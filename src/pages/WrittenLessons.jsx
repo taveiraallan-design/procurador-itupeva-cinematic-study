@@ -109,6 +109,7 @@ export default function WrittenLessons({ onNavigate }) {
           </p>
           <div className="hero-actions">
             <Button onClick={() => onNavigate?.('conteudo')}>Ver Conteúdo Completo</Button>
+            <Button variant="secondary" onClick={() => onNavigate?.('materiais')}>Abrir Materiais</Button>
             <Button variant="ghost" onClick={() => onNavigate?.('questoes')}>Treinar Questões</Button>
           </div>
         </div>

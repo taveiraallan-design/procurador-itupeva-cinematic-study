@@ -108,7 +108,8 @@ export default function CompleteContent({ onNavigate }) {
           </p>
           <div className="subjects-hero-actions">
             <Button onClick={copySubjectPlan}>Copiar plano da matéria</Button>
-            <Button variant="secondary" onClick={() => onNavigate?.('questoes')}>Treinar questões</Button>
+            <Button variant="secondary" onClick={() => onNavigate?.('materiais')}>Abrir materiais</Button>
+            <Button variant="ghost" onClick={() => onNavigate?.('questoes')}>Treinar questões</Button>
             <Button variant="ghost" onClick={() => onNavigate?.('discursivas')}>Treinar discursiva</Button>
           </div>
         </div>
