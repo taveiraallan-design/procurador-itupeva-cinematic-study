@@ -3480,3 +3480,167 @@ img, svg, canvas, video { max-width: 100%; }
     text-align: center;
   }
 }
+
+/* Fase 35.2 — Hotfix profundo do Simulador no celular
+   Corrige sobreposição interna das cenas cinematográficas, principalmente Competência. */
+@media (max-width: 700px) {
+  .scene-visual-frame {
+    min-height: 620px !important;
+    overflow: hidden !important;
+  }
+
+  .illustrated-scene {
+    transform: none !important;
+    inset: 0 !important;
+    min-height: 100% !important;
+  }
+
+  .competence-scene .competence-booth {
+    position: absolute !important;
+    left: 12px !important;
+    right: 12px !important;
+    top: 58px !important;
+    bottom: 112px !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 390px !important;
+    transform: none !important;
+    border-radius: 28px !important;
+  }
+
+  .competence-scene .person-authority {
+    display: none !important;
+  }
+
+  .competence-scene .legal-scanner {
+    top: 22px !important;
+    left: 18px !important;
+    right: 18px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: 56px !important;
+    transform: none !important;
+    border-radius: 18px !important;
+    font-size: .82rem !important;
+    line-height: 1.05 !important;
+    letter-spacing: .04em !important;
+    text-align: center !important;
+    padding: 0 12px !important;
+    z-index: 30 !important;
+  }
+
+  .competence-scene .approval-screen {
+    top: 96px !important;
+    left: 20px !important;
+    right: 20px !important;
+    width: auto !important;
+    min-height: auto !important;
+    padding: 12px 14px !important;
+    border-radius: 18px !important;
+    text-align: center !important;
+    z-index: 18 !important;
+  }
+
+  .competence-scene .approval-screen strong {
+    font-size: .98rem !important;
+    letter-spacing: .06em !important;
+  }
+
+  .competence-scene .approval-screen span {
+    display: block !important;
+    margin-top: 4px !important;
+    font-size: .82rem !important;
+  }
+
+  .competence-scene .scene-document {
+    top: 188px !important;
+    left: 50% !important;
+    width: 112px !important;
+    height: 142px !important;
+    transform: translateX(-50%) rotate(-3deg) !important;
+    z-index: 12 !important;
+  }
+
+  .competence-scene .cinematic-id {
+    top: 332px !important;
+    left: 50% !important;
+    width: 142px !important;
+    height: 68px !important;
+    transform: translateX(-50%) rotate(-2deg) !important;
+    z-index: 14 !important;
+  }
+
+  .competence-scene .cinematic-id strong {
+    font-size: 1.15rem !important;
+  }
+
+  .competence-scene .cinematic-id span {
+    font-size: .68rem !important;
+    line-height: 1.05 !important;
+  }
+
+  .competence-scene .scene-seal {
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 22px !important;
+    width: auto !important;
+    transform: none !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: .72rem !important;
+    letter-spacing: .10em !important;
+    padding: 10px 12px !important;
+    z-index: 26 !important;
+  }
+
+  .competence-scene .scene-caption {
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 10px !important;
+    font-size: .92rem !important;
+    line-height: 1.22 !important;
+    padding: 12px 14px !important;
+    border-radius: 18px !important;
+    z-index: 40 !important;
+  }
+
+  .competence-scene .competence-booth + .scene-caption,
+  .competence-scene .scene-caption {
+    bottom: 10px !important;
+  }
+
+  .competence-scene .competence-booth {
+    bottom: 116px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .scene-visual-frame {
+    min-height: 660px !important;
+  }
+
+  .competence-scene .competence-booth {
+    top: 48px !important;
+    bottom: 132px !important;
+  }
+
+  .competence-scene .legal-scanner {
+    font-size: .76rem !important;
+  }
+
+  .competence-scene .approval-screen {
+    top: 90px !important;
+  }
+
+  .competence-scene .scene-document {
+    top: 184px !important;
+  }
+
+  .competence-scene .cinematic-id {
+    top: 334px !important;
+  }
+
+  .competence-scene .scene-caption {
+    font-size: .86rem !important;
+  }
+}
