@@ -3644,3 +3644,165 @@ img, svg, canvas, video { max-width: 100%; }
     font-size: .86rem !important;
   }
 }
+
+/* Fase 35.5 — Hotfix de legibilidade das cenas
+   Separa rótulos de scanner/documentos para evitar texto ilegível no mobile e telas estreitas. */
+.legal-scanner strong {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  max-width: 92%;
+  padding: 0 8px;
+  line-height: 1.05;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(2, 6, 23, .95), 0 0 10px rgba(125, 211, 252, .45);
+}
+
+.legal-scanner .scanner-core {
+  z-index: 2;
+  opacity: .78;
+  pointer-events: none;
+}
+
+.motive-scene .evidence-wall {
+  min-height: 300px;
+}
+
+.motive-scene .legal-scanner {
+  top: 18px;
+  width: 250px;
+  height: 64px;
+  z-index: 40;
+  background: linear-gradient(180deg, rgba(14, 116, 144, .34), rgba(8, 47, 73, .76));
+  backdrop-filter: blur(8px);
+}
+
+.motive-scene .legal-scanner .scanner-core {
+  left: 72%;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.motive-scene .scene-document {
+  top: 112px;
+  z-index: 10;
+}
+
+.motive-scene .evidence-pins {
+  top: 52px;
+  right: 54px;
+  z-index: 22;
+}
+
+.motive-scene .scene-seal {
+  z-index: 34;
+}
+
+@media (max-width: 900px) {
+  .motive-scene .evidence-wall {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 78px !important;
+    width: auto !important;
+    height: 420px !important;
+    min-height: 420px !important;
+    transform: none !important;
+    border-radius: 28px !important;
+  }
+
+  .motive-scene .legal-scanner {
+    left: 18px !important;
+    right: 18px !important;
+    top: 22px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: 58px !important;
+    transform: none !important;
+    border-radius: 20px !important;
+    font-size: 1rem !important;
+    letter-spacing: .08em !important;
+  }
+
+  .motive-scene .legal-scanner .scanner-core {
+    left: auto !important;
+    right: 28px !important;
+    top: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+    opacity: .55 !important;
+  }
+
+  .motive-scene .scene-document {
+    top: 106px !important;
+    left: 50% !important;
+    width: 132px !important;
+    height: 168px !important;
+    transform: translateX(-50%) rotate(-2deg) !important;
+    z-index: 12 !important;
+  }
+
+  .motive-scene .evidence-pins {
+    left: 18px !important;
+    right: 18px !important;
+    top: 296px !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    z-index: 28 !important;
+  }
+
+  .motive-scene .evidence-pins span {
+    min-width: 92px !important;
+    text-align: center !important;
+    padding: 9px 12px !important;
+    font-size: .86rem !important;
+    line-height: 1 !important;
+  }
+
+  .motive-scene .scene-seal {
+    left: 26px !important;
+    right: 26px !important;
+    bottom: 22px !important;
+    width: auto !important;
+    justify-content: center !important;
+    text-align: center !important;
+    transform: none !important;
+    font-size: .76rem !important;
+    letter-spacing: .10em !important;
+    padding: 11px 12px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .scene-visual-frame {
+    min-height: 690px !important;
+  }
+
+  .motive-scene .evidence-wall {
+    height: 450px !important;
+    min-height: 450px !important;
+    bottom: 112px !important;
+  }
+
+  .motive-scene .legal-scanner {
+    font-size: .92rem !important;
+    height: 54px !important;
+  }
+
+  .motive-scene .scene-document {
+    top: 100px !important;
+    width: 118px !important;
+    height: 154px !important;
+  }
+
+  .motive-scene .evidence-pins {
+    top: 282px !important;
+  }
+
+  .motive-scene .evidence-pins span {
+    min-width: 88px !important;
+    font-size: .82rem !important;
+  }
+}
