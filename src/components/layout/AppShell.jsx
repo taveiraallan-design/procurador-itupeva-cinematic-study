@@ -18,6 +18,7 @@ const subtitles = {
   offline: 'Backup, exportação completa, PWA e checklist de segurança.',
   plano: 'Organize missões semanais sem poluir sua cabeça.',
   materias: 'Mapa das disciplinas e tópicos críticos do edital.',
+  aulas: 'Apostila interna com aulas escritas, fundamentos, lei seca e revisão ativa.',
   edital: 'Conteúdo programático oficial, cronograma, matriz de cobrança e checklist.',
   questoes: 'Treino objetivo com foco em banca, erro e revisão.',
   simulados: 'Modo prova com cronômetro, estratégia e relatório.',

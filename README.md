@@ -73,3 +73,8 @@ cd ~/Downloads && unzip -o procurador-itupeva-cinematic-study-fase15.zip && cd p
 - Adiciona bloco específico de Lei Local.
 - Adiciona treino discursivo com situação-problema, comando, texto livre e espelho de autoavaliação.
 
+
+
+## Fase 37 — Aulas Escritas Completas
+
+A versão inclui a aba **Aulas Escritas**, uma apostila interna por matéria com explicações, tópicos do edital, base legal, pegadinhas, revisão ativa, caderno pessoal e marcação de aulas lidas.

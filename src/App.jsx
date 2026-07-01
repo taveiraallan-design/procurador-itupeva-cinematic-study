@@ -21,6 +21,7 @@ import FinalAudit from './pages/FinalAudit';
 import StudyPlan from './pages/StudyPlan';
 import Subjects from './pages/Subjects';
 import CompleteContent from './pages/CompleteContent';
+import WrittenLessons from './pages/WrittenLessons';
 import Edital from './pages/Edital';
 import Questions from './pages/Questions';
 import Simulations from './pages/Simulations';
@@ -50,6 +51,7 @@ const navItems = [
   { id: 'plano', label: 'Plano' },
   { id: 'materias', label: 'Matérias' },
   { id: 'conteudo', label: 'Conteúdo Completo' },
+  { id: 'aulas', label: 'Aulas Escritas' },
   { id: 'edital', label: 'Edital' },
   { id: 'questoes', label: 'Questões' },
   { id: 'simulados', label: 'Simulados' },
@@ -80,6 +82,7 @@ const pageComponents = {
   plano: StudyPlan,
   materias: Subjects,
   conteudo: CompleteContent,
+  aulas: WrittenLessons,
   edital: Edital,
   questoes: Questions,
   simulados: Simulations,
