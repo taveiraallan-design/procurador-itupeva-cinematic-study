@@ -1,0 +1,137 @@
+export const vesperaBlocks = [
+  {
+    id: 'lei-local',
+    title: 'Lei local sem erro bobo',
+    window: '48h antes',
+    risk: 'Muito alto',
+    mission: 'Repassar Lei Orgânica, competências municipais, Câmara, Prefeito, tributos e poder de polícia municipal.',
+    checklist: [
+      'Autonomia municipal não é soberania',
+      'Competência de interesse local e suplementar',
+      'Funções da Câmara e do Prefeito',
+      'Processo legislativo municipal: sanção, veto e publicação',
+      'IPTU, ISS, ITBI e dívida ativa',
+      'Fiscalização, alvará, multa e interdição',
+    ],
+    traps: [
+      'Confundir Câmara com Executivo',
+      'Achar que alvará impede fiscalização futura',
+      'Atribuir ICMS/IPVA ao Município',
+    ],
+    action: 'Fazer bloco Lei Local + 12 flashcards',
+    targetPage: 'simulator',
+  },
+  {
+    id: 'administrativo',
+    title: 'Administrativo de alta incidência',
+    window: '36h antes',
+    risk: 'Muito alto',
+    mission: 'Fixar atos administrativos, poderes, responsabilidade civil, licitações e processo administrativo.',
+    checklist: [
+      'Ato ilegal: anulação',
+      'Ato válido inconveniente: revogação',
+      'Vício sanável: convalidação',
+      'Poder de polícia não é polícia judiciária',
+      'Dispensa x inexigibilidade',
+      'Responsabilidade objetiva exige dano e nexo',
+    ],
+    traps: [
+      'Revogar ato ilegal',
+      'Confundir dispensa com inexigibilidade',
+      'Achar que responsabilidade objetiva é automática',
+    ],
+    action: 'Rodar simulador de Atos + 20 questões',
+    targetPage: 'questoes',
+  },
+  {
+    id: 'processo-civil',
+    title: 'Processo Civil e atuação do Procurador',
+    window: '24h antes',
+    risk: 'Alto',
+    mission: 'Revisar contestação, prazos, Fazenda Pública, tutela provisória, recursos e execução fiscal quando conectado ao Município.',
+    checklist: [
+      'Prazos e prerrogativas da Fazenda Pública',
+      'Tutela provisória contra o Poder Público',
+      'Contestação e preliminares',
+      'Recursos e cumprimento de sentença',
+      'Execução fiscal e CDA',
+    ],
+    traps: [
+      'Responder discursiva sem providência prática',
+      'Ignorar prerrogativas processuais',
+      'Misturar execução fiscal com cobrança comum',
+    ],
+    action: 'Treinar 1 discursiva + revisar espelho',
+    targetPage: 'discursivas',
+  },
+  {
+    id: 'tributario-ambiental-urbanistico',
+    title: 'Núcleo municipal aplicado',
+    window: '18h antes',
+    risk: 'Alto',
+    mission: 'Revisar tributário municipal, urbanismo, meio ambiente local e poder de polícia em casos práticos.',
+    checklist: [
+      'IPTU: imóvel urbano',
+      'ISS: prestação de serviços',
+      'ITBI: transmissão inter vivos onerosa',
+      'Posturas e uso do solo',
+      'Fiscalização ambiental municipal',
+      'Proporcionalidade na sanção administrativa',
+    ],
+    traps: [
+      'Pular inscrição em dívida ativa',
+      'Usar sanção sem legalidade/motivação',
+      'Achar que todo impacto ambiental é só estadual/federal',
+    ],
+    action: 'Fazer revisão de véspera municipal',
+    targetPage: 'revisao',
+  },
+  {
+    id: 'portugues-controle',
+    title: 'Português e controle de prova',
+    window: '12h antes',
+    risk: 'Médio',
+    mission: 'Fazer revisão leve de interpretação, pontuação, concordância e controle de tempo.',
+    checklist: [
+      'Interpretação: localizar comando da questão',
+      'Pontuação e sentido',
+      'Concordância verbal e nominal',
+      'Crase em casos básicos',
+      'Estratégia: não travar em questão longa',
+    ],
+    traps: [
+      'Mudar resposta por ansiedade',
+      'Ignorar comando negativo da questão',
+      'Perder tempo em uma questão isolada',
+    ],
+    action: 'Resolver 10 questões leves + dormir cedo',
+    targetPage: 'questoes',
+  },
+];
+
+export const vesperaChecklists = [
+  {
+    id: 'documentos',
+    title: 'Logística de prova',
+    items: ['Documento oficial', 'Caneta preta/azul', 'Comprovante/local de prova', 'Água e lanche simples', 'Chegar com antecedência'],
+  },
+  {
+    id: 'mental',
+    title: 'Controle mental',
+    items: ['Nada de matéria nova pesada', 'Revisar só mapas e erros', 'Dormir com horário definido', 'Separar roupa e materiais', 'Plano de tempo da prova'],
+  },
+  {
+    id: 'discursiva',
+    title: 'Checklist discursiva',
+    items: ['Introdução objetiva', 'Fundamento legal/princípio', 'Aplicação ao caso', 'Providência prática', 'Conclusão clara'],
+  },
+];
+
+export const lastMinuteCards = [
+  { id: 'anulacao-revogacao', front: 'Ato ilegal é…', back: 'Anulado. Revogação é mérito de ato válido.' },
+  { id: 'autonomia', front: 'Município tem soberania?', back: 'Não. Tem autonomia política, administrativa, legislativa e financeira nos limites da Constituição.' },
+  { id: 'tributos', front: 'Tríade tributária municipal', back: 'IPTU, ISS e ITBI.' },
+  { id: 'policia', front: 'Alvará impede fiscalização?', back: 'Não. A fiscalização pode continuar e sanções exigem legalidade, motivação e defesa.' },
+  { id: 'responsabilidade', front: 'Responsabilidade objetiva dispensa o quê?', back: 'Dispensa prova de culpa do Estado, mas não dispensa dano e nexo causal.' },
+  { id: 'discursiva', front: 'Resposta discursiva forte precisa de…', back: 'Problema, fundamento, aplicação ao caso, providência e conclusão.' },
+];

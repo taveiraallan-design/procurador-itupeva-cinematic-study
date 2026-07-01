@@ -1,0 +1,56 @@
+export const timelineTracks = [
+  {
+    id: 'pad',
+    title: 'PAD e responsabilização do servidor',
+    focus: 'Processo Administrativo Disciplinar',
+    risk: 'Confundir sindicância, PAD, ampla defesa e consequência disciplinar.',
+    events: [
+      { id: 'pad-1', phase: 'Notícia do fato', time: 'Dia 0', actor: 'Administração', action: 'Recebe indício de infração funcional.', exam: 'A prova cobra se a Administração pode apurar de ofício.', trap: 'Arquivar sem apuração mínima quando há indício consistente.' },
+      { id: 'pad-2', phase: 'Juízo de admissibilidade', time: 'Início', actor: 'Autoridade competente', action: 'Verifica materialidade mínima e competência para instaurar.', exam: 'Competência e motivação aparecem em alternativas longas.', trap: 'Instauração por autoridade manifestamente incompetente.' },
+      { id: 'pad-3', phase: 'Instauração', time: 'Portaria', actor: 'Comissão', action: 'Define fatos, comissão e objeto da apuração.', exam: 'A banca testa se a portaria precisa pré-julgar o servidor: não precisa.', trap: 'Exigir tipificação fechada antes da instrução.' },
+      { id: 'pad-4', phase: 'Defesa e instrução', time: 'Fase probatória', actor: 'Servidor e comissão', action: 'Garante contraditório, provas, manifestação e defesa técnica quando exigida.', exam: 'Nulidade exige prejuízo, mas defesa real é ponto sensível.', trap: 'Tratar contraditório como mera formalidade dispensável.' },
+      { id: 'pad-5', phase: 'Relatório', time: 'Conclusão', actor: 'Comissão', action: 'Sugere absolvição ou penalidade, com fundamentos.', exam: 'Relatório não substitui decisão final da autoridade julgadora.', trap: 'Achar que comissão aplica diretamente a pena.' },
+      { id: 'pad-6', phase: 'Julgamento', time: 'Decisão', actor: 'Autoridade julgadora', action: 'Decide motivadamente e aplica consequência cabível.', exam: 'Motivação, proporcionalidade e competência são as chaves.', trap: 'Aplicar pena desproporcional ou sem nexo com o fato.' },
+    ],
+  },
+  {
+    id: 'licitacoes',
+    title: 'Licitação e contratação pública',
+    focus: 'Lei 14.133/2021 e atuação consultiva do Procurador',
+    risk: 'Confundir planejamento, julgamento, habilitação, contratação e controle.',
+    events: [
+      { id: 'lic-1', phase: 'Planejamento', time: 'Antes do edital', actor: 'Área técnica', action: 'Define necessidade, estudo técnico preliminar, risco e termo de referência.', exam: 'Sem planejamento, a contratação nasce vulnerável.', trap: 'Pular estudo técnico e justificar só depois.' },
+      { id: 'lic-2', phase: 'Parecer jurídico', time: 'Controle prévio', actor: 'Procuradoria', action: 'Analisa minuta, edital, cláusulas, riscos e legalidade.', exam: 'Parecer não substitui decisão administrativa, mas qualifica o controle.', trap: 'Tratar parecer como autorização automática para contratar.' },
+      { id: 'lic-3', phase: 'Publicação', time: 'Edital', actor: 'Administração', action: 'Dá publicidade e fixa regras objetivas.', exam: 'Vinculação ao edital é cobrança clássica.', trap: 'Mudar regra depois para beneficiar licitante.' },
+      { id: 'lic-4', phase: 'Julgamento', time: 'Sessão', actor: 'Agente de contratação', action: 'Julga propostas conforme critério previsto.', exam: 'Critério subjetivo sem previsão costuma ser ilegal.', trap: 'Confundir melhor técnica com menor preço.' },
+      { id: 'lic-5', phase: 'Habilitação', time: 'Após julgamento', actor: 'Licitantes', action: 'Comprova condições jurídicas, fiscais, técnicas e econômicas.', exam: 'Ordem de fases e saneamento geram pegadinhas.', trap: 'Inabilitar por falha sanável sem diligência possível.' },
+      { id: 'lic-6', phase: 'Contrato e fiscalização', time: 'Execução', actor: 'Gestor e fiscal', action: 'Acompanha execução, aditivos, sanções e recebimento.', exam: 'Fiscalização deficiente pode gerar dano ao erário.', trap: 'Aditivo usado para alterar objeto essencial.' },
+    ],
+  },
+  {
+    id: 'lei-organica',
+    title: 'Lei Orgânica Municipal',
+    focus: 'Competências, processo legislativo e controle municipal',
+    risk: 'Misturar atribuições da Câmara, Prefeito, Município e União/Estado.',
+    events: [
+      { id: 'lom-1', phase: 'Competência municipal', time: 'Base', actor: 'Município', action: 'Atua em interesse local e suplementa normas quando cabível.', exam: 'Interesse local é gatilho de prova.', trap: 'Invadir competência privativa da União.' },
+      { id: 'lom-2', phase: 'Câmara Municipal', time: 'Legislativo', actor: 'Vereadores', action: 'Legisla, fiscaliza e exerce controle político.', exam: 'Fiscalizar não é administrar diretamente.', trap: 'Câmara criar obrigação administrativa com vício de iniciativa.' },
+      { id: 'lom-3', phase: 'Prefeito', time: 'Executivo', actor: 'Chefe do Executivo', action: 'Administra, sanciona, veta, regulamenta e executa políticas públicas.', exam: 'Iniciativa reservada aparece em lei local.', trap: 'Lei parlamentar criando despesa ou estrutura do Executivo.' },
+      { id: 'lom-4', phase: 'Processo legislativo', time: 'Projeto de lei', actor: 'Câmara e Prefeito', action: 'Projeto, discussão, votação, sanção, veto e promulgação.', exam: 'Veto, sanção e promulgação são sequência clássica.', trap: 'Confundir veto político com controle judicial.' },
+      { id: 'lom-5', phase: 'Controle', time: 'Após ato', actor: 'Controle interno, externo e Judiciário', action: 'Fiscaliza legalidade, contas e constitucionalidade.', exam: 'Tribunal de Contas auxilia o Legislativo.', trap: 'Achar que parecer prévio sempre julga definitivamente.' },
+    ],
+  },
+  {
+    id: 'tributos',
+    title: 'Crédito tributário municipal',
+    focus: 'IPTU, ISS, ITBI, taxas, contribuição de melhoria e dívida ativa',
+    risk: 'Confundir lançamento, inscrição, cobrança e execução fiscal.',
+    events: [
+      { id: 'trib-1', phase: 'Hipótese de incidência', time: 'Fato gerador', actor: 'Contribuinte', action: 'Ocorre situação prevista em lei municipal tributária.', exam: 'Legalidade tributária é ponto central.', trap: 'Cobrar tributo por decreto sem lei anterior.' },
+      { id: 'trib-2', phase: 'Lançamento', time: 'Constituição', actor: 'Fisco municipal', action: 'Constitui o crédito tributário e identifica sujeito, base e valor.', exam: 'Sem lançamento não há crédito constituído.', trap: 'Confundir fato gerador com cobrança imediata.' },
+      { id: 'trib-3', phase: 'Notificação e defesa', time: 'Administrativo', actor: 'Contribuinte', action: 'Pode impugnar conforme processo administrativo tributário.', exam: 'Contraditório administrativo e decadência/prescrição aparecem juntos.', trap: 'Ignorar prazos e lançar crédito fulminado.' },
+      { id: 'trib-4', phase: 'Inscrição em dívida ativa', time: 'Inadimplemento', actor: 'Fazenda Municipal', action: 'Formaliza certidão para cobrança judicial.', exam: 'CDA deve ter requisitos formais.', trap: 'Achar que inscrição dispensa certeza e liquidez.' },
+      { id: 'trib-5', phase: 'Execução fiscal', time: 'Judicial', actor: 'Procuradoria', action: 'Propõe cobrança com base na CDA.', exam: 'Procurador atua no contencioso fiscal estratégico.', trap: 'Cobrar valor prescrito ou sem suporte documental.' },
+    ],
+  },
+];

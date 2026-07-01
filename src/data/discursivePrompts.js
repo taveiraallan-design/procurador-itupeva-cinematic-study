@@ -1,0 +1,42 @@
+export const discursivePrompts = [
+  {
+    id: 'disc-001',
+    subject: 'Direito Administrativo',
+    title: 'Parecer sobre anulação de ato administrativo',
+    situation: 'O Município identificou ato administrativo praticado por autoridade incompetente, com possível prejuízo ao interesse público. A Secretaria solicita parecer sobre manutenção, convalidação ou anulação.',
+    command: 'Elabore resposta fundamentada indicando providência jurídica adequada, requisitos de validade do ato, autotutela, possibilidade de convalidação e efeitos.',
+    keyPoints: ['competência', 'legalidade', 'autotutela', 'convalidação', 'anulação', 'motivação'],
+    trap: 'Não tratar ato ilegal como caso de revogação por conveniência e oportunidade.',
+    minimumLines: 20,
+  },
+  {
+    id: 'disc-002',
+    subject: 'Direito Tributário e Municipal',
+    title: 'Dívida ativa e cobrança municipal',
+    situation: 'Contribuinte questiona inscrição em dívida ativa de crédito municipal e a Procuradoria deve avaliar cobrança, defesa do Município e requisitos do título.',
+    command: 'Explique a função da inscrição em dívida ativa, requisitos de certeza/liquidez, possibilidades de defesa e cuidados antes da execução fiscal.',
+    keyPoints: ['crédito tributário', 'lançamento', 'dívida ativa', 'CDA', 'execução fiscal', 'defesa do contribuinte'],
+    trap: 'Não afirmar que inscrição em dívida ativa impede qualquer defesa.',
+    minimumLines: 20,
+  },
+  {
+    id: 'disc-003',
+    subject: 'Legislação Municipal',
+    title: 'Competência municipal e interesse local',
+    situation: 'A Câmara discute projeto de lei sobre matéria de interesse local, mas há dúvida sobre limites constitucionais e iniciativa legislativa.',
+    command: 'Analise a autonomia municipal, o interesse local, limites constitucionais e o risco de vício de iniciativa.',
+    keyPoints: ['autonomia municipal', 'interesse local', 'lei orgânica', 'iniciativa', 'constitucionalidade', 'separação de poderes'],
+    trap: 'Não confundir autonomia com soberania nem interesse local com competência ilimitada.',
+    minimumLines: 20,
+  },
+  {
+    id: 'disc-004',
+    subject: 'Responsabilidade Civil do Estado',
+    title: 'Indenização contra o Município',
+    situation: 'Cidadão ajuíza ação indenizatória contra o Município por suposta falha na prestação de serviço público.',
+    command: 'Elabore tese objetiva sobre responsabilidade civil do Estado, dano, nexo causal, excludentes e eventual direito de regresso.',
+    keyPoints: ['conduta estatal', 'dano', 'nexo causal', 'excludentes', 'omissão', 'direito de regresso'],
+    trap: 'Não afirmar que responsabilidade objetiva dispensa dano e nexo causal.',
+    minimumLines: 20,
+  }
+];
