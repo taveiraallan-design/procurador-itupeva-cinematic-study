@@ -19,6 +19,7 @@ export default function SceneStage({
   stepIndex,
   totalSteps,
   isExecuting,
+  autoPlay,
   selectedOption,
   lastFeedback,
   examMode,
@@ -137,7 +138,7 @@ export default function SceneStage({
           <p>{hideDetails ? 'Responda para revelar a consequência jurídica, o fundamento e a pegadinha.' : step.consequence}</p>
         </div>
         <div className="scene-control-row">
-          <Button onClick={onExecute}>{isExecuting ? 'Executando...' : 'Executar cena'}</Button>
+          <Button onClick={onExecute}>{autoPlay ? 'Pausar processo' : isExecuting ? 'Executando...' : 'Executar processo'}</Button>
           <Button variant="secondary" onClick={onNext} disabled={requiresAnswer && !selectedOption}>Continuar</Button>
           <Button variant="ghost" onClick={onBack}>Voltar</Button>
           <Button variant="ghost" onClick={onReset}>Reiniciar</Button>
