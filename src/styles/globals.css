@@ -3163,3 +3163,320 @@ textarea, input, select { width: 100%; max-width: 100%; }
   .card, .hero-panel { box-shadow: none; border-color: #d1d5db; background: #fff; color: #111827; break-inside: avoid; }
   .card p, .task-row span, .audit-check span { color: #374151; }
 }
+
+/* Fase 35.1 — Hotfix responsivo mobile/tablet para Simulador Cinemático e navegação */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+img, svg, canvas, video { max-width: 100%; }
+.app-shell, .main-content, .page-wrap, .cinematic-simulator-page { min-width: 0; }
+
+/* O simulador precisa respirar antes de chegar no celular: evita 3 colunas esmagadas. */
+@media (max-width: 1500px) {
+  .cinematic-main-layout,
+  .simulator-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .cinematic-map-card {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .cin-step-list {
+    display: flex !important;
+    gap: 10px !important;
+    max-height: none !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 4px 4px 10px !important;
+    scroll-snap-type: x mandatory;
+  }
+
+  .cin-step-node {
+    min-width: 210px !important;
+    flex: 0 0 210px !important;
+    scroll-snap-align: start;
+  }
+
+  .cin-step-node:hover { transform: none !important; }
+
+  .exam-insight-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .exam-insight-panel .section-heading,
+  .exam-insight-panel .memory-strip,
+  .exam-insight-panel > h3 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 1180px) {
+  .app-shell {
+    display: block !important;
+  }
+
+  .sidebar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+    height: auto !important;
+    max-height: none !important;
+    padding: 12px 14px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+    gap: 12px !important;
+    background: rgba(3, 7, 18, .92) !important;
+  }
+
+  .brand-block {
+    justify-content: space-between;
+  }
+
+  .brand-mark {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 14px !important;
+    font-size: .85rem !important;
+  }
+
+  .brand-block h1 { font-size: 1rem !important; }
+  .brand-block p { font-size: .78rem !important; }
+
+  .nav-list {
+    display: flex !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 2px 2px 8px !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+  }
+
+  .nav-item {
+    flex: 0 0 auto !important;
+    min-width: max-content !important;
+    padding: 10px 12px !important;
+    border-radius: 999px !important;
+    scroll-snap-align: start;
+  }
+
+  .nav-icon { width: auto !important; }
+  .sidebar-footer { display: none !important; }
+
+  .topbar {
+    min-height: auto !important;
+    padding: 18px 16px !important;
+  }
+
+  .topbar h2 {
+    font-size: clamp(1.75rem, 8vw, 2.8rem) !important;
+  }
+
+  .page-wrap {
+    padding: 16px 14px 44px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .cinematic-simulator-page {
+    gap: 14px !important;
+  }
+
+  .cinematic-hero {
+    padding: 18px !important;
+    border-radius: 24px !important;
+    gap: 16px !important;
+  }
+
+  .cinematic-hero h1 {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    line-height: .95 !important;
+  }
+
+  .simulator-meta-row span {
+    width: 100%;
+    border-radius: 16px !important;
+  }
+
+  .vertical-actions,
+  .simulator-actions {
+    min-width: 0 !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .flow-selector-panel {
+    padding: 12px !important;
+    border-radius: 18px !important;
+  }
+
+  .flow-selector-panel select {
+    font-size: 1rem !important;
+    white-space: normal !important;
+  }
+
+  .cinematic-map-card,
+  .scene-execution-panel,
+  .exam-insight-panel,
+  .score-report-card,
+  .scene-timeline-panel {
+    padding: 16px !important;
+    border-radius: 24px !important;
+  }
+
+  .cin-step-node {
+    min-width: 178px !important;
+    flex-basis: 178px !important;
+    padding: 10px !important;
+    border-radius: 16px !important;
+  }
+
+  .cin-step-number {
+    width: 30px !important;
+    height: 30px !important;
+    flex-basis: 30px !important;
+  }
+
+  .cin-step-node strong { font-size: .86rem !important; }
+  .cin-step-node small { font-size: .74rem !important; }
+
+  .scene-execution-panel {
+    min-height: auto !important;
+    gap: 14px !important;
+  }
+
+  .scene-execution-header {
+    gap: 12px !important;
+  }
+
+  .scene-execution-header h2 {
+    font-size: clamp(1.9rem, 11vw, 2.7rem) !important;
+    line-height: .96 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .scene-status-card {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .scene-visual-frame {
+    min-height: 390px !important;
+    border-radius: 22px !important;
+  }
+
+  .illustrated-scene {
+    transform: scale(.82) !important;
+    transform-origin: center center !important;
+  }
+
+  .scene-caption {
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    font-size: .78rem !important;
+    line-height: 1.25 !important;
+    padding: 10px 12px !important;
+  }
+
+  .scene-action-panel,
+  .scene-control-row,
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-content: stretch !important;
+  }
+
+  .btn {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .cinematic-options,
+  .cinematic-bottom-grid,
+  .exam-insight-panel,
+  .exam-score-strip,
+  .final-score-grid,
+  .exam-mini-score {
+    grid-template-columns: 1fr !important;
+  }
+
+  .exam-options .cinematic-option,
+  .cinematic-option {
+    grid-template-columns: 30px 1fr !important;
+    min-height: auto !important;
+  }
+
+  .section-heading {
+    align-items: stretch !important;
+  }
+}
+
+@media (max-width: 560px) {
+  :root { --radius: 18px; }
+
+  .topbar p {
+    font-size: .92rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .cinematic-hero p,
+  .scene-execution-header p,
+  .card p,
+  .exam-insight-panel p {
+    font-size: .95rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .page-wrap {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .scene-visual-frame {
+    min-height: 330px !important;
+  }
+
+  .illustrated-scene {
+    transform: scale(.68) !important;
+  }
+
+  .scene-building,
+  .cinematic-building {
+    left: 16px !important;
+  }
+
+  .scene-document {
+    width: 96px !important;
+    height: 126px !important;
+  }
+
+  .scene-stamp {
+    left: auto !important;
+    right: 12px !important;
+    top: 88px !important;
+    min-width: 94px !important;
+    font-size: .72rem !important;
+    padding: 8px 10px !important;
+  }
+
+  .scene-seal {
+    right: 12px !important;
+    bottom: 18px !important;
+    font-size: .68rem !important;
+    padding: 8px 10px !important;
+  }
+
+  .cin-step-node {
+    min-width: 160px !important;
+    flex-basis: 160px !important;
+  }
+
+  .badge {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+}
