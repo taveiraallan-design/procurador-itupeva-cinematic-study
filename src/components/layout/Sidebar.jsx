@@ -9,6 +9,7 @@ const icons = {
   'lei-seca': '¶',
   plano: '▦',
   materias: '◫',
+  conteudo: '▤',
   edital: '§',
   questoes: '✎',
   simulados: '◉',
