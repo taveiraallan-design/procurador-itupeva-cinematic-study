@@ -1,11 +1,11 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39E',
+  phase: 'Fase 39F',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Direito Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal + Penal/Processo Penal — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39F — Penal e Processo Penal Premium',
-    '39G — Trabalho e Processo do Trabalho Premium'
+    '39G — Trabalho e Processo do Trabalho Premium',
+    '39H — Direito Urbanístico Premium'
   ]
 };
 
@@ -2436,6 +2436,210 @@ export const premiumApostilaSubjects = [
         summary: 'Legislação Municipal deve ser estudada como ferramenta de parecer. O candidato competitivo transforma artigo em pergunta, quadro comparativo, flashcard e caso prático. Essa matéria pode separar quem sabe Direito Municipal de quem estudou só leis gerais.',
         checklist: ['Sei montar quadro Prefeito x Câmara.', 'Sei usar Estatuto em caso de servidor.', 'Sei usar plano de cargos em remuneração.', 'Sei usar LC nº 551/2024 em competência de órgão.', 'Consigo escrever parecer com lei local.'],
         nextTopic: 'Próxima fase: Penal e Processo Penal Premium'
+      }
+    ]
+  }
+
+  ,
+  {
+    id: 'direito-penal-processo-penal',
+    subject: 'Direito Processual Penal e Direito Penal',
+    status: '39F concluída',
+    priority: 'Alta',
+    overview: 'Apostila premium de Penal e Processo Penal voltada ao concurso de Procurador Municipal: princípios penais, teoria do crime, penas, crimes contra a Administração Pública, crimes contra finanças públicas e ordem tributária, inquérito, ação penal, provas, prisões, nulidades, recursos, habeas corpus e acordo de não persecução penal, sempre com foco em atuação municipal, improbidade, responsabilização de agentes e proteção do erário.',
+    lawBase: ['Código Penal', 'Código de Processo Penal', 'Constituição Federal, art. 5º', 'Lei nº 13.869/2019 — abuso de autoridade', 'Lei nº 12.850/2013 — organização criminosa', 'Lei nº 8.137/1990 — crimes contra a ordem tributária', 'Lei nº 10.028/2000 — crimes contra finanças públicas'],
+    topics: [
+      {
+        id: 'principios-penais-garantias',
+        level: 'básico',
+        title: 'Princípios penais e garantias constitucionais aplicáveis à persecução penal',
+        whatIs: 'São limites constitucionais e legais ao poder de punir do Estado. Incluem legalidade, anterioridade, reserva legal, taxatividade, irretroatividade da lei penal mais gravosa, retroatividade da lei penal benéfica, culpabilidade, individualização da pena, devido processo legal, contraditório, ampla defesa, presunção de inocência e vedação de prova ilícita.',
+        purpose: 'Servem para impedir punição arbitrária e para orientar a análise de validade de investigação, denúncia, prova, sentença e sanção penal. Para Procurador Municipal, ajudam a separar ilícito administrativo, improbidade, crime funcional e mera irregularidade de gestão.',
+        plainExplanation: [
+          'Direito Penal é a intervenção mais grave do Estado sobre a liberdade e o patrimônio da pessoa. Por isso, não basta que uma conduta pareça errada: ela precisa estar descrita em lei penal anterior, de forma clara e estrita. Esse é o núcleo da legalidade penal.',
+          'A Constituição também protege o modo de apuração. O Estado não pode condenar com base em prova ilícita, nem inverter a presunção de inocência como se o acusado tivesse de provar que é inocente. Em processo penal, acusação deve provar fato típico, ilícito, culpável e autoria.',
+          'Em concursos para Procurador, o tema aparece quando uma irregularidade municipal é narrada como se fosse crime. O candidato precisa perguntar: há tipo penal? há dolo ou culpa quando admitida? há nexo? há prova? há diferença entre ilícito administrativo, improbidade e crime?'
+        ],
+        examTechnical: 'Decore legalidade e anterioridade no art. 5º, XXXIX, da Constituição e no art. 1º do Código Penal. Presunção de inocência está no art. 5º, LVII. Provas ilícitas estão no art. 5º, LVI. Contraditório e ampla defesa estão no art. 5º, LV. A banca pode misturar princípios penais materiais com garantias processuais.',
+        cityExample: 'Relatório interno aponta pagamento indevido em contrato municipal. Antes de falar em peculato ou corrupção, o Procurador deve verificar se houve apropriação/desvio, vantagem indevida, dolo, participação de agente público, prejuízo ao erário e prova minimamente consistente. Nem toda falha administrativa é crime.',
+        legalBase: ['CF/88, art. 5º, XXXIX, LIV, LV, LVI e LVII', 'Código Penal, arts. 1º e 2º', 'CPP, regras sobre provas e nulidades'],
+        dryLaw: ['CF/88, art. 5º, XXXIX, XL, LIV, LV, LVI e LVII', 'CP, arts. 1º, 2º e 3º', 'CPP, arts. 155 a 157'],
+        jurisprudence: ['A jurisprudência dos tribunais superiores exige fundamentação concreta para medidas cautelares penais, especialmente quando restringem liberdade ou direitos.', 'Prova ilícita, em regra, não pode fundamentar condenação, salvo discussões específicas sobre fonte independente, descoberta inevitável e ausência de contaminação.'],
+        objectiveCharge: ['Legalidade penal e anterioridade.', 'Retroatividade da lei penal mais benéfica.', 'Presunção de inocência.', 'Prova ilícita.', 'Contraditório e ampla defesa.', 'Diferença entre ilícito administrativo e crime.'],
+        discursiveCharge: 'Pode aparecer em parecer sobre encaminhamento de notícia-crime, apuração de fraude em contrato, responsabilização de servidor ou análise de validade de prova obtida em sindicância/PAD.',
+        traps: ['Não existe crime sem lei anterior que o defina.', 'Analogia não pode criar crime ou agravar pena.', 'Irregularidade administrativa não vira crime automaticamente.', 'Prova ilícita não é “aproveitada” só porque parece verdadeira.', 'Presunção de inocência não impede investigação, mas impede condenação sem prova suficiente.'],
+        differences: ['Ilícito administrativo x crime: o primeiro viola dever funcional; o segundo exige tipo penal.', 'Improbidade x crime: improbidade é responsabilização civil sancionatória; crime segue legalidade penal estrita.', 'Legalidade penal x juridicidade administrativa: no Penal, a taxatividade é muito mais rígida.'],
+        commonMistakes: ['Chamar toda má gestão de crime.', 'Esquecer dolo nos crimes funcionais.', 'Confundir prova de PAD com prova penal suficiente.', 'Usar analogia contra o réu.', 'Ignorar retroatividade da lei penal benéfica.'],
+        miniCase: 'Fiscal municipal recebe denúncia anônima de fraude e apreende documentos em empresa sem autorização judicial ou base legal adequada. A questão central será a licitude da prova e se havia poder administrativo para aquela medida.',
+        activeQuestions: ['Existe tipo penal específico?', 'A lei penal é anterior ao fato?', 'Há dolo ou culpa admitida?', 'A prova foi obtida licitamente?', 'Há diferença entre irregularidade administrativa e crime?'],
+        flashcards: [
+          { front: 'O que diz a legalidade penal?', back: 'Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal.' },
+          { front: 'Lei penal benéfica retroage?', back: 'Sim, retroage para beneficiar o réu.' },
+          { front: 'Toda irregularidade administrativa é crime?', back: 'Não. Crime exige tipicidade, ilicitude, culpabilidade e prova de autoria/materialidade.' }
+        ],
+        summary: 'Princípios penais protegem contra punição sem lei e sem prova. Para Procurador, o mais importante é saber filtrar fatos municipais: irregularidade, ilícito funcional, improbidade e crime são planos diferentes.',
+        checklist: ['Sei explicar legalidade penal.', 'Sei prova ilícita e presunção de inocência.', 'Sei diferenciar ilícito administrativo, improbidade e crime.', 'Consigo analisar notícia-crime municipal.', 'Consigo aplicar garantias constitucionais ao processo penal.'],
+        nextTopic: 'Teoria do crime'
+      },
+      {
+        id: 'teoria-do-crime',
+        level: 'intermediário',
+        title: 'Teoria do crime: fato típico, ilicitude, culpabilidade, dolo, culpa, tentativa, concurso de pessoas e causas excludentes',
+        whatIs: 'Teoria do crime é o conjunto de categorias usadas para verificar se uma conduta pode ser considerada crime. A estrutura mais cobrada analisa fato típico, ilicitude e culpabilidade, além de dolo, culpa, consumação, tentativa, erro, concurso de pessoas e excludentes.',
+        purpose: 'Serve para evitar conclusões precipitadas. Uma conduta só é crime quando se encaixa no tipo penal, é ilícita, culpável e pode ser atribuída ao agente com dolo ou culpa, conforme o tipo. Para o Município, isso é essencial em fraudes, danos ao erário, condutas de servidores e crimes contra a Administração.',
+        plainExplanation: [
+          'O primeiro passo é o fato típico: conduta humana, resultado quando exigido, nexo causal e tipicidade. Se a conduta não se encaixa no tipo penal, a análise penal termina. O segundo passo é a ilicitude: mesmo típico, o fato pode ser justificado por legítima defesa, estado de necessidade, estrito cumprimento do dever legal ou exercício regular de direito.',
+          'Depois vem a culpabilidade, que envolve imputabilidade, potencial consciência da ilicitude e exigibilidade de conduta diversa. Em linguagem simples: o Direito Penal pergunta se era possível exigir daquele agente comportamento conforme o Direito.',
+          'Dolo é vontade consciente de realizar o tipo ou assumir o risco. Culpa envolve imprudência, negligência ou imperícia, mas só existe crime culposo quando a lei prevê. Em crimes contra a Administração, muitas pegadinhas giram em torno de dolo específico ou finalidade de obter vantagem.'
+        ],
+        examTechnical: 'Estude CP, arts. 13 a 25, especialmente nexo causal, crime consumado e tentado, desistência voluntária, arrependimento eficaz, arrependimento posterior, crime impossível, dolo e culpa, erro de tipo, erro de proibição, coação irresistível, obediência hierárquica e excludentes de ilicitude. Concurso de pessoas exige pluralidade de agentes, relevância causal, liame subjetivo e identidade de infração.',
+        cityExample: 'Servidor autoriza pagamento por erro material em planilha, sem benefício pessoal e com correção imediata. Antes de cogitar crime, deve-se analisar se houve dolo, culpa típica prevista, nexo, prejuízo e eventual esfera administrativa/civil.',
+        legalBase: ['Código Penal, arts. 13 a 31', 'CF/88, garantias penais do art. 5º'],
+        dryLaw: ['CP, arts. 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 29 e 30'],
+        jurisprudence: ['Tribunais superiores costumam exigir descrição mínima de conduta individualizada em denúncias envolvendo vários agentes, especialmente quando há imputação coletiva em contexto administrativo ou contratual.'],
+        objectiveCharge: ['Dolo x culpa.', 'Tentativa.', 'Desistência voluntária x arrependimento eficaz.', 'Erro de tipo x erro de proibição.', 'Excludentes de ilicitude.', 'Concurso de pessoas.'],
+        discursiveCharge: 'Pode cair em caso de fraude municipal com vários participantes. A resposta deve separar conduta de cada agente, tipo penal, dolo, nexo causal e eventual participação.',
+        traps: ['Crime culposo só existe quando previsto em lei.', 'Tentativa exige início de execução.', 'Desistência voluntária afasta tentativa do crime pretendido.', 'Erro de tipo exclui dolo; erro de proibição afeta culpabilidade.', 'Participação exige liame subjetivo.'],
+        differences: ['Fato típico x ilicitude x culpabilidade.', 'Dolo direto x dolo eventual.', 'Culpa consciente x dolo eventual.', 'Erro de tipo x erro de proibição.', 'Autoria x participação.'],
+        commonMistakes: ['Pular direto para pena sem analisar tipicidade.', 'Confundir negligência administrativa com crime culposo.', 'Não individualizar condutas.', 'Achar que todo resultado ruim indica dolo.', 'Confundir desistência voluntária com arrependimento posterior.'],
+        miniCase: 'Dois servidores assinam atestado falso de recebimento de material, mas apenas um sabia que o material não foi entregue. A imputação penal deve considerar conhecimento, dolo e conduta individual de cada um.',
+        activeQuestions: ['Qual é o tipo penal?', 'Houve dolo?', 'Existe previsão culposa?', 'Há excludente?', 'A conduta de cada agente foi individualizada?'],
+        flashcards: [
+          { front: 'Crime culposo sempre existe?', back: 'Não. Só quando a lei prevê expressamente.' },
+          { front: 'Erro de tipo exclui o quê?', back: 'Exclui o dolo; pode permitir punição culposa se prevista.' },
+          { front: 'Concurso de pessoas exige quê?', back: 'Pluralidade de agentes, relevância causal, liame subjetivo e identidade de infração.' }
+        ],
+        summary: 'Teoria do crime é o filtro lógico da responsabilização penal. Em prova, use a sequência: fato típico, ilicitude, culpabilidade, dolo/culpa, autoria e causas modificadoras.',
+        checklist: ['Sei estrutura analítica do crime.', 'Sei dolo e culpa.', 'Sei tentativa e desistência.', 'Sei erro de tipo/proibição.', 'Sei concurso de pessoas.'],
+        nextTopic: 'Crimes contra a Administração Pública'
+      },
+      {
+        id: 'crimes-administracao-publica',
+        level: 'avançado',
+        title: 'Crimes contra a Administração Pública: peculato, concussão, corrupção, prevaricação, advocacia administrativa e falsidades funcionais',
+        whatIs: 'São crimes que protegem a probidade, moralidade, regularidade e confiança na Administração Pública. Podem ser praticados por funcionário público, por particular contra a Administração ou em contextos envolvendo contratos, documentos, fiscalização e arrecadação.',
+        purpose: 'Servem para punir condutas que corrompem a função pública, desviam bens, vendem decisões, omitem dever funcional ou fraudam a confiança administrativa. Para Procurador Municipal, são essenciais em casos de servidores, licitações, fiscalização, tributos e contratos.',
+        plainExplanation: [
+          'Peculato envolve apropriação, desvio ou subtração de bem público ou particular sob posse da Administração em razão do cargo. Corrupção passiva envolve solicitar, receber ou aceitar promessa de vantagem indevida em razão da função. Concussão é exigir vantagem indevida. Prevaricação é retardar, deixar de praticar ou praticar ato contra disposição expressa de lei para satisfazer interesse ou sentimento pessoal.',
+          'A diferença entre esses crimes é cobrada o tempo todo. Se o servidor exige vantagem, a palavra-chave é concussão. Se solicita ou recebe, tende a corrupção passiva. Se desvia bem público de que tem posse em razão do cargo, peculato. Se favorece interesse privado perante Administração usando facilidade do cargo, pode haver advocacia administrativa.',
+          'Na Prefeitura, esses crimes aparecem em fiscalização que cobra propina, servidor que desvia material, agente que favorece empresa, fiscal que deixa de autuar por interesse pessoal, manipulação de documento, fraude em atesto de nota fiscal e interferência indevida em processo administrativo.'
+        ],
+        examTechnical: 'Estude CP, arts. 312 a 337-P, com foco nos crimes funcionais mais clássicos e nos crimes em licitações/contratos. Memorize verbos nucleares: apropriar/desviar/subtrair, exigir, solicitar/receber/aceitar promessa, retardar/deixar/praticar, patrocinar interesse privado, inserir declaração falsa, modificar sistema. O conceito de funcionário público para fins penais é amplo no art. 327 do CP.',
+        cityExample: 'Fiscal municipal exige pagamento informal para não aplicar multa. A conduta se aproxima de concussão se houve exigência de vantagem indevida em razão da função. Se apenas aceitou proposta do particular, a análise pode mudar para corrupção passiva, conforme o caso.',
+        legalBase: ['Código Penal, arts. 312 a 337-P', 'CP, art. 327 — conceito de funcionário público para fins penais', 'Lei nº 14.133/2021 e crimes licitatórios incorporados ao CP'],
+        dryLaw: ['CP, arts. 312, 313-A, 316, 317, 319, 321, 327, 337-E a 337-P'],
+        jurisprudence: ['O conceito penal de funcionário público é mais amplo que o conceito administrativo estrito, alcançando quem exerce cargo, emprego ou função pública, ainda que transitoriamente ou sem remuneração.', 'A jurisprudência diferencia concussão e corrupção passiva a partir do verbo nuclear e do contexto: exigir é mais grave e caracteriza concussão; solicitar/receber/aceitar promessa indica corrupção passiva.'],
+        objectiveCharge: ['Peculato apropriação x desvio x furto.', 'Concussão x corrupção passiva.', 'Prevaricação.', 'Advocacia administrativa.', 'Funcionário público por equiparação.', 'Crimes em licitações e contratos.'],
+        discursiveCharge: 'Pode cair como parecer sobre notícia de irregularidade envolvendo fiscal, servidor, contrato, atesto de nota fiscal ou vantagem indevida. A resposta deve tipificar em tese sem condenar, apontar necessidade de apuração e preservar devido processo.',
+        traps: ['Concussão exige vantagem; corrupção passiva envolve solicitar/receber/aceitar promessa.', 'Prevaricação exige interesse ou sentimento pessoal.', 'Peculato exige posse ou facilidade em razão do cargo em várias modalidades.', 'Funcionário público penal é conceito amplo.', 'Nem todo descumprimento de dever é crime funcional.'],
+        differences: ['Concussão x corrupção passiva.', 'Peculato x furto comum.', 'Prevaricação x corrupção passiva.', 'Advocacia administrativa x mera orientação administrativa.', 'Ilícito penal x improbidade.'],
+        commonMistakes: ['Confundir exigir com solicitar.', 'Ignorar elemento subjetivo específico.', 'Tratar pessoa terceirizada sempre como particular sem analisar função pública equiparada.', 'Não separar apuração administrativa de persecução penal.', 'Tipificar sem descrição mínima de conduta.'],
+        miniCase: 'Servidor responsável pelo almoxarifado retira bens públicos para uso próprio. A posse decorre do cargo e a conduta se aproxima de peculato-apropriação ou peculato-desvio, conforme a dinâmica.',
+        activeQuestions: ['Qual verbo foi praticado?', 'O agente é funcionário público penal?', 'A vantagem foi exigida ou solicitada?', 'O bem estava sob posse em razão do cargo?', 'Há dolo e prova mínima?'],
+        flashcards: [
+          { front: 'Exigir vantagem indevida é qual crime?', back: 'Concussão, em tese.' },
+          { front: 'Solicitar ou receber vantagem indevida em razão da função é qual crime?', back: 'Corrupção passiva.' },
+          { front: 'O conceito penal de funcionário público é amplo?', back: 'Sim. Inclui quem exerce cargo, emprego ou função pública, ainda que transitoriamente ou sem remuneração.' }
+        ],
+        summary: 'Crimes contra a Administração exigem leitura de verbos e elementos subjetivos. Em prova, compare peculato, concussão, corrupção e prevaricação. Em parecer, fale em tipificação em tese e necessidade de apuração regular.',
+        checklist: ['Sei diferenciar peculato, concussão e corrupção.', 'Sei conceito penal de funcionário público.', 'Sei prevaricação.', 'Sei crimes de licitação no CP.', 'Consigo analisar notícia-crime municipal.'],
+        nextTopic: 'Crimes contra finanças públicas, ordem tributária, abuso de autoridade e organização criminosa'
+      },
+      {
+        id: 'crimes-financas-tributarios-abuso-organizacao',
+        level: 'avançado',
+        title: 'Crimes contra finanças públicas, ordem tributária, abuso de autoridade e organização criminosa',
+        whatIs: 'São grupos de infrações penais que podem aparecer em contexto municipal: gestão fiscal irregular, fraude tributária, excesso de autoridade e atuação estruturada de grupo para praticar crimes contra a Administração ou arrecadação.',
+        purpose: 'Servem para responsabilizar condutas graves que atingem orçamento, arrecadação, legalidade fiscal, direitos fundamentais e integridade administrativa. Para Procurador Municipal, são importantes em dívida ativa, fiscalização, licitações, orçamento e controle interno.',
+        plainExplanation: [
+          'Crimes contra finanças públicas envolvem condutas como ordenar despesa não autorizada, assumir obrigação no fim de mandato em desconformidade legal, aumentar despesa com pessoal em desacordo com regras fiscais e violar limites de gestão responsável. Eles dialogam com LRF e orçamento público.',
+          'Crimes contra a ordem tributária protegem a arrecadação e punem fraudes como suprimir ou reduzir tributo mediante omissão, falsidade, fraude documental ou declaração falsa. O Procurador precisa saber que cobrança tributária, execução fiscal e persecução penal têm finalidades distintas, mas podem dialogar.',
+          'Abuso de autoridade pune condutas praticadas com finalidade específica de prejudicar, beneficiar a si/terceiro ou por mero capricho/satisfação pessoal. Organização criminosa exige estrutura ordenada, divisão de tarefas e finalidade de obter vantagem mediante crimes graves, conforme a lei.'
+        ],
+        examTechnical: 'Leia tipos penais ligados a finanças públicas no Código Penal, Lei nº 8.137/1990 para ordem tributária, Lei nº 13.869/2019 para abuso de autoridade e Lei nº 12.850/2013 para organização criminosa. Na prova, atenção aos elementos subjetivos especiais: abuso de autoridade exige finalidade específica; organização criminosa exige estrutura e divisão de tarefas.',
+        cityExample: 'Fiscais municipais combinam com empresários para reduzir artificialmente ISS mediante emissão de documentos falsos. Pode haver crime contra a ordem tributária, corrupção, falsidade e, se houver estrutura estável e divisão de tarefas, discussão sobre organização criminosa.',
+        legalBase: ['Código Penal — crimes contra finanças públicas', 'Lei nº 8.137/1990', 'Lei nº 13.869/2019', 'Lei nº 12.850/2013', 'LRF como referência de gestão fiscal'],
+        dryLaw: ['CP, arts. 359-A a 359-H', 'Lei nº 8.137/1990, arts. 1º a 3º', 'Lei nº 13.869/2019, arts. 1º e tipos mais cobrados', 'Lei nº 12.850/2013, art. 1º'],
+        jurisprudence: ['Em crimes materiais contra a ordem tributária, a constituição definitiva do crédito costuma ser tema central em jurisprudência dos tribunais superiores.', 'A Lei de Abuso de Autoridade exige finalidade específica, não bastando mera divergência interpretativa ou erro administrativo sem dolo especial.'],
+        objectiveCharge: ['Constituição definitiva do crédito tributário.', 'Elementos dos crimes contra ordem tributária.', 'Crimes contra finanças públicas.', 'Finalidade específica no abuso de autoridade.', 'Conceito de organização criminosa.'],
+        discursiveCharge: 'Pode cair em parecer sobre comunicação ao Ministério Público, fraude em ISS, excesso de fiscal municipal, gestão fiscal irregular ou notícia de grupo organizado em contratos públicos.',
+        traps: ['Inadimplemento tributário não é automaticamente crime contra ordem tributária.', 'Abuso de autoridade exige finalidade específica.', 'Organização criminosa não é mero concurso de pessoas.', 'Crime fiscal não substitui execução fiscal.', 'Gestão fiscal irregular exige tipo penal específico.'],
+        differences: ['Sonegação x inadimplemento.', 'Organização criminosa x concurso de pessoas.', 'Abuso de autoridade x ilegalidade administrativa comum.', 'Crime fiscal x infração tributária.', 'Responsabilização penal x cobrança do crédito.'],
+        commonMistakes: ['Chamar dívida tributária simples de crime.', 'Ignorar necessidade de lançamento definitivo em crimes materiais tributários.', 'Confundir grupo eventual com organização criminosa.', 'Esquecer dolo específico no abuso de autoridade.', 'Misturar sanção fiscal, improbidade e crime sem distinguir requisitos.'],
+        miniCase: 'Contribuinte declara ISS menor com notas ideologicamente falsas e participação de servidor. A análise deve separar crédito tributário, autos de infração, eventual representação fiscal para fins penais e crime funcional do servidor.',
+        activeQuestions: ['Há fraude ou mero inadimplemento?', 'O crédito está definitivamente constituído?', 'Há finalidade específica no abuso?', 'Existe estrutura organizada?', 'Qual esfera de responsabilização se aplica?'],
+        flashcards: [
+          { front: 'Inadimplir tributo é sempre crime?', back: 'Não. Crime contra ordem tributária exige elementos típicos, como fraude, omissão ou falsidade, conforme o tipo.' },
+          { front: 'Organização criminosa é igual a concurso de pessoas?', back: 'Não. Exige estrutura ordenada, divisão de tarefas e finalidade específica prevista em lei.' },
+          { front: 'Abuso de autoridade exige quê?', back: 'Finalidade específica de prejudicar, beneficiar ou agir por capricho/satisfação pessoal, conforme a lei.' }
+        ],
+        summary: 'Esses crimes são importantes para Município porque envolvem arrecadação, orçamento, fiscalização e contratos. A chave é não confundir irregularidade, infração administrativa, crédito tributário e crime.',
+        checklist: ['Sei crimes contra finanças públicas.', 'Sei noções da Lei 8.137/1990.', 'Sei finalidade específica do abuso de autoridade.', 'Sei conceito de organização criminosa.', 'Consigo separar cobrança tributária e persecução penal.'],
+        nextTopic: 'Processo Penal: investigação, ação, provas e cautelares'
+      },
+      {
+        id: 'processo-penal-investigacao-acao-provas-cautelares',
+        level: 'intermediário',
+        title: 'Processo Penal: inquérito, ação penal, competência, provas, prisões e medidas cautelares',
+        whatIs: 'Processo Penal é o conjunto de normas que disciplina investigação, acusação, defesa, prova, julgamento, recursos e execução das decisões penais. O inquérito apura; a ação penal leva a imputação ao Judiciário; o processo decide com contraditório.',
+        purpose: 'Serve para garantir que a persecução penal seja legítima, com prova lícita, competência correta, defesa efetiva e decisão fundamentada. Para Procurador Municipal, importa em notícias-crime, cooperação com órgãos de investigação, validade de provas administrativas e proteção do Município como vítima.',
+        plainExplanation: [
+          'O inquérito policial é procedimento administrativo investigativo, em regra inquisitivo, destinado a reunir elementos de informação. Ele não é processo judicial e não se confunde com condenação. A ação penal pública é promovida pelo Ministério Público; em alguns casos, a vítima pode atuar como assistente de acusação.',
+          'Prova no processo penal tem regras próprias. O juiz forma convicção pela prova produzida em contraditório judicial, não podendo fundamentar condenação exclusivamente em elementos informativos do inquérito, salvo exceções legais para provas cautelares, não repetíveis e antecipadas.',
+          'Prisão e cautelares exigem base legal e fundamentação concreta. Prisão preventiva não é antecipação de pena; deve proteger processo, ordem pública/econômica, instrução ou aplicação da lei penal, conforme requisitos legais.'
+        ],
+        examTechnical: 'Estude inquérito, ação penal pública/privada, jurisdição e competência, sujeitos processuais, provas, cadeia de custódia, busca e apreensão, prisões em flagrante/preventiva/temporária, medidas cautelares diversas, sentença, nulidades e recursos. Atenção ao ANPP no art. 28-A do CPP.',
+        cityExample: 'A Prefeitura detecta fraude documental em licitação. O Município pode preservar documentos, instaurar apuração interna, comunicar autoridades competentes e acompanhar como vítima/interessado, mas não substitui o Ministério Público na ação penal pública.',
+        legalBase: ['CPP', 'CF/88, art. 5º', 'Lei nº 7.960/1989 — prisão temporária', 'CPP, art. 28-A — ANPP'],
+        dryLaw: ['CPP, arts. 4º a 23', 'CPP, arts. 24 a 62', 'CPP, arts. 69 a 91', 'CPP, arts. 155 a 250', 'CPP, arts. 282 a 316', 'CPP, art. 28-A'],
+        jurisprudence: ['Condenação não pode se apoiar exclusivamente em elementos informativos do inquérito, ressalvadas provas cautelares, não repetíveis e antecipadas previstas no CPP.', 'Medidas cautelares pessoais exigem fundamentação concreta e proporcionalidade.'],
+        objectiveCharge: ['Características do inquérito.', 'Ação penal pública e privada.', 'Competência.', 'Provas e prova ilícita.', 'Prisão preventiva.', 'Medidas cautelares diversas.', 'ANPP.'],
+        discursiveCharge: 'Pode aparecer como orientação sobre como o Município deve agir diante de fraude: preservar prova, instaurar apuração administrativa, comunicar MP/Polícia, evitar produção ilícita de prova e resguardar ressarcimento.',
+        traps: ['Inquérito não é indispensável à ação penal.', 'MP é titular da ação penal pública.', 'Condenação não pode ser exclusivamente baseada em inquérito.', 'Preventiva não é pena antecipada.', 'ANPP não é direito automático sem requisitos.'],
+        differences: ['Elemento informativo x prova judicial.', 'Ação penal pública x privada.', 'Prisão em flagrante x preventiva x temporária.', 'Medida cautelar x pena.', 'Busca administrativa x busca judicial.'],
+        commonMistakes: ['Tratar inquérito como processo.', 'Ignorar cadeia de custódia.', 'Produzir prova administrativa de modo ilícito.', 'Confundir vítima Município com titular da ação penal pública.', 'Achar que prisão preventiva serve para dar resposta social.'],
+        miniCase: 'Comissão municipal copia dados pessoais de investigado sem base legal e sem autorização em ambiente protegido. A prova pode ser questionada por ilicitude, além de gerar problema de LGPD e abuso.',
+        activeQuestions: ['A prova é lícita?', 'Quem é titular da ação?', 'Qual autoridade é competente?', 'Há contraditório?', 'Cautelar está fundamentada?'],
+        flashcards: [
+          { front: 'Inquérito é indispensável?', back: 'Não. A ação penal pode ser proposta com outras peças de informação suficientes.' },
+          { front: 'Quem promove ação penal pública?', back: 'O Ministério Público.' },
+          { front: 'Preventiva é pena antecipada?', back: 'Não. É medida cautelar excepcional, com requisitos legais e fundamentação concreta.' }
+        ],
+        summary: 'Processo Penal organiza a persecução penal com garantias. Para Município, o foco é comunicar corretamente crimes, preservar provas lícitas e saber o papel institucional de cada órgão.',
+        checklist: ['Sei características do inquérito.', 'Sei ação penal pública.', 'Sei regras básicas de prova.', 'Sei cautelares e prisões.', 'Sei orientar atuação municipal sem violar garantias.'],
+        nextTopic: 'Nulidades, sentença, recursos, habeas corpus e revisão criminal'
+      },
+      {
+        id: 'nulidades-recursos-habeas-revisao',
+        level: 'discursiva',
+        title: 'Nulidades, sentença, recursos, habeas corpus, revisão criminal e leitura estratégica para Procurador',
+        whatIs: 'São instrumentos e regras que controlam validade dos atos processuais penais e permitem impugnação de decisões. Nulidades tratam de vícios; recursos buscam reforma; habeas corpus protege liberdade; revisão criminal desconstitui condenação em hipóteses legais.',
+        purpose: 'Servem para impedir condenações ou constrições ilegais e para garantir correção processual. Para Procurador Municipal, o tema importa quando servidores ou terceiros envolvidos em fatos municipais alegam ilegalidade, quando o Município é vítima ou quando se discute validade de provas e decisões.',
+        plainExplanation: [
+          'Nulidade no processo penal não é palavra mágica. É preciso identificar o ato viciado, a regra violada, o prejuízo e o momento de arguição, salvo nulidades absolutas em que a lógica é mais grave. A ideia “pas de nullité sans grief” significa que, em regra, não há nulidade sem prejuízo.',
+          'Recursos penais têm hipóteses, prazos e finalidades. Apelação, recurso em sentido estrito, embargos, agravos, recursos extraordinários e especiais possuem cabimento próprio. Habeas corpus não é recurso comum, mas ação constitucional para proteger liberdade de locomoção contra ilegalidade ou abuso de poder.',
+          'Revisão criminal é ação autônoma para desfazer condenação transitada em julgado em hipóteses legais, como prova nova, contrariedade ao texto expresso da lei penal ou evidência de erro judiciário. Para prova, a banca costuma cobrar cabimento e diferenças entre instrumentos.'
+        ],
+        examTechnical: 'Estude CPP sobre nulidades, sentença, recursos, habeas corpus e revisão criminal. Atenção a princípios: instrumentalidade das formas, prejuízo, convalidação, preclusão, competência, fundamentação das decisões e duplo grau. Em prova objetiva, o foco é cabimento; em discursiva, é identificar o vício e a providência adequada.',
+        cityExample: 'Servidor é investigado por peculato e a defesa alega nulidade porque não teve acesso a elementos já documentados que fundamentaram medida cautelar. A análise exige separar sigilo legítimo de investigação futura e direito de acesso da defesa ao que já foi documentado e usado contra o investigado.',
+        legalBase: ['CPP — nulidades, sentença, recursos, habeas corpus e revisão criminal', 'CF/88, art. 5º, LXVIII', 'CF/88, art. 93, IX'],
+        dryLaw: ['CPP, arts. 563 a 573', 'CPP, recursos em espécie', 'CPP, habeas corpus', 'CPP, revisão criminal', 'CF/88, art. 5º, LXVIII', 'CF/88, art. 93, IX'],
+        jurisprudence: ['A demonstração de prejuízo é exigência recorrente para reconhecimento de nulidades processuais.', 'Habeas corpus é instrumento voltado à liberdade de locomoção, não substituto universal de todos os recursos.'],
+        objectiveCharge: ['Nulidade absoluta e relativa.', 'Prejuízo.', 'Cabimento de recursos.', 'Habeas corpus.', 'Revisão criminal.', 'Fundamentação das decisões.'],
+        discursiveCharge: 'Pode cair em caso prático sobre prova ilícita, cerceamento de defesa, decisão sem fundamentação, prisão ilegal ou cabimento de habeas corpus.',
+        traps: ['Nem todo vício gera nulidade automática.', 'HC não serve para discutir qualquer tema patrimonial sem reflexo na liberdade.', 'Revisão criminal não é segunda apelação comum.', 'Nulidade relativa pode precluir.', 'Decisão penal precisa de fundamentação concreta.'],
+        differences: ['Recurso x ação autônoma.', 'HC x recurso ordinário.', 'Apelação x recurso em sentido estrito.', 'Nulidade absoluta x relativa.', 'Preclusão x matéria de ordem pública.'],
+        commonMistakes: ['Pedir nulidade sem apontar prejuízo.', 'Confundir revisão criminal com apelação.', 'Usar HC para tudo.', 'Não verificar cabimento do recurso.', 'Esquecer fundamentação das decisões.'],
+        miniCase: 'Sentença condenatória copia a denúncia e não enfrenta tese defensiva relevante. Há possível nulidade por ausência de fundamentação adequada, com base no dever constitucional de motivação.',
+        activeQuestions: ['Qual ato é viciado?', 'Houve prejuízo?', 'Qual instrumento cabível?', 'Há reflexo na liberdade?', 'A decisão foi fundamentada?'],
+        flashcards: [
+          { front: 'Há nulidade sem prejuízo?', back: 'Em regra, não; aplica-se a lógica do prejuízo.' },
+          { front: 'Habeas corpus protege o quê?', back: 'Liberdade de locomoção contra ilegalidade ou abuso de poder.' },
+          { front: 'Revisão criminal é recurso?', back: 'Não. É ação autônoma de impugnação contra condenação transitada em julgado.' }
+        ],
+        summary: 'Nulidades e recursos exigem técnica: vício, prejuízo, cabimento e providência. Para Procurador, esse bloco ajuda a reconhecer ilegalidades processuais sem perder de vista o interesse público e a defesa do Município vítima.',
+        checklist: ['Sei nulidade e prejuízo.', 'Sei cabimento básico de HC.', 'Sei revisão criminal.', 'Sei diferença entre recurso e ação autônoma.', 'Consigo analisar prova ilícita e decisão sem fundamentação.'],
+        nextTopic: 'Próxima fase: Trabalho e Processo do Trabalho Premium'
       }
     ]
   }
