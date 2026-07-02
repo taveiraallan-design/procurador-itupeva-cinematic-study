@@ -5084,3 +5084,280 @@ img, svg, canvas, video { max-width: 100%; }
   }
   .show-all-tools { min-height: 44px; }
 }
+
+/* Fase 41 — Visualizações Cinemáticas dentro da Apostila */
+.apostila-visual-block {
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid rgba(139, 92, 246, .30);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(56,189,248,.18), transparent 34%),
+    radial-gradient(circle at 85% 0%, rgba(139,92,246,.20), transparent 36%),
+    rgba(2, 6, 23, .56);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 22px 50px rgba(2,6,23,.22);
+}
+.apv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+.apv-header h3 {
+  margin: 12px 0 8px;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  letter-spacing: -.04em;
+}
+.apv-header p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.65;
+  max-width: 76ch;
+}
+.apv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: min(360px, 100%);
+}
+.apv-stage {
+  margin-top: 18px;
+  display: grid;
+  gap: 16px;
+}
+.apv-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.apv-flow-item {
+  min-width: 0;
+  min-height: 98px;
+  padding: 16px;
+  border: 1px solid rgba(56,189,248,.28);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(8,47,73,.50), rgba(15,23,42,.72));
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.apv-flow-item span {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #dff8ff;
+  background: rgba(56,189,248,.22);
+  font-weight: 950;
+}
+.apv-flow-item strong {
+  color: #f8fafc;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.apv-flow-item em {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  color: var(--cyan);
+  font-style: normal;
+  font-size: 1.4rem;
+  opacity: .75;
+}
+.apv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.apv-decision-tree,
+.apv-mindmap,
+.apv-municipal-case,
+.apv-cause-effect {
+  min-width: 0;
+  border: 1px solid rgba(148,163,184,.18);
+  border-radius: 26px;
+  padding: 18px;
+  background: rgba(15,23,42,.62);
+}
+.apv-decision-tree {
+  display: grid;
+  gap: 12px;
+}
+.apv-decision-node {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(2, 6, 23, .52);
+  border: 1px solid rgba(56,189,248,.14);
+}
+.apv-decision-node small {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 950;
+}
+.apv-decision-node strong {
+  display: block;
+  margin: 8px 0;
+  color: #f8fafc;
+  line-height: 1.35;
+}
+.apv-decision-node div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.apv-decision-node span {
+  padding: 10px;
+  border-radius: 14px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.apv-decision-node .yes { background: rgba(34,197,94,.12); color: #bbf7d0; }
+.apv-decision-node .no { background: rgba(249,115,22,.12); color: #fed7aa; }
+.apv-mindmap {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  min-height: 280px;
+}
+.apv-mind-center {
+  justify-self: center;
+  width: min(260px, 100%);
+  padding: 18px;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 950;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(37,99,235,.62), rgba(139,92,246,.38));
+  border: 1px solid rgba(147,197,253,.30);
+  line-height: 1.25;
+}
+.apv-mind-branches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.apv-mind-branches span {
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(56,189,248,.11);
+  border: 1px solid rgba(56,189,248,.22);
+  color: #dff8ff;
+  font-weight: 850;
+  max-width: 100%;
+}
+.apv-compare-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.apv-compare-cards article {
+  min-width: 0;
+  padding: 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(139,92,246,.26);
+  background: linear-gradient(145deg, rgba(88,28,135,.24), rgba(15,23,42,.72));
+}
+.apv-compare-cards strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #e9d5ff;
+  font-size: 1.05rem;
+}
+.apv-compare-cards p {
+  margin: 0;
+  color: #dbeafe;
+  line-height: 1.55;
+}
+.apv-municipal-case {
+  display: grid;
+  gap: 14px;
+}
+.apv-building,
+.apv-procurador {
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 950;
+  color: #f8fafc;
+  border: 1px solid rgba(56,189,248,.28);
+  background: rgba(8,47,73,.42);
+}
+.apv-procurador {
+  border-color: rgba(34,197,94,.30);
+  background: rgba(20,83,45,.30);
+}
+.apv-case-steps {
+  display: grid;
+  gap: 8px;
+}
+.apv-case-steps span {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(2,6,23,.46);
+  color: #dbeafe;
+  line-height: 1.4;
+}
+.apv-cause-effect {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.apv-cause-effect div {
+  min-width: 0;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(2,6,23,.48);
+  border: 1px solid rgba(148,163,184,.16);
+}
+.apv-cause-effect small {
+  display: block;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  font-weight: 950;
+  margin-bottom: 8px;
+}
+.apv-cause-effect strong {
+  color: #f8fafc;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.apv-cause-effect > span {
+  color: var(--cyan);
+  font-weight: 950;
+}
+.apv-warning {
+  padding: 16px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(249,115,22,.28);
+  background: rgba(124,45,18,.20);
+  color: #fed7aa;
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .apv-header { flex-direction: column; }
+  .apv-actions { width: 100%; justify-content: stretch; }
+  .apv-actions .btn { width: 100%; }
+  .apv-grid,
+  .apv-compare-cards { grid-template-columns: 1fr; }
+  .apv-cause-effect { grid-template-columns: 1fr; }
+  .apv-cause-effect > span { text-align: center; }
+  .apv-decision-node div { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .apostila-visual-block { padding: 16px; border-radius: 22px; }
+  .apv-flow { grid-template-columns: 1fr; }
+  .apv-flow-item { min-height: unset; }
+  .apv-mindmap { min-height: unset; }
+  .apv-mind-center { border-radius: 22px; }
+  .apv-stage .apostila-action-row { grid-template-columns: 1fr; }
+}
