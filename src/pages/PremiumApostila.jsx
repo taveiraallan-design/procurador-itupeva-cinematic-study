@@ -6,6 +6,7 @@ import ProgressBar from '../components/ui/ProgressBar';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { premiumApostilaMeta, premiumApostilaSubjects, getApostilaStats } from '../data/premiumApostila';
 import { deepDidacticMeta, getDeepDidacticLesson } from '../data/deepDidacticLessons';
+import { theoreticalApostilaMeta, getTheoreticalLesson } from '../data/theoreticalApostila';
 
 const APOSTILA_KEY = 'premium_apostila_progress_v1';
 const initialProgress = { selectedSubjectId: 'direito-administrativo', studied: {}, notes: {}, reviewQueue: [], visualDominated: {}, visualNotes: [], generatedAt: null };
@@ -79,6 +80,45 @@ function Section({ title, children, tone = 'cyan' }) {
 }
 
 
+
+
+function TheoreticalLessonBlock({ lesson }) {
+  if (!lesson) return null;
+  return (
+    <section className="theory-lesson-block">
+      <div className="theory-lesson-header">
+        <Badge tone="orange">{theoreticalApostilaMeta.phase} • aula teórica</Badge>
+        <h3>{lesson.title}</h3>
+        <p>{lesson.lead}</p>
+      </div>
+
+      <article className="theory-reading-card">
+        <Badge tone="green">Aula teórica principal</Badge>
+        <div className="theory-prose">
+          {lesson.paragraphs.map((paragraph, index) => <p key={`${index}-${paragraph.slice(0, 28)}`}>{paragraph}</p>)}
+        </div>
+      </article>
+
+      <div className="theory-support-grid">
+        <article className="theory-support-card">
+          <Badge tone="orange">Quadro de atenção</Badge>
+          <ul className="compact-list">{lesson.attention.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+        <article className="theory-support-card">
+          <Badge tone="cyan">Como cai na prova</Badge>
+          <ul className="compact-list">{lesson.exam.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+      </div>
+
+      <article className="theory-question-card">
+        <Badge tone="purple">Mini questão comentada</Badge>
+        <p><strong>Questão:</strong> {lesson.question.statement}</p>
+        <p><strong>Gabarito/linha de resposta:</strong> {lesson.question.answer}</p>
+        <p><strong>Comentário:</strong> {lesson.question.comment}</p>
+      </article>
+    </section>
+  );
+}
 
 function DeepDidacticBlock({ lesson }) {
   if (!lesson) return null;
@@ -609,6 +649,7 @@ export default function PremiumApostila({ onNavigate }) {
   const studiedSet = new Set(progress.studied?.[visibleActiveSubject.id] || []);
   const activeTopic = visibleActiveSubject.topics.find((topic) => topic.id === activeTopicId) || visibleActiveSubject.topics[0] || activeSubject.topics[0];
   const activeDeepLesson = getDeepDidacticLesson(activeSubject.id, activeTopic.id);
+  const activeTheoryLesson = getTheoreticalLesson(activeSubject, activeTopic);
   const subjectTotal = activeSubject.topics.length;
   const subjectDone = progress.studied?.[activeSubject.id]?.length || 0;
   const subjectPercent = Math.round((subjectDone / Math.max(subjectTotal, 1)) * 100);
@@ -770,12 +811,14 @@ export default function PremiumApostila({ onNavigate }) {
               </div>
 
               <div className="apostila-mini-index">
-                <span>O que é</span><span>Para que serve</span><span>Base legal</span><span>Pegadinhas</span><span>Discursiva</span><span>Revisão ativa</span>
+                <span>Aula teórica</span><span>Quadro de atenção</span><span>Como cai</span><span>Base legal</span><span>Revisão</span><span>Visual</span>
               </div>
 
-              <Section title="1. O que é" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
-              <Section title="2. Para que serve" tone="green"><p>{activeTopic.purpose}</p></Section>
-              <Section title="3. Explicação completa" tone="orange">
+              <TheoreticalLessonBlock lesson={activeTheoryLesson} />
+
+              <Section title="Complemento de revisão — conceito" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
+              <Section title="Complemento de revisão — função prática" tone="green"><p>{activeTopic.purpose}</p></Section>
+              <Section title="Complemento de revisão — pontos principais" tone="orange">
                 {activeTopic.plainExplanation.map((item) => <p key={item}>{item}</p>)}
               </Section>
               <DeepDidacticBlock lesson={activeDeepLesson} />
