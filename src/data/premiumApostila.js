@@ -1,10 +1,9 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39A',
+  phase: 'Fase 39B',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Direito Administrativo — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Direito Administrativo + Direito Constitucional — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39B — Direito Constitucional Premium',
     '39C — Processo Civil e Direito Civil Premium',
     '39D — Tributário, Financeiro e Orçamentário Premium',
     '39E — Legislação Municipal Premium'
@@ -343,7 +342,731 @@ export const premiumApostilaSubjects = [
         nextTopic: 'Próxima fase: Direito Constitucional Premium'
       }
     ]
-  }
+  },
+  {
+  "id": "direito-constitucional",
+  "subject": "Direito Constitucional",
+  "status": "39B concluída",
+  "priority": "Crítica",
+  "overview": "Apostila premium de Direito Constitucional voltada ao cargo de Procurador Municipal: Constituição, poder constituinte, princípios fundamentais, direitos fundamentais, organização do Estado, competências municipais, Poderes, controle de constitucionalidade, Administração Pública constitucional e políticas públicas. A ênfase é raciocinar como Procuradoria: competência, validade, constitucionalidade, direitos fundamentais e defesa do Município.",
+  "lawBase": [
+    "Constituição Federal de 1988, texto compilado",
+    "ADCT quando houver regra de transição relevante",
+    "Jurisprudência constitucional do STF em repercussão geral, súmulas vinculantes e controle concentrado",
+    "Lei Orgânica Municipal como desdobramento constitucional local"
+  ],
+  "topics": [
+    {
+      "id": "teoria-constituicao-poder-constituinte",
+      "level": "básico",
+      "title": "Teoria da Constituição, classificações, supremacia constitucional e poder constituinte",
+      "whatIs": "É o estudo da Constituição como norma jurídica superior, sua estrutura, força normativa, formas de classificação e o modo pelo qual ela é criada ou alterada. Poder constituinte originário cria uma nova ordem constitucional; poder constituinte derivado reforma a Constituição dentro dos limites estabelecidos por ela.",
+      "purpose": "Serve para identificar se uma lei municipal, ato administrativo, política pública ou decisão local respeita a Constituição. Para Procurador Municipal, esse tema orienta pareceres sobre constitucionalidade de projetos de lei, limites da Câmara, competência do prefeito e defesa de leis municipais em ações judiciais.",
+      "plainExplanation": [
+        "A Constituição ocupa o topo do sistema jurídico. Todas as leis, decretos, atos administrativos, contratos e políticas públicas precisam ser compatíveis com ela. Quando uma norma municipal contraria a Constituição, o problema não é apenas técnico: o Município pode sofrer ação direta de inconstitucionalidade no Tribunal de Justiça, controle difuso em processo judicial ou questionamento pelo Ministério Público.",
+        "O poder constituinte originário é inicial, autônomo e juridicamente ilimitado em relação à ordem anterior. Já o poder constituinte derivado é limitado: deve respeitar procedimento, cláusulas pétreas e limites materiais. Em prova, a banca costuma perguntar se emenda constitucional pode abolir direitos fundamentais, separação dos Poderes, voto direto, secreto, universal e periódico ou forma federativa. A resposta é não, pois esses núcleos são protegidos.",
+        "Supremacia constitucional significa que a Constituição não é conselho político; ela tem força normativa. O Procurador Municipal usa esse raciocínio para fundamentar a constitucionalidade de atos locais, adequar projetos legislativos, proteger competências do Município e evitar normas que invadam competência da União ou do Estado."
+      ],
+      "examTechnical": "Para prova, domine: Constituição formal e material; rígida, escrita, promulgada e analítica; supremacia constitucional; força normativa; eficácia das normas constitucionais; poder constituinte originário e derivado; limites ao poder de reforma; cláusulas pétreas. A banca gosta de trocar características: dizer que o poder derivado é ilimitado, que cláusula pétrea não impede reforma ou que norma constitucional programática não produz nenhum efeito.",
+      "cityExample": "A Câmara aprova projeto que restringe direito fundamental sem base constitucional. O Procurador deve apontar a supremacia constitucional, verificar competência legislativa municipal e avaliar se a restrição é proporcional, necessária e formalmente válida.",
+      "legalBase": [
+        "CF/88, art. 1º",
+        "CF/88, art. 5º",
+        "CF/88, art. 60",
+        "ADCT quando houver regras transitórias aplicáveis"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 1º a 4º",
+        "CF/88, art. 5º",
+        "CF/88, art. 60, especialmente §4º"
+      ],
+      "jurisprudence": [
+        "O STF trata a Constituição como norma jurídica dotada de força vinculante e utiliza controle de constitucionalidade para retirar ou afastar normas incompatíveis.",
+        "Cláusulas pétreas protegem núcleos constitucionais contra emendas tendentes à abolição, não impedindo qualquer alteração lateral que preserve o núcleo essencial."
+      ],
+      "objectiveCharge": [
+        "Conceito de poder constituinte originário e derivado.",
+        "Características da Constituição de 1988.",
+        "Limites materiais ao poder de reforma.",
+        "Eficácia das normas constitucionais.",
+        "Supremacia constitucional aplicada a lei municipal."
+      ],
+      "discursiveCharge": "Pode aparecer como parecer sobre projeto de lei municipal incompatível com a Constituição, emenda à Lei Orgânica que viole separação de Poderes ou norma local que atinja direitos fundamentais sem fundamento constitucional.",
+      "traps": [
+        "Poder constituinte derivado não é ilimitado.",
+        "Cláusula pétrea protege núcleo essencial, mas não congela toda disciplina constitucional.",
+        "Norma programática não é inútil: orienta políticas públicas, controle e interpretação.",
+        "Lei Orgânica não pode contrariar Constituição Federal nem Constituição Estadual."
+      ],
+      "differences": [
+        "Constituição formal x material.",
+        "Poder originário x derivado.",
+        "Limite formal x material x circunstancial.",
+        "Inconstitucionalidade formal x material."
+      ],
+      "commonMistakes": [
+        "Decorar classificações sem aplicar em casos.",
+        "Achar que Município pode resolver tudo por Lei Orgânica.",
+        "Confundir reforma constitucional com poder constituinte originário."
+      ],
+      "miniCase": "Projeto de emenda à Lei Orgânica pretende permitir ao prefeito remanejar livremente todo o orçamento sem autorização legislativa. O parecer deve avaliar separação de Poderes, legalidade orçamentária, controle legislativo e simetria constitucional.",
+      "activeQuestions": [
+        "Qual norma superior controla a validade da lei municipal?",
+        "O vício é formal ou material?",
+        "Há competência municipal?",
+        "Existe afronta a cláusula pétrea ou princípio estruturante?",
+        "A Lei Orgânica pode inovar contra a Constituição?"
+      ],
+      "flashcards": [
+        {
+          "front": "Poder constituinte derivado é ilimitado?",
+          "back": "Não. É juridicamente limitado pela própria Constituição."
+        },
+        {
+          "front": "O que é supremacia constitucional?",
+          "back": "É a posição superior da Constituição, que condiciona a validade das demais normas."
+        },
+        {
+          "front": "Norma programática não tem efeito?",
+          "back": "Tem efeitos interpretativos, vinculantes e de orientação para políticas públicas."
+        }
+      ],
+      "summary": "Teoria da Constituição é a base para reconhecer validade normativa. Para Procurador Municipal, o ponto central é saber se o Município atuou dentro da competência e em harmonia com a Constituição.",
+      "checklist": [
+        "Sei diferenciar poder originário e derivado.",
+        "Sei limites do art. 60.",
+        "Sei aplicar supremacia constitucional a lei municipal.",
+        "Sei separar vício formal e material.",
+        "Consigo transformar o tema em parecer."
+      ],
+      "nextTopic": "Princípios fundamentais e Estado Democrático de Direito"
+    },
+    {
+      "id": "principios-fundamentais-estado-democratico",
+      "level": "básico",
+      "title": "Princípios fundamentais, República, Federação, separação dos Poderes e objetivos constitucionais",
+      "whatIs": "São os fundamentos estruturantes do Estado brasileiro: soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político, forma republicana, federação, Estado Democrático de Direito e separação dos Poderes.",
+      "purpose": "Servem como critérios de interpretação e controle de atos do Poder Público. Para o Município, orientam políticas públicas, legislação local, atuação administrativa, orçamento, transparência e proteção da população.",
+      "plainExplanation": [
+        "Os princípios fundamentais não ficam restritos ao início da Constituição. Eles irradiam efeitos sobre toda atuação municipal. Dignidade da pessoa humana, por exemplo, aparece em saúde, assistência social, moradia, acessibilidade, educação, saneamento e atendimento ao cidadão.",
+        "A Federação significa distribuição constitucional de competências entre União, Estados, Distrito Federal e Municípios. O Município não é mero órgão do Estado; é ente federativo com autonomia política, administrativa, financeira e legislativa nos assuntos de interesse local.",
+        "Separação dos Poderes não é isolamento absoluto. Legislativo fiscaliza, Executivo administra, Judiciário controla legalidade e constitucionalidade. O problema ocorre quando um Poder invade o núcleo de função típica do outro, como lei de iniciativa parlamentar criando atribuições administrativas específicas ou despesa sem observar regras constitucionais."
+      ],
+      "examTechnical": "Para prova, memorize fundamentos do art. 1º, objetivos do art. 3º, relações internacionais do art. 4º, forma federativa e separação dos Poderes. A banca costuma cobrar literalidade, mas também aplicação: lei municipal que cria obrigação administrativa pode violar separação de Poderes; política pública discriminatória viola igualdade e dignidade.",
+      "cityExample": "Projeto de lei local impõe ao Executivo a criação de programa com estrutura, servidores e despesas específicas. O Procurador deve verificar iniciativa, separação dos Poderes, impacto orçamentário e compatibilidade com objetivos constitucionais.",
+      "legalBase": [
+        "CF/88, arts. 1º a 4º",
+        "CF/88, art. 18",
+        "CF/88, arts. 29 e 30",
+        "CF/88, art. 2º"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 1º, 2º, 3º e 4º",
+        "CF/88, art. 18",
+        "CF/88, arts. 29 e 30"
+      ],
+      "jurisprudence": [
+        "O STF frequentemente utiliza separação dos Poderes, autonomia federativa e dignidade da pessoa humana como parâmetros de controle de leis e atos públicos.",
+        "A autonomia municipal é protegida constitucionalmente, mas deve ser exercida dentro das competências constitucionais."
+      ],
+      "objectiveCharge": [
+        "Fundamentos da República.",
+        "Objetivos fundamentais.",
+        "Separação dos Poderes em caso concreto.",
+        "Federação e autonomia municipal.",
+        "Dignidade da pessoa humana em políticas públicas."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre projeto de lei municipal de iniciativa parlamentar, política pública local, atuação da Câmara, autonomia do Município ou conflito entre direito fundamental e orçamento.",
+      "traps": [
+        "Município tem autonomia, não soberania.",
+        "Separação dos Poderes não impede controle judicial de ilegalidade.",
+        "Objetivos fundamentais vinculam políticas públicas, mas não autorizam ignorar orçamento e competência.",
+        "Dignidade não é argumento vazio: precisa ser conectada ao caso."
+      ],
+      "differences": [
+        "Soberania x autonomia.",
+        "Fundamentos x objetivos.",
+        "Função típica x função atípica dos Poderes.",
+        "Interesse local x competência privativa da União."
+      ],
+      "commonMistakes": [
+        "Confundir Município com órgão estadual.",
+        "Usar dignidade sem explicar impacto jurídico.",
+        "Ignorar iniciativa reservada e separação de Poderes."
+      ],
+      "miniCase": "Vereador propõe lei obrigando o prefeito a criar uma secretaria específica. Há risco de vício de iniciativa e violação à separação dos Poderes, ainda que a intenção política seja relevante.",
+      "activeQuestions": [
+        "Qual fundamento constitucional está no caso?",
+        "O Município tem competência?",
+        "Há invasão de iniciativa?",
+        "A medida realiza objetivo constitucional?",
+        "Há impacto orçamentário?"
+      ],
+      "flashcards": [
+        {
+          "front": "Município tem soberania?",
+          "back": "Não. Município tem autonomia federativa."
+        },
+        {
+          "front": "Quais são fundamentos do art. 1º?",
+          "back": "Soberania, cidadania, dignidade, valores sociais do trabalho e livre iniciativa, pluralismo político."
+        },
+        {
+          "front": "Separação dos Poderes impede controle judicial?",
+          "back": "Não. Impede substituição indevida da função típica, mas permite controle de legalidade e constitucionalidade."
+        }
+      ],
+      "summary": "Princípios fundamentais são ferramentas de análise constitucional. Em Procuradoria, servem para avaliar competência, iniciativa, política pública, autonomia municipal e validade de atos normativos.",
+      "checklist": [
+        "Sei fundamentos e objetivos.",
+        "Sei explicar autonomia municipal.",
+        "Sei detectar vício de separação de Poderes.",
+        "Consigo aplicar dignidade e igualdade sem genericidade.",
+        "Consigo fazer parecer sobre iniciativa legislativa."
+      ],
+      "nextTopic": "Direitos e garantias fundamentais"
+    },
+    {
+      "id": "direitos-garantias-fundamentais",
+      "level": "intermediário",
+      "title": "Direitos e garantias fundamentais: igualdade, liberdade, devido processo, remédios constitucionais e direitos sociais",
+      "whatIs": "São posições jurídicas protegidas pela Constituição para limitar o poder estatal e assegurar condições mínimas de liberdade, igualdade, participação, proteção judicial e dignidade. Incluem direitos individuais, coletivos, sociais, políticos e garantias processuais.",
+      "purpose": "Servem para orientar a atuação do Município e evitar atos que violem igualdade, contraditório, ampla defesa, liberdade, propriedade, acesso à informação, saúde, educação, assistência social e outros direitos constitucionais.",
+      "plainExplanation": [
+        "Direito fundamental não é apenas matéria penal ou judicial. Ele aparece todos os dias na prefeitura: processo disciplinar, concurso público, filas de saúde, matrícula escolar, assistência social, fiscalização, interdição de estabelecimento e acesso a documentos públicos.",
+        "Garantias como devido processo legal, contraditório e ampla defesa são essenciais quando o Município aplica sanção, cancela benefício, anula ato favorável, rescinde contrato ou pune servidor. A Administração pode agir com autoridade, mas deve dar oportunidade de defesa quando a decisão afetar direitos ou interesses.",
+        "Direitos sociais exigem prestações do Estado, mas a concretização deve considerar competência, orçamento, políticas públicas e mínimo existencial. O Procurador precisa equilibrar proteção de direitos e defesa responsável do erário, especialmente em ações de saúde, educação, creche e assistência."
+      ],
+      "examTechnical": "Para prova, domine art. 5º, remédios constitucionais, direitos sociais do art. 6º, nacionalidade e direitos políticos em noções gerais, eficácia vertical e horizontal, reserva do possível, mínimo existencial e judicialização de políticas públicas. A banca gosta de misturar direito, garantia e remédio constitucional.",
+      "cityExample": "Munícipe impetra mandado de segurança contra negativa de medicamento. A Procuradoria deve avaliar direito à saúde, responsabilidade solidária dos entes, protocolos, prova médica, competência administrativa e eventual necessidade de direcionamento do cumprimento.",
+      "legalBase": [
+        "CF/88, art. 5º",
+        "CF/88, art. 6º",
+        "CF/88, arts. 196 a 200",
+        "CF/88, arts. 205 a 214",
+        "Lei nº 12.016/2009 para mandado de segurança"
+      ],
+      "dryLaw": [
+        "CF/88, art. 5º, incisos XXXIII, XXXIV, LIV, LV, LXIX, LXX, LXXI, LXXII, LXXIII",
+        "CF/88, art. 6º",
+        "CF/88, arts. 196 e 205"
+      ],
+      "jurisprudence": [
+        "O STF reconhece responsabilidade solidária dos entes federados em matéria de saúde, com necessidade de organizar o cumprimento conforme repartição administrativa.",
+        "Devido processo, contraditório e ampla defesa são parâmetros constantes para controle de sanções administrativas e processos que afetem direitos."
+      ],
+      "objectiveCharge": [
+        "Remédios constitucionais e hipóteses de cabimento.",
+        "Contraditório e ampla defesa em processo administrativo.",
+        "Direitos sociais e políticas públicas.",
+        "Acesso à informação.",
+        "Igualdade e vedação de discriminação."
+      ],
+      "discursiveCharge": "Pode cair como parecer em ação de saúde, vaga em creche, processo disciplinar sem defesa, pedido de informação, mandado de segurança contra ato municipal ou anulação de benefício administrativo.",
+      "traps": [
+        "Habeas data não é para qualquer pedido de informação pública; liga-se a dados pessoais do impetrante.",
+        "Mandado de segurança exige direito líquido e certo.",
+        "Ação popular protege patrimônio público, moralidade administrativa, meio ambiente e patrimônio histórico-cultural.",
+        "Reserva do possível não pode ser alegada de modo genérico.",
+        "Contraditório não é mera formalidade: deve permitir influência na decisão."
+      ],
+      "differences": [
+        "Direito x garantia.",
+        "Mandado de segurança x habeas data.",
+        "Mínimo existencial x reserva do possível.",
+        "Igualdade formal x igualdade material.",
+        "Direito social x política pública discricionária."
+      ],
+      "commonMistakes": [
+        "Alegar falta de orçamento sem prova.",
+        "Ignorar competência dos entes em saúde.",
+        "Confundir remédios constitucionais.",
+        "Anular ato favorável sem contraditório quando houver situação consolidada."
+      ],
+      "miniCase": "Servidor recebe sanção sem acesso aos documentos do processo. O vício atinge contraditório e ampla defesa, podendo levar à nulidade do processo administrativo sancionador.",
+      "activeQuestions": [
+        "Qual direito fundamental foi afetado?",
+        "Havia processo adequado?",
+        "Existe prova documental suficiente?",
+        "O remédio constitucional escolhido é correto?",
+        "A defesa do Município precisa cumprir ou contestar?"
+      ],
+      "flashcards": [
+        {
+          "front": "Mandado de segurança protege o quê?",
+          "back": "Direito líquido e certo não amparado por habeas corpus ou habeas data."
+        },
+        {
+          "front": "Habeas data serve para quê?",
+          "back": "Conhecer ou retificar dados pessoais em registros de entidades governamentais ou de caráter público."
+        },
+        {
+          "front": "Reserva do possível basta por alegação genérica?",
+          "back": "Não. Precisa de demonstração concreta e diálogo com mínimo existencial."
+        }
+      ],
+      "summary": "Direitos fundamentais são limites e mandamentos para a Administração. Para Procurador, a boa resposta separa direito invocado, prova, competência, política pública, orçamento e providência juridicamente adequada.",
+      "checklist": [
+        "Sei remédios constitucionais.",
+        "Sei devido processo administrativo.",
+        "Sei noções de direitos sociais.",
+        "Sei aplicar mínimo existencial e reserva do possível.",
+        "Consigo responder caso de saúde/creche/servidor."
+      ],
+      "nextTopic": "Organização do Estado e competências municipais"
+    },
+    {
+      "id": "organizacao-estado-competencias-municipais",
+      "level": "avançado",
+      "title": "Organização do Estado: Federação, autonomia municipal, competências e intervenção",
+      "whatIs": "É o conjunto de regras que distribui competências entre União, Estados, Distrito Federal e Municípios, define autonomia dos entes e disciplina hipóteses excepcionais de intervenção.",
+      "purpose": "Serve para saber se o Município pode legislar ou agir sobre determinado tema. Em Procuradoria Municipal, competência é o primeiro filtro de validade de leis, decretos, contratos, políticas públicas e atos de fiscalização.",
+      "plainExplanation": [
+        "A Constituição reconhece o Município como ente federativo. Isso significa autonomia para auto-organização por Lei Orgânica, autogoverno, autoadministração e autolegislação nos limites constitucionais. O Município cuida especialmente de interesse local e suplementa legislação federal e estadual quando couber.",
+        "Interesse local não significa assunto pequeno; significa predominância do interesse municipal. Transporte coletivo local, uso do solo urbano, posturas municipais, horário de funcionamento, limpeza urbana e serviços locais costumam aparecer nesse campo. Mas o Município não pode invadir competência privativa da União, como direito civil, penal, processual, trânsito em normas gerais e licitações em normas gerais.",
+        "A competência suplementar permite adaptar normas gerais à realidade local. O erro comum é achar que suplementar significa contrariar norma federal. Suplementar é completar, detalhar e executar dentro do espaço constitucional."
+      ],
+      "examTechnical": "Para prova, leia arts. 18, 21 a 24, 29 e 30. Foque em competência municipal: legislar sobre interesse local, suplementar legislação federal e estadual, instituir e arrecadar tributos, organizar serviços públicos locais, promover ordenamento territorial, proteção do patrimônio histórico-cultural local e cooperação em saúde/educação. A banca cobra muito conflito de competência.",
+      "cityExample": "Lei municipal disciplina horário de funcionamento de comércio local por razões de ordenamento urbano. O Procurador deve avaliar interesse local, eventual impacto em livre iniciativa, competência da União para direito comercial/trabalhista e proporcionalidade da medida.",
+      "legalBase": [
+        "CF/88, art. 18",
+        "CF/88, arts. 21 a 24",
+        "CF/88, art. 29",
+        "CF/88, art. 30",
+        "CF/88, art. 182"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 18, 22, 23, 24, 29 e 30",
+        "CF/88, art. 182"
+      ],
+      "jurisprudence": [
+        "O STF reconhece autonomia municipal para assuntos de interesse local, mas invalida leis municipais que invadam competência privativa da União ou contrariem normas gerais.",
+        "Em conflitos federativos, a análise costuma verificar predominância do interesse e presença de norma geral nacional."
+      ],
+      "objectiveCharge": [
+        "Competências privativas, comuns e concorrentes.",
+        "Interesse local.",
+        "Competência suplementar.",
+        "Autonomia municipal.",
+        "Intervenção e limites federativos."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre projeto de lei municipal, ação direta de inconstitucionalidade estadual, defesa de autuação municipal, regulamentação urbana, serviço público local ou conflito com lei estadual/federal.",
+      "traps": [
+        "Interesse local não autoriza invadir direito civil, penal ou processual.",
+        "Competência comum para executar política pública não significa competência legislativa plena.",
+        "Suplementar não é contrariar.",
+        "Município integra a Federação, mas não tem soberania.",
+        "Lei Orgânica deve respeitar Constituição Federal e Estadual."
+      ],
+      "differences": [
+        "Competência privativa x comum x concorrente.",
+        "Interesse local x interesse regional/nacional.",
+        "Norma geral x norma suplementar.",
+        "Autonomia x soberania.",
+        "Auto-organização x livre criação de regras contrárias à Constituição."
+      ],
+      "commonMistakes": [
+        "Responder competência apenas por “é assunto municipal” sem fundamentar.",
+        "Confundir interesse local com qualquer impacto local.",
+        "Ignorar normas gerais federais.",
+        "Esquecer o art. 30."
+      ],
+      "miniCase": "Município cria regra própria de licitação contrariando norma geral da Lei nº 14.133/2021. Há forte risco de inconstitucionalidade por invasão de competência da União para normas gerais.",
+      "activeQuestions": [
+        "Qual ente tem competência?",
+        "O tema é interesse local?",
+        "Existe norma geral federal?",
+        "A lei municipal suplementa ou contraria?",
+        "A matéria é administrativa, civil, penal, processual ou urbanística?"
+      ],
+      "flashcards": [
+        {
+          "front": "Qual artigo concentra competências municipais?",
+          "back": "Art. 30 da Constituição Federal."
+        },
+        {
+          "front": "Município pode suplementar lei federal?",
+          "back": "Sim, no que couber e sem contrariar norma geral."
+        },
+        {
+          "front": "Interesse local é o mesmo que assunto sem impacto externo?",
+          "back": "Não. É predominância do interesse municipal no caso concreto."
+        }
+      ],
+      "summary": "Competência é filtro eliminatório. Antes de discutir mérito, o Procurador deve perguntar: o Município pode legislar ou agir sobre isso? A resposta passa por arts. 18, 29 e 30 da Constituição.",
+      "checklist": [
+        "Sei art. 30.",
+        "Sei separar competência privativa, comum e concorrente.",
+        "Sei identificar interesse local.",
+        "Sei competência suplementar.",
+        "Consigo defender ou apontar inconstitucionalidade de lei municipal."
+      ],
+      "nextTopic": "Organização dos Poderes e funções essenciais à Justiça"
+    },
+    {
+      "id": "organizacao-poderes-funcoes-essenciais",
+      "level": "intermediário",
+      "title": "Organização dos Poderes, processo legislativo municipal e funções essenciais à Justiça",
+      "whatIs": "É o estudo da estrutura do Legislativo, Executivo e Judiciário, suas funções típicas e atípicas, processo legislativo, fiscalização, controle e órgãos essenciais à Justiça, como Ministério Público, Advocacia Pública, Defensoria e advocacia.",
+      "purpose": "Serve para orientar validade de leis municipais, iniciativa legislativa, sanção e veto, fiscalização da Câmara, atuação do prefeito e papel institucional da Procuradoria Municipal.",
+      "plainExplanation": [
+        "No Município, os conflitos mais comuns envolvem Câmara e Prefeito. A Câmara legisla e fiscaliza; o Executivo administra e executa políticas públicas. Uma lei pode ser inconstitucional se invade iniciativa do prefeito, cria atribuições para órgãos municipais, interfere na gestão administrativa ou gera despesa sem observância constitucional.",
+        "Processo legislativo deve observar iniciativa, quórum, deliberação, sanção, veto, promulgação e publicação. A forma importa porque vício formal pode derrubar a lei inteira, ainda que o conteúdo pareça bom.",
+        "A Procuradoria Municipal não é apenas setor de processos. Ela atua como função jurídica do Município, emitindo pareceres, defendendo leis, orientando gestores, prevenindo nulidades e protegendo o interesse público juridicamente qualificado."
+      ],
+      "examTechnical": "Para prova, domine separação dos Poderes, funções típicas/atípicas, processo legislativo, iniciativa reservada, controle legislativo, fiscalização financeira e papel das funções essenciais à Justiça. Em âmbito municipal, aplique por simetria com cautela e sempre considerando Constituição Federal, Constituição Estadual e Lei Orgânica.",
+      "cityExample": "Projeto de iniciativa parlamentar obriga o Executivo a instalar câmeras em todas as escolas no prazo de 30 dias, cria obrigações a secretarias e gera despesa. O parecer deve avaliar iniciativa, separação de Poderes, orçamento, razoabilidade e eventual vício formal.",
+      "legalBase": [
+        "CF/88, art. 2º",
+        "CF/88, arts. 44 a 69 por simetria quando aplicável",
+        "CF/88, arts. 70 a 75",
+        "CF/88, arts. 127 a 135",
+        "CF/88, arts. 29 e 31"
+      ],
+      "dryLaw": [
+        "CF/88, art. 2º",
+        "CF/88, arts. 29, 31, 61, 70 a 75, 127 a 135"
+      ],
+      "jurisprudence": [
+        "O STF e os Tribunais de Justiça costumam invalidar leis de iniciativa parlamentar que invadem a organização administrativa do Executivo ou violam iniciativa reservada.",
+        "A advocacia pública exerce função essencial à Justiça e à juridicidade administrativa, especialmente na defesa do ente público e consultoria jurídica."
+      ],
+      "objectiveCharge": [
+        "Separação dos Poderes.",
+        "Iniciativa legislativa.",
+        "Sanção e veto.",
+        "Controle externo.",
+        "Funções essenciais à Justiça.",
+        "Papel da Procuradoria."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre projeto de lei, veto, promulgação, fiscalização da Câmara, convocação de secretário, criação de cargos, organização administrativa ou defesa de lei municipal em ADI estadual.",
+      "traps": [
+        "Boa intenção legislativa não cura vício de iniciativa.",
+        "Câmara fiscaliza, mas não administra.",
+        "Prefeito não pode ignorar lei válida por discordância política.",
+        "Sanção não convalida vício de iniciativa em hipóteses relevantes de reserva constitucional.",
+        "Controle externo não é subordinação do Executivo ao Legislativo."
+      ],
+      "differences": [
+        "Função típica x atípica.",
+        "Iniciativa comum x iniciativa reservada.",
+        "Veto político x veto jurídico.",
+        "Fiscalização legislativa x gestão administrativa.",
+        "Procuradoria consultiva x contenciosa."
+      ],
+      "commonMistakes": [
+        "Analisar só mérito e esquecer iniciativa.",
+        "Achar que sanção sempre convalida vício.",
+        "Confundir fiscalização com ingerência direta.",
+        "Ignorar Lei Orgânica e Constituição Estadual."
+      ],
+      "miniCase": "A Câmara aprova lei criando atribuições detalhadas para a Secretaria de Saúde. Mesmo que a política seja desejável, pode haver vício de iniciativa e violação à separação dos Poderes.",
+      "activeQuestions": [
+        "Quem iniciou o projeto?",
+        "Existe iniciativa reservada?",
+        "A lei cria despesa ou estrutura administrativa?",
+        "O veto deve ser jurídico ou político?",
+        "Qual papel da Procuradoria no parecer?"
+      ],
+      "flashcards": [
+        {
+          "front": "Câmara Municipal administra?",
+          "back": "Não. Sua função típica é legislar e fiscalizar."
+        },
+        {
+          "front": "Sanção convalida vício de iniciativa?",
+          "back": "Em regra, não se deve presumir convalidação de vício constitucional de iniciativa reservada."
+        },
+        {
+          "front": "Procuradoria só atua em processo judicial?",
+          "back": "Não. Atua consultiva e contenciosamente, prevenindo ilegalidades e defendendo o Município."
+        }
+      ],
+      "summary": "Organização dos Poderes no Município é tema de alta incidência prática. O foco deve ser iniciativa, separação dos Poderes, fiscalização e validade do processo legislativo.",
+      "checklist": [
+        "Sei detectar vício de iniciativa.",
+        "Sei funções da Câmara e do prefeito.",
+        "Sei noções de processo legislativo.",
+        "Sei papel da Procuradoria.",
+        "Consigo emitir parecer sobre projeto de lei."
+      ],
+      "nextTopic": "Controle de constitucionalidade"
+    },
+    {
+      "id": "controle-constitucionalidade",
+      "level": "avançado",
+      "title": "Controle de constitucionalidade: difuso, concentrado, leis municipais e atuação da Procuradoria",
+      "whatIs": "É o mecanismo jurídico que verifica se leis e atos normativos são compatíveis com a Constituição. Pode ocorrer de forma difusa, em qualquer processo concreto, ou concentrada, em ações específicas perante tribunais competentes.",
+      "purpose": "Serve para proteger a supremacia constitucional. Para Procurador Municipal, é ferramenta central para defender leis municipais válidas, reconhecer riscos de inconstitucionalidade e orientar revogação, alteração ou veto de normas problemáticas.",
+      "plainExplanation": [
+        "Controle difuso ocorre em um caso concreto: o juiz afasta a aplicação de norma incompatível com a Constituição para resolver aquela demanda. Controle concentrado discute a validade da norma em tese, com efeitos mais amplos, em ações como ADI, ADC, ADPF e, no âmbito estadual, ADI contra lei municipal perante Tribunal de Justiça quando o parâmetro for Constituição Estadual.",
+        "Lei municipal pode ser questionada no Tribunal de Justiça por violar Constituição Estadual, inclusive normas de reprodução obrigatória da Constituição Federal. Também pode sofrer controle difuso em ações individuais ou coletivas. O Procurador deve saber montar defesa mostrando competência, iniciativa correta, proporcionalidade e compatibilidade com direitos fundamentais.",
+        "Antes de judicializar, o melhor controle é preventivo: parecer jurídico no projeto de lei, análise de competência, iniciativa, impacto, constitucionalidade material e técnica legislativa. Procuradoria forte evita leis vulneráveis."
+      ],
+      "examTechnical": "Para prova, domine controle preventivo e repressivo, político e judicial, difuso e concentrado, cláusula de reserva de plenário, súmula vinculante, modulação de efeitos, interpretação conforme e declaração parcial de nulidade sem redução de texto. Para Município, atenção à ADI estadual contra lei municipal.",
+      "cityExample": "Lei municipal sobre trânsito cria infrações e penalidades próprias além do CTB. O Procurador deve avaliar invasão de competência da União, risco de ADI e possibilidade de veto ou revogação orientada.",
+      "legalBase": [
+        "CF/88, arts. 97, 102, 103 e 125, §2º",
+        "CF/88, art. 30",
+        "Lei nº 9.868/1999",
+        "Lei nº 9.882/1999",
+        "Súmula Vinculante nº 10"
+      ],
+      "dryLaw": [
+        "CF/88, art. 97",
+        "CF/88, arts. 102 e 103",
+        "CF/88, art. 125, §2º",
+        "Lei nº 9.868/1999",
+        "Lei nº 9.882/1999"
+      ],
+      "jurisprudence": [
+        "A cláusula de reserva de plenário exige órgão especial ou plenário para declaração de inconstitucionalidade por tribunal.",
+        "Tribunais de Justiça podem controlar lei municipal frente à Constituição Estadual, inclusive normas de reprodução obrigatória."
+      ],
+      "objectiveCharge": [
+        "Diferença entre controle difuso e concentrado.",
+        "Reserva de plenário.",
+        "ADI estadual contra lei municipal.",
+        "Controle preventivo por veto jurídico.",
+        "Efeitos da decisão e modulação."
+      ],
+      "discursiveCharge": "Pode cair como parecer de defesa em ADI estadual, nota técnica para veto, manifestação em ação civil pública, decisão sobre cumprimento de súmula vinculante ou revisão de lei municipal inconstitucional.",
+      "traps": [
+        "Juiz singular pode afastar norma no caso concreto, mas tribunal deve observar reserva de plenário.",
+        "ADI municipal no TJ não usa Constituição Federal como parâmetro direto, salvo reprodução na Constituição Estadual.",
+        "Controle preventivo não é só político: parecer jurídico e veto jurídico são fundamentais.",
+        "Interpretação conforme preserva texto quando houver leitura constitucional possível."
+      ],
+      "differences": [
+        "Difuso x concentrado.",
+        "Inconstitucionalidade formal x material.",
+        "Controle preventivo x repressivo.",
+        "Interpretação conforme x nulidade parcial sem redução de texto.",
+        "Efeito erga omnes x inter partes."
+      ],
+      "commonMistakes": [
+        "Confundir ADI federal com ADI estadual.",
+        "Esquecer art. 125, §2º.",
+        "Achar que toda decisão difusa vale para todos automaticamente.",
+        "Não identificar parâmetro de controle."
+      ],
+      "miniCase": "Associação propõe ADI no TJ contra lei municipal de iniciativa parlamentar que cria obrigações para secretarias. A Procuradoria deve defender se possível, ou reconhecer fragilidade por vício de iniciativa e sugerir correção legislativa.",
+      "activeQuestions": [
+        "Qual norma é objeto?",
+        "Qual Constituição é parâmetro?",
+        "O vício é formal ou material?",
+        "O controle é difuso ou concentrado?",
+        "Há possibilidade de interpretação conforme?"
+      ],
+      "flashcards": [
+        {
+          "front": "O que é reserva de plenário?",
+          "back": "Regra do art. 97: tribunal só declara inconstitucionalidade por maioria absoluta do plenário ou órgão especial."
+        },
+        {
+          "front": "Lei municipal pode ser objeto de ADI no TJ?",
+          "back": "Sim, frente à Constituição Estadual, inclusive normas de reprodução obrigatória."
+        },
+        {
+          "front": "Controle preventivo existe?",
+          "back": "Sim, ocorre antes da norma nascer, por análise legislativa, parecer e veto jurídico."
+        }
+      ],
+      "summary": "Controle de constitucionalidade é essencial para Procurador. O objetivo é prevenir leis inválidas, defender normas válidas e saber reconhecer riscos constitucionais com técnica.",
+      "checklist": [
+        "Sei controle difuso e concentrado.",
+        "Sei reserva de plenário.",
+        "Sei ADI estadual contra lei municipal.",
+        "Sei efeitos das decisões.",
+        "Consigo elaborar parecer de constitucionalidade."
+      ],
+      "nextTopic": "Administração Pública na Constituição"
+    },
+    {
+      "id": "administracao-publica-constitucional",
+      "level": "lei seca",
+      "title": "Administração Pública na Constituição: art. 37, servidores, concurso, cargos, remuneração e responsabilidade",
+      "whatIs": "É o conjunto de regras constitucionais que disciplinam a Administração Pública direta e indireta, princípios, concursos, cargos, funções, remuneração, acumulação, responsabilidade e controle.",
+      "purpose": "Serve como base constitucional para praticamente todo parecer municipal sobre servidores, concurso público, nomeações, cargos em comissão, contratação temporária, remuneração, nepotismo, publicidade e responsabilidade estatal.",
+      "plainExplanation": [
+        "O art. 37 da Constituição é um dos dispositivos mais importantes para Procurador Municipal. Ele estabelece princípios, concurso público, validade do concurso, cargos em comissão, funções de confiança, contratação temporária, teto remuneratório, vedação de acumulações indevidas, publicidade e responsabilidade civil do Estado.",
+        "Concurso público é regra para ingresso em cargo ou emprego público. Cargos em comissão são exceção e devem se destinar a direção, chefia e assessoramento, não a funções permanentes técnicas ou burocráticas. Função de confiança só pode ser exercida por servidor efetivo.",
+        "Nepotismo decorre diretamente dos princípios constitucionais da Administração Pública. A vedação não depende de lei local específica, pois impessoalidade e moralidade já bastam como fundamento. Em Município, esse tema aparece em nomeação de parentes para cargos comissionados e contratações indiretas."
+      ],
+      "examTechnical": "Para prova, leia art. 37 inteiro com atenção. Foque em concurso, validade, cargos em comissão, função de confiança, contratação temporária, acumulação, teto, publicidade oficial, improbidade, responsabilidade civil e acesso a cargos por brasileiros e estrangeiros na forma da lei. A banca costuma cobrar exceções e literalidade.",
+      "cityExample": "Prefeito pretende nomear parente para cargo comissionado de assessoramento. O Procurador deve verificar nepotismo, natureza do cargo, qualificação, subordinação, moralidade e impessoalidade, considerando a vedação constitucional e entendimento sumulado.",
+      "legalBase": [
+        "CF/88, art. 37",
+        "CF/88, arts. 39 a 41",
+        "CF/88, art. 169",
+        "Súmula Vinculante nº 13 do STF",
+        "Lei local de cargos e estatuto municipal"
+      ],
+      "dryLaw": [
+        "CF/88, art. 37, caput e incisos I a XXI",
+        "CF/88, art. 37, §1º, §4º e §6º",
+        "CF/88, arts. 39, 40 e 41"
+      ],
+      "jurisprudence": [
+        "A Súmula Vinculante nº 13 veda nepotismo na Administração Pública direta e indireta de todos os Poderes e entes federativos.",
+        "O STF entende que a vedação ao nepotismo decorre diretamente dos princípios do art. 37, não dependendo de lei formal específica."
+      ],
+      "objectiveCharge": [
+        "Princípios expressos do art. 37.",
+        "Concurso público e exceções.",
+        "Cargos em comissão e funções de confiança.",
+        "Nepotismo.",
+        "Publicidade oficial sem promoção pessoal.",
+        "Responsabilidade civil do Estado."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre concurso, contratação temporária, nomeação de comissionado, nepotismo, acumulação de cargos, pagamento de vantagem, publicidade institucional ou ação indenizatória.",
+      "traps": [
+        "Cargo em comissão não serve para burlar concurso.",
+        "Função de confiança é apenas para servidor efetivo.",
+        "Publicidade oficial não pode promover autoridade.",
+        "Nepotismo não exige lei municipal para ser proibido.",
+        "Responsabilidade objetiva exige dano e nexo; não é automática."
+      ],
+      "differences": [
+        "Cargo efetivo x cargo em comissão.",
+        "Cargo em comissão x função de confiança.",
+        "Contratação temporária x terceirização x concurso.",
+        "Publicidade institucional x promoção pessoal.",
+        "Responsabilidade objetiva x ação regressiva."
+      ],
+      "commonMistakes": [
+        "Ler art. 37 só pelo caput.",
+        "Achar que qualquer cargo comissionado é válido.",
+        "Ignorar SV 13.",
+        "Confundir função de confiança com cargo em comissão.",
+        "Esquecer prazo de validade do concurso."
+      ],
+      "miniCase": "Lei municipal cria dezenas de cargos em comissão com atribuições genéricas de atendimento e rotina administrativa. O parecer deve apontar risco de burla ao concurso e necessidade de funções de direção, chefia ou assessoramento reais.",
+      "activeQuestions": [
+        "O ingresso exige concurso?",
+        "O cargo comissionado tem atribuições de chefia/direção/assessoramento?",
+        "Existe nepotismo?",
+        "Há promoção pessoal na publicidade?",
+        "Houve dano e nexo na responsabilidade estatal?"
+      ],
+      "flashcards": [
+        {
+          "front": "Quais princípios estão no caput do art. 37?",
+          "back": "Legalidade, impessoalidade, moralidade, publicidade e eficiência."
+        },
+        {
+          "front": "Função de confiança pode ser exercida por qualquer pessoa?",
+          "back": "Não. É exclusiva de servidor ocupante de cargo efetivo."
+        },
+        {
+          "front": "Nepotismo precisa de lei municipal para ser vedado?",
+          "back": "Não. Decorre dos princípios constitucionais do art. 37."
+        }
+      ],
+      "summary": "Art. 37 é núcleo duro para Procurador Municipal. Estude literalidade, exceções e casos práticos de concurso, cargos, nepotismo, publicidade e responsabilidade.",
+      "checklist": [
+        "Sei art. 37.",
+        "Sei concurso e exceções.",
+        "Sei cargo em comissão e função de confiança.",
+        "Sei nepotismo.",
+        "Consigo responder caso de servidor municipal."
+      ],
+      "nextTopic": "Ordem econômica, social e políticas públicas municipais"
+    },
+    {
+      "id": "ordem-economica-social-politicas-publicas",
+      "level": "discursiva",
+      "title": "Ordem econômica, ordem social, saúde, educação, meio ambiente, urbanismo e políticas públicas",
+      "whatIs": "São normas constitucionais que orientam a atividade econômica, serviços públicos, direitos sociais, saúde, educação, assistência, meio ambiente, cultura, família, criança, adolescente, idoso e política urbana.",
+      "purpose": "Servem para orientar a atuação municipal em políticas públicas e para defender ou ajustar ações judiciais sobre saúde, creche, educação, moradia, saneamento, meio ambiente e ordenamento urbano.",
+      "plainExplanation": [
+        "A Constituição não trata apenas da estrutura do Estado; ela define finalidades sociais. Saúde é direito de todos e dever do Estado. Educação é direito de todos e dever do Estado e da família. Meio ambiente equilibrado é direito de todos e dever do Poder Público e da coletividade. Política urbana busca ordenar o pleno desenvolvimento das funções sociais da cidade.",
+        "O Município executa muitas políticas públicas na ponta. Por isso, ações judiciais de saúde, creche, transporte, assistência, acessibilidade, saneamento e meio ambiente chegam diretamente à Procuradoria. A resposta jurídica deve reconhecer direitos, mas também organizar competência, orçamento, fila, critérios técnicos, protocolos e cumprimento adequado.",
+        "Em prova discursiva, não basta dizer “direito fundamental”. É preciso construir solução: competência do Município, norma constitucional, política pública existente, limites orçamentários demonstrados, prioridade do mínimo existencial, possibilidade de acordo, obrigação de fazer, prazo razoável e prevenção de efeito multiplicador desorganizado."
+      ],
+      "examTechnical": "Para prova, leia arts. 170, 174, 182, 196 a 200, 205 a 214, 225 e principais normas de proteção social. Foque em função social da propriedade, política urbana, saúde, educação, meio ambiente, controle judicial de políticas públicas, mínimo existencial, reserva do possível e separação dos Poderes.",
+      "cityExample": "Ação civil pública exige do Município criação imediata de vagas em creche. O Procurador deve avaliar direito à educação infantil, fila, orçamento, plano de expansão, possibilidade de cronograma judicial, reserva do possível comprovada e prioridade constitucional da criança.",
+      "legalBase": [
+        "CF/88, arts. 170 e 174",
+        "CF/88, arts. 182 e 183",
+        "CF/88, arts. 196 a 200",
+        "CF/88, arts. 205 a 214",
+        "CF/88, art. 225",
+        "Estatuto da Cidade e legislação setorial quando aplicável"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 170, 182, 196, 205, 208 e 225"
+      ],
+      "jurisprudence": [
+        "O STF admite controle judicial de políticas públicas quando há omissão inconstitucional ou violação ao mínimo existencial, sem transformar o Judiciário em gestor universal de escolhas administrativas.",
+        "Na saúde, há entendimento de responsabilidade solidária dos entes federativos, com organização do cumprimento conforme regras administrativas do SUS."
+      ],
+      "objectiveCharge": [
+        "Direito à saúde.",
+        "Educação infantil e creche.",
+        "Função social da propriedade.",
+        "Política urbana.",
+        "Meio ambiente.",
+        "Reserva do possível e mínimo existencial.",
+        "Controle judicial de políticas públicas."
+      ],
+      "discursiveCharge": "Pode cair como parecer em ação de saúde, vaga em creche, obrigação ambiental, regularização urbana, política habitacional, plano diretor, interdição de atividade econômica ou cumprimento de sentença coletiva.",
+      "traps": [
+        "Reserva do possível não é frase mágica.",
+        "Judiciário pode controlar omissão, mas não deve gerir todos os detalhes sem critério.",
+        "Função social limita propriedade, mas exige base legal e devido processo.",
+        "Meio ambiente permite responsabilidade em múltiplas esferas.",
+        "Saúde solidária não elimina organização administrativa do cumprimento."
+      ],
+      "differences": [
+        "Mínimo existencial x reserva do possível.",
+        "Direito individual x política pública coletiva.",
+        "Função social x desapropriação.",
+        "Controle judicial x escolha administrativa legítima.",
+        "Competência comum x execução administrativa."
+      ],
+      "commonMistakes": [
+        "Negar direito social de forma genérica.",
+        "Não apresentar dados orçamentários.",
+        "Ignorar fila administrativa.",
+        "Confundir direito à saúde com fornecimento automático de qualquer pedido sem prova técnica.",
+        "Esquecer política urbana no Direito Constitucional."
+      ],
+      "miniCase": "Munícipe pede medicamento experimental fora da lista pública. A Procuradoria deve avaliar laudo, registro sanitário, alternativas terapêuticas, protocolos, responsabilidade dos entes e possibilidade de cumprimento organizado.",
+      "activeQuestions": [
+        "Qual direito social está em jogo?",
+        "Há mínimo existencial?",
+        "Existe política pública ou fila?",
+        "O Município tem competência de execução?",
+        "A defesa comprovou limites concretos?",
+        "Há solução administrativa possível?"
+      ],
+      "flashcards": [
+        {
+          "front": "Reserva do possível pode ser genérica?",
+          "back": "Não. Deve ser demonstrada concretamente e ponderada com mínimo existencial."
+        },
+        {
+          "front": "Saúde é dever de qual ente?",
+          "back": "É dever do Estado em sentido amplo; a jurisprudência reconhece responsabilidade solidária, com organização do cumprimento."
+        },
+        {
+          "front": "Política urbana está onde na Constituição?",
+          "back": "Principalmente nos arts. 182 e 183."
+        }
+      ],
+      "summary": "Ordem social e econômica transformam a Constituição em guia de políticas públicas. Para Procurador, o desafio é proteger direitos sem perder competência, orçamento, protocolos e gestão responsável.",
+      "checklist": [
+        "Sei saúde, educação e meio ambiente na Constituição.",
+        "Sei mínimo existencial e reserva do possível.",
+        "Sei política urbana constitucional.",
+        "Consigo montar parecer de ação de saúde/creche.",
+        "Sei equilibrar direito e gestão pública."
+      ],
+      "nextTopic": "Próxima fase: Processo Civil e Direito Civil Premium"
+    }
+  ]
+}
 ];
 
 export function getApostilaStats(progress = {}) {
