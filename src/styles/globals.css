@@ -4690,3 +4690,189 @@ img, svg, canvas, video { max-width: 100%; }
   .hero-actions { display: grid !important; grid-template-columns: 1fr !important; }
   .hero-actions .btn { width: 100% !important; }
 }
+
+/* Hotfix 39N — Apostila Premium legível em telas médias, MacBook e celular */
+.apostila-page,
+.apostila-page * {
+  box-sizing: border-box;
+}
+
+.apostila-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.apostila-page .card,
+.apostila-layout,
+.apostila-main,
+.apostila-workbench,
+.apostila-subject-menu,
+.apostila-topic-list-card,
+.apostila-reader-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.apostila-reader-card,
+.apostila-reader-card * {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.apostila-reader-card h2,
+.apostila-reader-card h3,
+.apostila-section p,
+.apostila-section li,
+.apostila-subject-card,
+.lesson-row {
+  hyphens: auto;
+}
+
+@media (max-width: 1500px) {
+  .apostila-layout {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .apostila-subject-menu {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    max-height: none !important;
+    overflow: visible !important;
+    padding-right: 0 !important;
+  }
+
+  .apostila-subject-card {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .apostila-next-card {
+    display: none;
+  }
+
+  .apostila-workbench {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .apostila-topic-list-card {
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .apostila-topic-list-card .lesson-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: 10px;
+  }
+
+  .apostila-topic-list-card .lesson-row {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .apostila-reader-card {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .apostila-hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .apostila-page .hero-panel,
+  .apostila-page .card {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .apostila-subject-menu {
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 10px !important;
+    padding: 0 0 10px !important;
+    scroll-snap-type: x mandatory;
+  }
+
+  .apostila-subject-card {
+    flex: 0 0 min(84vw, 330px) !important;
+    scroll-snap-align: start;
+  }
+
+  .apostila-topic-list-card .lesson-list {
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    gap: 10px !important;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .apostila-topic-list-card .lesson-row {
+    flex: 0 0 min(86vw, 360px) !important;
+    scroll-snap-align: start;
+  }
+
+  .lesson-reader-header,
+  .subject-detail-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .lesson-reader-actions,
+  .hero-actions,
+  .apostila-action-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .lesson-reader-actions .btn,
+  .hero-actions .btn,
+  .apostila-action-row .btn {
+    width: 100% !important;
+  }
+
+  .lesson-columns {
+    grid-template-columns: 1fr !important;
+  }
+
+  .apostila-mini-index {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apostila-mini-index span {
+    width: auto !important;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .apostila-section p,
+  .apostila-section li {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+@media (max-width: 420px) {
+  .apostila-mini-index {
+    grid-template-columns: 1fr !important;
+  }
+
+  .apostila-reader-card h2 {
+    font-size: clamp(1.6rem, 9vw, 2.15rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  .apostila-section {
+    padding: 13px !important;
+  }
+}
