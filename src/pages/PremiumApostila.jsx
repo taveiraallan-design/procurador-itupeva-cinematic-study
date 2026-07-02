@@ -84,50 +84,95 @@ function includesAny(text, terms) {
 }
 
 function buildVisualModel(subject, topic) {
+  const subjectId = subject?.id || '';
   const allText = [subject?.subject, topic?.title, topic?.summary, topic?.whatIs, ...(topic?.plainExplanation || [])].join(' ');
 
-  if (includesAny(allText, ['ato administrativo', 'anulação', 'revogação', 'convalidação', 'vício'])) {
-    return {
-      type: 'decision',
-      title: 'Ato administrativo: legalidade antes de mérito',
-      subtitle: 'Use este mapa para não confundir anulação, revogação e convalidação.',
-      flow: ['Fato administrativo', 'Ato praticado', 'Requisitos', 'Legalidade', 'Providência'],
-      decision: [
-        { q: 'O ato tem vício de legalidade?', yes: 'Anulação ou convalidação', no: 'Pode avaliar mérito' },
-        { q: 'O vício é sanável?', yes: 'Convalidar se não houver prejuízo', no: 'Anular o ato' },
-        { q: 'O ato é válido, mas inconveniente?', yes: 'Revogação por mérito', no: 'Manter ou motivar nova análise' }
-      ],
-      compare: [
-        { label: 'Anulação', text: 'Controle de legalidade. Ato ilegal deve ser retirado.' },
-        { label: 'Revogação', text: 'Controle de mérito. Só incide sobre ato válido.' },
-        { label: 'Convalidação', text: 'Correção de vício sanável, sem prejuízo.' }
-      ],
-      caseSteps: ['Prefeitura pratica ato', 'Procurador identifica requisito', 'Verifica vício', 'Escolhe providência', 'Redige parecer seguro'],
-      warning: 'Pegadinha: ato ilegal não se revoga; ato ilegal se anula.'
-    };
+  const adminGeneral = {
+    type: 'flow',
+    title: 'Raciocínio administrativo municipal',
+    subtitle: 'Da situação concreta à providência segura do Procurador.',
+    flow: ['Fato administrativo', 'Competência legal', 'Finalidade pública', 'Motivação', 'Proporcionalidade', 'Controle', 'Providência do Procurador'],
+    decision: [
+      { q: 'A autoridade tem competência?', yes: 'Avançar para validade do ato', no: 'Risco de nulidade ou necessidade de ratificação/convalidação' },
+      { q: 'A finalidade é pública?', yes: 'Verificar motivação e interesse público', no: 'Vício de finalidade/desvio de poder' },
+      { q: 'O ato está motivado e proporcional?', yes: 'Parecer pode validar a atuação', no: 'Recomendar correção, nova instrução, anulação ou convalidação' }
+    ],
+    compare: [
+      { label: 'Legalidade', text: 'A Administração só age com fundamento jurídico suficiente.' },
+      { label: 'Motivação', text: 'O ato deve explicar fatos, fundamentos e finalidade pública.' },
+      { label: 'Controle', text: 'O Procurador identifica risco, vício e providência adequada.' }
+    ],
+    caseSteps: ['Demanda chega à Prefeitura', 'Gestor propõe ato', 'Procurador confere competência', 'Avalia motivação e proporcionalidade', 'Emite parecer preventivo'],
+    warning: 'Pegadinha: interesse público não autoriza agir fora da lei; competência administrativa nasce da norma.'
+  };
+
+  if (subjectId === 'direito-administrativo') {
+    if (includesAny(allText, ['ato administrativo', 'anulação', 'revogação', 'convalidação', 'vício'])) {
+      return {
+        type: 'decision',
+        title: 'Ato administrativo: legalidade antes de mérito',
+        subtitle: 'Use este mapa para não confundir anulação, revogação e convalidação.',
+        flow: ['Fato administrativo', 'Ato praticado', 'Requisitos', 'Legalidade', 'Providência'],
+        decision: [
+          { q: 'O ato tem vício de legalidade?', yes: 'Anulação ou convalidação', no: 'Pode avaliar mérito' },
+          { q: 'O vício é sanável?', yes: 'Convalidar se não houver prejuízo', no: 'Anular o ato' },
+          { q: 'O ato é válido, mas inconveniente?', yes: 'Revogação por mérito', no: 'Manter ou motivar nova análise' }
+        ],
+        compare: [
+          { label: 'Anulação', text: 'Controle de legalidade. Ato ilegal deve ser retirado.' },
+          { label: 'Revogação', text: 'Controle de mérito. Só incide sobre ato válido.' },
+          { label: 'Convalidação', text: 'Correção de vício sanável, sem prejuízo.' }
+        ],
+        caseSteps: ['Prefeitura pratica ato', 'Procurador identifica requisito', 'Verifica vício', 'Escolhe providência', 'Redige parecer seguro'],
+        warning: 'Pegadinha: ato ilegal não se revoga; ato ilegal se anula.'
+      };
+    }
+    return adminGeneral;
   }
 
-  if (includesAny(allText, ['competência municipal', 'autonomia', 'interesse local', 'lei orgânica', 'município'])) {
+  if (subjectId === 'direito-constitucional') {
     return {
       type: 'flow',
-      title: 'Competência municipal em prova',
-      subtitle: 'A lógica é sempre partir da Constituição e chegar ao interesse local.',
-      flow: ['Constituição', 'Município', 'Interesse local', 'Suplementação', 'Ato/lei municipal'],
+      title: 'Competência constitucional municipal',
+      subtitle: 'Parta da Constituição e chegue ao interesse local sem confundir autonomia com soberania.',
+      flow: ['Constituição', 'Município', 'Interesse local', 'Norma geral', 'Suplementação', 'Ato/lei municipal'],
       decision: [
         { q: 'Existe interesse local predominante?', yes: 'Município pode atuar', no: 'Verificar competência de outro ente' },
-        { q: 'Há norma federal/estadual geral?', yes: 'Atuação suplementar', no: 'Lei municipal pode detalhar dentro dos limites' }
+        { q: 'Há norma federal/estadual geral?', yes: 'Município suplementa sem contrariar', no: 'Município pode disciplinar dentro dos limites constitucionais' },
+        { q: 'A lei local respeita direitos fundamentais?', yes: 'Defesa mais segura', no: 'Risco de inconstitucionalidade' }
       ],
       compare: [
         { label: 'Autonomia', text: 'Capacidade política, administrativa, legislativa e financeira.' },
-        { label: 'Limite', text: 'Não pode contrariar a Constituição nem normas gerais.' },
-        { label: 'Procurador', text: 'Defende competência municipal com base no interesse local.' }
+        { label: 'Soberania', text: 'Pertence à República Federativa, não ao Município.' },
+        { label: 'Interesse local', text: 'Critério central para justificar a atuação municipal.' }
       ],
-      caseSteps: ['Problema local surge', 'Município identifica interesse local', 'Lei/ato é produzido', 'Procuradoria valida competência'],
-      warning: 'Pegadinha: autonomia municipal não é soberania.'
+      caseSteps: ['Problema local surge', 'Município identifica competência', 'Lei/ato é produzido', 'Procuradoria valida constitucionalidade'],
+      warning: 'Pegadinha: Município tem autonomia, mas não pode contrariar Constituição nem normas gerais.'
     };
   }
 
-  if (includesAny(allText, ['crédito tributário', 'lançamento', 'dívida ativa', 'execução fiscal', 'tributário', 'iptu', 'iss', 'itbi'])) {
+  if (subjectId === 'processo-civil-direito-civil') {
+    return {
+      type: 'flow',
+      title: 'Fazenda Pública em juízo',
+      subtitle: 'Roteiro processual para defender o Município com atenção a prazos, recursos e pagamento.',
+      flow: ['Citação', 'Contestação', 'Provas', 'Sentença', 'Recursos', 'Cumprimento', 'RPV/Precatório'],
+      decision: [
+        { q: 'A sentença é contra o Município?', yes: 'Verificar recurso e remessa necessária', no: 'Avaliar cumprimento e honorários' },
+        { q: 'A obrigação é de pagar?', yes: 'RPV ou precatório', no: 'Cumprimento específico/obrigação de fazer' },
+        { q: 'Há tese de defesa pública?', yes: 'Registrar fundamento e prova', no: 'Avaliar acordo/risco processual' }
+      ],
+      compare: [
+        { label: 'Contestação', text: 'Concentra preliminares e defesa de mérito.' },
+        { label: 'Remessa', text: 'Protege interesse público em hipóteses legais.' },
+        { label: 'Precatório/RPV', text: 'Forma constitucional de pagamento.' }
+      ],
+      caseSteps: ['Município é citado', 'Procuradoria organiza defesa', 'Produz prova', 'Recorre quando cabível', 'Executa decisão corretamente'],
+      warning: 'Pegadinha: Fazenda Pública não é parte comum; há regras próprias de prazo, pagamento e controle.'
+    };
+  }
+
+  if (subjectId === 'tributario-financeiro-orcamentario') {
     return {
       type: 'flow',
       title: 'Crédito tributário municipal',
@@ -135,7 +180,8 @@ function buildVisualModel(subject, topic) {
       flow: ['Fato gerador', 'Obrigação tributária', 'Lançamento', 'Crédito tributário', 'Dívida ativa', 'Execução fiscal'],
       decision: [
         { q: 'O lançamento foi validamente constituído?', yes: 'Crédito pode ser cobrado', no: 'Risco de nulidade' },
-        { q: 'Houve pagamento/suspensão/extinção?', yes: 'Cobrança deve ser revista', no: 'Inscrição e execução' }
+        { q: 'Houve pagamento/suspensão/extinção?', yes: 'Cobrança deve ser revista', no: 'Inscrição e execução' },
+        { q: 'A CDA está regular?', yes: 'Ajuizar/seguir execução', no: 'Corrigir antes de executar' }
       ],
       compare: [
         { label: 'Obrigação', text: 'Nasce com o fato gerador.' },
@@ -147,47 +193,70 @@ function buildVisualModel(subject, topic) {
     };
   }
 
-  if (includesAny(allText, ['fazenda pública', 'precatório', 'rpv', 'remessa necessária', 'execução', 'processo civil'])) {
+  if (subjectId === 'legislacao-municipal') {
     return {
       type: 'flow',
-      title: 'Fazenda Pública em juízo',
-      subtitle: 'Roteiro processual para defender o Município.',
-      flow: ['Citação', 'Contestação', 'Provas', 'Sentença', 'Recursos', 'Cumprimento', 'RPV/Precatório'],
+      title: 'Lei Orgânica e funcionamento municipal',
+      subtitle: 'Organize a relação entre Município, Prefeito, Câmara, servidores e estrutura administrativa.',
+      flow: ['Lei Orgânica', 'Competência municipal', 'Prefeito', 'Câmara', 'Servidores/estrutura', 'Controle'],
       decision: [
-        { q: 'A sentença é contra o Município?', yes: 'Verificar recurso/remessa necessária', no: 'Avaliar cumprimento e honorários' },
-        { q: 'A obrigação é de pagar?', yes: 'RPV ou precatório', no: 'Cumprimento específico/obrigação de fazer' }
+        { q: 'O ato é do Executivo ou Legislativo?', yes: 'Identifique competência do órgão', no: 'Releia a Lei Orgânica' },
+        { q: 'A matéria exige lei?', yes: 'Processo legislativo e iniciativa correta', no: 'Ato administrativo pode bastar' },
+        { q: 'Há regra local específica?', yes: 'Aplicar lei municipal', no: 'Usar Constituição e normas gerais' }
       ],
       compare: [
-        { label: 'Contestação', text: 'Concentra preliminares e defesa de mérito.' },
-        { label: 'Remessa', text: 'Protege interesse público em hipóteses legais.' },
-        { label: 'Precatório/RPV', text: 'Forma constitucional de pagamento.' }
+        { label: 'Prefeito', text: 'Chefia o Executivo e pratica atos de gestão.' },
+        { label: 'Câmara', text: 'Legisla e fiscaliza nos limites da Lei Orgânica.' },
+        { label: 'Procuradoria', text: 'Previne ilegalidade e defende a autonomia municipal.' }
       ],
-      caseSteps: ['Município é citado', 'Procuradoria organiza defesa', 'Produz prova', 'Recorre quando cabível', 'Executa decisão corretamente'],
-      warning: 'Pegadinha: prazo e regime da Fazenda não podem ser tratados como processo comum simples.'
+      caseSteps: ['Demanda municipal surge', 'Lei Orgânica é conferida', 'Competência é definida', 'Procurador orienta providência'],
+      warning: 'Pegadinha: lei local não pode contrariar Constituição nem normas gerais.'
     };
   }
 
-  if (includesAny(allText, ['licenciamento', 'ambiental', 'eia', 'rima', 'app', 'resíduo', 'saneamento'])) {
+  if (subjectId === 'penal-processo-penal') {
     return {
-      type: 'cause',
-      title: 'Raciocínio ambiental municipal',
-      subtitle: 'Do impacto ao controle administrativo e judicial.',
-      flow: ['Atividade impactante', 'Licença/estudo', 'Condicionantes', 'Fiscalização', 'Sanção/TAC/Ação'],
+      type: 'decision',
+      title: 'Raciocínio penal aplicado à Administração',
+      subtitle: 'Separe improbidade, ilícito administrativo e crime contra a Administração.',
+      flow: ['Fato investigado', 'Tipicidade', 'Dolo/culpa', 'Prova', 'Processo', 'Providência'],
       decision: [
-        { q: 'A atividade tem impacto ambiental?', yes: 'Exigir controle/licenciamento', no: 'Fiscalização ordinária' },
-        { q: 'Descumpriu condicionante?', yes: 'Sanção, embargo ou TAC', no: 'Monitoramento' }
+        { q: 'A conduta é típica?', yes: 'Avançar para autoria e elemento subjetivo', no: 'Pode haver só ilícito administrativo/civil' },
+        { q: 'Há prova mínima?', yes: 'Medida processual cabível', no: 'Diligenciar/investigar' },
+        { q: 'Envolve agente público?', yes: 'Ver crimes funcionais', no: 'Ver tipo penal comum ou tributário' }
       ],
       compare: [
-        { label: 'Prevenção', text: 'Risco conhecido exige ação antecipada.' },
-        { label: 'Precaução', text: 'Incerteza relevante recomenda cautela.' },
-        { label: 'Responsabilidade', text: 'Pode ser civil, administrativa e penal.' }
+        { label: 'Crime', text: 'Exige tipicidade e prova penal.' },
+        { label: 'PAD', text: 'Apura infração funcional.' },
+        { label: 'Improbidade', text: 'Apura ilícito civil-administrativo com requisitos próprios.' }
       ],
-      caseSteps: ['Empreendimento chega ao Município', 'Órgão exige documentos', 'Fiscalização verifica impacto', 'Procuradoria orienta providência'],
-      warning: 'Pegadinha: dano ambiental pode gerar responsabilidades independentes.'
+      caseSteps: ['Notícia de irregularidade', 'Procuradoria qualifica o fato', 'Avalia prova', 'Orienta encaminhamento adequado'],
+      warning: 'Pegadinha: irregularidade administrativa nem sempre é crime.'
     };
   }
 
-  if (includesAny(allText, ['plano diretor', 'zoneamento', 'uso do solo', 'regularização fundiária', 'urbanístico'])) {
+  if (subjectId === 'trabalho-processo-trabalho') {
+    return {
+      type: 'flow',
+      title: 'Risco trabalhista municipal',
+      subtitle: 'Da contratação/fiscalização ao processo trabalhista.',
+      flow: ['Contrato/terceirização', 'Fiscalização', 'Verbas/obrigações', 'Reclamação', 'Defesa', 'Execução'],
+      decision: [
+        { q: 'Há vínculo direto com o Município?', yes: 'Ver regime jurídico e competência', no: 'Analisar terceirização/fiscalização' },
+        { q: 'O Município fiscalizou o contrato?', yes: 'Defesa mais forte', no: 'Risco de responsabilização' },
+        { q: 'A verba é comprovada?', yes: 'Avaliar acordo/defesa', no: 'Impugnar prova' }
+      ],
+      compare: [
+        { label: 'Servidor estatutário', text: 'Regime administrativo/local.' },
+        { label: 'Empregado público', text: 'CLT e regras constitucionais.' },
+        { label: 'Terceirizado', text: 'Fiscalização contratual é decisiva.' }
+      ],
+      caseSteps: ['Contrato terceirizado é executado', 'Fiscalização registra ocorrências', 'Ação trabalhista surge', 'Procuradoria monta defesa'],
+      warning: 'Pegadinha: terceirização lícita não elimina o dever de fiscalizar.'
+    };
+  }
+
+  if (subjectId === 'direito-urbanistico') {
     return {
       type: 'mind',
       title: 'Política urbana municipal',
@@ -195,7 +264,8 @@ function buildVisualModel(subject, topic) {
       flow: ['Política urbana', 'Plano Diretor', 'Zoneamento', 'Uso do solo', 'Fiscalização', 'Sanção'],
       decision: [
         { q: 'O imóvel cumpre função social?', yes: 'Regularidade urbanística', no: 'Instrumentos e sanções' },
-        { q: 'A ocupação respeita zoneamento?', yes: 'Licenciamento possível', no: 'Embargo/adequação' }
+        { q: 'A ocupação respeita zoneamento?', yes: 'Licenciamento possível', no: 'Embargo/adequação' },
+        { q: 'Há risco coletivo?', yes: 'Medida urgente/fiscalização', no: 'Instrução ordinária' }
       ],
       compare: [
         { label: 'Plano Diretor', text: 'Organiza política urbana.' },
@@ -207,7 +277,28 @@ function buildVisualModel(subject, topic) {
     };
   }
 
-  if (includesAny(allText, ['interpretação', 'texto', 'coesão', 'pontuação', 'crase', 'português', 'redação'])) {
+  if (subjectId === 'direito-ambiental') {
+    return {
+      type: 'cause',
+      title: 'Raciocínio ambiental municipal',
+      subtitle: 'Do impacto ao controle administrativo e judicial.',
+      flow: ['Atividade impactante', 'Licença/estudo', 'Condicionantes', 'Fiscalização', 'Sanção/TAC/Ação'],
+      decision: [
+        { q: 'A atividade tem impacto ambiental?', yes: 'Exigir controle/licenciamento', no: 'Fiscalização ordinária' },
+        { q: 'Descumpriu condicionante?', yes: 'Sanção, embargo ou TAC', no: 'Monitoramento' },
+        { q: 'Há dano ambiental?', yes: 'Reparação e responsabilização', no: 'Medida preventiva' }
+      ],
+      compare: [
+        { label: 'Prevenção', text: 'Risco conhecido exige ação antecipada.' },
+        { label: 'Precaução', text: 'Incerteza relevante recomenda cautela.' },
+        { label: 'Responsabilidade', text: 'Pode ser civil, administrativa e penal.' }
+      ],
+      caseSteps: ['Empreendimento chega ao Município', 'Órgão exige documentos', 'Fiscalização verifica impacto', 'Procuradoria orienta providência'],
+      warning: 'Pegadinha: dano ambiental pode gerar responsabilidades independentes.'
+    };
+  }
+
+  if (subjectId === 'lingua-portuguesa') {
     return {
       type: 'decision',
       title: 'Interpretação objetiva de texto',
@@ -215,7 +306,8 @@ function buildVisualModel(subject, topic) {
       flow: ['Comando', 'Tese do texto', 'Palavra-chave', 'Inferência', 'Alternativas', 'Resposta'],
       decision: [
         { q: 'A alternativa extrapola o texto?', yes: 'Eliminar', no: 'Comparar com a tese' },
-        { q: 'Há palavra extrema?', yes: 'Desconfiar e conferir contexto', no: 'Avaliar aderência' }
+        { q: 'Há palavra extrema?', yes: 'Desconfiar e conferir contexto', no: 'Avaliar aderência' },
+        { q: 'A resposta contradiz o comando?', yes: 'Eliminar', no: 'Conferir precisão' }
       ],
       compare: [
         { label: 'Literal', text: 'Está expressamente no texto.' },
