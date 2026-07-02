@@ -4298,3 +4298,90 @@ img, svg, canvas, video { max-width: 100%; }
   .apostila-section p { font-size: .96rem; line-height: 1.65; }
   .apostila-mini-index span { width: 100%; text-align: center; }
 }
+
+/* Hotfix 39K — Discursivas legíveis no celular e em telas estreitas */
+.discursive-page,
+.discursive-page * { box-sizing: border-box; }
+.discursive-page { width: 100%; max-width: 100%; overflow-x: hidden; }
+.discursive-page .card,
+.discursive-workbench,
+.answer-editor-panel,
+.rubric-panel { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+.discursive-page .wide-card { width: 100%; min-width: 0; }
+.discursive-layout,
+.templates-layout { grid-template-columns: minmax(260px, 320px) minmax(0, 1fr); }
+.discursive-editor-grid { grid-template-columns: minmax(0, 1fr) minmax(300px, 340px); }
+.discursive-analysis-grid,
+.discursive-support-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rubric-item { min-width: 0; }
+.rubric-item span,
+.rubric-item strong,
+.clean-list li,
+.metric-pills span { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 1400px) {
+  .discursive-layout,
+  .templates-layout { grid-template-columns: 1fr; }
+  .discursive-editor-grid,
+  .discursive-analysis-grid,
+  .discursive-support-grid,
+  .case-prompt-grid,
+  .criterion-results,
+  .result-grid { grid-template-columns: 1fr; }
+  .discursive-layout > .card:first-child .case-list,
+  .templates-layout > .card:first-child .case-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-snap-type: x mandatory;
+  }
+  .discursive-layout > .card:first-child .case-selector,
+  .templates-layout > .card:first-child .case-selector {
+    min-width: 260px;
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .discursive-page { gap: 14px; }
+  .discursive-hero.hero-panel,
+  .discursive-hero { grid-template-columns: 1fr !important; padding: 18px; border-radius: 24px; }
+  .discursive-hero h1 { font-size: clamp(2rem, 13vw, 3rem); line-height: .95; }
+  .discursive-score-orb { min-height: auto; border-radius: 24px; padding: 16px; }
+  .discursive-score-orb strong { font-size: 2.5rem; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .stats-grid .card { padding: 14px; border-radius: 18px; }
+  .stat-value { font-size: 1.55rem; }
+  .discursive-workbench.card,
+  .discursive-page .card { padding: 14px; border-radius: 22px; }
+  .section-heading { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .section-heading .btn { width: 100%; }
+  .case-prompt-grid article,
+  .answer-editor-panel,
+  .rubric-panel { padding: 14px; border-radius: 20px; }
+  .editor-toolbar { display: grid; grid-template-columns: 1fr; gap: 6px; font-size: .9rem; line-height: 1.35; }
+  .answer-editor-panel textarea { min-height: 320px; padding: 14px; border-radius: 18px; font-size: 1rem; }
+  .editor-actions,
+  .rubric-mode-actions { display: grid; grid-template-columns: 1fr; }
+  .editor-actions .btn,
+  .rubric-mode-actions .btn { width: 100%; }
+  .rubric-list { gap: 8px; }
+  .rubric-item { grid-template-columns: 22px minmax(0, 1fr); align-items: start; padding: 12px; }
+  .rubric-item > strong { grid-column: 2; justify-self: start; font-size: .95rem; }
+  .rubric-item span { line-height: 1.25; }
+  .rubric-item small { font-size: .74rem; line-height: 1.35; }
+  .discursive-analysis-grid .card,
+  .discursive-support-grid .card,
+  .discursive-result.card { padding: 14px; }
+  .metric-pills { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .metric-pills span { border-radius: 14px; text-align: left; }
+  .clean-list { padding-left: 16px; font-size: .95rem; }
+  .criterion-card > div { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 420px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .discursive-layout > .card:first-child .case-selector,
+  .templates-layout > .card:first-child .case-selector { min-width: 225px; }
+}
