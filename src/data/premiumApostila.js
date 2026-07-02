@@ -1,11 +1,11 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39F',
+  phase: 'Fase 39G',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal + Penal/Processo Penal — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal + Penal/Processo Penal + Trabalho/Processo do Trabalho — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39G — Trabalho e Processo do Trabalho Premium',
-    '39H — Direito Urbanístico Premium'
+    '39H — Direito Urbanístico Premium',
+    '39I — Direito Ambiental Premium'
   ]
 };
 
@@ -2640,6 +2640,209 @@ export const premiumApostilaSubjects = [
         summary: 'Nulidades e recursos exigem técnica: vício, prejuízo, cabimento e providência. Para Procurador, esse bloco ajuda a reconhecer ilegalidades processuais sem perder de vista o interesse público e a defesa do Município vítima.',
         checklist: ['Sei nulidade e prejuízo.', 'Sei cabimento básico de HC.', 'Sei revisão criminal.', 'Sei diferença entre recurso e ação autônoma.', 'Consigo analisar prova ilícita e decisão sem fundamentação.'],
         nextTopic: 'Próxima fase: Trabalho e Processo do Trabalho Premium'
+      }
+    ]
+  }
+  ,
+  {
+    id: 'direito-trabalho-processo-trabalho',
+    subject: 'Direito do Trabalho e Direito Processual do Trabalho',
+    status: '39G concluída',
+    priority: 'Alta',
+    overview: 'Apostila premium voltada ao edital de Procurador Municipal, com foco em relação de trabalho e emprego, contrato de trabalho, jornada, remuneração, extinção contratual, estabilidade, terceirização, Administração Pública, responsabilidade trabalhista, direito coletivo e Processo do Trabalho aplicado à defesa do Município.',
+    lawBase: ['CF/88, arts. 7º, 8º, 37, 39, 114 e 173', 'CLT — Decreto-Lei nº 5.452/1943', 'Lei nº 6.019/1974, quando estudada terceirização/trabalho temporário', 'CPC aplicado subsidiária e supletivamente ao Processo do Trabalho quando compatível', 'Jurisprudência do STF e TST sobre terceirização, concurso público e responsabilidade subsidiária'],
+    topics: [
+      {
+        id: 'relacao-trabalho-emprego',
+        level: 'básico',
+        title: 'Relação de trabalho, relação de emprego, empregado, empregador e requisitos do vínculo',
+        whatIs: 'Relação de trabalho é gênero amplo que abrange várias formas de prestação humana de serviços. Relação de emprego é espécie mais protegida, caracterizada pela presença simultânea dos requisitos clássicos: pessoa física, pessoalidade, não eventualidade, onerosidade e subordinação.',
+        purpose: 'Serve para definir qual regime jurídico se aplica. Se houver vínculo de emprego, incidem direitos da CLT e da Constituição. Para Procurador Municipal, o tema aparece quando se discute terceirização, contratação irregular, cooperativas, autônomos, estagiários, temporários e responsabilidade do Município como tomador.',
+        plainExplanation: [
+          'Nem toda pessoa que trabalha para alguém é empregada. Um advogado contratado para parecer específico, um médico plantonista eventual, uma empresa terceirizada e um servidor estatutário podem prestar trabalho sem vínculo celetista direto. O ponto central é verificar como o serviço é prestado na realidade.',
+          'A CLT considera empregado a pessoa física que presta serviços de natureza não eventual a empregador, sob dependência e mediante salário. Por isso, a prova costuma cobrar os requisitos juntos: se faltar subordinação, por exemplo, pode não haver vínculo de emprego; se o serviço é eventual e sem integração à rotina, também muda a análise.',
+          'Na Administração Pública, existe camada extra: vínculo com ente público depende de concurso para cargo ou emprego público, salvo exceções constitucionais. Contratação irregular não gera automaticamente vínculo efetivo com o Município, mas pode gerar efeitos indenizatórios e dever de pagar verbas pelo trabalho prestado, conforme a situação.'
+        ],
+        examTechnical: 'Para prova, memorize os cinco requisitos do vínculo empregatício e aplique a primazia da realidade. A banca pode apresentar contrato “autônomo” que na prática tem jornada fixa, ordens diárias, pessoalidade e salário. Também pode perguntar por que contratação sem concurso não gera vínculo permanente com Administração Pública.',
+        cityExample: 'O Município contrata pessoa física como “prestador autônomo” por anos, com jornada diária, subordinação a chefe, ordens e pagamento mensal. O Procurador deve avaliar risco trabalhista, nulidade da contratação, eventual dever de pagamento de verbas e necessidade de corrigir a forma de contratação por concurso, processo seletivo ou licitação, conforme o caso.',
+        legalBase: ['CF/88, art. 7º', 'CF/88, art. 37, II e IX', 'CLT, arts. 2º e 3º', 'CLT, art. 9º'],
+        dryLaw: ['CF/88, arts. 7º e 37', 'CLT, arts. 2º, 3º, 9º e 442'],
+        jurisprudence: ['A jurisprudência trabalhista aplica a primazia da realidade para reconhecer a natureza real da relação, independentemente do nome dado ao contrato.', 'No setor público, a exigência constitucional de concurso impede formação de vínculo efetivo irregular com a Administração, sem afastar análise de efeitos patrimoniais pelo trabalho prestado.'],
+        objectiveCharge: ['Requisitos do vínculo de emprego.', 'Diferença entre trabalho e emprego.', 'Primazia da realidade.', 'Empregado x autônomo x eventual x estagiário.', 'Contratação irregular pela Administração Pública.'],
+        discursiveCharge: 'Pode cair como parecer sobre prestador contratado irregularmente pelo Município, risco de vínculo, terceirização fraudulenta ou medidas preventivas para reduzir passivo trabalhista.',
+        traps: ['Contrato escrito de autônomo não impede vínculo se a realidade demonstrar subordinação.', 'Servidor estatutário não é empregado celetista.', 'Contratação sem concurso não transforma contratado em servidor efetivo.', 'Pejotização fraudulenta pode ser desconsiderada.', 'Estágio exige requisitos legais; sem eles, vira risco trabalhista.'],
+        differences: ['Relação de trabalho x relação de emprego.', 'Empregado x autônomo.', 'Empregado x servidor estatutário.', 'Terceirizado x empregado direto.', 'Trabalho eventual x trabalho não eventual.'],
+        commonMistakes: ['Decorar requisitos sem aplicá-los ao caso.', 'Achar que qualquer prestação contínua ao Município gera cargo público.', 'Ignorar a exigência de concurso.', 'Confundir subordinação técnica com mera fiscalização contratual.'],
+        miniCase: 'Empresa terceirizada aloca trabalhador em unidade municipal. Se o Município apenas fiscaliza resultado do contrato, isso não é subordinação direta. Mas se chefe municipal dá ordens pessoais, controla férias e pune o trabalhador, cresce o risco de fraude/intermediação irregular.',
+        activeQuestions: ['Quem dá ordens diretas?', 'A prestação é pessoal?', 'Há pagamento habitual?', 'Há inserção na rotina administrativa?', 'Existe concurso, licitação ou contratação temporária regular?'],
+        flashcards: [
+          { front: 'Quais são os requisitos do vínculo de emprego?', back: 'Pessoa física, pessoalidade, não eventualidade, onerosidade e subordinação.' },
+          { front: 'O nome do contrato decide se há vínculo?', back: 'Não. Vale a primazia da realidade.' },
+          { front: 'Contratação sem concurso gera cargo efetivo?', back: 'Não. A Administração Pública depende de concurso, ressalvadas hipóteses constitucionais.' }
+        ],
+        summary: 'Relação de emprego exige requisitos concretos. Para Procurador, o raciocínio é separar contrato regular, terceirização lícita, contratação temporária e fraude, sempre considerando concurso público e primazia da realidade.',
+        checklist: ['Sei os requisitos do vínculo.', 'Sei diferenciar empregado, autônomo, eventual e servidor.', 'Sei aplicar primazia da realidade.', 'Sei os riscos da contratação irregular municipal.', 'Consigo escrever parecer preventivo sobre vínculo.'],
+        nextTopic: 'Contrato de trabalho, alteração, suspensão e interrupção'
+      },
+      {
+        id: 'contrato-trabalho-alteracao-suspensao',
+        level: 'intermediário',
+        title: 'Contrato de trabalho: formação, alteração, suspensão, interrupção e poderes do empregador',
+        whatIs: 'Contrato de trabalho é o ajuste, expresso ou tácito, pelo qual uma pessoa física presta serviços com requisitos de emprego a um empregador. Pode sofrer alterações, suspensão ou interrupção, desde que respeitados limites legais e proteção ao trabalhador.',
+        purpose: 'Serve para organizar direitos e deveres durante a relação laboral. Para o Município, importa em empresas públicas, sociedades de economia mista, contratos celetistas autorizados e fiscalização de terceirizados.',
+        plainExplanation: [
+          'O contrato de trabalho pode nascer por escrito, verbalmente ou pela própria prática. O mais importante é a realidade da prestação. A CLT limita alterações prejudiciais: em regra, mudança contratual exige mútuo consentimento e não pode causar prejuízo direto ou indireto ao empregado.',
+          'Suspensão e interrupção são diferentes. Na interrupção, o empregado não trabalha, mas o tempo conta e há pagamento de salário em várias hipóteses. Na suspensão, em regra, não há trabalho nem salário, e o tempo pode não contar, salvo exceções legais.',
+          'O empregador possui poder diretivo, regulamentar, fiscalizatório e disciplinar. Porém, esses poderes não são absolutos. Devem respeitar dignidade, intimidade, proporcionalidade, não discriminação e devido processo nas punições.'
+        ],
+        examTechnical: 'A banca cobra alteração contratual lesiva, jus variandi, transferência, suspensão/interrupção e poder disciplinar. Para Procurador, conecte com compliance público: regulamentos claros, controle de jornada, fiscalização proporcional e prevenção de assédio moral.',
+        cityExample: 'Empresa pública municipal muda unilateralmente empregados de setor, aumentando carga e reduzindo gratificação sem base legal/contratual. O parecer deve verificar se houve alteração prejudicial, direito adquirido, norma coletiva, regulamento interno e risco de reclamatória.',
+        legalBase: ['CLT, arts. 442, 444, 468 e 469', 'CF/88, art. 7º', 'CF/88, art. 37, caput, quando empregador integra Administração Pública'],
+        dryLaw: ['CLT, arts. 442 a 456', 'CLT, arts. 468 e 469', 'CF/88, art. 7º'],
+        jurisprudence: ['A alteração contratual prejudicial tende a ser invalidada quando viola proteção trabalhista e boa-fé.', 'Poder disciplinar deve observar proporcionalidade e imediatidade, evitando punição arbitrária.'],
+        objectiveCharge: ['Alteração contratual lesiva.', 'Transferência.', 'Suspensão x interrupção.', 'Poder diretivo e disciplinar.', 'Contrato expresso e tácito.'],
+        discursiveCharge: 'Pode cair em parecer sobre mudança unilateral de jornada, transferência, punição, assédio, regulamento interno ou pagamento de gratificação.',
+        traps: ['Mútuo consentimento não valida alteração prejudicial.', 'Transferência provisória pode exigir adicional em hipóteses legais.', 'Advertência, suspensão e justa causa exigem proporcionalidade.', 'Poder diretivo não permite humilhação ou abuso.'],
+        differences: ['Suspensão x interrupção.', 'Alteração lícita x alteração lesiva.', 'Poder diretivo x assédio moral.', 'Transferência provisória x definitiva.', 'Regulamento interno x contrato individual.'],
+        commonMistakes: ['Confundir suspensão com interrupção.', 'Achar que consentimento do empregado sempre valida perda de direito.', 'Ignorar norma coletiva.', 'Não documentar motivos de punição.'],
+        miniCase: 'Empregado celetista de entidade municipal é suspenso por 10 dias sem descrição clara da falta. O risco é nulidade da punição por ausência de motivação, proporcionalidade e prova.',
+        activeQuestions: ['A alteração prejudica o trabalhador?', 'Houve consentimento real?', 'Há previsão legal ou coletiva?', 'É suspensão ou interrupção?', 'A punição é proporcional?'],
+        flashcards: [
+          { front: 'Alteração contratual prejudicial é válida?', back: 'Em regra, não, mesmo com consentimento se resultar prejuízo direto ou indireto.' },
+          { front: 'Suspensão tem salário?', back: 'Em regra, não; interrupção costuma preservar salário em hipóteses legais.' },
+          { front: 'Poder disciplinar é ilimitado?', back: 'Não. Exige proporcionalidade, imediatidade, prova e respeito à dignidade.' }
+        ],
+        summary: 'Contrato de trabalho é protegido contra alteração prejudicial. Em prova, diferencie suspensão/interrupção e aplique limites ao poder diretivo. Para Município, o foco é reduzir passivo e agir com motivação e documentação.',
+        checklist: ['Sei contrato expresso, verbal e tácito.', 'Sei alteração contratual lesiva.', 'Sei suspensão e interrupção.', 'Sei limites do poder disciplinar.', 'Consigo orientar órgão municipal empregador.'],
+        nextTopic: 'Jornada, descanso, salário e verbas trabalhistas'
+      },
+      {
+        id: 'jornada-remuneracao-verbas',
+        level: 'intermediário',
+        title: 'Jornada, descanso, salário, remuneração e verbas trabalhistas',
+        whatIs: 'É o conjunto de regras sobre duração do trabalho, horas extras, intervalos, repouso semanal, férias, salário, remuneração, adicionais, gratificações e demais parcelas de natureza trabalhista.',
+        purpose: 'Serve para proteger saúde, previsibilidade econômica e equilíbrio contratual. Para Procurador, é essencial para analisar passivo trabalhista, contratos terceirizados, folhas de pagamento de entidades municipais e risco de condenações.',
+        plainExplanation: [
+          'Jornada é tempo em que o empregado está à disposição do empregador. A Constituição prevê limites gerais e a CLT detalha controle, compensação, banco de horas, intervalos e adicionais. Erro de controle de jornada é uma das maiores fontes de condenação trabalhista.',
+          'Salário é contraprestação pelo trabalho. Remuneração é conceito mais amplo, incluindo salário e certas parcelas recebidas em razão do contrato. A natureza jurídica da verba importa porque define reflexos em férias, 13º, FGTS e contribuições.',
+          'Na terceirização municipal, o Município não paga diretamente salário do terceirizado, mas deve fiscalizar o contrato. Falha de fiscalização pode gerar discussão de responsabilidade subsidiária, especialmente quando há inadimplemento da prestadora.'
+        ],
+        examTechnical: 'Estude jornada normal, horas extras, adicional noturno, intervalos, descanso semanal remunerado, férias, 13º, FGTS, salário utilidade, adicionais e reflexos. Em prova municipal, relacione com fiscalização de contratos e controle de ponto.',
+        cityExample: 'Vigilantes terceirizados de prédio municipal alegam ausência de pagamento de horas extras. O Município deve comprovar fiscalização: controle de frequência, notas fiscais, comprovantes trabalhistas, advertências à contratada e glosas quando necessárias.',
+        legalBase: ['CF/88, art. 7º', 'CLT, regras de duração do trabalho, salário e férias', 'Lei nº 8.036/1990 sobre FGTS, quando aplicável'],
+        dryLaw: ['CF/88, art. 7º, incisos sobre jornada, descanso, férias e salário', 'CLT, arts. 58 a 75', 'CLT, arts. 76 a 145, conforme o tópico estudado'],
+        jurisprudence: ['A prova de jornada pode envolver cartões de ponto, testemunhas e presunções conforme o caso.', 'Em terceirização, a fiscalização efetiva do contrato é elemento central para afastar responsabilidade do ente público.'],
+        objectiveCharge: ['Horas extras.', 'Intervalos.', 'Adicional noturno.', 'Férias.', '13º salário.', 'Salário x remuneração.', 'Reflexos trabalhistas.'],
+        discursiveCharge: 'Pode cair como parecer preventivo de fiscalização de contrato terceirizado ou análise de reclamatória trabalhista envolvendo jornada e verbas inadimplidas por empresa contratada.',
+        traps: ['Remuneração não é exatamente igual a salário.', 'Verba indenizatória e salarial têm efeitos diferentes.', 'Controle de ponto frágil aumenta risco.', 'Fiscalização formal sem prova real pode ser insuficiente.', 'Banco de horas exige requisitos legais/negociais.'],
+        differences: ['Salário x remuneração.', 'Verba salarial x indenizatória.', 'Hora extra x compensação.', 'Intervalo intrajornada x interjornada.', 'Fiscalização contratual x subordinação direta.'],
+        commonMistakes: ['Não olhar reflexos.', 'Ignorar cartões de ponto.', 'Achar que terceirização elimina qualquer risco público.', 'Confundir adicional com gratificação.', 'Esquecer descanso semanal remunerado.'],
+        miniCase: 'Empresa terceirizada deixa de pagar 13º e férias. Se o Município não prova fiscalização efetiva, pode enfrentar pedido de responsabilidade subsidiária. O parecer deve orientar retenção de pagamento, notificação e eventual rescisão contratual.',
+        activeQuestions: ['Qual verba foi inadimplida?', 'Há controle de jornada confiável?', 'A verba tem natureza salarial?', 'O Município fiscalizou?', 'Há prova documental suficiente?'],
+        flashcards: [
+          { front: 'Qual o limite constitucional geral de jornada?', back: 'Em regra, 8 horas diárias e 44 semanais, salvo regimes especiais e compensações válidas.' },
+          { front: 'Salário e remuneração são sinônimos?', back: 'Não. Remuneração é conceito mais amplo.' },
+          { front: 'Fiscalizar contrato terceirizado gera vínculo direto?', back: 'Fiscalizar o contrato não é subordinar pessoalmente; é dever do tomador público.' }
+        ],
+        summary: 'Jornada e verbas são núcleo de passivo trabalhista. Para Procurador Municipal, a chave é prova, controle, fiscalização e classificação correta das parcelas.',
+        checklist: ['Sei regras gerais de jornada.', 'Sei salário e remuneração.', 'Sei principais verbas.', 'Sei fiscalizar terceirização.', 'Consigo estruturar defesa em caso de horas extras.'],
+        nextTopic: 'Extinção do contrato, estabilidade e garantias'
+      },
+      {
+        id: 'extincao-estabilidade-garantias',
+        level: 'intermediário',
+        title: 'Extinção do contrato de trabalho, justa causa, estabilidade e garantias provisórias',
+        whatIs: 'É o estudo das formas de encerramento do contrato de trabalho e das situações em que a dispensa é limitada por garantia provisória, estabilidade ou proteção legal.',
+        purpose: 'Serve para calcular verbas rescisórias, evitar dispensas ilegais e orientar entidades municipais celetistas ou contratos terceirizados em situações sensíveis.',
+        plainExplanation: [
+          'O contrato pode terminar por pedido de demissão, dispensa sem justa causa, justa causa, acordo, término de prazo, rescisão indireta ou outras hipóteses. Cada modalidade gera efeitos financeiros distintos. A justa causa é a punição máxima e exige prova robusta, gravidade, proporcionalidade e imediatidade.',
+          'Estabilidade e garantias provisórias limitam a dispensa em situações como gestação, acidente de trabalho e representação sindical/CIPA, conforme a legislação aplicável. A banca cobra muito a ideia de que estabilidade não é privilégio pessoal: é proteção ligada a valor jurídico específico.',
+          'Na Administração Pública, empregados de empresas públicas e sociedades de economia mista não se confundem com servidores estatutários. Há regras próprias, mas dispensas podem exigir motivação conforme entendimento aplicável, especialmente em empresas públicas e sociedades de economia mista prestadoras de serviço público ou conforme jurisprudência sobre motivação.'
+        ],
+        examTechnical: 'Foque em modalidades de rescisão, verbas, justa causa, rescisão indireta, aviso prévio, FGTS, estabilidade gestante, acidentária, dirigente sindical e CIPA. Em contexto público, estude concurso, motivação, empregados públicos e diferenças com regime estatutário.',
+        cityExample: 'Empregada pública municipal gestante é dispensada sem análise da garantia. O parecer deve avaliar reintegração ou indenização substitutiva, risco processual e adequação da conduta administrativa.',
+        legalBase: ['CF/88, art. 7º', 'CLT, arts. 482 e 483', 'ADCT, art. 10, II, b, quando estudada gestante', 'Lei nº 8.036/1990 sobre FGTS'],
+        dryLaw: ['CLT, arts. 477, 482 e 483', 'CF/88, art. 7º', 'ADCT, art. 10, II, b'],
+        jurisprudence: ['A justa causa exige prova clara da falta grave e proporcionalidade.', 'Garantia gestante é tema consolidado na jurisprudência trabalhista, inclusive com foco na proteção objetiva da maternidade.'],
+        objectiveCharge: ['Justa causa.', 'Rescisão indireta.', 'Aviso prévio.', 'Verbas rescisórias.', 'Estabilidade gestante e acidentária.', 'Empregado público.'],
+        discursiveCharge: 'Pode cair em parecer sobre dispensa de empregado público, gestante, empregado acidentado, justa causa mal documentada ou rescisão indireta por atraso reiterado de salário em empresa municipal.',
+        traps: ['Justa causa não se presume.', 'Falta antiga tolerada pode perder imediatidade.', 'Gestante pode ter proteção ainda que empregador desconheça gravidez, conforme entendimento consolidado.', 'Estabilidade não significa impossibilidade absoluta de qualquer ruptura em todos os casos.', 'Servidor estatutário e empregado público têm regimes diferentes.'],
+        differences: ['Justa causa x dispensa sem justa causa.', 'Rescisão indireta x pedido de demissão.', 'Estabilidade x garantia provisória.', 'Servidor estatutário x empregado público.', 'Reintegração x indenização substitutiva.'],
+        commonMistakes: ['Aplicar regra celetista a servidor estatutário sem conferir regime.', 'Punir com justa causa sem prova.', 'Não calcular reflexos rescisórios.', 'Dispensar empregado protegido.', 'Ignorar motivação em contexto público.'],
+        miniCase: 'Empregado de fundação municipal é dispensado uma semana após retornar de afastamento por acidente de trabalho. É necessário checar estabilidade acidentária, nexo e documentação previdenciária antes de sustentar a dispensa.',
+        activeQuestions: ['Qual modalidade de rescisão?', 'Quais verbas são devidas?', 'Há garantia provisória?', 'A justa causa está provada?', 'O empregador integra Administração Pública?'],
+        flashcards: [
+          { front: 'Justa causa exige prova?', back: 'Sim, prova robusta, gravidade, proporcionalidade e imediatidade.' },
+          { front: 'Rescisão indireta é o quê?', back: 'É a ruptura por falta grave do empregador.' },
+          { front: 'Empregado público é servidor estatutário?', back: 'Não. Empregado público é celetista, embora submetido a regras constitucionais de Administração Pública.' }
+        ],
+        summary: 'Extinção contratual exige identificar modalidade, verbas e proteções. Em contexto municipal, a análise mistura CLT com princípios constitucionais da Administração Pública.',
+        checklist: ['Sei modalidades de extinção.', 'Sei justa causa e rescisão indireta.', 'Sei estabilidade gestante/acidentária.', 'Sei diferenças com servidor estatutário.', 'Consigo emitir parecer sobre dispensa.'],
+        nextTopic: 'Terceirização, Administração Pública e responsabilidade trabalhista'
+      },
+      {
+        id: 'terceirizacao-administracao-publica',
+        level: 'avançado',
+        title: 'Terceirização, Administração Pública, fiscalização contratual e responsabilidade trabalhista do Município',
+        whatIs: 'Terceirização é contratação de empresa especializada para prestar serviços. Na Administração Pública, deve ser feita por licitação/contratação regular, com fiscalização. Responsabilidade trabalhista discute se o ente público pode responder por débitos da empresa contratada.',
+        purpose: 'Serve para proteger o Município contra passivos trabalhistas e garantir prestação contínua de serviços como limpeza, vigilância, portaria, manutenção, transporte e tecnologia, sem fraude à exigência de concurso público.',
+        plainExplanation: [
+          'Terceirizar não é contratar pessoas diretamente por empresa interposta para burlar concurso. O contrato deve ser com empresa prestadora, que organiza empregados, paga salários e assume obrigações trabalhistas. O Município fiscaliza o contrato, mas não deve exercer subordinação direta sobre cada trabalhador.',
+          'O grande risco prático é a empresa não pagar salários, FGTS, férias ou verbas rescisórias. Se o Município não fiscaliza, pode surgir discussão de responsabilidade subsidiária. A defesa municipal depende de documentos: designação de fiscal, relatórios, comprovantes, retenções, notificações, glosas e medidas contra inadimplemento.',
+          'Para prova de Procurador, esse tema é ouro. Junta Direito do Trabalho, Licitações, Contratos Administrativos, Constitucional e responsabilidade do Estado. A resposta boa separa: terceirização lícita, ausência de vínculo direto com Administração, dever de fiscalização e prova concreta de fiscalização.'
+        ],
+        examTechnical: 'Domine terceirização lícita, ausência de vínculo direto com Administração por contratação irregular, responsabilidade subsidiária, culpa in vigilando, fiscalização contratual, ônus probatório conforme entendimento aplicado, contratos continuados e medidas administrativas de prevenção.',
+        cityExample: 'Empresa de limpeza contratada pelo Município atrasa salários. O Procurador orienta notificação, exigência de comprovantes, retenção cautelar conforme contrato/lei, pagamento direto se juridicamente previsto, rescisão, aplicação de sanção e documentação para futura defesa trabalhista.',
+        legalBase: ['CF/88, art. 37, II e XXI', 'Lei nº 14.133/2021 sobre contratação e fiscalização', 'Lei nº 6.019/1974 com alterações sobre terceirização/trabalho temporário', 'CLT e legislação trabalhista aplicável'],
+        dryLaw: ['CF/88, art. 37', 'Lei nº 14.133/2021 — gestão e fiscalização contratual', 'CLT, arts. 2º, 3º e 9º', 'Lei nº 6.019/1974'],
+        jurisprudence: ['A discussão de responsabilidade subsidiária do ente público exige análise da fiscalização contratual e da culpa administrativa, conforme orientação consolidada na jurisprudência constitucional e trabalhista.', 'A contratação irregular de trabalhador por empresa interposta não gera vínculo direto com órgão da Administração Pública, por força da exigência constitucional de concurso.'],
+        objectiveCharge: ['Terceirização lícita.', 'Vínculo com Administração Pública.', 'Culpa in vigilando.', 'Responsabilidade subsidiária.', 'Fiscalização de contrato.', 'Súmula 331/TST e entendimento do STF.'],
+        discursiveCharge: 'Muito provável em parecer: empresa terceirizada inadimplente, ação trabalhista contra Município, documentos de fiscalização, medidas de retenção e tese defensiva.',
+        traps: ['Fiscalizar contrato não é subordinar empregado terceirizado.', 'Ausência de vínculo direto não elimina discussão de responsabilidade subsidiária.', 'Responsabilidade do ente público não deve ser automática; exige análise de conduta/fiscalização.', 'Terceirização não pode fraudar concurso.', 'Contrato administrativo sem fiscal documentalmente atuante fragiliza a defesa.'],
+        differences: ['Tomador x empregador.', 'Fiscalização contratual x subordinação direta.', 'Responsabilidade automática x responsabilidade por falha de fiscalização.', 'Terceirização lícita x intermediação fraudulenta.', 'Sanção contratual x responsabilidade trabalhista.'],
+        commonMistakes: ['Achar que basta juntar contrato para afastar responsabilidade.', 'Não produzir relatórios de fiscalização.', 'Dar ordens diretas ao terceirizado.', 'Ignorar inadimplemento conhecido.', 'Confundir terceirização com contratação temporária.'],
+        miniCase: 'A empresa de portaria deixa de recolher FGTS por seis meses. Se o fiscal do contrato nunca exigiu comprovantes, a defesa do Município fica fraca. Se houve notificações, glosas e processo sancionador, a tese defensiva melhora.',
+        activeQuestions: ['Quem é empregador formal?', 'O Município fiscalizou?', 'Há relatórios e comprovantes?', 'Houve ordens diretas ao trabalhador?', 'Qual medida administrativa foi tomada diante do inadimplemento?'],
+        flashcards: [
+          { front: 'Terceirizado vira empregado do Município?', back: 'Não há vínculo direto com a Administração sem concurso, mas pode haver debate sobre responsabilidade subsidiária.' },
+          { front: 'O que é culpa in vigilando?', back: 'Falha no dever de fiscalizar o contrato.' },
+          { front: 'Qual prova ajuda a defesa municipal?', back: 'Relatórios de fiscalização, notificações, comprovantes trabalhistas, retenções/glosas e sanções documentadas.' }
+        ],
+        summary: 'Terceirização exige contrato regular e fiscalização real. Para Procurador, a tese central é mostrar que o Município não é empregador direto e que fiscalizou efetivamente a contratada.',
+        checklist: ['Sei terceirização lícita.', 'Sei ausência de vínculo direto com Administração.', 'Sei responsabilidade subsidiária.', 'Sei documentos de fiscalização.', 'Consigo montar tese defensiva municipal.'],
+        nextTopic: 'Direito coletivo e Processo do Trabalho'
+      },
+      {
+        id: 'direito-coletivo-processo-trabalho',
+        level: 'discursiva',
+        title: 'Direito coletivo, sindicatos, negociação coletiva e Processo do Trabalho aplicado ao Município',
+        whatIs: 'Direito coletivo regula sindicatos, negociação coletiva, greve e instrumentos coletivos. Processo do Trabalho organiza a solução judicial de conflitos trabalhistas, incluindo reclamação, audiência, provas, sentença, recursos e execução.',
+        purpose: 'Serve para compreender conflitos coletivos e defender o Município ou entidades municipais em ações trabalhistas. Também ajuda a lidar com greves, acordos coletivos, terceirização e execuções trabalhistas com impacto orçamentário.',
+        plainExplanation: [
+          'O Direito Coletivo olha para categorias, sindicatos e negociação. Convenções e acordos coletivos podem ajustar condições de trabalho dentro dos limites constitucionais e legais. No serviço público, a greve e a negociação têm particularidades, especialmente para servidores estatutários e serviços essenciais.',
+          'O Processo do Trabalho é mais simples e concentrado que o processo comum, mas tem técnica própria. A audiência é muito relevante: nela pode haver conciliação, defesa, depoimentos e instrução. A prova documental e testemunhal costuma decidir jornada, vínculo, assédio e verbas.',
+          'Para Procurador Municipal, o processo trabalhista exige estratégia: verificar competência, legitimidade, prescrição, documentos de fiscalização, impugnar pedidos líquidos, avaliar acordo, calcular impacto orçamentário e preservar teses recursais.'
+        ],
+        examTechnical: 'Estude Justiça do Trabalho, competência do art. 114 da CF, reclamação trabalhista, audiência, revelia, contestação, provas, sentença, recursos trabalhistas, execução, prescrição, negociação coletiva, sindicato, greve e aplicação subsidiária do CPC. Em prova, a banca cobra prazos, competência e peculiaridades do rito.',
+        cityExample: 'Município é incluído em reclamação de terceirizado como tomador. A defesa deve arguir ausência de vínculo direto, comprovar fiscalização, impugnar verbas sem prova, verificar prescrição e avaliar possibilidade de acordo se o risco estiver documentado.',
+        legalBase: ['CF/88, arts. 8º, 9º e 114', 'CLT — processo judiciário do trabalho', 'CPC aplicado subsidiariamente quando compatível', 'Lei nº 7.783/1989 sobre greve, quando pertinente'],
+        dryLaw: ['CF/88, arts. 8º, 9º e 114', 'CLT, arts. 643 e seguintes', 'CLT, recursos e execução trabalhista', 'CPC subsidiário conforme compatibilidade'],
+        jurisprudence: ['A competência da Justiça do Trabalho é definida pelo art. 114 da Constituição e por interpretação jurisprudencial sobre a natureza da relação discutida.', 'A negociação coletiva possui força constitucional, mas não pode eliminar direitos absolutamente indisponíveis sem observância dos limites jurídicos.'],
+        objectiveCharge: ['Competência da Justiça do Trabalho.', 'Audiência trabalhista.', 'Contestação e revelia.', 'Provas.', 'Recursos.', 'Execução.', 'Sindicatos e negociação coletiva.'],
+        discursiveCharge: 'Pode cair como defesa do Município em reclamação trabalhista de terceirizado, parecer sobre greve, análise de acordo coletivo ou estratégia para reduzir passivo em execução.',
+        traps: ['Nem toda relação com o Poder Público vai para Justiça do Trabalho; estatutários costumam ter outro regime jurisdicional.', 'Revelia contra ente público exige análise das peculiaridades aplicáveis.', 'Acordo coletivo não pode simplesmente afastar qualquer direito sem limites.', 'Greve no serviço público exige ponderação com continuidade de serviços essenciais.', 'Execução trabalhista pode gerar impacto financeiro relevante.'],
+        differences: ['Acordo coletivo x convenção coletiva.', 'Dissídio individual x coletivo.', 'Servidor estatutário x empregado público.', 'Prescrição bienal x quinquenal.', 'Recurso ordinário x recurso de revista.'],
+        commonMistakes: ['Confundir competência trabalhista com regime estatutário.', 'Não preparar documentos antes da audiência.', 'Ignorar prescrição.', 'Não impugnar cálculos.', 'Fazer acordo sem estimativa de risco e impacto orçamentário.'],
+        miniCase: 'Sindicato convoca paralisação de empregados de empresa pública municipal de saneamento. O Município deve avaliar serviço essencial, negociação, contingência mínima e eventual medida judicial, sem transformar o conflito coletivo em perseguição sindical.',
+        activeQuestions: ['Qual é o regime jurídico do trabalhador?', 'A Justiça do Trabalho é competente?', 'Há prescrição?', 'Quais provas documentais existem?', 'Qual tese defensiva reduz risco?'],
+        flashcards: [
+          { front: 'Qual artigo trata da competência da Justiça do Trabalho?', back: 'Art. 114 da Constituição Federal.' },
+          { front: 'Acordo coletivo e convenção coletiva são iguais?', back: 'Não. Acordo envolve sindicato profissional e empresa; convenção envolve sindicatos profissional e econômico.' },
+          { front: 'Processo trabalhista aceita CPC?', back: 'Sim, de forma subsidiária/supletiva quando houver compatibilidade e lacuna.' }
+        ],
+        summary: 'Direito coletivo e Processo do Trabalho completam a visão trabalhista. Para Procurador, o foco é competência, prova, prescrição, fiscalização, negociação e impacto financeiro.',
+        checklist: ['Sei competência da Justiça do Trabalho.', 'Sei noções de audiência e defesa.', 'Sei recursos básicos.', 'Sei negociação coletiva.', 'Consigo montar defesa municipal trabalhista.'],
+        nextTopic: 'Próxima fase: Direito Urbanístico Premium'
       }
     ]
   }
