@@ -1,10 +1,9 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39B',
+  phase: 'Fase 39C',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Direito Administrativo + Direito Constitucional — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Direito Administrativo + Direito Constitucional + Processo Civil e Direito Civil — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39C — Processo Civil e Direito Civil Premium',
     '39D — Tributário, Financeiro e Orçamentário Premium',
     '39E — Legislação Municipal Premium'
   ]
@@ -1067,6 +1066,338 @@ export const premiumApostilaSubjects = [
     }
   ]
 }
+,
+  {
+    id: 'processo-civil-direito-civil',
+    subject: 'Direito Processual Civil e Direito Civil',
+    status: '39C concluída',
+    priority: 'Crítica',
+    overview: 'Apostila premium para a atuação do Procurador Municipal em juízo e em parecer: normas fundamentais do CPC, jurisdição, competência, partes, atos processuais, tutelas, provas, sentença, recursos, precedentes, Fazenda Pública em juízo, execução, cumprimento de sentença, além de LINDB, pessoas, bens, fatos jurídicos, negócios jurídicos, prescrição, decadência, obrigações, contratos, responsabilidade civil, posse, propriedade e direitos reais.',
+    lawBase: ['Código de Processo Civil — Lei nº 13.105/2015', 'Código Civil — Lei nº 10.406/2002', 'LINDB — Decreto-Lei nº 4.657/1942', 'Constituição Federal, especialmente contraditório, ampla defesa, devido processo e Administração Pública', 'Lei nº 6.830/1980 como referência de execução fiscal quando estudada em conjunto com Tributário'],
+    topics: [
+      {
+        id: 'cpc-normas-fundamentais',
+        level: 'básico',
+        title: 'Normas fundamentais do Processo Civil, devido processo, contraditório, cooperação e boa-fé processual',
+        whatIs: 'São as regras e princípios que orientam todo o processo civil brasileiro. Elas dizem como o processo deve funcionar para ser justo, efetivo, contraditório, cooperativo e compatível com a Constituição.',
+        purpose: 'Servem para impedir processo-surpresa, decisões arbitrárias e formalismo inútil. Para o Procurador Municipal, orientam manifestações, defesas, recursos, cumprimento de decisões e atuação institucional ética.',
+        plainExplanation: [
+          'O processo não é apenas uma sequência de prazos. Ele é um método constitucional de solução de conflitos. Por isso, o CPC começa afirmando que o processo deve ser ordenado, disciplinado e interpretado conforme a Constituição. Isso significa que contraditório, ampla defesa, duração razoável, fundamentação das decisões e isonomia não são detalhes: são a base do jogo processual.',
+          'Contraditório não é só ser avisado. É poder influenciar a decisão. Uma decisão que usa fundamento não debatido pode violar a lógica do contraditório substancial. Boa-fé processual exige que as partes não criem incidentes artificiais, não omitam informação relevante e não abusem de faculdades processuais.',
+          'A cooperação processual não transforma adversários em parceiros românticos. Ela impõe que juiz e partes atuem para uma decisão de mérito justa e efetiva, sem armadilhas procedimentais desnecessárias.'
+        ],
+        examTechnical: 'Para prova, domine CPC arts. 1º a 12. A banca costuma cobrar contraditório substancial, vedação à decisão surpresa, ordem cronológica, primazia da decisão de mérito, boa-fé, cooperação e fundamentação. Em Procuradoria, use isso para sustentar nulidades, pedir saneamento, justificar complementação de documentos e combater decisões sem fundamentação adequada.',
+        cityExample: 'O Município é condenado com base em tese jurídica não debatida, sem intimação prévia. A Procuradoria pode alegar violação ao contraditório substancial e pedir anulação ou integração da decisão, demonstrando prejuízo à defesa.',
+        legalBase: ['CPC, arts. 1º a 12', 'CF/88, art. 5º, LIV e LV', 'CF/88, art. 93, IX'],
+        dryLaw: ['CPC, arts. 1º, 4º, 6º, 7º, 9º, 10 e 11', 'CF/88, art. 5º, LIV e LV', 'CF/88, art. 93, IX'],
+        jurisprudence: ['Decisões devem ser fundamentadas de forma adequada, enfrentando argumentos capazes de infirmar a conclusão adotada.', 'A vedação à decisão surpresa é uma das expressões do contraditório substancial no CPC de 2015.'],
+        objectiveCharge: ['Normas fundamentais do CPC.', 'Contraditório x ampla defesa.', 'Decisão surpresa.', 'Boa-fé processual.', 'Cooperação.', 'Primazia do julgamento de mérito.'],
+        discursiveCharge: 'Pode cair em parecer ou peça sobre nulidade processual, decisão sem fundamentação, indeferimento abrupto de prova ou sentença fundada em tese não discutida.',
+        traps: ['Contraditório não é mera ciência formal.', 'Boa-fé processual vale também para a Fazenda Pública.', 'Celeridade não autoriza atropelar defesa.', 'Fundamentação não é copiar norma sem aplicar ao caso.'],
+        differences: ['Contraditório formal x contraditório substancial.', 'Duração razoável x pressa processual.', 'Boa-fé subjetiva x boa-fé objetiva processual.', 'Cooperação x renúncia à defesa.'],
+        commonMistakes: ['Invocar nulidade sem demonstrar prejuízo.', 'Confundir cooperação com perda da combatividade processual.', 'Esquecer CPC art. 10 em decisões-surpresa.', 'Não pedir saneamento antes de alegar nulidade.'],
+        miniCase: 'Juiz extingue ação contra o Município por prescrição usando termo inicial nunca debatido. A Procuradoria pode apontar violação ao art. 10 do CPC e pedir manifestação prévia sobre o fundamento.',
+        activeQuestions: ['A parte teve chance real de influenciar a decisão?', 'Houve fundamento surpresa?', 'A decisão enfrentou argumentos relevantes?', 'A nulidade causou prejuízo?', 'O pedido favorece julgamento de mérito?'],
+        flashcards: [
+          { front: 'Contraditório substancial significa o quê?', back: 'Direito de ciência e de influência real sobre a decisão.' },
+          { front: 'O juiz pode decidir com fundamento não debatido?', back: 'Em regra, não; deve observar a vedação à decisão surpresa do CPC art. 10.' },
+          { front: 'Cooperação processual retira o dever de defesa da Fazenda?', back: 'Não. Impõe lealdade e busca de decisão de mérito, sem eliminar a defesa técnica.' }
+        ],
+        summary: 'Normas fundamentais são a Constituição dentro do processo civil. Para Procurador, elas servem para defender o Município com técnica e para evitar nulidades, decisões surpresa e decisões sem fundamentação.',
+        checklist: ['Sei explicar contraditório substancial.', 'Sei aplicar CPC art. 10.', 'Sei identificar decisão sem fundamentação.', 'Sei diferenciar cooperação e renúncia à defesa.', 'Consigo usar normas fundamentais em peça.'],
+        nextTopic: 'Jurisdição, ação, competência e sujeitos do processo'
+      },
+      {
+        id: 'jurisdicao-acao-competencia',
+        level: 'intermediário',
+        title: 'Jurisdição, ação, competência, partes, procuradores e Fazenda Pública em juízo',
+        whatIs: 'É o estudo de quem pode provocar o Judiciário, qual órgão julga, quem participa do processo e como a Fazenda Pública se apresenta em juízo.',
+        purpose: 'Serve para evitar ações no foro errado, defesa por parte ilegítima, nulidade de citação/intimação, perda de prazo e atuação processual inadequada do Município.',
+        plainExplanation: [
+          'Jurisdição é a função estatal de dizer o direito no caso concreto. A ação é o direito de provocar essa função. Competência é a distribuição da jurisdição entre órgãos judiciais. No cotidiano da Procuradoria, competência é decisiva: ação contra Município, matéria tributária, servidor, saúde, infância, execução fiscal e mandado de segurança podem ter regras diferentes de processamento.',
+          'Partes são os sujeitos principais da relação processual. O Município atua por representação judicial própria, em regra por sua Procuradoria. O CPC trata a Fazenda Pública com algumas regras especiais: prazos diferenciados em certas hipóteses, intimação pessoal, remessa necessária em casos específicos, honorários com regras próprias e cumprimento de sentença por precatório ou RPV, conforme o caso.',
+          'Atenção: Fazenda Pública não é sinônimo de qualquer empresa pública ou sociedade de economia mista. O regime processual especial deve ser analisado conforme a natureza jurídica da entidade.'
+        ],
+        examTechnical: 'Domine competência absoluta e relativa, modificação de competência, conexão, continência, litisconsórcio, intervenção de terceiros, capacidade processual, representação do Município, intimação da Fazenda Pública, prazos e prerrogativas processuais. A banca adora confundir competência com legitimidade.',
+        cityExample: 'Uma ação de obrigação de fazer em saúde é proposta contra o Município e o Estado. A Procuradoria deve avaliar legitimidade, competência, eventual chamamento ou organização de cumprimento, provas médicas, protocolos do SUS e impacto orçamentário.',
+        legalBase: ['CPC, partes sobre competência, sujeitos do processo e Fazenda Pública', 'CF/88, art. 5º, XXXV, LIV e LV', 'Lei Orgânica e normas locais de representação judicial do Município'],
+        dryLaw: ['CPC, arts. 42 a 69', 'CPC, arts. 70 a 112', 'CPC, arts. 183, 184, 496, 534 e 535'],
+        jurisprudence: ['A Fazenda Pública possui regime processual próprio em razão do interesse público, mas essas prerrogativas devem ser lidas restritivamente quando a lei assim delimita.', 'Em saúde pública, a responsabilidade dos entes pode ser solidária, com organização administrativa do cumprimento conforme orientação jurisprudencial.'],
+        objectiveCharge: ['Competência absoluta e relativa.', 'Legitimidade e representação processual.', 'Prazos e intimação da Fazenda Pública.', 'Remessa necessária.', 'Litisconsórcio e intervenção de terceiros.'],
+        discursiveCharge: 'Pode cair como parecer sobre competência, ilegitimidade passiva, necessidade de incluir outro ente, remessa necessária ou cumprimento de decisão contra o Município.',
+        traps: ['Competência absoluta pode ser reconhecida de ofício; relativa, em regra, depende de alegação.', 'Legitimidade não é competência.', 'Prazo em dobro da Fazenda Pública não se aplica a toda e qualquer situação sem verificar lei.', 'Empresa estatal exploradora de atividade econômica não recebe automaticamente regime de Fazenda Pública.'],
+        differences: ['Competência absoluta x relativa.', 'Legitimidade x representação.', 'Capacidade de ser parte x capacidade processual.', 'Litisconsórcio necessário x facultativo.', 'Fazenda Pública x empresa estatal.'],
+        commonMistakes: ['Alegar incompetência fora do momento adequado.', 'Confundir foro com juízo.', 'Não conferir intimação pessoal.', 'Tratar todo ente indireto como Fazenda Pública.'],
+        miniCase: 'Contribuinte ajuíza ação tributária contra a Secretaria de Finanças em vez do Município. A defesa deve apontar que secretaria é órgão sem personalidade jurídica, indicando a pessoa jurídica correta.',
+        activeQuestions: ['Quem é a pessoa jurídica correta?', 'O juízo é competente?', 'A competência é absoluta ou relativa?', 'A Fazenda foi intimada corretamente?', 'Há necessidade de litisconsórcio?'],
+        flashcards: [
+          { front: 'Secretaria municipal tem personalidade jurídica?', back: 'Em regra, não. É órgão do Município.' },
+          { front: 'Competência absoluta pode ser reconhecida de ofício?', back: 'Sim.' },
+          { front: 'Fazenda Pública é qualquer ente estatal?', back: 'Não. É preciso verificar natureza jurídica e regime aplicável.' }
+        ],
+        summary: 'Antes de discutir mérito, o Procurador deve saber quem litiga, onde litiga e como o Município é chamado ao processo. Erros de competência, legitimidade e representação podem decidir a causa antes do conteúdo.',
+        checklist: ['Sei competência absoluta e relativa.', 'Sei representar corretamente o Município.', 'Sei regras básicas de Fazenda Pública em juízo.', 'Sei diferenciar órgão e pessoa jurídica.', 'Consigo montar preliminar processual.'],
+        nextTopic: 'Atos processuais, prazos, comunicação e nulidades'
+      },
+      {
+        id: 'atos-prazos-nulidades',
+        level: 'intermediário',
+        title: 'Atos processuais, prazos, comunicação, nulidades e saneamento do processo',
+        whatIs: 'São as regras sobre como os atos do processo são praticados, comunicados, contados, corrigidos e eventualmente anulados.',
+        purpose: 'Servem para garantir segurança, previsibilidade e defesa efetiva. Para o Município, dominar prazos e nulidades evita revelia, preclusão, perda de recurso e pagamento indevido.',
+        plainExplanation: [
+          'Processo é forma, mas forma com finalidade. Citação chama o réu ao processo; intimação comunica atos e abre prazos; publicação e intimação pessoal da Fazenda têm relevância prática enorme. Um prazo perdido pode tornar definitiva uma decisão ruim.',
+          'Nulidade não é prêmio por formalismo. Em regra, exige prejuízo. O CPC prestigia aproveitamento dos atos e correção de defeitos. Por isso, o Procurador deve distinguir vício grave que compromete defesa de irregularidade sem impacto real.',
+          'Saneamento é momento estratégico. O juiz organiza questões de fato e de direito, pontos controvertidos, provas e ônus probatório. Em causas complexas contra o Município, participar bem do saneamento pode evitar condenação por prova mal delimitada.'
+        ],
+        examTechnical: 'Estude contagem de prazo em dias úteis no CPC, comunicação de atos, citação, intimação, preclusão, nulidades, princípio do prejuízo, instrumentalidade das formas e saneamento. Para Fazenda Pública, observe intimação pessoal e prazos conforme CPC.',
+        cityExample: 'O Município é intimado por publicação genérica quando a lei exige intimação pessoal. Se houver prejuízo ao prazo de contestar ou recorrer, a Procuradoria pode arguir nulidade demonstrando o impacto concreto.',
+        legalBase: ['CPC, atos processuais, prazos, comunicação e nulidades', 'CF/88, art. 5º, LIV e LV'],
+        dryLaw: ['CPC, arts. 188 a 293', 'CPC, arts. 183 e 184', 'CPC, arts. 276 a 283', 'CPC, art. 357'],
+        jurisprudence: ['A jurisprudência prestigia a instrumentalidade das formas e costuma exigir demonstração de prejuízo para reconhecimento de nulidade processual.', 'Intimação inadequada da Fazenda pode gerar nulidade se comprometer exercício de defesa.'],
+        objectiveCharge: ['Contagem de prazos.', 'Citação e intimação.', 'Preclusão.', 'Nulidades.', 'Saneamento.', 'Instrumentalidade das formas.'],
+        discursiveCharge: 'Pode cair como peça arguindo nulidade de citação/intimação, pedido de reabertura de prazo, saneamento de processo ou impugnação à prova.',
+        traps: ['Nem todo erro formal anula o processo.', 'Nulidade deve ser arguida no momento adequado.', 'Preclusão pode atingir a Fazenda Pública.', 'Prazo em dias úteis é regra do CPC, mas cuidado com leis especiais.'],
+        differences: ['Citação x intimação.', 'Nulidade absoluta x relativa.', 'Preclusão temporal x lógica x consumativa.', 'Irregularidade x nulidade com prejuízo.'],
+        commonMistakes: ['Não demonstrar prejuízo.', 'Perder momento de alegar nulidade.', 'Confundir prazo material com prazo processual.', 'Não participar do saneamento.'],
+        miniCase: 'Em ação indenizatória, o juiz fixa pontos controvertidos sem incluir nexo causal. A Procuradoria deve pedir ajuste no saneamento para evitar condenação sem prova do vínculo entre conduta municipal e dano.',
+        activeQuestions: ['O ato atingiu sua finalidade?', 'Houve prejuízo à defesa?', 'A nulidade foi alegada tempestivamente?', 'O prazo é processual ou material?', 'O saneamento delimitou corretamente as provas?'],
+        flashcards: [
+          { front: 'Nulidade exige prejuízo?', back: 'Em regra, sim: sem prejuízo, não há nulidade útil.' },
+          { front: 'Citação serve para quê?', back: 'Chamar o réu a integrar a relação processual.' },
+          { front: 'Saneamento do processo é importante por quê?', back: 'Define questões controvertidas, provas e organização do julgamento.' }
+        ],
+        summary: 'Prazos e nulidades são defesa institucional. O bom Procurador controla comunicação, prova prejuízo quando necessário e usa saneamento para organizar a causa.',
+        checklist: ['Sei contar prazo processual.', 'Sei diferença entre citação e intimação.', 'Sei arguir nulidade com prejuízo.', 'Sei identificar preclusão.', 'Sei usar saneamento estrategicamente.'],
+        nextTopic: 'Tutela provisória, petição inicial, contestação e provas'
+      },
+      {
+        id: 'tutelas-inicial-contestacao-provas',
+        level: 'avançado',
+        title: 'Tutela provisória, petição inicial, contestação, provas e estratégia defensiva municipal',
+        whatIs: 'É o conjunto de instrumentos para pedir proteção urgente, iniciar processo, apresentar defesa e provar fatos relevantes.',
+        purpose: 'Serve para lidar com liminares contra o Município, ações de saúde, obras públicas, servidor, tributos, urbanismo, indenização e obrigações de fazer.',
+        plainExplanation: [
+          'Tutela provisória busca antecipar ou assegurar efeitos antes da sentença. Pode ser de urgência, quando há probabilidade do direito e perigo de dano ou risco ao resultado útil do processo, ou de evidência, quando a força jurídica do direito dispensa urgência em hipóteses legais.',
+          'A petição inicial delimita o objeto do processo. A contestação é a resposta defensiva principal. Para o Procurador, contestar bem não é negar tudo: é organizar preliminares, impugnar fatos, provas, direito, valores, pedidos e consequências práticas.',
+          'Prova é o coração do processo. Em ações contra o Município, documentos administrativos, protocolos, relatórios técnicos, prontuários, laudos, fotos, autos de infração, pareceres e informações de secretaria são decisivos. Sem prova, a defesa vira discurso.'
+        ],
+        examTechnical: 'Domine requisitos da inicial, indeferimento, improcedência liminar, contestação, ônus da impugnação específica, provas, ônus da prova, prova documental, pericial, testemunhal, audiência e tutela provisória. Banca gosta de diferenciar tutela de urgência e evidência.',
+        cityExample: 'Munícipe pede liminar para cirurgia sem apresentar laudo suficiente. A Procuradoria deve impugnar probabilidade do direito ou urgência, juntar informação técnica da saúde, demonstrar protocolo, fila, alternativa terapêutica e pedir prazo razoável ou organização administrativa do cumprimento.',
+        legalBase: ['CPC, tutelas provisórias', 'CPC, petição inicial e contestação', 'CPC, teoria geral da prova', 'CF/88, devido processo e contraditório'],
+        dryLaw: ['CPC, arts. 294 a 311', 'CPC, arts. 319 a 342', 'CPC, arts. 369 a 484'],
+        jurisprudence: ['Em demandas de saúde, decisões devem considerar prova técnica, registro, protocolos e responsabilidade dos entes, evitando automatismo sem instrução mínima.', 'Tutela provisória contra o poder público pode sofrer limites legais específicos conforme a matéria.'],
+        objectiveCharge: ['Tutela de urgência x evidência.', 'Probabilidade do direito e perigo de dano.', 'Requisitos da inicial.', 'Contestação e preliminares.', 'Ônus da prova.', 'Prova pericial.'],
+        discursiveCharge: 'Pode cair como minuta de contestação, manifestação contra liminar, parecer sobre risco de tutela ou roteiro de prova em ação indenizatória/saúde/servidor.',
+        traps: ['Tutela de evidência não exige urgência nas hipóteses legais.', 'Contestação deve concentrar defesas, sob pena de preclusão.', 'Impugnação genérica pode ser insuficiente.', 'Sem prova administrativa, defesa municipal fica fraca.'],
+        differences: ['Tutela cautelar x antecipada.', 'Tutela de urgência x evidência.', 'Preliminar x mérito.', 'Ônus da prova x dever de colaboração probatória.'],
+        commonMistakes: ['Pedir suspensão de liminar sem atacar requisitos.', 'Não juntar documentos da secretaria.', 'Não impugnar valor da causa ou dano moral.', 'Esquecer preliminares.'],
+        miniCase: 'Ação pede indenização por queda em calçada. A defesa deve buscar fotos, registros de manutenção, competência sobre o local, nexo causal, culpa exclusiva, ausência de omissão específica e eventual prova pericial.',
+        activeQuestions: ['Há urgência real?', 'Qual prova demonstra o fato?', 'Quais preliminares existem?', 'O pedido é juridicamente possível?', 'Qual secretaria precisa informar?'],
+        flashcards: [
+          { front: 'Quais requisitos da tutela de urgência?', back: 'Probabilidade do direito e perigo de dano ou risco ao resultado útil do processo.' },
+          { front: 'Tutela de evidência exige urgência?', back: 'Não, nas hipóteses legais do CPC.' },
+          { front: 'Contestação municipal deve ser genérica?', back: 'Não. Deve impugnar fatos, direito, valores e provas de forma estratégica.' }
+        ],
+        summary: 'Tutela e prova definem o ritmo da causa. Para Procurador, a melhor defesa combina preliminares, mérito, prova técnica, informação administrativa e consequências práticas.',
+        checklist: ['Sei requisitos da tutela provisória.', 'Sei estruturar contestação.', 'Sei pedir e impugnar provas.', 'Sei montar defesa de liminar.', 'Consigo transformar informações administrativas em argumento jurídico.'],
+        nextTopic: 'Sentença, coisa julgada, recursos e precedentes'
+      },
+      {
+        id: 'sentenca-recursos-precedentes',
+        level: 'avançado',
+        title: 'Sentença, coisa julgada, recursos, precedentes e remessa necessária',
+        whatIs: 'É a parte do processo que trata da decisão judicial, seus efeitos, estabilidade e meios de impugnação.',
+        purpose: 'Serve para saber quando recorrer, como atacar fundamentos, quando há remessa necessária, como usar precedentes e quando a discussão ficou definitivamente encerrada.',
+        plainExplanation: [
+          'Sentença resolve o processo ou encerra fase cognitiva. Coisa julgada dá estabilidade à decisão. Recursos permitem reexame por erro de fato, direito, procedimento ou omissão. Para a Fazenda Pública, saber recorrer bem é proteger orçamento e legalidade sem recorrer automaticamente de tudo.',
+          'Precedentes são decisões qualificadas que orientam casos futuros. O CPC fortaleceu a lógica de coerência, integridade e estabilidade. Procuradoria deve usar precedentes para defender teses repetitivas, especialmente em saúde, servidores, tributos, responsabilidade civil e políticas públicas.',
+          'Remessa necessária é reexame obrigatório em certas decisões contra a Fazenda Pública, mas possui exceções e limites. A banca gosta de cobrar quando cabe e quando não cabe.'
+        ],
+        examTechnical: 'Domine sentença, elementos, coisa julgada, embargos de declaração, apelação, agravo de instrumento, recursos aos tribunais superiores, precedentes obrigatórios, distinguishing, overruling e remessa necessária. Em prova, muito cuidado com prazos, cabimento e hipóteses legais.',
+        cityExample: 'Sentença condena o Município a indenização alta sem enfrentar laudo técnico. A Procuradoria pode opor embargos de declaração por omissão e, depois, apelar atacando nexo causal, dano, culpa, valor e ausência de fundamentação adequada.',
+        legalBase: ['CPC, sentença e coisa julgada', 'CPC, recursos', 'CPC, precedentes', 'CPC, remessa necessária'],
+        dryLaw: ['CPC, arts. 485 a 508', 'CPC, arts. 994 a 1.044', 'CPC, art. 496', 'CPC, arts. 926 e 927'],
+        jurisprudence: ['Tribunais exigem impugnação específica dos fundamentos da decisão recorrida.', 'Precedentes qualificados devem ser observados, permitindo distinção fundamentada quando o caso concreto for diferente.'],
+        objectiveCharge: ['Sentença terminativa x definitiva.', 'Embargos de declaração.', 'Apelação e agravo.', 'Remessa necessária.', 'Coisa julgada.', 'Precedentes obrigatórios.'],
+        discursiveCharge: 'Pode cair como parecer sobre recorrer ou não recorrer, cabimento de remessa necessária, embargos por omissão ou uso de precedente em tese municipal repetitiva.',
+        traps: ['Embargos não servem para rediscutir tudo sem vício.', 'Recurso que não ataca fundamento pode ser inadmitido.', 'Nem toda sentença contra Fazenda Pública vai à remessa necessária.', 'Precedente não é ementa solta; precisa comparar fatos e razão de decidir.'],
+        differences: ['Coisa julgada formal x material.', 'Apelação x agravo de instrumento.', 'Embargos de declaração x recurso de reforma.', 'Distinguishing x overruling.'],
+        commonMistakes: ['Recorrer sem atacar fundamento central.', 'Perder prazo recursal.', 'Ignorar precedente desfavorável sem distinguir.', 'Confundir remessa necessária com recurso voluntário.'],
+        miniCase: 'Acórdão aplica precedente de saúde, mas o caso envolve medicamento sem registro e ausência de laudo. A Procuradoria pode fazer distinguishing, mostrando que a razão do precedente não cobre o caso específico.',
+        activeQuestions: ['Qual decisão foi proferida?', 'Qual recurso é cabível?', 'Há omissão/contradição/obscuridade?', 'A decisão enfrentou precedentes?', 'Cabe remessa necessária?'],
+        flashcards: [
+          { front: 'Embargos de declaração servem para quê?', back: 'Esclarecer obscuridade, eliminar contradição, suprir omissão ou corrigir erro material.' },
+          { front: 'Precedente obrigatório é igual a ementa?', back: 'Não. Importa a ratio decidendi aplicável ao caso.' },
+          { front: 'Remessa necessária é sempre cabível contra Fazenda?', back: 'Não. Há limites e exceções no CPC.' }
+        ],
+        summary: 'Recurso bom é recurso estratégico. A Procuradoria deve atacar fundamentos, preservar teses, usar precedentes e evitar automatismo improdutivo.',
+        checklist: ['Sei sentença e coisa julgada.', 'Sei cabimento básico dos recursos.', 'Sei embargos de declaração.', 'Sei remessa necessária.', 'Sei usar precedente com distinguishing.'],
+        nextTopic: 'Cumprimento de sentença, execução e Fazenda Pública'
+      },
+      {
+        id: 'cumprimento-execucao-fazenda',
+        level: 'discursiva',
+        title: 'Cumprimento de sentença, execução, precatório, RPV e defesa do Município',
+        whatIs: 'É a fase em que se busca realizar concretamente o que foi decidido ou cobrar obrigação reconhecida em título judicial ou extrajudicial.',
+        purpose: 'Serve para pagar corretamente o que é devido, evitar excesso de execução, proteger orçamento público e cumprir decisões de fazer, pagar ou entregar coisa dentro do regime jurídico aplicável à Fazenda Pública.',
+        plainExplanation: [
+          'Contra a Fazenda Pública, execução por quantia possui regime especial. Em vez de penhora comum de bens públicos, a satisfação normalmente ocorre por precatório ou requisição de pequeno valor, conforme regras constitucionais e locais. Por isso, o cálculo é central: juros, correção, honorários, termo inicial e limites da condenação precisam ser conferidos.',
+          'Cumprimento de obrigação de fazer contra Município aparece muito em saúde, servidores, obras, urbanismo e políticas públicas. A defesa não deve ser simplesmente resistir; deve organizar forma viável de cumprimento, prazo, responsabilidade da secretaria e eventual impossibilidade técnica comprovada.',
+          'Na execução, um erro pequeno vira despesa pública indevida. O Procurador deve impugnar excesso, ilegitimidade, inexigibilidade, erro de cálculo, coisa julgada e índices incorretos quando presentes.'
+        ],
+        examTechnical: 'Estude cumprimento de sentença contra Fazenda Pública, impugnação, precatório, RPV, execução de obrigação de fazer, execução de título extrajudicial, honorários e limites da coisa julgada. Conecte com Direito Financeiro e orçamento.',
+        cityExample: 'Sentença manda pagar diferenças a servidores. A Procuradoria deve conferir base de cálculo, período, prescrição quinquenal, reflexos, índice de correção, juros, honorários e forma de pagamento por RPV/precatório.',
+        legalBase: ['CPC, cumprimento de sentença contra Fazenda Pública', 'CF/88, art. 100', 'Norma municipal sobre RPV, quando existente'],
+        dryLaw: ['CPC, arts. 513 a 538', 'CPC, arts. 534 e 535', 'CF/88, art. 100'],
+        jurisprudence: ['Regime de precatórios decorre da Constituição e protege ordem orçamentária, sem afastar o dever de pagamento.', 'Excesso de execução deve ser demonstrado com memória de cálculo e fundamentos objetivos.'],
+        objectiveCharge: ['Cumprimento de sentença contra Fazenda.', 'Impugnação.', 'Precatório e RPV.', 'Excesso de execução.', 'Obrigação de fazer.', 'Honorários.'],
+        discursiveCharge: 'Pode cair como parecer sobre cumprimento de sentença, impugnação a cálculo, ordem de pagamento, obrigação de fazer em saúde ou risco orçamentário.',
+        traps: ['Bens públicos não seguem execução comum por penhora como regra.', 'Impugnação sem cálculo pode ser fraca.', 'RPV depende de limite normativo.', 'Cumprir decisão não impede discutir modo, prazo e limites da coisa julgada.'],
+        differences: ['Cumprimento de sentença x execução autônoma.', 'Precatório x RPV.', 'Obrigação de pagar x fazer.', 'Excesso de execução x inexigibilidade do título.'],
+        commonMistakes: ['Não conferir cálculo.', 'Ignorar prescrição ou coisa julgada.', 'Confundir precatório e RPV.', 'Não envolver a secretaria responsável no cumprimento de obrigação de fazer.'],
+        miniCase: 'Exequente inclui parcelas posteriores não abrangidas pela sentença. A Procuradoria deve impugnar excesso por violação à coisa julgada e apresentar cálculo correto.',
+        activeQuestions: ['Qual obrigação foi fixada?', 'O cálculo respeita a sentença?', 'Cabe RPV ou precatório?', 'Há excesso?', 'Qual secretaria executa obrigação de fazer?'],
+        flashcards: [
+          { front: 'Pagamento de quantia pela Fazenda segue qual regime?', back: 'Em regra, precatório ou RPV, conforme Constituição e limite aplicável.' },
+          { front: 'Impugnação de excesso exige o quê?', back: 'Demonstração objetiva e, em geral, cálculo do valor que entende correto.' },
+          { front: 'Bens públicos são livremente penhoráveis?', back: 'Não. Há regime jurídico próprio de proteção e pagamento.' }
+        ],
+        summary: 'Execução contra Município é onde tese vira dinheiro ou obrigação concreta. Dominar cálculo, coisa julgada, precatório/RPV e cumprimento prático é essencial para Procurador.',
+        checklist: ['Sei cumprimento contra Fazenda.', 'Sei precatório e RPV.', 'Sei impugnar excesso.', 'Sei conectar execução com orçamento.', 'Sei organizar cumprimento de obrigação de fazer.'],
+        nextTopic: 'LINDB, pessoas, bens, fatos e negócios jurídicos'
+      },
+      {
+        id: 'lindb-pessoas-fatos-negocios',
+        level: 'básico',
+        title: 'LINDB, pessoas, bens, fatos jurídicos, negócios jurídicos, prescrição e decadência',
+        whatIs: 'É a base da Parte Geral do Direito Civil e da interpretação jurídica: início da vigência da lei, aplicação no tempo, pessoas naturais e jurídicas, bens, fatos, atos, negócios jurídicos, invalidade, prescrição e decadência.',
+        purpose: 'Serve para entender validade de atos privados e públicos, contratos, prazos de cobrança, responsabilidade, capacidade, personalidade, patrimônio e segurança jurídica.',
+        plainExplanation: [
+          'A LINDB ensina como a lei entra em vigor, como se aplica no tempo e como o intérprete deve decidir. Para Procurador, os arts. 20 a 30 são muito importantes, porque exigem considerar consequências práticas, segurança jurídica e motivação em decisões administrativas, judiciais e controladoras.',
+          'Pessoa é quem pode ter direitos e deveres. Bens são objetos de relações jurídicas. Fatos jurídicos são acontecimentos com efeito no Direito. Negócio jurídico é manifestação de vontade destinada a produzir efeitos jurídicos, como contrato, renúncia, reconhecimento ou acordo.',
+          'Prescrição atinge a pretensão; decadência atinge o próprio direito potestativo. Essa diferença parece abstrata, mas decide cobranças, anulação de atos, responsabilidade civil e defesa do Município.'
+        ],
+        examTechnical: 'Estude vigência e aplicação da lei, irretroatividade, ato jurídico perfeito, direito adquirido, coisa julgada, capacidade, personalidade, pessoas jurídicas, domicílio, bens públicos e privados, fatos jurídicos, defeitos do negócio jurídico, invalidade, prescrição e decadência.',
+        cityExample: 'Município analisa acordo administrativo firmado anos antes. A Procuradoria deve verificar competência, validade do negócio, vício de vontade, prazo prescricional, interesse público e segurança jurídica conforme LINDB.',
+        legalBase: ['LINDB', 'Código Civil, Parte Geral', 'CF/88, segurança jurídica e devido processo'],
+        dryLaw: ['LINDB, arts. 1º a 6º e 20 a 30', 'CC, arts. 1º a 232', 'CC, arts. 189 a 211'],
+        jurisprudence: ['A segurança jurídica e a proteção da confiança são valores relevantes na revisão de atos e contratos, especialmente quando há decurso de tempo e boa-fé.', 'Prescrição e decadência devem ser analisadas conforme natureza da pretensão ou do direito invocado.'],
+        objectiveCharge: ['Vigência da lei.', 'Direito adquirido, ato jurídico perfeito e coisa julgada.', 'Capacidade e personalidade.', 'Defeitos do negócio jurídico.', 'Nulidade e anulabilidade.', 'Prescrição e decadência.'],
+        discursiveCharge: 'Pode cair em parecer sobre anulação de contrato, revisão de ato antigo, prescrição de indenização, validade de acordo ou efeitos de mudança legislativa.',
+        traps: ['Prescrição não extingue o direito material em si, mas a pretensão.', 'Decadência atinge direito potestativo.', 'Nulidade e anulabilidade não são a mesma coisa.', 'LINDB exige considerar consequências práticas, não decidir por abstração vazia.'],
+        differences: ['Prescrição x decadência.', 'Nulidade x anulabilidade.', 'Pessoa natural x pessoa jurídica.', 'Bens públicos x privados.', 'Fato jurídico x negócio jurídico.'],
+        commonMistakes: ['Confundir prazo prescricional e decadencial.', 'Esquecer LINDB em parecer administrativo.', 'Achar que todo vício gera nulidade absoluta.', 'Não verificar capacidade e representação.'],
+        miniCase: 'Contrato administrativo menciona garantia prestada por pessoa jurídica sem poderes de representação. A Procuradoria deve analisar validade do negócio, representação, possível ratificação e proteção do interesse público.',
+        activeQuestions: ['Qual lei estava vigente?', 'Há direito adquirido?', 'O ato é nulo ou anulável?', 'O prazo é prescricional ou decadencial?', 'Quem tinha capacidade/representação?'],
+        flashcards: [
+          { front: 'Prescrição atinge o quê?', back: 'A pretensão.' },
+          { front: 'Decadência atinge o quê?', back: 'O direito potestativo.' },
+          { front: 'LINDB arts. 20 a 30 importam por quê?', back: 'Exigem decisões motivadas, consequencialistas e com segurança jurídica.' }
+        ],
+        summary: 'Parte Geral do Civil é gramática do Direito. Sem ela, o candidato erra validade, prazo, pessoa, bem e negócio jurídico. Para Procurador, LINDB é ferramenta central de parecer.',
+        checklist: ['Sei LINDB básica e arts. 20 a 30.', 'Sei pessoas e bens.', 'Sei fato e negócio jurídico.', 'Sei nulidade e anulabilidade.', 'Sei prescrição e decadência.'],
+        nextTopic: 'Obrigações, contratos e responsabilidade civil'
+      },
+      {
+        id: 'obrigacoes-contratos-responsabilidade',
+        level: 'avançado',
+        title: 'Obrigações, contratos e responsabilidade civil aplicados ao Município',
+        whatIs: 'Obrigações são vínculos jurídicos entre credor e devedor. Contratos são negócios jurídicos que criam, modificam ou extinguem obrigações. Responsabilidade civil é o dever de reparar dano quando presentes os pressupostos legais.',
+        purpose: 'Serve para analisar cobranças, inadimplemento, contratos privados relacionados ao Município, indenizações, danos causados por obras, acidentes, omissões, serviços públicos e relações com particulares.',
+        plainExplanation: [
+          'Obrigação envolve prestação: dar, fazer ou não fazer. Contrato organiza interesses e riscos. Mesmo quando o Município atua em regime público, muitos conceitos civis aparecem: inadimplemento, mora, perdas e danos, cláusula penal, boa-fé objetiva, função social, equilíbrio, responsabilidade e reparação.',
+          'Responsabilidade civil exige analisar conduta, dano, nexo causal e regime jurídico. Contra o Estado, há regra constitucional de responsabilidade objetiva por atos de agentes públicos nessa qualidade, mas a discussão concreta costuma girar em torno de nexo, dano, culpa exclusiva da vítima, fortuito, omissão e extensão do prejuízo.',
+          'Para Procurador Municipal, responsabilidade civil aparece em buraco em via pública, queda em escola, acidente em unidade de saúde, enchente, obra, guarda de aluno, erro administrativo, dano moral e regressiva contra agente.'
+        ],
+        examTechnical: 'Estude modalidades de obrigações, pagamento, inadimplemento, mora, perdas e danos, contratos em geral, boa-fé objetiva, função social, revisão, extinção, responsabilidade civil subjetiva e objetiva, dano material/moral, nexo causal, excludentes e direito de regresso.',
+        cityExample: 'Morador pede indenização por dano em veículo causado por buraco. A Procuradoria deve apurar existência do buraco, ciência prévia do Município, tempo de resposta, sinalização, nexo causal, culpa concorrente, prova do dano e valor do orçamento.',
+        legalBase: ['Código Civil, obrigações, contratos e responsabilidade civil', 'CF/88, art. 37, §6º', 'LINDB, consequências práticas e proporcionalidade'],
+        dryLaw: ['CC, arts. 233 a 420', 'CC, arts. 421 a 480', 'CC, arts. 186, 187, 927 e seguintes', 'CF/88, art. 37, §6º'],
+        jurisprudence: ['A responsabilidade civil do Estado exige dano e nexo causal, sendo possível discutir excludentes e culpa concorrente.', 'O dano moral não é automático em qualquer falha administrativa; depende de situação concreta que ultrapasse mero aborrecimento, conforme entendimento jurisprudencial dominante.'],
+        objectiveCharge: ['Boa-fé objetiva.', 'Função social do contrato.', 'Mora e inadimplemento.', 'Responsabilidade civil objetiva e subjetiva.', 'Nexo causal.', 'Excludentes de responsabilidade.'],
+        discursiveCharge: 'Pode cair como parecer sobre indenização contra Município, acordo judicial, ação regressiva, queda em via pública, omissão em serviço ou dano causado por agente.',
+        traps: ['Responsabilidade objetiva não significa indenização automática.', 'Sem dano e nexo, não há reparação.', 'Omissão estatal pode exigir análise específica de dever legal de agir.', 'Dano moral precisa ser demonstrado ou presumido conforme hipóteses reconhecidas, não inventado.'],
+        differences: ['Responsabilidade contratual x extracontratual.', 'Objetiva x subjetiva.', 'Dano material x moral.', 'Culpa exclusiva x concorrente.', 'Obrigação de meio x resultado.'],
+        commonMistakes: ['Não discutir nexo causal.', 'Aceitar orçamento sem prova.', 'Não avaliar culpa da vítima.', 'Confundir responsabilidade do agente com responsabilidade do Município.'],
+        miniCase: 'Aluno se machuca em escola municipal. A defesa deve investigar vigilância, dinâmica do acidente, idade, local, protocolos, atendimento, nexo, extensão do dano e eventual falha específica do serviço.',
+        activeQuestions: ['Qual foi a conduta estatal?', 'Existe dano comprovado?', 'Há nexo causal?', 'Há excludente?', 'O valor pedido é proporcional?'],
+        flashcards: [
+          { front: 'Responsabilidade objetiva dispensa o quê?', back: 'Dispensa prova de culpa, mas não dispensa dano e nexo causal.' },
+          { front: 'Boa-fé objetiva é o quê?', back: 'Padrão de conduta leal, cooperativa e coerente nas relações jurídicas.' },
+          { front: 'Cabe regresso contra agente público?', back: 'Sim, quando houver dolo ou culpa, conforme CF/88 art. 37, §6º.' }
+        ],
+        summary: 'Civil aplicado ao Município exige prova e nexo. A defesa forte não nega o dano por hábito: reconstrói fatos, demonstra regime jurídico e calcula corretamente consequências.',
+        checklist: ['Sei obrigações básicas.', 'Sei contratos e boa-fé.', 'Sei responsabilidade civil.', 'Sei responsabilidade do Estado.', 'Consigo montar defesa indenizatória.'],
+        nextTopic: 'Posse, propriedade, direitos reais e bens públicos'
+      },
+      {
+        id: 'posse-propriedade-direitos-reais',
+        level: 'intermediário',
+        title: 'Posse, propriedade, direitos reais, função social, usucapião e interface com bens públicos',
+        whatIs: 'Direitos reais são poderes jurídicos exercidos diretamente sobre coisas. Posse é exercício de poderes de fato sobre bem. Propriedade é direito de usar, gozar, dispor e reaver, limitado pela função social e pelo ordenamento.',
+        purpose: 'Serve para lidar com imóveis municipais, ocupações, regularização fundiária, ações possessórias, desapropriação indireta, uso de áreas públicas, servidões, loteamentos e conflitos urbanos.',
+        plainExplanation: [
+          'Posse e propriedade são diferentes. Alguém pode possuir sem ser proprietário. Propriedade não é absoluta: deve cumprir função social, observar regras urbanísticas, ambientais e administrativas. No Município, isso aparece em áreas públicas ocupadas, obras, calçadas, loteamentos e política urbana.',
+          'Bens públicos têm regime especial. Em regra, são impenhoráveis, imprescritíveis quanto à usucapião, inalienáveis enquanto afetados e submetidos a finalidade pública. Isso é fundamental para Procurador, porque muitas ações tentam consolidar ocupação particular sobre área pública.',
+          'Ações possessórias exigem prova de posse, turbação/esbulho/ameaça e data. Já propriedade costuma envolver matrícula, registro e cadeia dominial. Em parecer, o primeiro passo é descobrir a natureza do bem e a prova documental.'
+        ],
+        examTechnical: 'Estude posse, classificação, efeitos, ações possessórias, propriedade, aquisição e perda, direitos reais, servidões, usucapião, função social, bens públicos e limites à disposição patrimonial. Conecte com Urbanístico e Ambiental.',
+        cityExample: 'Famílias ocupam área institucional do Município. A Procuradoria deve verificar matrícula, afetação, risco social, possibilidade de regularização, reintegração de posse, política habitacional, mediação e prova da titularidade pública.',
+        legalBase: ['Código Civil, posse, propriedade e direitos reais', 'CF/88, função social da propriedade e política urbana', 'Regime jurídico dos bens públicos', 'Estatuto da Cidade quando integrado ao Urbanístico'],
+        dryLaw: ['CC, arts. 1.196 a 1.510', 'CF/88, arts. 5º, XXII e XXIII', 'CF/88, arts. 182 e 183', 'CC, arts. 98 a 103 sobre bens públicos'],
+        jurisprudence: ['Bens públicos não são adquiridos por usucapião.', 'A proteção possessória de bem público exige análise da titularidade, afetação e interesse público, sem ignorar direitos fundamentais em ocupações coletivas.'],
+        objectiveCharge: ['Posse x propriedade.', 'Ações possessórias.', 'Usucapião.', 'Função social.', 'Bens públicos.', 'Direitos reais.'],
+        discursiveCharge: 'Pode cair como parecer sobre ocupação de área pública, reintegração de posse, regularização fundiária, uso de bem municipal ou conflito entre moradia e patrimônio público.',
+        traps: ['Bens públicos não sofrem usucapião.', 'Registro importa para propriedade imobiliária.', 'Posse não é sinônimo de propriedade.', 'Função social limita, mas não elimina propriedade sem procedimento legal.'],
+        differences: ['Posse x detenção x propriedade.', 'Bem público de uso comum x uso especial x dominical.', 'Esbulho x turbação x ameaça.', 'Usucapião ordinária x extraordinária x especial.'],
+        commonMistakes: ['Não pedir matrícula do imóvel.', 'Confundir área pública com particular por aparência.', 'Ignorar afetação do bem.', 'Tratar ocupação coletiva apenas como caso patrimonial sem política pública.'],
+        miniCase: 'Particular constrói muro em praça pública e alega uso há 20 anos. A Procuradoria deve apontar natureza pública do bem, impossibilidade de usucapião e medidas administrativas/judiciais cabíveis.',
+        activeQuestions: ['O bem é público ou privado?', 'Há matrícula?', 'Qual tipo de posse existe?', 'Há esbulho/turbação/ameaça?', 'Existe alternativa urbanística ou social?'],
+        flashcards: [
+          { front: 'Bem público pode ser usucapido?', back: 'Não.' },
+          { front: 'Posse é igual a propriedade?', back: 'Não. Posse é poder de fato; propriedade é direito real.' },
+          { front: 'Função social elimina propriedade?', back: 'Não. Limita e orienta seu exercício conforme Constituição e leis.' }
+        ],
+        summary: 'Direitos reais são essenciais para Procurador Municipal por causa de imóveis, áreas públicas, ocupações e política urbana. O segredo é qualificar bem o bem, a posse, a propriedade e a finalidade pública.',
+        checklist: ['Sei posse e propriedade.', 'Sei bens públicos.', 'Sei impossibilidade de usucapião de bem público.', 'Sei ações possessórias.', 'Consigo fazer parecer sobre ocupação municipal.'],
+        nextTopic: 'Família, sucessões e empresa no edital de Direito Civil'
+      },
+      {
+        id: 'familia-sucessoes-empresa',
+        level: 'lei seca',
+        title: 'Noções de família, sucessões, empresa e temas civis complementares relevantes ao edital',
+        whatIs: 'São blocos complementares do Direito Civil que aparecem em editais amplos: relações familiares, sucessão causa mortis, atividade empresarial, nome empresarial, estabelecimento, títulos básicos e efeitos patrimoniais.',
+        purpose: 'Servem para resolver questões objetivas e situações patrimoniais que podem alcançar o Município, como ITBI/ITCMD em interface tributária, inventários com interesse municipal, empresas contratadas, responsabilidade empresarial e cadastro de fornecedores.',
+        plainExplanation: [
+          'Família e sucessões nem sempre são o centro de Procuradoria Municipal, mas aparecem em prova para medir domínio do Código Civil. O candidato deve saber casamento, união estável, parentesco, alimentos, regime de bens, sucessão legítima, testamento, inventário e partilha em linhas gerais.',
+          'Empresa importa porque o Município contrata com empresários, fiscaliza atividades, cobra tributos e analisa responsabilidade patrimonial. Saber empresário, sociedade, estabelecimento, nome empresarial e desconsideração da personalidade jurídica ajuda em licitações, execução fiscal e contratos.',
+          'A estratégia aqui é lei seca qualificada: não tentar virar especialista em família, mas dominar conceitos estruturantes e pegadinhas recorrentes.'
+        ],
+        examTechnical: 'Priorize conceitos gerais, classificação, efeitos patrimoniais e pontos de lei seca. Em empresa, conecte com capacidade, pessoa jurídica, responsabilidade, desconsideração e contratos com o poder público. Em sucessões, cuidado com vocação hereditária, legítima, testamento e inventário.',
+        cityExample: 'Empresa contratada pelo Município altera quadro societário e transfere estabelecimento. A Procuradoria deve verificar efeitos contratuais, responsabilidade, habilitação, eventual sucessão empresarial e manutenção das condições de contratação.',
+        legalBase: ['Código Civil, Direito de Família, Sucessões e Empresa', 'CPC, inventário e partilha quando processual', 'Regras de contratação pública quando houver interface com licitações'],
+        dryLaw: ['CC, Livro de Família', 'CC, Livro de Sucessões', 'CC, arts. 966 e seguintes sobre empresa', 'CPC, inventário e partilha'],
+        jurisprudence: ['Desconsideração da personalidade jurídica exige pressupostos legais e procedimento adequado, com contraditório.', 'União estável e regimes patrimoniais geram efeitos patrimoniais relevantes conforme legislação e jurisprudência.'],
+        objectiveCharge: ['Empresário.', 'Pessoa jurídica.', 'Desconsideração.', 'Estabelecimento empresarial.', 'Vocação hereditária.', 'Inventário.', 'Regime de bens.'],
+        discursiveCharge: 'Menos provável como discursiva principal, mas pode aparecer em parecer sobre empresa contratada, sucessão empresarial, patrimônio, inventário com dívida municipal ou desconsideração em execução fiscal.',
+        traps: ['Empresário não é qualquer pessoa que ganha dinheiro.', 'Desconsideração não é automática por inadimplemento.', 'Família e sucessões têm muitos prazos e ordens legais.', 'Pessoa jurídica não se confunde com seus sócios, salvo hipóteses legais.'],
+        differences: ['Empresário x sociedade empresária.', 'Pessoa jurídica x sócios.', 'Sucessão legítima x testamentária.', 'Casamento x união estável.', 'Desconsideração direta x inversa.'],
+        commonMistakes: ['Ignorar lei seca em família/sucessões.', 'Confundir inadimplemento com abuso da personalidade.', 'Não separar patrimônio social e dos sócios.', 'Estudar empresa sem conectar com contratos públicos.'],
+        miniCase: 'Empresa devedora de tributo municipal encerra atividades e transfere bens a outra pessoa jurídica do mesmo grupo. A Procuradoria deve avaliar sucessão, fraude, desconsideração e prova patrimonial.',
+        activeQuestions: ['Qual é o sujeito civil envolvido?', 'Há pessoa jurídica distinta?', 'Existe abuso ou confusão patrimonial?', 'Há sucessão patrimonial?', 'Qual dispositivo do Código Civil resolve?'],
+        flashcards: [
+          { front: 'Inadimplemento autoriza desconsideração automática?', back: 'Não. É preciso preencher requisitos legais, como abuso da personalidade, desvio de finalidade ou confusão patrimonial conforme o caso.' },
+          { front: 'Empresário é definido por qual ideia?', back: 'Exercício profissional de atividade econômica organizada para produção ou circulação de bens ou serviços.' },
+          { front: 'Sucessão pode impactar o Município?', back: 'Sim, em dívidas, tributos, inventário, patrimônio e contratos.' }
+        ],
+        summary: 'Família, sucessões e empresa devem ser estudados com foco de edital: conceitos, lei seca, efeitos patrimoniais e interface com atuação municipal.',
+        checklist: ['Sei conceitos gerais de família.', 'Sei noções de sucessões.', 'Sei empresário e sociedade.', 'Sei desconsideração.', 'Sei conectar temas civis com Município.'],
+        nextTopic: 'Próxima fase: Tributário, Financeiro e Orçamentário Premium'
+      }
+    ]
+  }
+
 ];
 
 export function getApostilaStats(progress = {}) {
