@@ -21,6 +21,7 @@ const subtitles = {
   aulas: 'Apostila interna com aulas escritas, fundamentos, lei seca e revisão ativa.',
   edital: 'Conteúdo programático oficial, cronograma, matriz de cobrança e checklist.',
   questoes: 'Treino objetivo com foco em banca, erro e revisão.',
+  'questoes-topico': 'Questões comentadas integradas aos tópicos da Apostila, com gabarito, pegadinha e revisão.',
   simulados: 'Modo prova com cronômetro, estratégia e relatório.',
   discursivas: 'Pareceres, teses e respostas discursivas com espelho de correção.',
   revisao: 'Fila de erros, temas fracos e revisões inteligentes.',

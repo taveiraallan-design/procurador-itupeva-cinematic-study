@@ -17,6 +17,7 @@ const icons = {
   apostila: '▣',
   edital: '§',
   questoes: '✎',
+  'questoes-topico': '☑',
   simulados: '◉',
   revisao: '↻',
   flashcards: '▣',
@@ -33,12 +34,12 @@ const icons = {
   configuracoes: '⚙',
 };
 
-const simpleIds = ['dashboard', 'mentor', 'apostila', 'questoes', 'discursivas'];
+const simpleIds = ['dashboard', 'mentor', 'apostila', 'questoes', 'questoes-topico', 'discursivas'];
 
 const groups = [
   { id: 'inicio', label: 'Início', items: ['dashboard', 'mentor', 'sprint'] },
   { id: 'estudo', label: 'Estudo', items: ['apostila', 'conteudo', 'aulas', 'materiais', 'materias', 'lei-seca', 'edital'] },
-  { id: 'treino', label: 'Treino', items: ['questoes', 'simulados', 'simulados-pro', 'discursivas', 'oral', 'banca', 'simulator'] },
+  { id: 'treino', label: 'Treino', items: ['questoes', 'questoes-topico', 'simulados', 'simulados-pro', 'discursivas', 'oral', 'banca', 'simulator'] },
   { id: 'revisao', label: 'Revisão', items: ['revisao', 'flashcards', 'erros', 'mapas', 'timeline', 'rapida', 'vespera'] },
   { id: 'estrategia', label: 'Estratégia', items: ['plano', 'ranking', 'estatisticas'] },
   { id: 'sistema', label: 'Sistema', items: ['offline', 'configuracoes', 'final'] },
@@ -265,7 +266,7 @@ export default function Sidebar({ items, activePage, onNavigate }) {
       <div className="sidebar-footer smart-footer">
         <span className="status-dot" />
         <div>
-          <strong>Fase 40</strong>
+          <strong>Fase 45</strong>
           <small>menu simples ativo</small>
         </div>
       </div>

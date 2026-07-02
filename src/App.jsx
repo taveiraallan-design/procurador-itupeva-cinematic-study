@@ -26,6 +26,7 @@ import StudyMaterials from './pages/StudyMaterials';
 import PremiumApostila from './pages/PremiumApostila';
 import Edital from './pages/Edital';
 import Questions from './pages/Questions';
+import TopicQuestions from './pages/TopicQuestions';
 import Simulations from './pages/Simulations';
 import Discursives from './pages/Discursives';
 import Review from './pages/Review';
@@ -58,6 +59,7 @@ const navItems = [
   { id: 'apostila', label: 'Apostila' },
   { id: 'edital', label: 'Edital' },
   { id: 'questoes', label: 'Questões' },
+  { id: 'questoes-topico', label: 'Questões por Tópico' },
   { id: 'simulados', label: 'Simulados' },
   { id: 'discursivas', label: 'Discursivas' },
   { id: 'revisao', label: 'Revisão' },
@@ -91,6 +93,7 @@ const pageComponents = {
   apostila: PremiumApostila,
   edital: Edital,
   questoes: Questions,
+  'questoes-topico': TopicQuestions,
   simulados: Simulations,
   discursivas: Discursives,
   revisao: Review,
