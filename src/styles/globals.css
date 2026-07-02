@@ -5558,3 +5558,110 @@ img, svg, canvas, video { max-width: 100%; }
   .theory-support-card { border-radius: 18px; }
   .integrated-prose p { font-size: .98rem; line-height: 1.72; }
 }
+
+/* Fase 44 — Método Premium de Aprendizagem Jurídica por Tópico */
+.premium-method-block {
+  display: grid;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.premium-method-header,
+.premium-method-reading,
+.premium-method-card,
+.apostila-legacy-details {
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(145deg, rgba(15,23,42,.94), rgba(2,6,23,.86));
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.22);
+  overflow: hidden;
+}
+
+.premium-method-header h3,
+.premium-method-reading h2 {
+  margin: 10px 0 6px;
+  line-height: 1.16;
+}
+
+.premium-method-header p,
+.premium-method-reading p,
+.premium-method-card p,
+.premium-method-card li,
+.method-rule small {
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.premium-method-prose p {
+  margin: 0 0 14px;
+  font-size: 1rem;
+}
+
+.premium-method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.premium-method-card.wide {
+  grid-column: 1 / -1;
+}
+
+.method-rule {
+  border: 1px solid rgba(148,163,184,.18);
+  background: rgba(15,23,42,.58);
+  border-radius: 16px;
+  padding: 14px;
+  margin-top: 12px;
+}
+
+.method-rule strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-primary, #f8fafc);
+}
+
+.method-rule small {
+  display: block;
+  color: var(--text-secondary, #94a3b8);
+  margin-top: 8px;
+}
+
+.method-question {
+  background: linear-gradient(145deg, rgba(88,28,135,.25), rgba(15,23,42,.88));
+}
+
+.method-checklist li {
+  list-style: none;
+}
+
+.apostila-legacy-details {
+  margin: 12px 0;
+}
+
+.apostila-legacy-details summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--text-primary, #f8fafc);
+}
+
+@media (max-width: 900px) {
+  .premium-method-grid {
+    grid-template-columns: 1fr;
+  }
+  .premium-method-header,
+  .premium-method-reading,
+  .premium-method-card,
+  .apostila-legacy-details {
+    padding: 14px;
+    border-radius: 18px;
+  }
+  .premium-method-prose p,
+  .premium-method-card p,
+  .premium-method-card li {
+    font-size: .96rem;
+  }
+}

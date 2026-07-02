@@ -7,6 +7,7 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 import { premiumApostilaMeta, premiumApostilaSubjects, getApostilaStats } from '../data/premiumApostila';
 import { deepDidacticMeta, getDeepDidacticLesson } from '../data/deepDidacticLessons';
 import { theoreticalApostilaMeta, getTheoreticalLesson } from '../data/theoreticalApostila';
+import { methodPremiumMeta, getPremiumMethodLesson } from '../data/methodPremiumLearning';
 
 const APOSTILA_KEY = 'premium_apostila_progress_v1';
 const initialProgress = { selectedSubjectId: 'direito-administrativo', studied: {}, notes: {}, reviewQueue: [], visualDominated: {}, visualNotes: [], generatedAt: null };
@@ -121,6 +122,103 @@ function TheoreticalLessonBlock({ lesson }) {
 }
 
 
+
+function PremiumMethodBlock({ lesson }) {
+  if (!lesson) return null;
+  const s = lesson.sections;
+  return (
+    <section className="premium-method-block">
+      <div className="premium-method-header">
+        <Badge tone="orange">{methodPremiumMeta.phase} • método premium</Badge>
+        <h3>{methodPremiumMeta.title}</h3>
+        <p>{lesson.lead}</p>
+      </div>
+
+      <article className="premium-method-reading">
+        <Badge tone="green">Aula completa do tópico</Badge>
+        <h2>{lesson.title}</h2>
+        <div className="premium-method-prose">
+          <p><strong>Conceito.</strong> {s.concept}</p>
+          <p><strong>Finalidade.</strong> {s.purpose}</p>
+          <p><strong>Funcionamento prático.</strong> {s.practical}</p>
+          <p>Agora o estudo deixa de ser uma lista de palavras e vira raciocínio. Primeiro você entende o instituto, depois observa suas regras, compara com temas parecidos, aplica em um caso municipal e treina como a banca costuma transformar isso em alternativa ou em pedido discursivo.</p>
+        </div>
+      </article>
+
+      <div className="premium-method-grid">
+        <article className="premium-method-card wide">
+          <Badge tone="cyan">Regras principais desenvolvidas</Badge>
+          {s.developedRules.map((rule) => (
+            <div className="method-rule" key={`${lesson.title}-${rule.title}`}>
+              <strong>{rule.title}</strong>
+              <p>{rule.text}</p>
+              <small>{rule.explanation}</small>
+            </div>
+          ))}
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="green">Exemplo certo e errado</Badge>
+          <p><strong>Correto:</strong> {s.examples.right}</p>
+          <p><strong>Errado:</strong> {s.examples.wrong}</p>
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="purple">Diferenças importantes</Badge>
+          <ul className="compact-list">{s.differences.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+
+        <article className="premium-method-card wide">
+          <Badge tone="orange">Aplicação prática na Procuradoria Municipal</Badge>
+          <p>{s.municipal}</p>
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="cyan">Como a banca cobra</Badge>
+          <ul className="compact-list">{s.objective.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="orange">Pegadinhas</Badge>
+          <ul className="compact-list">{s.traps.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+
+        <article className="premium-method-card wide">
+          <Badge tone="green">Passo a passo para resolver questões</Badge>
+          <ol className="compact-list">{s.solving.map((item) => <li key={item}>{item}</li>)}</ol>
+        </article>
+
+        <article className="premium-method-card wide method-question">
+          <Badge tone="purple">Questão comentada</Badge>
+          <p><strong>Enunciado:</strong> {s.question.statement}</p>
+          {s.question.options && <ol className="deep-options">{s.question.options.map((option, index) => <li key={option}>{String.fromCharCode(65 + index)}) {option}</li>)}</ol>}
+          <p><strong>Gabarito:</strong> {s.question.answer}</p>
+          <p><strong>Comentário:</strong> {s.question.comment}</p>
+        </article>
+
+        <article className="premium-method-card wide">
+          <Badge tone="green">Aplicação em discursiva ou parecer</Badge>
+          <p>{s.discursive}</p>
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="cyan">Lei seca essencial</Badge>
+          <ul className="compact-list">{s.dryLaw.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+
+        <article className="premium-method-card">
+          <Badge tone="orange">Resumo final</Badge>
+          <p>{s.summary}</p>
+        </article>
+
+        <article className="premium-method-card wide">
+          <Badge tone="cyan">Checklist de domínio</Badge>
+          <ul className="compact-list method-checklist">{s.checklist.map((item) => <li key={item}>□ {item}</li>)}</ul>
+        </article>
+      </div>
+    </section>
+  );
+}
 
 function IntegratedTheoryBlock({ theory, deep, topic }) {
   if (!theory && !deep) return null;
@@ -733,6 +831,7 @@ export default function PremiumApostila({ onNavigate }) {
   const activeTopic = visibleActiveSubject.topics.find((topic) => topic.id === activeTopicId) || visibleActiveSubject.topics[0] || activeSubject.topics[0];
   const activeDeepLesson = getDeepDidacticLesson(activeSubject.id, activeTopic.id);
   const activeTheoryLesson = getTheoreticalLesson(activeSubject, activeTopic);
+  const activeMethodLesson = getPremiumMethodLesson(activeSubject, activeTopic);
   const subjectTotal = activeSubject.topics.length;
   const subjectDone = progress.studied?.[activeSubject.id]?.length || 0;
   const subjectPercent = Math.round((subjectDone / Math.max(subjectTotal, 1)) * 100);
@@ -897,7 +996,12 @@ export default function PremiumApostila({ onNavigate }) {
                 <span>Aula teórica</span><span>Quadro de atenção</span><span>Como cai</span><span>Base legal</span><span>Revisão</span><span>Visual</span>
               </div>
 
-              <IntegratedTheoryBlock theory={activeTheoryLesson} deep={activeDeepLesson} topic={activeTopic} />
+              <PremiumMethodBlock lesson={activeMethodLesson} />
+
+              <details className="apostila-legacy-details">
+                <summary>Ver complementos anteriores da apostila</summary>
+                <IntegratedTheoryBlock theory={activeTheoryLesson} deep={activeDeepLesson} topic={activeTopic} />
+              </details>
 
               <Section title="Complemento de revisão — conceito" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
               <Section title="Complemento de revisão — função prática" tone="green"><p>{activeTopic.purpose}</p></Section>
