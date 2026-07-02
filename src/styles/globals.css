@@ -4385,3 +4385,160 @@ img, svg, canvas, video { max-width: 100%; }
   .discursive-layout > .card:first-child .case-selector,
   .templates-layout > .card:first-child .case-selector { min-width: 225px; }
 }
+
+/* Hotfix 39L — Discursivas em leitura única: remove colunas estreitas que quebravam texto */
+.discursive-page {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+.discursive-page * {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: normal !important;
+}
+.discursive-page .stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 12px !important;
+}
+.discursive-layout,
+.templates-layout,
+.discursive-editor-grid,
+.discursive-analysis-grid,
+.discursive-support-grid,
+.criterion-results,
+.result-grid,
+.case-prompt-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 16px !important;
+  width: 100% !important;
+}
+.discursive-workbench.wide-card,
+.discursive-page .wide-card,
+.answer-editor-panel,
+.rubric-panel,
+.discursive-analysis-grid > .card,
+.discursive-support-grid > .card,
+.discursive-result.card {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+.discursive-layout > .card:first-child .case-list,
+.templates-layout > .card:first-child .case-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 10px !important;
+  overflow-x: auto !important;
+  padding-bottom: 8px !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+.discursive-layout > .card:first-child .case-selector,
+.templates-layout > .card:first-child .case-selector {
+  flex: 0 0 min(320px, 82vw) !important;
+  width: min(320px, 82vw) !important;
+}
+.rubric-panel {
+  overflow: visible !important;
+}
+.rubric-mode-actions,
+.editor-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+.rubric-mode-actions .btn,
+.editor-actions .btn {
+  flex: 1 1 220px !important;
+}
+.rubric-list {
+  display: grid !important;
+  gap: 12px !important;
+}
+.rubric-item {
+  display: grid !important;
+  grid-template-columns: 28px minmax(0, 1fr) auto !important;
+  gap: 12px !important;
+  align-items: center !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+.rubric-item span,
+.rubric-item small,
+.rubric-item strong,
+.clean-list,
+.clean-list li,
+.criterion-card p,
+.criterion-card small {
+  line-height: 1.45 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+}
+.discursive-analysis-grid .metric-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+.discursive-analysis-grid .metric-pills span {
+  flex: 1 1 170px !important;
+  text-align: center !important;
+}
+@media (max-width: 760px) {
+  .discursive-page { padding-inline: 0 !important; }
+  .discursive-page .stats-grid { grid-template-columns: 1fr !important; }
+  .discursive-hero.hero-panel,
+  .discursive-hero {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    padding: 16px !important;
+  }
+  .discursive-hero h1 { font-size: clamp(2rem, 11vw, 3rem) !important; }
+  .discursive-workbench.card,
+  .discursive-page .card,
+  .answer-editor-panel,
+  .rubric-panel {
+    padding: 14px !important;
+    border-radius: 20px !important;
+  }
+  .editor-toolbar {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+  .answer-editor-panel textarea {
+    min-height: 300px !important;
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+  }
+  .rubric-mode-actions,
+  .editor-actions { display: grid !important; grid-template-columns: 1fr !important; }
+  .rubric-mode-actions .btn,
+  .editor-actions .btn { width: 100% !important; flex: none !important; }
+  .rubric-item {
+    grid-template-columns: 26px minmax(0, 1fr) !important;
+    align-items: start !important;
+    padding: 14px !important;
+  }
+  .rubric-item > strong {
+    grid-column: 2 !important;
+    justify-self: start !important;
+    font-size: .95rem !important;
+    margin-top: 4px !important;
+  }
+  .discursive-analysis-grid .metric-pills {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .discursive-analysis-grid .metric-pills span {
+    text-align: left !important;
+    border-radius: 14px !important;
+  }
+  .clean-list { padding-left: 18px !important; }
+}
