@@ -37,6 +37,179 @@ function subjectTone(subject) {
   return 'jurídico aplicado ao Município';
 }
 
+
+
+const administrativeSpecific = {
+  'regime-principios': {
+    concept: 'Regime jurídico-administrativo é o conjunto de prerrogativas e limitações que diferencia a atuação da Administração Pública da atuação dos particulares. Ele permite que o Município pratique atos voltados ao interesse público, mas exige que cada decisão tenha competência legal, finalidade pública, motivação, proporcionalidade e respeito aos direitos fundamentais.',
+    purpose: 'O tema serve para formar o raciocínio-base do Procurador Municipal. Antes de discutir licitação, servidor, poder de polícia, contrato ou responsabilidade, é preciso saber que a Administração não age por vontade livre: ela administra competências e interesses indisponíveis.',
+    practical: 'Na prática municipal, o Procurador deve perguntar: qual norma autoriza a conduta? qual princípio limita a decisão? existe motivação suficiente? a medida é impessoal, proporcional e transparente? Essa sequência evita pareceres meramente formais e transforma princípios em filtro real de legalidade.',
+    rules: [
+      'Legalidade administrativa significa que o agente público precisa de autorização normativa para agir; não basta inexistir proibição.',
+      'Impessoalidade impede favorecimento, perseguição e promoção pessoal com estrutura pública.',
+      'Moralidade administrativa exige lealdade institucional, boa-fé, honestidade funcional e finalidade legítima, mesmo quando o ato parece formalmente regular.',
+      'Publicidade garante controle social e transparência, mas não autoriza exposição indevida de dados pessoais nem propaganda pessoal de agente público.',
+      'Eficiência exige resultado adequado, planejamento e boa gestão, sem permitir violação de procedimento obrigatório.',
+      'Supremacia e indisponibilidade do interesse público devem ser lidas com legalidade, proporcionalidade, segurança jurídica e proteção de direitos.'
+    ],
+    rightWrong: {
+      right: 'Correto: a Procuradoria condiciona a contratação pretendida por secretaria à demonstração da necessidade pública, pesquisa de preços, motivação, hipótese legal e ausência de direcionamento.',
+      wrong: 'Errado: afirmar que o prefeito pode escolher livremente a empresa porque o serviço é urgente, sem instrução mínima e sem fundamento legal.'
+    },
+    solving: ['Identifique se o caso envolve prerrogativa ou limitação da Administração.', 'Procure o fundamento legal da competência.', 'Aplique os princípios do art. 37 ao fato concreto.', 'Verifique motivação, finalidade, proporcionalidade e publicidade.', 'Conclua pela validade, correção, anulação, convalidação ou necessidade de instrução adicional.'],
+    question: { statement: 'Uma secretaria municipal pretende praticar ato sem previsão normativa expressa, alegando que a medida é eficiente e atende ao interesse público. À luz do regime jurídico-administrativo, a orientação correta é:', options: ['admitir a medida, pois eficiência supera legalidade', 'admitir a medida se houver concordância política do gestor', 'exigir fundamento jurídico suficiente, pois Administração depende de competência normativa', 'dispensar motivação quando o interesse público for evidente'], answer: 'C', comment: 'A Administração Pública está vinculada à juridicidade. Eficiência e interesse público não autorizam atuação sem competência e fundamento jurídico.' }
+  },
+  'organizacao-administrativa': {
+    concept: 'Organização administrativa é a forma como o Estado distribui competências entre órgãos e entidades para desempenhar a função administrativa. No Município, envolve Administração direta, autarquias, fundações, empresas estatais, órgãos internos, secretarias, delegação, descentralização e desconcentração.',
+    purpose: 'Serve para identificar quem pode agir, quem responde pelo ato, qual regime jurídico incide e como se controla a atividade administrativa. Para Procurador, erro de organização costuma gerar vício de competência, responsabilização inadequada ou defesa judicial frágil.',
+    practical: 'Diante de um problema municipal, a primeira pergunta é institucional: o ato veio de órgão da Administração direta, de entidade da indireta ou de particular delegado? Depois, analisa-se se houve centralização, descentralização por outorga, delegação por contrato ou simples desconcentração interna.',
+    rules: [
+      'Centralização ocorre quando a própria pessoa política executa a atividade por seus órgãos.',
+      'Desconcentração é distribuição interna de competências dentro da mesma pessoa jurídica, como secretarias e departamentos.',
+      'Descentralização transfere execução ou titularidade para outra pessoa jurídica ou para particular delegado, conforme o caso.',
+      'Órgão público não possui personalidade jurídica própria; integra a pessoa jurídica a que pertence.',
+      'Autarquia é pessoa jurídica de direito público criada para atividade típica, com prerrogativas e sujeições próprias.',
+      'Empresas públicas e sociedades de economia mista possuem personalidade de direito privado, mas continuam submetidas a controles e princípios administrativos.'
+    ],
+    rightWrong: { right: 'Correto: reconhecer que uma secretaria municipal é órgão da Administração direta e que eventual vício de competência deve ser analisado dentro da estrutura do próprio Município.', wrong: 'Errado: tratar secretaria municipal como pessoa jurídica autônoma capaz de responder em nome próprio em qualquer demanda.' },
+    solving: ['Identifique se há órgão, entidade ou particular delegado.', 'Verifique se a hipótese é centralização, desconcentração ou descentralização.', 'Confira a norma que atribui competência.', 'Defina o regime jurídico aplicável.', 'Indique quem responde e qual providência administrativa ou judicial é adequada.'],
+    question: { statement: 'A criação de uma secretaria municipal para distribuir competências dentro da mesma pessoa jurídica caracteriza:', options: ['descentralização por outorga', 'desconcentração administrativa', 'delegação de serviço público', 'criação de entidade da Administração indireta'], answer: 'B', comment: 'Secretarias são órgãos internos. A distribuição interna de atribuições na mesma pessoa jurídica é desconcentração.' }
+  },
+  'poderes-administrativos': {
+    concept: 'Poderes administrativos são instrumentos jurídicos conferidos à Administração para cumprir finalidades públicas. Eles não são privilégios pessoais do gestor, mas competências-deveres vinculadas à legalidade, finalidade, motivação e proporcionalidade.',
+    purpose: 'O tema serve para compreender como o Município ordena condutas, disciplina servidores, organiza serviços, edita normas complementares e fiscaliza atividades privadas. É especialmente importante em autos de infração, embargos, licenças, servidores e sanções.',
+    practical: 'O Procurador deve identificar qual poder está sendo exercido e se seus limites foram respeitados. Poder de polícia exige base legal, competência, devido processo quando houver sanção e proporcionalidade. Poder disciplinar exige vínculo especial e procedimento. Poder regulamentar não pode inovar além da lei.',
+    rules: [
+      'Poder vinculado impõe atuação quando preenchidos os requisitos legais, sem liberdade de escolha quanto ao resultado.',
+      'Poder discricionário permite escolha dentro da lei, mas não autoriza arbitrariedade.',
+      'Poder hierárquico organiza subordinação interna, delegação, avocação, revisão e fiscalização de órgãos e agentes.',
+      'Poder disciplinar permite apurar e punir infrações funcionais ou vínculos especiais, sempre com processo adequado.',
+      'Poder regulamentar detalha a lei para permitir sua execução, sem criar obrigações incompatíveis com a norma superior.',
+      'Poder de polícia limita direitos e atividades privadas em benefício do interesse público, especialmente segurança, ordem urbana, saúde, meio ambiente e posturas municipais.'
+    ],
+    rightWrong: { right: 'Correto: embargo de obra irregular com auto fundamentado, competência fiscalizatória e possibilidade de defesa.', wrong: 'Errado: interditar atividade econômica sem base legal, sem motivação e sem proporcionalidade, apenas por pressão política.' },
+    solving: ['Classifique o poder administrativo envolvido.', 'Verifique competência e base legal.', 'Separe discricionariedade de arbitrariedade.', 'Confira se houve motivação, proporcionalidade e procedimento.', 'Indique se o ato deve ser mantido, corrigido ou anulado.'],
+    question: { statement: 'O poder de polícia administrativa municipal permite:', options: ['limitar atividades privadas nos termos da lei para proteger interesse público', 'criar tributo por decreto', 'punir servidor sem processo', 'afastar controle judicial sobre atos municipais'], answer: 'A', comment: 'Poder de polícia condiciona e limita atividades privadas, mas depende de lei, competência, motivação, proporcionalidade e controle.' }
+  },
+  'atos-administrativos': {
+    concept: 'Ato administrativo é manifestação unilateral da Administração, ou de quem exerça função administrativa, produzida sob regime de direito público e destinada a gerar efeitos jurídicos imediatos. No Município, aparece em licenças, autorizações, multas, nomeações, exonerações, decisões de processo administrativo, editais e sanções.',
+    purpose: 'Serve para avaliar validade, efeitos e controle da atuação administrativa. O Procurador Municipal precisa saber quando defender o ato, quando recomendar correção, quando reconhecer nulidade e quando preservar efeitos por segurança jurídica.',
+    practical: 'A análise deve passar por cinco elementos: competência, finalidade, forma, motivo e objeto. Depois, verifica-se atributo, vício, possibilidade de convalidação, anulação, revogação ou controle judicial. O erro de prova é pular direto para o resultado sem examinar o elemento viciado.',
+    rules: [
+      'Competência é o poder legal atribuído ao agente ou órgão; vício de competência pode ser sanável se não for exclusiva e não houver prejuízo.',
+      'Finalidade é sempre pública e prevista em lei; desvio de finalidade contamina o ato.',
+      'Forma é o modo de exteriorização exigido; forma essencial protege controle, defesa e segurança jurídica.',
+      'Motivo é o pressuposto fático e jurídico do ato; motivação é a exposição formal desses motivos.',
+      'Objeto é o conteúdo do ato, isto é, o efeito jurídico produzido.',
+      'Anulação retira ato ilegal; revogação retira ato válido por conveniência e oportunidade; convalidação corrige vício sanável.'
+    ],
+    rightWrong: { right: 'Correto: anular auto de infração lavrado por autoridade absolutamente incompetente ou sem descrição mínima do fato.', wrong: 'Errado: dizer que ato ilegal deve ser revogado por conveniência administrativa.' },
+    solving: ['Identifique o ato e seus efeitos.', 'Analise competência, finalidade, forma, motivo e objeto.', 'Classifique o vício, se existir.', 'Decida entre anulação, revogação, convalidação ou manutenção.', 'Considere segurança jurídica e efeitos já produzidos.'],
+    question: { statement: 'A Administração pretende retirar ato válido por mudança de conveniência administrativa. O instituto adequado é:', options: ['anulação', 'revogação', 'convalidação', 'cassação por ilegalidade originária'], answer: 'B', comment: 'Revogação incide sobre ato válido e decorre de juízo de mérito administrativo. Ato ilegal deve ser anulado.' }
+  },
+  'agentes-publicos': {
+    concept: 'Agentes públicos são todas as pessoas que exercem função pública, ainda que temporariamente ou sem remuneração. O tema abrange servidores estatutários, empregados públicos, agentes políticos, temporários, comissionados e particulares em colaboração.',
+    purpose: 'Serve para definir forma de ingresso, regime jurídico, direitos, deveres, responsabilidade, estabilidade, acumulação, sanções e defesa do Município em demandas funcionais.',
+    practical: 'Em caso envolvendo agente, o Procurador deve identificar o vínculo antes de responder. Servidor efetivo, comissionado, temporário e empregado público não seguem exatamente as mesmas regras. No Município, a Constituição dá a moldura e o estatuto local fornece o rito e detalhes.',
+    rules: [
+      'Concurso público é a regra para cargo ou emprego público, ressalvadas hipóteses constitucionais.',
+      'Cargo em comissão destina-se a direção, chefia e assessoramento, não a funções meramente técnicas permanentes.',
+      'Contratação temporária exige previsão legal, necessidade temporária e excepcional interesse público.',
+      'Estabilidade protege servidor efetivo aprovado em estágio probatório, mas não impede demissão mediante processo regular.',
+      'Acumulação remunerada só é admitida nas hipóteses constitucionais e com compatibilidade de horários.',
+      'Responsabilidade funcional pode ser administrativa, civil e penal, com pressupostos próprios em cada esfera.'
+    ],
+    rightWrong: { right: 'Correto: orientar PAD com contraditório antes de eventual demissão de servidor estável.', wrong: 'Errado: exonerar servidor estável como se fosse comissionado, sem processo e sem motivação adequada.' },
+    solving: ['Identifique o tipo de agente e o vínculo.', 'Verifique forma de ingresso e norma local aplicável.', 'Analise direitos, deveres e eventuais restrições constitucionais.', 'Confira necessidade de processo administrativo.', 'Defina consequência funcional e estratégia de defesa municipal.'],
+    question: { statement: 'Cargo em comissão, segundo a Constituição, deve destinar-se principalmente a funções de:', options: ['atividade burocrática permanente', 'direção, chefia e assessoramento', 'substituição de concurso público', 'qualquer função técnica ordinária'], answer: 'B', comment: 'Cargo em comissão é exceção à regra do concurso e deve ser reservado a direção, chefia e assessoramento.' }
+  },
+  'pad': {
+    concept: 'Processo Administrativo Disciplinar é o procedimento pelo qual a Administração apura infração funcional e, se houver prova suficiente, aplica sanção ao agente submetido ao regime disciplinar. Ele concretiza poder disciplinar, devido processo, contraditório e ampla defesa.',
+    purpose: 'Serve para proteger simultaneamente o interesse público e o servidor. O Município precisa apurar irregularidades, mas não pode punir por presunção, pressão política ou processo defeituoso.',
+    practical: 'O Procurador deve conferir instauração, competência, descrição dos fatos, comissão, provas, defesa, relatório, julgamento, prescrição e proporcionalidade da pena. Em Município, a lei local é indispensável para definir rito, prazos e penalidades.',
+    rules: [
+      'Portaria de instauração deve delimitar os fatos de modo suficiente para permitir defesa.',
+      'Sindicância investigativa não substitui PAD para penalidade grave quando a lei exige processo formal.',
+      'Contraditório e ampla defesa são garantias mínimas antes da sanção.',
+      'Afastamento preventivo é cautelar, não pena, e exige fundamento.',
+      'Julgamento deve enfrentar provas, defesa e dosimetria da penalidade.',
+      'Nulidade exige atenção ao prejuízo, mas cerceamento de defesa e incompetência podem comprometer todo o processo.'
+    ],
+    rightWrong: { right: 'Correto: instaurar PAD com fato descrito, comissão regular, defesa e decisão motivada antes de aplicar demissão.', wrong: 'Errado: punir servidor por fato diferente daquele investigado, sem abrir oportunidade real de defesa.' },
+    solving: ['Verifique a lei local do servidor.', 'Identifique fato, autoria e materialidade.', 'Confira competência e comissão.', 'Cheque defesa, provas e contraditório.', 'Analise prescrição, dosimetria e motivação da decisão.'],
+    question: { statement: 'Em PAD municipal, o afastamento preventivo do servidor, quando legalmente previsto, tem natureza de:', options: ['pena principal', 'medida cautelar administrativa', 'demissão indireta', 'confissão de culpa'], answer: 'B', comment: 'Afastamento preventivo não é sanção; é medida cautelar para proteger a apuração, quando prevista e motivada.' }
+  },
+  'licitacoes-contratos': {
+    concept: 'Licitação é procedimento administrativo destinado a selecionar proposta apta a gerar o resultado de contratação mais vantajoso para a Administração, com isonomia, competição, planejamento e controle. Contrato administrativo é o ajuste celebrado para atender necessidade pública sob regime jurídico próprio.',
+    purpose: 'Serve para proteger o erário, evitar direcionamento, planejar contratações e permitir que o Município compre, contrate obras, serviços, tecnologia, manutenção e concessões de forma defensável.',
+    practical: 'O Procurador não deve analisar licitação só no fim. Deve verificar planejamento, estudo técnico, termo de referência, pesquisa de preços, gestão de riscos, modalidade, critérios, habilitação, matriz de responsabilidades, cláusulas contratuais e hipóteses de contratação direta.',
+    rules: [
+      'Planejamento é eixo central da Lei nº 14.133/2021: contratação sem necessidade definida tende a gerar nulidade ou desperdício.',
+      'Competição e isonomia impedem exigências restritivas sem justificativa técnica.',
+      'Contratação direta não é contratação informal; dispensa e inexigibilidade exigem processo instruído e motivado.',
+      'Parecer jurídico deve controlar legalidade, apontar riscos e recomendar correções, não apenas carimbar a vontade do gestor.',
+      'Contrato administrativo exige gestão e fiscalização, com matriz de riscos, sanções e equilíbrio econômico-financeiro quando cabível.',
+      'Nulidade contratual deve considerar consequências práticas, boa-fé, interesse público e apuração de responsabilidade.'
+    ],
+    rightWrong: { right: 'Correto: exigir justificativa técnica para marca/modelo, pesquisa de preços robusta e motivação da escolha.', wrong: 'Errado: usar inexigibilidade apenas porque o gestor prefere determinado fornecedor, sem singularidade ou inviabilidade de competição.' },
+    solving: ['Identifique o objeto e a necessidade pública.', 'Verifique planejamento e instrução processual.', 'Escolha modalidade ou hipótese de contratação direta.', 'Confira competição, habilitação e julgamento.', 'Analise contrato, fiscalização, sanções e riscos.'],
+    question: { statement: 'Na Lei nº 14.133/2021, contratação direta por dispensa ou inexigibilidade:', options: ['dispensa processo administrativo', 'dispensa motivação', 'exige instrução, justificativa e controle de legalidade', 'autoriza escolha livre sem preço estimado'], answer: 'C', comment: 'Contratação direta não significa ausência de processo. Exige instrução, motivação, estimativa, justificativas e controle.' }
+  },
+  'servicos-publicos': {
+    concept: 'Serviço público é atividade destinada à satisfação de necessidades coletivas assumida pelo Estado, prestada diretamente ou por delegação, sob regime jurídico de direito público em maior ou menor intensidade.',
+    purpose: 'Serve para compreender continuidade, adequação, modicidade, universalidade, concessões, permissões, fiscalização e direitos dos usuários. No Município, envolve transporte, limpeza urbana, iluminação, saneamento, saúde, educação, cemitérios, feiras e outros serviços locais.',
+    practical: 'O Procurador analisa se o Município é titular do serviço, se a execução é direta ou delegada, se há contrato de concessão/permissão, qual padrão de continuidade é exigível e como agir diante de inadimplemento, falha do concessionário ou reclamação do usuário.',
+    rules: [
+      'Titularidade do serviço não se confunde com execução; o Município pode prestar diretamente ou delegar quando cabível.',
+      'Continuidade impede interrupção arbitrária, mas admite exceções legais e técnicas.',
+      'Adequação exige regularidade, segurança, eficiência, atualidade, generalidade, cortesia e modicidade conforme o regime aplicável.',
+      'Concessão e permissão exigem licitação e contrato, com fiscalização permanente do poder concedente.',
+      'Usuário possui direitos à informação, qualidade, atendimento adequado e meios de reclamação.',
+      'Falha de serviço pode gerar responsabilidade civil do Município ou do delegatário, conforme a situação.'
+    ],
+    rightWrong: { right: 'Correto: fiscalizar concessionária de transporte e aplicar sanção contratual motivada diante de descumprimento comprovado.', wrong: 'Errado: afirmar que delegação elimina responsabilidade de fiscalização do Município.' },
+    solving: ['Defina se a atividade é serviço público municipal.', 'Identifique titularidade e forma de prestação.', 'Confira contrato, lei ou regulamento aplicável.', 'Analise dever de continuidade e qualidade.', 'Defina sanção, intervenção, correção ou defesa judicial.'],
+    question: { statement: 'Na delegação de serviço público, o Município:', options: ['perde a titularidade do serviço', 'mantém dever de fiscalização', 'não pode aplicar sanções ao delegatário', 'fica impedido de regular a prestação'], answer: 'B', comment: 'A delegação transfere a execução, não a titularidade nem o dever de fiscalização do poder concedente.' }
+  },
+  'responsabilidade-controle-improbidade': {
+    concept: 'Responsabilidade civil do Estado, controle da Administração e improbidade administrativa formam o núcleo de responsabilização da atividade pública. O tema envolve danos causados por agentes, controle interno, externo e judicial, e repressão a condutas ímprobas.',
+    purpose: 'Serve para defender o Município em ações indenizatórias, orientar prevenção de danos, estruturar controles e distinguir ilegalidade administrativa de improbidade. Para Procurador, é área de risco financeiro e institucional elevado.',
+    practical: 'A análise começa pelo fato danoso: houve conduta estatal, dano e nexo causal? Existe causa excludente ou culpa exclusiva da vítima? Em controle, pergunta-se quem controla e qual limite. Em improbidade, após a Lei nº 14.230/2021, é indispensável atenção ao dolo e à tipicidade da conduta.',
+    rules: [
+      'A responsabilidade civil objetiva do Estado exige dano, conduta estatal e nexo causal, sem necessidade de provar culpa do agente.',
+      'Excludentes como culpa exclusiva da vítima, caso fortuito externo ou ausência de nexo podem afastar responsabilidade.',
+      'O direito de regresso contra agente público exige demonstração de dolo ou culpa.',
+      'Controle interno, externo, legislativo, judicial e social possuem objetos e limites próprios.',
+      'Controle judicial não substitui mérito administrativo legítimo, mas alcança legalidade, motivação, finalidade e proporcionalidade.',
+      'Improbidade administrativa exige tipicidade e, em regra, dolo, não se confundindo com mera ilegalidade ou erro administrativo.'
+    ],
+    rightWrong: { right: 'Correto: em ação indenizatória por queda em via pública, apurar dano, nexo, manutenção da via, prova do fato e eventual culpa da vítima.', wrong: 'Errado: afirmar que todo ato ilegal é automaticamente ato de improbidade.' },
+    solving: ['Separe responsabilidade, controle e improbidade.', 'Em responsabilidade, verifique dano, conduta e nexo.', 'Em controle, identifique órgão controlador e limite.', 'Em improbidade, confira tipo legal, dolo e elemento subjetivo.', 'Conclua com defesa, correção administrativa ou responsabilização adequada.'],
+    question: { statement: 'Após a reforma da Lei de Improbidade Administrativa, é correto afirmar que:', options: ['qualquer ilegalidade configura improbidade', 'a responsabilização por improbidade deve observar tipicidade e elemento subjetivo exigido', 'culpa simples sempre basta para todos os atos ímprobos', 'controle judicial pode substituir livremente o mérito administrativo'], answer: 'B', comment: 'A improbidade não se confunde com ilegalidade genérica. A lei exige enquadramento típico e elemento subjetivo conforme o caso.' }
+  },
+  'processo-lai-lgpd-municipal': {
+    concept: 'Processo administrativo, Lei de Acesso à Informação, LGPD e Direito Administrativo Municipal formam o bloco de governança jurídica cotidiana da Prefeitura. Envolvem rito, participação, transparência, proteção de dados, motivação e legislação local.',
+    purpose: 'Serve para garantir que decisões municipais sejam documentadas, transparentes, controláveis e compatíveis com proteção de dados pessoais. O Procurador atua para evitar nulidades, omissões, publicidade indevida e decisões sem instrução.',
+    practical: 'Antes de uma decisão municipal, o processo deve revelar pedido, competência, instrução, manifestação técnica, motivação e decisão. Na transparência, a regra é publicidade, mas com proteção de informações sigilosas e dados pessoais. A LGPD exige finalidade, necessidade, base legal, segurança e prestação de contas.',
+    rules: [
+      'Processo administrativo organiza a formação da vontade estatal e permite contraditório, motivação e controle.',
+      'Motivação deve indicar fatos, fundamentos e relação lógica entre prova e conclusão.',
+      'LAI estabelece publicidade como regra e sigilo como exceção justificada.',
+      'Transparência ativa é divulgação espontânea; transparência passiva é resposta a pedidos de acesso.',
+      'LGPD não elimina transparência pública, mas exige compatibilização entre acesso à informação e proteção de dados pessoais.',
+      'Legislação municipal define competências, ritos, estruturas e regimes locais que precisam ser aplicados no parecer.'
+    ],
+    rightWrong: { right: 'Correto: fornecer informação pública solicitada, ocultando dados pessoais desnecessários quando cabível.', wrong: 'Errado: negar todo pedido de acesso sob alegação genérica de LGPD, sem análise de publicidade, finalidade e eventual anonimização.' },
+    solving: ['Identifique o processo e a competência decisória.', 'Confira instrução, contraditório e motivação.', 'Separe informação pública, sigilosa e dado pessoal.', 'Aplique LAI e LGPD de forma harmonizada.', 'Consulte legislação municipal antes de concluir.'],
+    question: { statement: 'Sobre LAI e LGPD na Administração Municipal, é correto afirmar:', options: ['LGPD revogou a transparência pública', 'todo dado existente em processo público deve ser divulgado integralmente', 'publicidade é regra, mas deve ser compatibilizada com proteção de dados e sigilos legais', 'pedido de acesso pode ser negado sem motivação'], answer: 'C', comment: 'LAI e LGPD devem ser harmonizadas. A Administração deve garantir transparência e proteger dados pessoais quando necessário.' }
+  }
+};
+
+function getAdministrativeSpecific(subject, topic) {
+  if (subject?.id !== 'direito-administrativo') return null;
+  return administrativeSpecific[topic?.id] || null;
+}
+
 const portugueseSpecific = [
   {
     test: (txt) => has(txt, ['tipologia textual', 'generos textuais', 'gêneros textuais', 'narracao', 'narração']),
@@ -128,8 +301,9 @@ function buildGenericSpecific(subject, topic) {
 
 export function getPremiumMethodLesson(subject, topic) {
   if (!topic) return null;
+  const adminSpecific = getAdministrativeSpecific(subject, topic);
   const specific = subject?.id === 'lingua-portuguesa' ? getPortugueseSpecific(topic) : null;
-  const base = specific || buildGenericSpecific(subject, topic);
+  const base = adminSpecific || specific || buildGenericSpecific(subject, topic);
   const subjectName = subject?.subject || 'Matéria';
   const title = topic.title;
   const legalBase = list(topic.legalBase, ['Conferir a lei seca indicada no edital e nas normas oficiais aplicáveis.']);
