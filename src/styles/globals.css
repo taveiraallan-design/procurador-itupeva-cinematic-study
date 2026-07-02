@@ -4164,3 +4164,137 @@ img, svg, canvas, video { max-width: 100%; }
   .materials-subject-menu { position: static; max-height: unset; display: flex; overflow-x: auto; padding-bottom: 8px; }
   .materials-subject-card { min-width: 260px; }
 }
+
+/* Fase 39A - Apostila Explicada Premium */
+.apostila-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 18px;
+  align-items: center;
+}
+.source-note {
+  margin-top: 10px;
+  color: #ffdfaa !important;
+  font-weight: 800;
+  line-height: 1.45;
+}
+.apostila-toolbar { align-items: center; }
+.apostila-filter-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.apostila-filter-actions input { min-width: min(520px, 100%); }
+.apostila-filter-actions select,
+.apostila-filter-actions input {
+  border: 1px solid rgba(142, 170, 214, .2);
+  background: rgba(1, 6, 18, .75);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 12px 14px;
+  font: inherit;
+  font-weight: 800;
+}
+.apostila-layout {
+  display: grid;
+  grid-template-columns: minmax(270px, 350px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.apostila-subject-menu {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 10px;
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+  padding-right: 4px;
+}
+.apostila-subject-card {
+  width: 100%;
+  border: 1px solid rgba(142, 170, 214, .18);
+  background: linear-gradient(135deg, rgba(8, 15, 32, .78), rgba(7, 12, 28, .9));
+  color: inherit;
+  border-radius: 22px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+.apostila-subject-card.active {
+  border-color: rgba(255, 177, 90, .7);
+  background: linear-gradient(135deg, rgba(118, 68, 10, .36), rgba(23, 18, 55, .9));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .25);
+}
+.apostila-subject-card strong { font-size: 1.06rem; line-height: 1.2; }
+.apostila-subject-card small { color: var(--muted); font-weight: 900; }
+.apostila-next-card { padding: 16px !important; }
+.apostila-main { display: grid; gap: 16px; min-width: 0; }
+.apostila-workbench {
+  display: grid;
+  grid-template-columns: minmax(265px, 360px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.apostila-topic-list-card {
+  position: sticky;
+  top: 18px;
+  max-height: calc(100vh - 130px);
+  overflow: auto;
+}
+.apostila-reader-card { overflow: hidden; }
+.apostila-mini-index {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+.apostila-mini-index span {
+  border: 1px solid rgba(74, 163, 255, .24);
+  background: rgba(21, 74, 141, .18);
+  color: #d7ecff;
+  border-radius: 999px;
+  padding: 8px 11px;
+  font-weight: 1000;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.apostila-section {
+  border: 1px solid rgba(142, 170, 214, .14);
+  background: rgba(5, 10, 22, .45);
+  border-radius: 22px;
+  padding: 18px;
+  margin-top: 14px;
+}
+.apostila-section p {
+  color: #d7e2f3;
+  line-height: 1.72;
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+.apostila-section .compact-list { color: #d7e2f3; }
+.apostila-section .compact-list li { margin: 9px 0; line-height: 1.6; }
+.apostila-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+@media (max-width: 1200px) {
+  .apostila-workbench { grid-template-columns: 1fr; }
+  .apostila-topic-list-card { position: static; max-height: unset; }
+}
+@media (max-width: 900px) {
+  .apostila-hero,
+  .apostila-layout { grid-template-columns: 1fr; }
+  .apostila-subject-menu { position: static; max-height: unset; display: flex; overflow-x: auto; padding-bottom: 8px; }
+  .apostila-subject-card { min-width: 270px; }
+  .apostila-filter-actions,
+  .apostila-filter-actions input,
+  .apostila-filter-actions select,
+  .apostila-action-row .btn { width: 100%; }
+  .apostila-reader-card .lesson-reader-actions { width: 100%; }
+}
+@media (max-width: 560px) {
+  .apostila-section { padding: 14px; border-radius: 18px; }
+  .apostila-section p { font-size: .96rem; line-height: 1.65; }
+  .apostila-mini-index span { width: 100%; text-align: center; }
+}

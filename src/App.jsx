@@ -23,6 +23,7 @@ import Subjects from './pages/Subjects';
 import CompleteContent from './pages/CompleteContent';
 import WrittenLessons from './pages/WrittenLessons';
 import StudyMaterials from './pages/StudyMaterials';
+import PremiumApostila from './pages/PremiumApostila';
 import Edital from './pages/Edital';
 import Questions from './pages/Questions';
 import Simulations from './pages/Simulations';
@@ -54,6 +55,7 @@ const navItems = [
   { id: 'conteudo', label: 'Conteúdo Completo' },
   { id: 'aulas', label: 'Aulas Escritas' },
   { id: 'materiais', label: 'Materiais' },
+  { id: 'apostila', label: 'Apostila' },
   { id: 'edital', label: 'Edital' },
   { id: 'questoes', label: 'Questões' },
   { id: 'simulados', label: 'Simulados' },
@@ -86,6 +88,7 @@ const pageComponents = {
   conteudo: CompleteContent,
   aulas: WrittenLessons,
   materiais: StudyMaterials,
+  apostila: PremiumApostila,
   edital: Edital,
   questoes: Questions,
   simulados: Simulations,
