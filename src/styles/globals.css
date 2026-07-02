@@ -4542,3 +4542,151 @@ img, svg, canvas, video { max-width: 100%; }
   }
   .clean-list { padding-left: 18px !important; }
 }
+
+/* Hotfix 39M — Véspera em layout legível: elimina colunas estreitas e textos fora dos cards */
+.vespera-page,
+.vespera-page * {
+  box-sizing: border-box;
+  min-width: 0;
+}
+.vespera-page {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  gap: 20px;
+}
+.vespera-hero,
+.vespera-layout,
+.vespera-bottom-grid,
+.vespera-detail-grid {
+  width: 100%;
+  max-width: 100%;
+}
+.vespera-bottom-grid {
+  grid-template-columns: 1fr !important;
+  gap: 18px !important;
+}
+.vespera-layout {
+  grid-template-columns: 1fr !important;
+  gap: 18px !important;
+}
+.vespera-block-list,
+.vespera-detail-card,
+.last-minute-card,
+.vespera-bottom-grid > .card {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+.vespera-checklists {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 14px !important;
+  width: 100% !important;
+}
+.vespera-checklists article {
+  width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+.vespera-checklists label {
+  display: grid !important;
+  grid-template-columns: 22px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 12px !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
+  line-height: 1.45 !important;
+}
+.vespera-checklists input {
+  width: 18px !important;
+  height: 18px !important;
+  margin-top: 3px !important;
+  flex: 0 0 auto !important;
+}
+.vespera-checklists label span {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: normal !important;
+  line-height: 1.45 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+}
+.last-minute-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  gap: 14px !important;
+}
+.last-minute-grid article,
+.last-minute-grid strong,
+.last-minute-grid p,
+.vespera-detail-card p,
+.vespera-detail-card span,
+.vespera-action-strip,
+.vespera-action-strip span,
+.trap-list.compact-traps p {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: normal !important;
+  line-height: 1.45 !important;
+}
+.vespera-action-strip {
+  align-items: flex-start !important;
+}
+.vespera-action-strip .btn {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 900px) {
+  .vespera-hero {
+    grid-template-columns: 1fr !important;
+    padding: 18px !important;
+    border-radius: 24px !important;
+  }
+  .vespera-countdown strong { font-size: 3.4rem !important; }
+  .vespera-block-buttons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    gap: 10px !important;
+    padding-bottom: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .vespera-block-buttons button {
+    flex: 0 0 min(280px, 78vw) !important;
+    width: min(280px, 78vw) !important;
+  }
+  .vespera-detail-grid,
+  .vespera-checklists,
+  .last-minute-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .vespera-action-strip {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .vespera-action-strip .btn { width: 100% !important; }
+}
+
+@media (max-width: 560px) {
+  .vespera-page { gap: 14px !important; }
+  .vespera-page .card,
+  .vespera-block-list,
+  .vespera-detail-card,
+  .last-minute-card,
+  .vespera-bottom-grid > .card {
+    padding: 14px !important;
+    border-radius: 20px !important;
+  }
+  .vespera-hero h1 { font-size: clamp(2rem, 12vw, 3rem) !important; }
+  .vespera-hero p { font-size: .96rem !important; }
+  .hero-actions { display: grid !important; grid-template-columns: 1fr !important; }
+  .hero-actions .btn { width: 100% !important; }
+}
