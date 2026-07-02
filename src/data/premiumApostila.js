@@ -1,11 +1,11 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39C',
+  phase: 'Fase 39D',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Direito Administrativo + Direito Constitucional + Processo Civil e Direito Civil — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Direito Administrativo + Constitucional + Processo/Civil + Tributário, Financeiro e Orçamentário — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39D — Tributário, Financeiro e Orçamentário Premium',
-    '39E — Legislação Municipal Premium'
+    '39E — Legislação Municipal Premium',
+    '39F — Penal e Processo Penal Premium'
   ]
 };
 
@@ -1396,7 +1396,814 @@ export const premiumApostilaSubjects = [
         nextTopic: 'Próxima fase: Tributário, Financeiro e Orçamentário Premium'
       }
     ]
-  }
+  },
+  {
+  "id": "tributario-financeiro-orcamentario",
+  "subject": "Direito Tributário, Financeiro e Orçamentário",
+  "status": "39D concluída",
+  "priority": "Crítica",
+  "overview": "Apostila premium dedicada ao bloco tributário, financeiro e orçamentário do edital. O foco é preparar o candidato para atuar como Procurador Municipal: competência tributária, impostos municipais, taxas, contribuição de melhoria, obrigação e crédito tributário, lançamento, dívida ativa, execução fiscal, orçamento público, Lei nº 4.320/1964, LRF, receita, despesa, renúncia fiscal, controle e responsabilidade fiscal.",
+  "lawBase": [
+    "CF/88, arts. 145 a 162, sistema tributário nacional e competências municipais",
+    "Código Tributário Nacional — Lei nº 5.172/1966",
+    "Lei nº 4.320/1964, normas gerais de direito financeiro e orçamento",
+    "Lei Complementar nº 101/2000 — Lei de Responsabilidade Fiscal",
+    "Lei de Execução Fiscal — Lei nº 6.830/1980",
+    "Legislação tributária municipal de Itupeva e normas locais sobre RPV, dívida ativa e orçamento, quando aplicáveis"
+  ],
+  "topics": [
+    {
+      "id": "sistema-tributario-competencia-municipal",
+      "level": "básico",
+      "title": "Sistema Tributário Nacional, competência tributária e limitações ao poder de tributar",
+      "whatIs": "É o conjunto de regras constitucionais e legais que organiza quem pode criar tributos, quais espécies tributárias existem, quais limites o poder público deve respeitar e como a arrecadação financia atividades públicas. Para o Município, o núcleo é saber instituir e cobrar tributos sem invadir competência da União ou do Estado.",
+      "purpose": "Serve para impedir cobrança arbitrária e dar segurança à arrecadação. Para Procurador Municipal, é o ponto de partida para avaliar leis tributárias locais, autos de infração, execuções fiscais, imunidades, isenções e risco de inconstitucionalidade.",
+      "plainExplanation": [
+        "O Município não cria tributo porque quer. Ele só pode instituir tributos dentro da competência que a Constituição autorizou. Essa competência é uma parcela de poder político-jurídico: permite legislar, fiscalizar, lançar e cobrar, mas dentro dos limites constitucionais.",
+        "A Constituição prevê espécies tributárias como impostos, taxas e contribuição de melhoria, e atribui aos Municípios impostos próprios, como IPTU, ITBI e ISS. Além disso, o Município pode instituir taxas pelo exercício regular do poder de polícia ou por serviço público específico e divisível, e contribuição de melhoria em razão de obra pública que valorize imóveis.",
+        "As limitações ao poder de tributar funcionam como freios: legalidade, anterioridade, irretroatividade, isonomia, capacidade contributiva, vedação ao confisco e imunidades. Em prova, a banca costuma criar uma lei municipal aparentemente útil, mas que viola uma dessas travas. O raciocínio correto é sempre: competência, espécie tributária, fato gerador, base de cálculo, contribuinte, limites e procedimento."
+      ],
+      "examTechnical": "Para prova, domine CF/88 arts. 145 a 162, CTN como norma geral e diferenças entre competência tributária, capacidade tributária ativa e sujeição ativa. Competência tributária é indelegável em sentido legislativo, mas funções de arrecadar/fiscalizar podem ser atribuídas nos limites legais. Imunidade é limitação constitucional; isenção é benefício legal infraconstitucional.",
+      "cityExample": "A Câmara aprova lei criando uma taxa municipal sobre qualquer estabelecimento comercial, mas sem vincular a exercício de polícia ou serviço específico e divisível. A Procuradoria deve alertar que taxa exige hipótese constitucional específica, não pode ter base de cálculo própria de imposto e precisa guardar relação com atividade estatal divisível ou poder de polícia.",
+      "legalBase": [
+        "CF/88, arts. 145 a 162",
+        "CTN, normas gerais de direito tributário",
+        "Lei Orgânica e Código Tributário Municipal, quando existentes"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 145, 146, 150, 156, 158 e 159",
+        "CTN, arts. 3º, 4º, 6º, 7º, 9º a 15"
+      ],
+      "jurisprudence": [
+        "O STF diferencia imunidade constitucional de isenção legal; imunidade retira competência tributária, isenção dispensa pagamento por lei dentro da competência existente.",
+        "A jurisprudência exige que taxa tenha relação com atividade estatal específica: poder de polícia ou serviço público específico e divisível."
+      ],
+      "objectiveCharge": [
+        "Conceito de tributo no CTN.",
+        "Competência para IPTU, ITBI e ISS.",
+        "Diferença entre imposto, taxa e contribuição de melhoria.",
+        "Limitações constitucionais ao poder de tributar.",
+        "Imunidade x isenção."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre constitucionalidade de lei municipal que cria taxa, concede isenção sem estimativa de impacto, aumenta IPTU, altera ISS ou pretende cobrar ITBI em hipótese controvertida. A resposta deve começar pela competência e terminar com risco jurídico e providência legislativa/administrativa.",
+      "traps": [
+        "Taxa não pode ser criada como imposto disfarçado.",
+        "Competência tributária legislativa não se delega.",
+        "Imunidade não é favor fiscal; é limite constitucional.",
+        "Isenção depende de lei específica e deve respeitar impacto orçamentário quando renúncia de receita.",
+        "Capacidade contributiva não autoriza confisco."
+      ],
+      "differences": [
+        "Competência tributária x capacidade tributária ativa.",
+        "Imunidade x isenção x não incidência.",
+        "Imposto x taxa x preço público.",
+        "Legalidade tributária x simples ato administrativo de cobrança."
+      ],
+      "commonMistakes": [
+        "Decorar impostos municipais sem entender limites.",
+        "Confundir serviço público geral com serviço específico e divisível.",
+        "Tratar imunidade como benefício revogável por lei municipal.",
+        "Esquecer anterioridade e legalidade em aumento de tributo."
+      ],
+      "miniCase": "Lei municipal cria taxa anual de segurança pública municipal para todos os imóveis. O candidato deve desconfiar: segurança pública geral não é serviço específico e divisível prestado ao contribuinte, e taxa não pode financiar atividade geral como se fosse imposto.",
+      "activeQuestions": [
+        "Qual é a espécie tributária?",
+        "O Município tem competência?",
+        "Há lei formal?",
+        "Há fato gerador definido?",
+        "Existe limitação constitucional afetada?"
+      ],
+      "flashcards": [
+        {
+          "front": "Quais impostos são municipais na Constituição?",
+          "back": "IPTU, ITBI e ISS, nos termos do art. 156 da CF."
+        },
+        {
+          "front": "Taxa pode ter base de cálculo de imposto?",
+          "back": "Não deve utilizar base própria de imposto; precisa guardar relação com poder de polícia ou serviço específico e divisível."
+        },
+        {
+          "front": "Imunidade é o mesmo que isenção?",
+          "back": "Não. Imunidade é limitação constitucional à competência; isenção é dispensa legal dentro da competência tributária."
+        }
+      ],
+      "summary": "Tributário municipal começa na Constituição. O Procurador precisa saber se o Município pode tributar, por qual espécie, com qual base legal e respeitando quais limites.",
+      "checklist": [
+        "Sei identificar competência municipal.",
+        "Sei diferenciar imposto, taxa e contribuição de melhoria.",
+        "Sei imunidade x isenção.",
+        "Sei aplicar legalidade, anterioridade e vedação ao confisco.",
+        "Consigo avaliar constitucionalidade de taxa municipal."
+      ],
+      "nextTopic": "Impostos municipais: IPTU, ITBI e ISS"
+    },
+    {
+      "id": "impostos-municipais-iptu-itbi-iss",
+      "level": "intermediário",
+      "title": "Impostos municipais: IPTU, ITBI e ISS",
+      "whatIs": "São os impostos de competência própria do Município: IPTU sobre propriedade predial e territorial urbana, ITBI sobre transmissão onerosa inter vivos de bens imóveis e direitos reais sobre imóveis, e ISS sobre serviços definidos em lei complementar.",
+      "purpose": "Servem para financiar políticas municipais e compõem o núcleo da arrecadação local. Para Procurador, são temas centrais em lançamento, contencioso tributário, dívida ativa, execução fiscal e defesa de leis municipais.",
+      "plainExplanation": [
+        "IPTU incide sobre propriedade, domínio útil ou posse de imóvel urbano. A discussão prática costuma envolver zona urbana, cadastro imobiliário, planta genérica de valores, progressividade, alíquotas, imunidades, isenções e responsabilidade pelo pagamento.",
+        "ITBI incide sobre transmissão onerosa inter vivos de imóvel ou direitos reais. A prova cobra muito o momento da transmissão, base de cálculo, imunidade em integralização de capital e limites da cobrança antecipada. O Município precisa cuidar para não exigir ITBI antes do fato juridicamente relevante quando a jurisprudência não permite.",
+        "ISS incide sobre prestação de serviços previstos em lei complementar. O desafio é identificar se há serviço na lista, local de incidência, contribuinte, responsável tributário, retenção, sociedades profissionais, construção civil e conflitos com ICMS. Em parecer municipal, ISS exige leitura da LC 116/2003 e da legislação local."
+      ],
+      "examTechnical": "Para prova, foque CF art. 156, CTN, LC 116/2003 para ISS e legislação municipal. Entenda progressividade do IPTU, função extrafiscal, ITBI e registro/transmissão, ISS e lista de serviços. A banca costuma misturar imposto municipal com taxa ou inverter competência com Estado/União.",
+      "cityExample": "Uma empresa pede imunidade de ITBI na integralização de imóvel ao capital social. A Procuradoria deve analisar se a atividade preponderante é compra e venda, locação ou arrendamento mercantil de imóveis, verificar documentação contábil e aplicar a regra constitucional e legal com cautela.",
+      "legalBase": [
+        "CF/88, art. 156",
+        "CTN, regras sobre impostos municipais",
+        "LC nº 116/2003 para ISS",
+        "Legislação tributária municipal"
+      ],
+      "dryLaw": [
+        "CF/88, art. 156, I, II e III",
+        "CTN, arts. 32 a 42, 156 conforme extinção, e regras gerais aplicáveis",
+        "LC 116/2003, lista de serviços e regras de local do ISS"
+      ],
+      "jurisprudence": [
+        "O STF possui entendimentos relevantes sobre base de cálculo e momento do ITBI, além de temas sobre IPTU progressivo e imunidades tributárias.",
+        "O STJ possui jurisprudência importante sobre ISS, lista de serviços, base de cálculo e local de incidência em situações específicas."
+      ],
+      "objectiveCharge": [
+        "Fato gerador do IPTU.",
+        "Progressividade fiscal e extrafiscal.",
+        "ITBI e transmissão onerosa.",
+        "ISS e lista de serviços.",
+        "Conflitos entre ISS e ICMS."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre cobrança de ITBI, revisão de IPTU, lançamento de ISS, imunidade de entidade, isenção municipal ou defesa em execução fiscal. A resposta deve mostrar competência, fato gerador, base de cálculo, sujeito passivo e risco jurisprudencial.",
+      "traps": [
+        "IPTU não é taxa de limpeza urbana.",
+        "ITBI não incide em transmissão gratuita, que é tema de ITCMD estadual.",
+        "ISS não incide sobre qualquer atividade econômica, apenas serviços previstos em lei complementar/lista.",
+        "Planta genérica de valores pode exigir lei conforme o tipo de alteração.",
+        "Imunidade recíproca não alcança automaticamente todo terceiro privado."
+      ],
+      "differences": [
+        "IPTU x ITR.",
+        "ITBI x ITCMD.",
+        "ISS x ICMS.",
+        "Isenção x imunidade.",
+        "Contribuinte x responsável tributário."
+      ],
+      "commonMistakes": [
+        "Não verificar se o imóvel é urbano.",
+        "Cobrar ITBI sem analisar transmissão efetiva.",
+        "Aplicar ISS fora da lista legal.",
+        "Ignorar jurisprudência sobre base de cálculo.",
+        "Não conferir lei municipal específica."
+      ],
+      "miniCase": "Município autua empresa de streaming por ISS. A Procuradoria precisa verificar previsão na lista da LC 116/2003, legislação municipal, local de recolhimento, base de cálculo e entendimento jurisprudencial, evitando autuação genérica.",
+      "activeQuestions": [
+        "Qual é o imposto municipal envolvido?",
+        "Qual é o fato gerador?",
+        "Qual é a base de cálculo?",
+        "Quem é contribuinte/responsável?",
+        "Existe imunidade, isenção ou precedente relevante?"
+      ],
+      "flashcards": [
+        {
+          "front": "ITBI é imposto de qual ente?",
+          "back": "Município, nos termos do art. 156, II, da Constituição."
+        },
+        {
+          "front": "ISS depende de quê?",
+          "back": "Prestação de serviço previsto em lei complementar/lista e legislação municipal instituidora."
+        },
+        {
+          "front": "IPTU pode ser progressivo?",
+          "back": "Sim, conforme hipóteses constitucionais, inclusive progressividade fiscal e extrafiscal urbana."
+        }
+      ],
+      "summary": "IPTU, ITBI e ISS são o coração tributário municipal. Estude sempre pela sequência: competência, fato gerador, base de cálculo, contribuinte, benefício/limitação e cobrança.",
+      "checklist": [
+        "Sei IPTU, ITBI e ISS.",
+        "Sei fato gerador de cada um.",
+        "Sei principais pegadinhas de ITBI.",
+        "Sei ISS e lista de serviços.",
+        "Consigo montar parecer tributário municipal."
+      ],
+      "nextTopic": "Taxas, contribuição de melhoria e preço público"
+    },
+    {
+      "id": "taxas-contribuicao-melhoria-preco-publico",
+      "level": "intermediário",
+      "title": "Taxas, contribuição de melhoria e preço público",
+      "whatIs": "Taxas são tributos vinculados ao exercício do poder de polícia ou a serviço público específico e divisível. Contribuição de melhoria decorre de obra pública que valoriza imóveis. Preço público ou tarifa é remuneração não tributária, geralmente contratual ou decorrente de serviço facultativo em regime específico.",
+      "purpose": "Serve para estruturar cobranças municipais sem violar a Constituição. O Procurador precisa evitar que o Município chame de taxa uma cobrança que, na essência, é imposto ou preço público.",
+      "plainExplanation": [
+        "A taxa tem uma característica fundamental: ela depende de uma atuação estatal específica dirigida ao contribuinte. Pode ser poder de polícia, como fiscalização de licença e funcionamento, ou serviço público específico e divisível, como coleta individualizável em certas hipóteses. Serviços gerais, universais e indivisíveis não podem ser custeados por taxa.",
+        "Contribuição de melhoria é mais rara na prática, mas cai em prova. Ela exige obra pública e valorização imobiliária decorrente da obra. Não basta a obra existir; é preciso demonstrar benefício patrimonial ao imóvel e respeitar limites, como custo da obra e acréscimo individual de valor.",
+        "Preço público não é tributo. Normalmente decorre de relação mais próxima da escolha do usuário ou de serviço econômico. A diferença é importante porque tributo exige lei, lançamento, regime de direito público e cobrança tributária; preço público segue lógica diversa."
+      ],
+      "examTechnical": "Para prova, saiba que taxa exige especificidade e divisibilidade ou poder de polícia. Contribuição de melhoria exige obra pública + valorização imobiliária. Preço público não é tributo. A banca costuma apresentar serviços de limpeza, iluminação ou segurança como taxa para ver se o candidato percebe a indivisibilidade.",
+      "cityExample": "O Município pretende cobrar contribuição de melhoria após pavimentar rua. A Procuradoria deve exigir processo com custo da obra, delimitação da zona beneficiada, avaliação de valorização dos imóveis, notificação e critérios de rateio, sob pena de cobrança frágil.",
+      "legalBase": [
+        "CF/88, art. 145, II e III",
+        "CTN, arts. 77 a 82",
+        "Legislação municipal instituidora de taxas e contribuição de melhoria"
+      ],
+      "dryLaw": [
+        "CF/88, art. 145, II e III",
+        "CTN, arts. 77, 78, 79, 81 e 82"
+      ],
+      "jurisprudence": [
+        "A jurisprudência dos tribunais superiores diferencia taxa de preço público e rejeita taxas fundadas em serviços gerais e indivisíveis.",
+        "Poder de polícia pode fundamentar taxa quando houver atividade estatal efetiva e estrutura administrativa apta à fiscalização."
+      ],
+      "objectiveCharge": [
+        "Taxa x imposto.",
+        "Taxa de polícia x taxa de serviço.",
+        "Serviço específico e divisível.",
+        "Contribuição de melhoria e valorização.",
+        "Preço público x taxa."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre criação de taxa de fiscalização, cobrança por coleta, contribuição de melhoria após obra urbana ou defesa de cobrança municipal impugnada por contribuinte.",
+      "traps": [
+        "Taxa não serve para custear serviço geral.",
+        "Iluminação pública não é taxa; hoje há contribuição específica prevista constitucionalmente.",
+        "Contribuição de melhoria não é simples reembolso de obra.",
+        "Preço público não vira tributo só por ser cobrado pelo Município."
+      ],
+      "differences": [
+        "Taxa x preço público.",
+        "Taxa de serviço x taxa de polícia.",
+        "Contribuição de melhoria x imposto sobre valorização.",
+        "Serviço específico x serviço geral."
+      ],
+      "commonMistakes": [
+        "Criar taxa sem fato gerador vinculado.",
+        "Ignorar divisibilidade do serviço.",
+        "Cobrar contribuição de melhoria sem provar valorização.",
+        "Confundir tarifa com tributo."
+      ],
+      "miniCase": "Lei cria taxa para custear limpeza de praças e vias públicas. A cobrança é vulnerável porque o serviço é geral e indivisível, não diretamente mensurável para cada contribuinte.",
+      "activeQuestions": [
+        "Há serviço específico e divisível?",
+        "Há poder de polícia?",
+        "A cobrança é compulsória?",
+        "Existe obra pública e valorização?",
+        "É tributo ou preço público?"
+      ],
+      "flashcards": [
+        {
+          "front": "Taxa pode financiar serviço geral?",
+          "back": "Não. Taxa exige serviço específico e divisível ou poder de polícia."
+        },
+        {
+          "front": "Contribuição de melhoria exige o quê?",
+          "back": "Obra pública e valorização imobiliária decorrente da obra."
+        },
+        {
+          "front": "Preço público é tributo?",
+          "back": "Não. Tem natureza não tributária."
+        }
+      ],
+      "summary": "Taxas e contribuição de melhoria são tributos vinculados. A prova tenta transformar qualquer custo municipal em taxa; o candidato deve perguntar qual atuação estatal específica justifica a cobrança.",
+      "checklist": [
+        "Sei taxa de polícia e serviço.",
+        "Sei especificidade e divisibilidade.",
+        "Sei contribuição de melhoria.",
+        "Sei preço público.",
+        "Consigo impugnar taxa inconstitucional."
+      ],
+      "nextTopic": "Obrigação tributária, fato gerador e sujeitos"
+    },
+    {
+      "id": "obrigacao-fato-gerador-sujeitos",
+      "level": "básico",
+      "title": "Obrigação tributária, fato gerador, sujeito ativo, sujeito passivo e responsabilidade tributária",
+      "whatIs": "Obrigação tributária é a relação jurídica que nasce com a ocorrência do fato gerador e liga o sujeito ativo ao sujeito passivo. Pode ser principal, envolvendo pagamento de tributo ou penalidade, ou acessória, envolvendo deveres instrumentais como declarações, cadastros e emissão de documentos.",
+      "purpose": "Serve para identificar quando o tributo nasce, quem deve pagar, quem pode cobrar, quais deveres acessórios existem e quando terceiros podem responder por dívida tributária.",
+      "plainExplanation": [
+        "O fato gerador é o acontecimento previsto em lei que faz nascer a obrigação tributária. No IPTU, por exemplo, a situação ligada ao imóvel urbano; no ISS, a prestação de serviço; no ITBI, a transmissão onerosa inter vivos de imóvel ou direito real.",
+        "Sujeito ativo é quem tem o direito de exigir o tributo. Sujeito passivo é quem deve cumprir a obrigação, como contribuinte ou responsável. Contribuinte tem relação direta com o fato gerador; responsável é indicado por lei mesmo sem praticar diretamente o fato gerador.",
+        "Obrigação acessória não é 'menos importante'. Descumpri-la pode gerar multa. Para Município, cadastros, declarações de ISS, emissão de notas e informações imobiliárias são instrumentos essenciais de fiscalização."
+      ],
+      "examTechnical": "Estude CTN arts. 113 a 138. A banca cobra obrigação principal x acessória, fato gerador, sujeito passivo, contribuinte x responsável, solidariedade, capacidade tributária passiva, domicílio tributário e responsabilidade de sucessores, terceiros e infrações.",
+      "cityExample": "Empresa prestadora de serviço deixa de recolher ISS, mas a lei municipal atribui responsabilidade ao tomador em certas hipóteses de retenção. A Procuradoria deve verificar se a responsabilidade está prevista em lei, se o serviço ocorreu, se houve retenção devida e quem deve constar no lançamento.",
+      "legalBase": [
+        "CTN, obrigação tributária e responsabilidade",
+        "CF/88, competência tributária municipal",
+        "Legislação municipal de ISS, IPTU, ITBI e deveres acessórios"
+      ],
+      "dryLaw": [
+        "CTN, arts. 113 a 138",
+        "CTN, arts. 121, 124, 128, 129 a 135",
+        "CTN, arts. 114 a 118"
+      ],
+      "jurisprudence": [
+        "A responsabilização de terceiros exige base legal e enquadramento nos requisitos do CTN, não bastando inadimplência da pessoa jurídica.",
+        "A jurisprudência exige cuidado na responsabilização de sócios e administradores, especialmente em execução fiscal."
+      ],
+      "objectiveCharge": [
+        "Obrigação principal x acessória.",
+        "Fato gerador.",
+        "Contribuinte x responsável.",
+        "Solidariedade tributária.",
+        "Responsabilidade de sócio/administrador."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre inclusão de responsável em dívida ativa, multa por obrigação acessória, lançamento contra sucessor imobiliário, retenção de ISS ou redirecionamento de execução fiscal.",
+      "traps": [
+        "Obrigação acessória pode virar obrigação principal quanto à penalidade pecuniária.",
+        "Responsabilidade tributária depende de lei.",
+        "Sócio não responde automaticamente por dívida da empresa.",
+        "Contribuinte e responsável não são sinônimos.",
+        "Fato gerador é definido em lei, não por vontade do fiscal."
+      ],
+      "differences": [
+        "Obrigação principal x acessória.",
+        "Contribuinte x responsável.",
+        "Sujeito ativo x competência tributária.",
+        "Solidariedade x subsidiariedade.",
+        "Responsabilidade pessoal x por sucessão."
+      ],
+      "commonMistakes": [
+        "Confundir multa acessória com tributo original.",
+        "Incluir sócio sem fundamento legal.",
+        "Não identificar fato gerador.",
+        "Achar que obrigação acessória não importa."
+      ],
+      "miniCase": "Imóvel é vendido com débitos de IPTU. A Procuradoria deve analisar responsabilidade do adquirente, natureza propter rem do imposto, certidões apresentadas e regras do CTN sobre sucessão.",
+      "activeQuestions": [
+        "Qual fato gerador ocorreu?",
+        "Quem tem relação direta com o fato?",
+        "Há responsável previsto em lei?",
+        "A obrigação é principal ou acessória?",
+        "Existe solidariedade?"
+      ],
+      "flashcards": [
+        {
+          "front": "Obrigação acessória descumprida pode gerar quê?",
+          "back": "Penalidade pecuniária, que se converte em obrigação principal quanto à multa."
+        },
+        {
+          "front": "Contribuinte é quem?",
+          "back": "Quem tem relação pessoal e direta com o fato gerador."
+        },
+        {
+          "front": "Responsável tributário depende de quê?",
+          "back": "Previsão legal."
+        }
+      ],
+      "summary": "Obrigação tributária é a engrenagem da cobrança. Identificar fato gerador, sujeito passivo e responsabilidade evita autuações nulas e execuções fiscais frágeis.",
+      "checklist": [
+        "Sei fato gerador.",
+        "Sei obrigação principal e acessória.",
+        "Sei contribuinte e responsável.",
+        "Sei responsabilidade tributária.",
+        "Consigo analisar inclusão de terceiro."
+      ],
+      "nextTopic": "Crédito tributário, lançamento e constituição"
+    },
+    {
+      "id": "credito-lancamento-suspensao-extincao-exclusao",
+      "level": "avançado",
+      "title": "Crédito tributário: lançamento, suspensão, extinção, exclusão, decadência e prescrição",
+      "whatIs": "Crédito tributário é a obrigação tributária formalizada e exigível após o lançamento. O lançamento identifica fato gerador, sujeito passivo, base de cálculo, alíquota e valor devido. Suspensão, extinção e exclusão são categorias do CTN que alteram a exigibilidade, eliminam o crédito ou impedem sua constituição/cobrança em certas condições.",
+      "purpose": "Serve para saber quando o Município pode cobrar, quando deve esperar, quando perdeu prazo, quando o crédito foi pago ou extinto e quando uma execução fiscal é juridicamente segura.",
+      "plainExplanation": [
+        "A obrigação nasce com o fato gerador, mas o crédito tributário é constituído pelo lançamento. Sem lançamento válido, a cobrança fica vulnerável. O lançamento pode ser de ofício, por declaração ou por homologação, conforme a participação do contribuinte e o tipo de tributo.",
+        "Suspensão da exigibilidade não apaga o crédito; apenas impede sua cobrança enquanto durar a causa. Moratória, depósito integral, reclamações e recursos administrativos, liminar, tutela e parcelamento são hipóteses importantes. Extinção, por outro lado, elimina o crédito, como pagamento, compensação, prescrição, decadência e remissão.",
+        "Decadência e prescrição são temas de prova e de prática diária. Decadência atinge o direito de constituir o crédito; prescrição atinge a pretensão de cobrá-lo judicialmente. Para Procurador, errar prazo significa perder receita ou ajuizar execução inviável."
+      ],
+      "examTechnical": "Domine CTN arts. 142 a 182. Saiba lançamento de ofício, declaração e homologação; hipóteses de suspensão do art. 151; extinção do art. 156; exclusão por isenção/anistia; decadência e prescrição. A banca cobra muito parcelamento, depósito integral e diferença entre decadência e prescrição.",
+      "cityExample": "O Município pretende ajuizar execução fiscal de ISS antigo. A Procuradoria deve conferir data do fato gerador, constituição definitiva, notificação, recursos administrativos, parcelamentos, prescrição, protesto/interrupção conforme o caso e inscrição regular em dívida ativa.",
+      "legalBase": [
+        "CTN, crédito tributário, lançamento, suspensão, extinção e exclusão",
+        "Lei de Execução Fiscal",
+        "Legislação municipal sobre processo administrativo tributário e parcelamento"
+      ],
+      "dryLaw": [
+        "CTN, arts. 142 a 150",
+        "CTN, art. 151",
+        "CTN, art. 156",
+        "CTN, arts. 173 e 174",
+        "CTN, arts. 175 a 182"
+      ],
+      "jurisprudence": [
+        "A jurisprudência distingue decadência e prescrição conforme a modalidade de lançamento e a constituição definitiva do crédito.",
+        "Depósito integral suspende a exigibilidade; depósito parcial não produz o mesmo efeito integral."
+      ],
+      "objectiveCharge": [
+        "Modalidades de lançamento.",
+        "Suspensão do crédito.",
+        "Extinção do crédito.",
+        "Exclusão por isenção e anistia.",
+        "Decadência x prescrição."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre lançamento intempestivo, execução fiscal prescrita, parcelamento, recurso administrativo, certidão positiva com efeito de negativa ou remissão/anistia por lei municipal.",
+      "traps": [
+        "Suspensão não extingue o crédito.",
+        "Isenção exclui crédito, mas não dispensa obrigações acessórias salvo previsão.",
+        "Decadência vem antes da constituição; prescrição vem depois da constituição definitiva.",
+        "Parcelamento suspende exigibilidade, mas inadimplemento pode reativar cobrança.",
+        "Depósito precisa ser integral para suspensão plena."
+      ],
+      "differences": [
+        "Decadência x prescrição.",
+        "Suspensão x extinção x exclusão.",
+        "Lançamento de ofício x declaração x homologação.",
+        "Moratória x parcelamento.",
+        "Isenção x anistia."
+      ],
+      "commonMistakes": [
+        "Ajuizar execução sem verificar prescrição.",
+        "Confundir recurso administrativo com extinção.",
+        "Não provar notificação do lançamento.",
+        "Tratar isenção como imunidade.",
+        "Ignorar constituição definitiva."
+      ],
+      "miniCase": "Contribuinte recorre administrativamente contra lançamento de ISS. Enquanto o recurso administrativo estiver pendente nos termos da lei, a exigibilidade fica suspensa, e a inscrição/cobrança deve respeitar o devido processo tributário.",
+      "activeQuestions": [
+        "O crédito foi lançado?",
+        "Houve notificação válida?",
+        "A exigibilidade está suspensa?",
+        "O crédito foi extinto?",
+        "Há decadência ou prescrição?"
+      ],
+      "flashcards": [
+        {
+          "front": "Quem constitui o crédito tributário?",
+          "back": "O lançamento, atividade administrativa vinculada nos termos do CTN."
+        },
+        {
+          "front": "Parcelamento suspende a exigibilidade?",
+          "back": "Sim, conforme CTN art. 151."
+        },
+        {
+          "front": "Decadência e prescrição são iguais?",
+          "back": "Não. Decadência é perda do direito de constituir; prescrição é perda da pretensão de cobrar."
+        }
+      ],
+      "summary": "Crédito tributário é onde o Direito Tributário vira cobrança concreta. Para prova e prática, o candidato deve dominar lançamento, suspensão, extinção, exclusão e prazos.",
+      "checklist": [
+        "Sei modalidades de lançamento.",
+        "Sei suspensão do art. 151.",
+        "Sei extinção do art. 156.",
+        "Sei exclusão por isenção/anistia.",
+        "Sei decadência e prescrição."
+      ],
+      "nextTopic": "Administração tributária, dívida ativa e execução fiscal"
+    },
+    {
+      "id": "administracao-divida-ativa-execucao-fiscal",
+      "level": "discursiva",
+      "title": "Administração tributária, fiscalização, dívida ativa, certidões e execução fiscal",
+      "whatIs": "Administração tributária é a estrutura jurídica e operacional de fiscalização, lançamento, arrecadação, inscrição em dívida ativa e cobrança. Dívida ativa é o crédito regularmente inscrito após apuração de certeza e liquidez. Execução fiscal é a ação judicial de cobrança regulada pela Lei nº 6.830/1980.",
+      "purpose": "Serve para transformar crédito tributário em receita efetiva de forma legal. Para Procurador, é um dos temas mais práticos: CDA, prescrição, protesto, execução, garantias, exceção de pré-executividade, embargos e redirecionamento.",
+      "plainExplanation": [
+        "A inscrição em dívida ativa não é ato automático sem controle. Antes de inscrever, a Administração deve verificar existência do crédito, sujeito passivo correto, valor, origem, fundamento legal, notificação e ausência de suspensão. A Certidão de Dívida Ativa precisa conter requisitos legais para gozar de presunção de certeza e liquidez.",
+        "Execução fiscal é procedimento especial para cobrar dívida ativa. O Município ajuíza com CDA, busca citação, penhora, bloqueio, garantia e satisfação do crédito. O executado pode se defender por embargos, após garantia, ou por exceção de pré-executividade em matérias de ordem pública sem dilação probatória.",
+        "Na prática moderna, Procuradoria eficiente não ajuíza qualquer dívida automaticamente. Avalia valor, recuperabilidade, prescrição, protesto, cobrança administrativa, conciliação, parcelamento e custo-benefício, respeitando legislação local e diretrizes de racionalidade."
+      ],
+      "examTechnical": "Estude CTN sobre administração tributária e certidões, Lei de Execução Fiscal, CPC subsidiário, CDA, presunção relativa, requisitos, penhora, embargos, exceção de pré-executividade, redirecionamento e prescrição intercorrente. É tema com alta chance de parecer e objetiva.",
+      "cityExample": "Antes de executar IPTU de baixo valor, a Procuradoria analisa se há lei ou ato normativo sobre ajuizamento mínimo, protesto, cobrança administrativa e prescrição. Pode recomendar não ajuizar se antieconômico, desde que haja base normativa e transparência.",
+      "legalBase": [
+        "CTN, administração tributária e certidões",
+        "Lei nº 6.830/1980 — Lei de Execução Fiscal",
+        "CPC aplicado subsidiariamente",
+        "Legislação municipal sobre dívida ativa, cobrança e transação/parcelamento"
+      ],
+      "dryLaw": [
+        "CTN, arts. 194 a 208",
+        "LEF, arts. 2º, 3º, 6º, 8º, 16 e 40",
+        "CPC, dispositivos subsidiários sobre execução"
+      ],
+      "jurisprudence": [
+        "A CDA possui presunção relativa de certeza e liquidez, que pode ser afastada por prova do executado.",
+        "Prescrição intercorrente em execução fiscal é tema consolidado na jurisprudência, especialmente quando há inércia e paralisação conforme requisitos legais."
+      ],
+      "objectiveCharge": [
+        "Requisitos da CDA.",
+        "Presunção de certeza e liquidez.",
+        "Embargos x exceção de pré-executividade.",
+        "Prescrição intercorrente.",
+        "Redirecionamento contra sócio."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre ajuizamento de execução, nulidade de CDA, prescrição intercorrente, redirecionamento, protesto de CDA, parcelamento, garantia ou estratégia de cobrança municipal.",
+      "traps": [
+        "CDA com erro essencial pode ser nula.",
+        "Presunção da CDA é relativa, não absoluta.",
+        "Exceção de pré-executividade não serve para prova complexa.",
+        "Sócio não responde automaticamente por dívida da empresa.",
+        "Prescrição intercorrente pode encerrar execução paralisada."
+      ],
+      "differences": [
+        "Dívida ativa tributária x não tributária.",
+        "Embargos x exceção de pré-executividade.",
+        "Prescrição ordinária x intercorrente.",
+        "Protesto x execução fiscal.",
+        "Cobrança administrativa x judicial."
+      ],
+      "commonMistakes": [
+        "Inscrever dívida sem revisar dados mínimos.",
+        "Ajuizar crédito prescrito.",
+        "Redirecionar sem fundamento.",
+        "Não controlar prescrição intercorrente.",
+        "Ignorar custo de cobrança."
+      ],
+      "miniCase": "CDA indica contribuinte errado por homônimo. A defesa apresenta exceção de pré-executividade. Como o erro é verificável documentalmente e atinge legitimidade, a Procuradoria deve avaliar correção/substituição possível ou extinção, evitando insistência temerária.",
+      "activeQuestions": [
+        "A CDA tem requisitos legais?",
+        "O crédito é exigível?",
+        "A execução é economicamente racional?",
+        "Há prescrição?",
+        "A defesa exige prova complexa?"
+      ],
+      "flashcards": [
+        {
+          "front": "CDA tem presunção absoluta?",
+          "back": "Não. A presunção de certeza e liquidez é relativa."
+        },
+        {
+          "front": "Embargos à execução fiscal exigem garantia?",
+          "back": "Em regra, sim, conforme Lei de Execução Fiscal."
+        },
+        {
+          "front": "Exceção de pré-executividade serve para quê?",
+          "back": "Matérias cognoscíveis de ofício e demonstráveis sem prova complexa."
+        }
+      ],
+      "summary": "Dívida ativa e execução fiscal são a parte operacional da receita municipal. A boa Procuradoria cobra bem, cobra certo e evita execuções inviáveis ou nulas.",
+      "checklist": [
+        "Sei requisitos da CDA.",
+        "Sei execução fiscal básica.",
+        "Sei embargos e exceção.",
+        "Sei prescrição intercorrente.",
+        "Consigo pensar estratégia de cobrança."
+      ],
+      "nextTopic": "Direito Financeiro e orçamento público"
+    },
+    {
+      "id": "direito-financeiro-orcamento-publico",
+      "level": "intermediário",
+      "title": "Direito Financeiro, orçamento público, PPA, LDO e LOA",
+      "whatIs": "Direito Financeiro disciplina a atividade financeira do Estado: receita, despesa, orçamento, crédito público, controle e responsabilidade na gestão fiscal. O orçamento público organiza juridicamente a previsão de receitas e a autorização de despesas.",
+      "purpose": "Serve para impedir gasto sem autorização, planejar políticas públicas, garantir controle democrático e proteger o Município contra desequilíbrio fiscal. Para Procurador, orçamento é limite e fundamento de muitas decisões administrativas e judiciais.",
+      "plainExplanation": [
+        "O orçamento não é só planilha. Ele é lei formal com função de planejamento e autorização. O Município trabalha com PPA, LDO e LOA: o PPA define programas de médio prazo; a LDO orienta a elaboração da LOA e metas fiscais; a LOA estima receitas e fixa despesas para o exercício.",
+        "Receita pública é entrada de recursos; despesa pública é aplicação autorizada desses recursos. Nenhuma despesa pode ser realizada sem previsão e autorização adequadas. Isso aparece em contratação, concurso, aumento de despesa com pessoal, decisão judicial, subvenções e políticas públicas.",
+        "A Lei nº 4.320/1964 organiza conceitos clássicos de orçamento, receita e despesa. A LRF adiciona responsabilidade fiscal: planejamento, transparência, equilíbrio, limites, metas, controle e responsabilização."
+      ],
+      "examTechnical": "Estude CF arts. 165 a 169, Lei 4.320/1964 e LRF. Domine PPA, LDO, LOA, créditos adicionais, receita, despesa, empenho, liquidação, pagamento, restos a pagar, renúncia de receita, despesa obrigatória e limites de pessoal.",
+      "cityExample": "Secretaria quer criar programa permanente com pagamento mensal a beneficiários, mas sem dotação suficiente. A Procuradoria deve verificar LOA, compatibilidade com PPA/LDO, estimativa de impacto, fonte de custeio e regras da LRF antes de opinar.",
+      "legalBase": [
+        "CF/88, arts. 165 a 169",
+        "Lei nº 4.320/1964",
+        "Lei Complementar nº 101/2000 — LRF",
+        "Lei orçamentária municipal vigente"
+      ],
+      "dryLaw": [
+        "CF/88, arts. 165, 166, 167 e 169",
+        "Lei nº 4.320/1964, normas sobre receita, despesa e orçamento",
+        "LRF, arts. 1º, 14, 15, 16, 17, 19, 20, 42, 48"
+      ],
+      "jurisprudence": [
+        "O controle judicial de políticas públicas deve dialogar com orçamento, separação de poderes e mínimo existencial, sem ignorar deveres constitucionais.",
+        "Tribunais de Contas cobram planejamento, dotação, impacto orçamentário e respeito à LRF em criação de despesas."
+      ],
+      "objectiveCharge": [
+        "PPA, LDO e LOA.",
+        "Princípios orçamentários.",
+        "Créditos adicionais.",
+        "Empenho, liquidação e pagamento.",
+        "Restos a pagar e limites fiscais."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre despesa sem dotação, contratação, aumento de pessoal, criação de benefício, cumprimento de decisão judicial, abertura de crédito adicional ou renúncia de receita.",
+      "traps": [
+        "Orçamento autoriza despesa, não obriga gastar tudo.",
+        "Despesa sem dotação é risco jurídico grave.",
+        "PPA, LDO e LOA têm funções diferentes.",
+        "Crédito adicional não é cheque em branco.",
+        "Restos a pagar sem caixa podem violar responsabilidade fiscal."
+      ],
+      "differences": [
+        "PPA x LDO x LOA.",
+        "Empenho x liquidação x pagamento.",
+        "Receita prevista x receita arrecadada.",
+        "Crédito suplementar x especial x extraordinário.",
+        "Despesa obrigatória x discricionária."
+      ],
+      "commonMistakes": [
+        "Responder orçamento como se fosse só contabilidade.",
+        "Ignorar LRF em parecer.",
+        "Confundir empenho com pagamento.",
+        "Não verificar fonte de custeio.",
+        "Esquecer créditos adicionais."
+      ],
+      "miniCase": "Prefeito quer abrir despesa para evento cultural não previsto. A Procuradoria deve verificar dotação, possibilidade de crédito adicional, interesse público, procedimento de contratação e compatibilidade orçamentária.",
+      "activeQuestions": [
+        "A despesa tem dotação?",
+        "Está compatível com PPA e LDO?",
+        "Há impacto orçamentário?",
+        "Qual é a fase da despesa?",
+        "Existe limite da LRF afetado?"
+      ],
+      "flashcards": [
+        {
+          "front": "Quais são as três leis orçamentárias centrais?",
+          "back": "PPA, LDO e LOA."
+        },
+        {
+          "front": "Empenho é pagamento?",
+          "back": "Não. Empenho reserva dotação/obriga orçamento; pagamento é fase posterior."
+        },
+        {
+          "front": "Lei 4.320/1964 trata de quê?",
+          "back": "Normas gerais de direito financeiro para orçamentos e balanços dos entes federativos."
+        }
+      ],
+      "summary": "Direito Financeiro mostra se o Município pode gastar, como gastar e com qual controle. Para Procurador, orçamento é argumento jurídico essencial, não detalhe contábil.",
+      "checklist": [
+        "Sei PPA/LDO/LOA.",
+        "Sei fases da despesa.",
+        "Sei créditos adicionais.",
+        "Sei aplicar Lei 4.320.",
+        "Sei consultar LRF."
+      ],
+      "nextTopic": "Lei de Responsabilidade Fiscal, renúncia de receita e despesa pública"
+    },
+    {
+      "id": "lrf-renuncia-despesa-pessoal-controle",
+      "level": "avançado",
+      "title": "Lei de Responsabilidade Fiscal: planejamento, renúncia de receita, despesa obrigatória, pessoal, endividamento e transparência",
+      "whatIs": "A LRF é a lei complementar que estabelece normas de finanças públicas voltadas à responsabilidade na gestão fiscal, com foco em planejamento, equilíbrio, transparência, controle, limites e responsabilização.",
+      "purpose": "Serve para impedir decisões populistas ou improvisadas que desequilibrem as contas públicas. Para Procurador Municipal, é indispensável em pareceres sobre isenção, benefício fiscal, aumento de despesa, contratação, pessoal, dívida e fim de mandato.",
+      "plainExplanation": [
+        "A LRF transforma responsabilidade fiscal em dever jurídico. Ela exige que o gestor planeje, estime impacto, indique fonte de custeio, respeite metas fiscais, publique relatórios e mantenha controle sobre despesa com pessoal, dívida e restos a pagar.",
+        "Renúncia de receita é tema crítico. Isenção, anistia, remissão, subsídio, crédito presumido e benefícios similares podem exigir estimativa de impacto e medidas de compensação ou demonstração de que foram considerados na lei orçamentária. O Município não pode conceder benefício tributário como favor político sem cumprir a LRF.",
+        "Despesa obrigatória de caráter continuado exige cuidado especial: criação ou expansão de gasto permanente pede estimativa de impacto e demonstração de origem dos recursos. Em fim de mandato, há regras rígidas para evitar deixar contas sem caixa para o sucessor."
+      ],
+      "examTechnical": "Estude LRF arts. 1º, 14, 15, 16, 17, 19, 20, 21, 22, 42, 48 e relatórios fiscais. A banca cobra renúncia de receita, despesa com pessoal, aumento de despesa, transparência e restrições de final de mandato.",
+      "cityExample": "Vereadores propõem isenção de IPTU para uma categoria sem estimativa de impacto. A Procuradoria deve apontar exigências da LRF, necessidade de lei específica, compatibilidade orçamentária, eventual compensação e risco de invalidade fiscal.",
+      "legalBase": [
+        "Lei Complementar nº 101/2000 — LRF",
+        "CF/88, arts. 163 a 169",
+        "Lei nº 4.320/1964",
+        "Lei orçamentária e LDO municipais"
+      ],
+      "dryLaw": [
+        "LRF, arts. 1º, 14, 15, 16, 17, 19, 20, 21, 22, 42 e 48",
+        "CF/88, arts. 165 a 169"
+      ],
+      "jurisprudence": [
+        "Tribunais de Contas costumam exigir demonstração de impacto, fonte de custeio, compatibilidade orçamentária e respeito aos limites legais.",
+        "A jurisprudência reconhece relevância da responsabilidade fiscal, mas também exige análise concreta quando direitos fundamentais e políticas públicas estão em jogo."
+      ],
+      "objectiveCharge": [
+        "Renúncia de receita.",
+        "Despesa obrigatória continuada.",
+        "Limites de pessoal.",
+        "Fim de mandato.",
+        "Transparência fiscal."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre isenção, anistia, aumento de salário, contratação de pessoal, criação de programa permanente, restos a pagar, dívida, relatório fiscal ou veto jurídico a projeto de lei.",
+      "traps": [
+        "Renúncia fiscal sem impacto é armadilha clássica.",
+        "Despesa continuada exige origem de recursos.",
+        "Fim de mandato tem restrições específicas.",
+        "Transparência não é opcional.",
+        "Limite de pessoal não é só tema contábil; gera vedações jurídicas."
+      ],
+      "differences": [
+        "Renúncia de receita x despesa pública.",
+        "Despesa temporária x continuada.",
+        "Limite prudencial x limite máximo.",
+        "Compatibilidade orçamentária x disponibilidade financeira.",
+        "Controle interno x externo."
+      ],
+      "commonMistakes": [
+        "Aprovar benefício fiscal sem LRF.",
+        "Ignorar impacto em despesa de pessoal.",
+        "Confundir autorização orçamentária com dinheiro em caixa.",
+        "Não observar regras de final de mandato.",
+        "Não envolver área técnica contábil no parecer."
+      ],
+      "miniCase": "Projeto cria gratificação permanente para servidores sem impacto e sem fonte. Parecer deve apontar LRF, despesa continuada, limite de pessoal, iniciativa legislativa e risco de nulidade/responsabilização.",
+      "activeQuestions": [
+        "Há impacto orçamentário-financeiro?",
+        "Há fonte de custeio?",
+        "É renúncia de receita?",
+        "É despesa continuada?",
+        "Afeta limite de pessoal ou fim de mandato?"
+      ],
+      "flashcards": [
+        {
+          "front": "Qual artigo da LRF é central para renúncia de receita?",
+          "back": "Art. 14."
+        },
+        {
+          "front": "Despesa obrigatória continuada exige o quê?",
+          "back": "Estimativa de impacto e demonstração da origem dos recursos, conforme LRF."
+        },
+        {
+          "front": "LRF serve só para contabilidade?",
+          "back": "Não. Cria deveres jurídicos de planejamento, transparência, equilíbrio e controle."
+        }
+      ],
+      "summary": "LRF é uma das leis mais importantes para Procurador Municipal porque transforma orçamento em responsabilidade jurídica. Todo benefício, despesa e projeto financeiro deve passar por esse filtro.",
+      "checklist": [
+        "Sei LRF art. 14.",
+        "Sei despesa continuada.",
+        "Sei limites de pessoal.",
+        "Sei regras de fim de mandato.",
+        "Consigo redigir alerta fiscal em parecer."
+      ],
+      "nextTopic": "Receita pública, despesa pública, créditos adicionais e controle"
+    },
+    {
+      "id": "receita-despesa-creditos-controle",
+      "level": "lei seca",
+      "title": "Receita pública, despesa pública, créditos adicionais, restos a pagar e controle financeiro-orçamentário",
+      "whatIs": "Receita pública é o ingresso de recursos nos cofres públicos; despesa pública é a aplicação autorizada desses recursos para atender finalidades públicas. Créditos adicionais ajustam o orçamento quando a dotação inicial é insuficiente ou inexistente. Restos a pagar são despesas empenhadas e não pagas até o fim do exercício.",
+      "purpose": "Serve para controlar execução orçamentária e evitar gasto irregular. Para Procurador, é essencial em contratos, convênios, decisões judiciais, despesas de pessoal, subvenções, compras e encerramento do exercício.",
+      "plainExplanation": [
+        "A execução da despesa tem fases: em regra, empenho, liquidação e pagamento. Empenho reserva dotação e cria obrigação orçamentária; liquidação verifica direito do credor; pagamento quita a obrigação. Pular etapas ou contratar sem dotação gera risco de irregularidade.",
+        "Créditos adicionais são ferramentas para ajustar o orçamento: suplementares reforçam dotação existente; especiais criam dotação para despesa sem previsão específica; extraordinários atendem situações urgentes e imprevisíveis. Cada um tem requisitos próprios e deve respeitar autorização legal e fonte de recursos.",
+        "Controle financeiro-orçamentário envolve controle interno, controle externo pela Câmara com auxílio do Tribunal de Contas, transparência e prestação de contas. O Procurador precisa traduzir riscos contábeis em consequências jurídicas."
+      ],
+      "examTechnical": "Priorize Lei 4.320/1964: classificação de receita, despesa, créditos adicionais, estágios da despesa e balanços. Conecte com LRF e Constituição. A banca cobra conceitos objetivos e diferenças entre institutos.",
+      "cityExample": "Contrato emergencial foi executado sem empenho prévio. A Procuradoria deve avaliar irregularidade, possibilidade de reconhecimento de obrigação para evitar enriquecimento sem causa, responsabilidade do gestor e necessidade de regularização com controle interno.",
+      "legalBase": [
+        "Lei nº 4.320/1964",
+        "CF/88, arts. 165 a 169 e 70 a 75",
+        "LRF",
+        "Normas municipais de execução orçamentária"
+      ],
+      "dryLaw": [
+        "Lei nº 4.320/1964, dispositivos sobre receita, despesa e créditos adicionais",
+        "CF/88, arts. 70, 71, 74, 165 a 169",
+        "LRF, transparência e controle"
+      ],
+      "jurisprudence": [
+        "Tribunais de Contas valorizam a observância de fases da despesa, dotação, empenho prévio, liquidação regular e prestação de contas.",
+        "A Administração deve evitar enriquecimento sem causa, mas a regularização de despesa irregular não elimina responsabilidade do agente."
+      ],
+      "objectiveCharge": [
+        "Empenho, liquidação e pagamento.",
+        "Créditos adicionais.",
+        "Restos a pagar.",
+        "Controle interno e externo.",
+        "Prestação de contas."
+      ],
+      "discursiveCharge": "Pode cair como parecer sobre pagamento sem empenho, abertura de crédito adicional, restos a pagar, regularização de despesa, convênio, prestação de contas ou responsabilidade de gestor.",
+      "traps": [
+        "Empenho não é pagamento.",
+        "Crédito suplementar reforça dotação; especial cria dotação nova.",
+        "Restos a pagar exigem cuidado com disponibilidade financeira.",
+        "Controle interno não é formalidade.",
+        "Pagamento por serviço prestado irregularmente exige análise: não premiar fraude, mas evitar enriquecimento sem causa."
+      ],
+      "differences": [
+        "Empenho x liquidação x pagamento.",
+        "Crédito suplementar x especial x extraordinário.",
+        "Receita orçamentária x extraorçamentária.",
+        "Controle interno x externo.",
+        "Despesa empenhada x liquidada x paga."
+      ],
+      "commonMistakes": [
+        "Autorizar despesa sem dotação.",
+        "Confundir crédito adicional com nova receita automática.",
+        "Não verificar fonte de recursos.",
+        "Pagar sem liquidação.",
+        "Ignorar prestação de contas."
+      ],
+      "miniCase": "Secretaria pede pagamento de fornecedor por serviço já prestado, mas sem contrato regular. A Procuradoria deve avaliar prova da prestação, preço de mercado, responsabilidade do agente, possibilidade excepcional de indenização e medidas corretivas.",
+      "activeQuestions": [
+        "Havia dotação?",
+        "Foi empenhado?",
+        "A despesa foi liquidada?",
+        "Qual crédito adicional seria necessário?",
+        "Houve controle interno?"
+      ],
+      "flashcards": [
+        {
+          "front": "Quais são fases clássicas da despesa?",
+          "back": "Empenho, liquidação e pagamento."
+        },
+        {
+          "front": "Crédito especial serve para quê?",
+          "back": "Criar dotação para despesa sem previsão específica no orçamento."
+        },
+        {
+          "front": "Restos a pagar são o quê?",
+          "back": "Despesas empenhadas e não pagas até o encerramento do exercício."
+        }
+      ],
+      "summary": "Receita, despesa e controle são a parte operacional do orçamento. Para o candidato, é tema de lei seca; para o Procurador, é filtro de legalidade financeira.",
+      "checklist": [
+        "Sei fases da despesa.",
+        "Sei créditos adicionais.",
+        "Sei restos a pagar.",
+        "Sei controle interno/externo.",
+        "Consigo analisar pagamento irregular."
+      ],
+      "nextTopic": "Próxima fase: Legislação Municipal Premium"
+    }
+  ]
+}
 
 ];
 
