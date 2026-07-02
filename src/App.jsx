@@ -9,6 +9,7 @@ import SprintFinal from './pages/SprintFinal';
 import Vespera from './pages/Vespera';
 import ErrorLab from './pages/ErrorLab';
 import MindMaps from './pages/MindMaps';
+import LegalFlowEngine from './components/LegalFlowEngine';
 import LawTimeline from './pages/LawTimeline';
 import DryLaw from './pages/DryLaw';
 import OralJuridico from './pages/OralJuridico';
@@ -42,6 +43,7 @@ const navItems = [
   { id: 'vespera', label: 'Véspera' },
   { id: 'erros', label: 'Lab de Erros' },
   { id: 'mapas', label: 'Mapas Mentais' },
+  { id: 'fluxogramas', label: 'Fluxogramas' },
   { id: 'timeline', label: 'Linha do Tempo' },
   { id: 'lei-seca', label: 'Lei Seca' },
   { id: 'oral', label: 'Oral Jurídico' },
@@ -76,6 +78,7 @@ const pageComponents = {
   vespera: Vespera,
   erros: ErrorLab,
   mapas: MindMaps,
+  fluxogramas: LegalFlowEngine,
   timeline: LawTimeline,
   'lei-seca': DryLaw,
   oral: OralJuridico,

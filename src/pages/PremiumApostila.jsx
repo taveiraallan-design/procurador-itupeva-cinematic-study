@@ -220,6 +220,128 @@ function PremiumMethodBlock({ lesson }) {
   );
 }
 
+function asList(value, fallback = []) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (value) return [value];
+  return fallback;
+}
+
+function Fase44TopicLesson({ subject, topic, methodLesson }) {
+  if (!topic) return null;
+  const s = methodLesson?.sections || {};
+  const rules = asList(s.developedRules).map((rule) => `${rule.title}: ${rule.text} ${rule.explanation || ''}`.trim());
+
+  const sections = [
+    {
+      number: '01',
+      title: 'Introdução didática do tema',
+      tone: 'orange',
+      body: [
+        `${topic.title} é um ponto de estudo de ${subject?.subject || 'uma matéria do edital'} que deve ser aprendido como raciocínio jurídico, não como frase decorada.`,
+        s.concept || topic.whatIs,
+        `Para Procurador Municipal, o tema precisa ser conectado ao cotidiano da Prefeitura: pareceres, defesa judicial, controle de legalidade, orientação de secretarias e prevenção de nulidades.`
+      ]
+    },
+    {
+      number: '02',
+      title: 'Explicação teórica desenvolvida',
+      tone: 'green',
+      body: [s.purpose || topic.purpose, s.practical, ...rules].filter(Boolean)
+    },
+    {
+      number: '03',
+      title: 'Fundamentos jurídicos principais',
+      tone: 'cyan',
+      list: asList(s.legalBase, asList(topic.legalBase))
+    },
+    {
+      number: '04',
+      title: 'Aplicação prática para Procurador Municipal',
+      tone: 'purple',
+      body: [
+        s.municipal || topic.cityExample,
+        'Na prática, o Procurador deve transformar o conteúdo em providência: validar, corrigir, recomendar instrução adicional, defender o Município ou apontar risco jurídico antes que o problema vire litígio.'
+      ]
+    },
+    {
+      number: '05',
+      title: 'Exemplo concreto envolvendo Município/Prefeitura',
+      tone: 'green',
+      body: [topic.cityExample || s.municipal, topic.miniCase].filter(Boolean)
+    },
+    {
+      number: '06',
+      title: 'Como a banca pode cobrar em prova objetiva',
+      tone: 'cyan',
+      list: asList(s.objective, asList(topic.objectiveCharge))
+    },
+    {
+      number: '07',
+      title: 'Como o tema pode aparecer em discursiva',
+      tone: 'green',
+      body: [s.discursive || topic.discursiveCharge, 'Estruture a resposta em quatro movimentos: conceito, fundamento jurídico, aplicação ao caso e conclusão com providência municipal segura.']
+    },
+    {
+      number: '08',
+      title: 'Pegadinhas e erros comuns',
+      tone: 'orange',
+      list: [...asList(s.traps, asList(topic.traps)), ...asList(topic.commonMistakes)].slice(0, 12)
+    },
+    {
+      number: '09',
+      title: 'Mini caso prático',
+      tone: 'purple',
+      body: [topic.miniCase || s.municipal, 'Resolva o caso perguntando: qual é o fato relevante, qual norma incide, qual requisito falta ou está presente, qual providência protege melhor o interesse público municipal?']
+    },
+    {
+      number: '10',
+      title: 'Treino final',
+      tone: 'cyan',
+      list: [
+        ...(s.question?.statement ? [`Questão: ${s.question.statement}`] : []),
+        ...(s.question?.answer ? [`Gabarito/linha de resposta: ${s.question.answer}`] : []),
+        ...(s.question?.comment ? [`Comentário: ${s.question.comment}`] : []),
+        ...asList(topic.activeQuestions).slice(0, 4)
+      ]
+    },
+    {
+      number: '11',
+      title: 'Fechamento com síntese inteligente',
+      tone: 'green',
+      body: [s.summary || topic.summary, `Domínio real do tópico significa conseguir explicar ${topic.title}, aplicar em um problema municipal e reconhecer a pegadinha em alternativas de prova.`],
+      list: asList(s.checklist, asList(topic.checklist)).slice(0, 8)
+    }
+  ];
+
+  return (
+    <section className="fase44-topic-lesson">
+      <div className="fase44-lesson-cover">
+        <Badge tone="orange">Fase 44 • aula completa por tópico</Badge>
+        <h3>{topic.title}</h3>
+        <p>Leitura principal em formato de aula: teoria desenvolvida, aplicação municipal, cobrança objetiva, discursiva, pegadinhas e treino.</p>
+      </div>
+
+      <div className="fase44-lesson-flow">
+        {sections.map((section) => (
+          <article className="fase44-section" key={section.number}>
+            <div className="fase44-section-head">
+              <span>{section.number}</span>
+              <Badge tone={section.tone}>{section.title}</Badge>
+            </div>
+            {section.body?.map((paragraph, index) => <p key={`${section.number}-p-${index}`}>{paragraph}</p>)}
+            {section.list?.length > 0 && (
+              <ul className="compact-list fase44-list">
+                {section.list.map((item, index) => <li key={`${section.number}-li-${index}`}>{item}</li>)}
+              </ul>
+            )}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
 function IntegratedTheoryBlock({ theory, deep, topic }) {
   if (!theory && !deep) return null;
   if (!deep) return <TheoreticalLessonBlock lesson={theory} />;
@@ -996,52 +1118,53 @@ export default function PremiumApostila({ onNavigate }) {
                 <span>Aula teórica</span><span>Quadro de atenção</span><span>Como cai</span><span>Base legal</span><span>Revisão</span><span>Visual</span>
               </div>
 
-              <PremiumMethodBlock lesson={activeMethodLesson} />
+              <Fase44TopicLesson subject={activeSubject} topic={activeTopic} methodLesson={activeMethodLesson} />
 
               <details className="apostila-legacy-details">
-                <summary>Ver complementos anteriores da apostila</summary>
+                <summary>Ver complementos, cards e revisão rápida do tópico</summary>
+                <PremiumMethodBlock lesson={activeMethodLesson} />
                 <IntegratedTheoryBlock theory={activeTheoryLesson} deep={activeDeepLesson} topic={activeTopic} />
+
+                <Section title="Complemento de revisão — conceito" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
+                <Section title="Complemento de revisão — função prática" tone="green"><p>{activeTopic.purpose}</p></Section>
+                <Section title="Complemento de revisão — pontos principais" tone="orange">
+                  {activeTopic.plainExplanation.map((item) => <p key={item}>{item}</p>)}
+                </Section>
+                {!activeDeepLesson && <DeepDidacticBlock lesson={activeDeepLesson} />}
+                <Section title="Explicação técnica para prova" tone="purple"><p>{activeTopic.examTechnical}</p></Section>
+                <Section title="Exemplo aplicado à Procuradoria Municipal" tone="green"><p>{activeTopic.cityExample}</p></Section>
+
+                <div className="lesson-columns">
+                  <Section title="Base legal principal" tone="cyan"><ul className="compact-list">{activeTopic.legalBase.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                  <Section title="Artigos para lei seca" tone="orange"><ul className="compact-list">{activeTopic.dryLaw.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                </div>
+
+                <Section title="Jurisprudência e entendimento relevante" tone="purple"><ul className="compact-list">{activeTopic.jurisprudence.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+
+                <div className="lesson-columns">
+                  <Section title="Como a banca cobra na objetiva" tone="cyan"><ul className="compact-list">{activeTopic.objectiveCharge.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                  <Section title="Como vira discursiva/parecer" tone="green"><p>{activeTopic.discursiveCharge}</p></Section>
+                </div>
+
+                <div className="lesson-columns">
+                  <Section title="Pegadinhas prováveis" tone="orange"><ul className="compact-list">{activeTopic.traps.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                  <Section title="Diferenças importantes" tone="purple"><ul className="compact-list">{activeTopic.differences.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                </div>
+
+                <div className="lesson-columns">
+                  <Section title="Erros comuns do candidato" tone="orange"><ul className="compact-list">{activeTopic.commonMistakes.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                  <Section title="Mini caso prático" tone="green"><p>{activeTopic.miniCase}</p></Section>
+                </div>
+
+                <div className="lesson-columns">
+                  <Section title="Perguntas de revisão ativa" tone="cyan"><ul className="compact-list">{activeTopic.activeQuestions.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                  <Section title="Flashcards sugeridos" tone="purple"><ul className="compact-list">{activeTopic.flashcards.map((item) => <li key={item.front}><strong>{item.front}</strong> — {item.back}</li>)}</ul></Section>
+                </div>
+
+                <Section title="Mini resumo final" tone="green"><p>{activeTopic.summary}</p></Section>
+                <Section title="Checklist de domínio" tone="cyan"><ul className="compact-list">{activeTopic.checklist.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+                <Section title="Próximo tópico recomendado" tone="orange"><p>{activeTopic.nextTopic}</p></Section>
               </details>
-
-              <Section title="Complemento de revisão — conceito" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
-              <Section title="Complemento de revisão — função prática" tone="green"><p>{activeTopic.purpose}</p></Section>
-              <Section title="Complemento de revisão — pontos principais" tone="orange">
-                {activeTopic.plainExplanation.map((item) => <p key={item}>{item}</p>)}
-              </Section>
-              {!activeDeepLesson && <DeepDidacticBlock lesson={activeDeepLesson} />}
-              <Section title="4. Explicação técnica para prova" tone="purple"><p>{activeTopic.examTechnical}</p></Section>
-              <Section title="5. Exemplo aplicado à Procuradoria Municipal" tone="green"><p>{activeTopic.cityExample}</p></Section>
-
-              <div className="lesson-columns">
-                <Section title="6. Base legal principal" tone="cyan"><ul className="compact-list">{activeTopic.legalBase.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-                <Section title="7. Artigos para lei seca" tone="orange"><ul className="compact-list">{activeTopic.dryLaw.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-              </div>
-
-              <Section title="8. Jurisprudência e entendimento relevante" tone="purple"><ul className="compact-list">{activeTopic.jurisprudence.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-
-              <div className="lesson-columns">
-                <Section title="9. Como a banca cobra na objetiva" tone="cyan"><ul className="compact-list">{activeTopic.objectiveCharge.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-                <Section title="10. Como vira discursiva/parecer" tone="green"><p>{activeTopic.discursiveCharge}</p></Section>
-              </div>
-
-              <div className="lesson-columns">
-                <Section title="11. Pegadinhas prováveis" tone="orange"><ul className="compact-list">{activeTopic.traps.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-                <Section title="12. Diferenças importantes" tone="purple"><ul className="compact-list">{activeTopic.differences.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-              </div>
-
-              <div className="lesson-columns">
-                <Section title="13. Erros comuns do candidato" tone="orange"><ul className="compact-list">{activeTopic.commonMistakes.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-                <Section title="14. Mini caso prático" tone="green"><p>{activeTopic.miniCase}</p></Section>
-              </div>
-
-              <div className="lesson-columns">
-                <Section title="15. Perguntas de revisão ativa" tone="cyan"><ul className="compact-list">{activeTopic.activeQuestions.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-                <Section title="16. Flashcards sugeridos" tone="purple"><ul className="compact-list">{activeTopic.flashcards.map((item) => <li key={item.front}><strong>{item.front}</strong> — {item.back}</li>)}</ul></Section>
-              </div>
-
-              <Section title="17. Mini resumo final" tone="green"><p>{activeTopic.summary}</p></Section>
-              <Section title="18. Checklist de domínio" tone="cyan"><ul className="compact-list">{activeTopic.checklist.map((item) => <li key={item}>{item}</li>)}</ul></Section>
-              <Section title="19. Próximo tópico recomendado" tone="orange"><p>{activeTopic.nextTopic}</p></Section>
 
               <ApostilaVisualBlock subject={activeSubject} topic={activeTopic} progress={progress} setProgress={setProgress} onNavigate={onNavigate} />
 
