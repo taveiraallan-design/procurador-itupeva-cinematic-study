@@ -5,6 +5,7 @@ import Button from '../components/ui/Button';
 import ProgressBar from '../components/ui/ProgressBar';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { premiumApostilaMeta, premiumApostilaSubjects, getApostilaStats } from '../data/premiumApostila';
+import { deepDidacticMeta, getDeepDidacticLesson } from '../data/deepDidacticLessons';
 
 const APOSTILA_KEY = 'premium_apostila_progress_v1';
 const initialProgress = { selectedSubjectId: 'direito-administrativo', studied: {}, notes: {}, reviewQueue: [], visualDominated: {}, visualNotes: [], generatedAt: null };
@@ -77,6 +78,68 @@ function Section({ title, children, tone = 'cyan' }) {
   );
 }
 
+
+
+function DeepDidacticBlock({ lesson }) {
+  if (!lesson) return null;
+  return (
+    <section className="deep-didactic-block">
+      <div className="deep-didactic-header">
+        <Badge tone="orange">{deepDidacticMeta.phase} • {lesson.label}</Badge>
+        <h3>{deepDidacticMeta.title}</h3>
+        <p>{deepDidacticMeta.subtitle}</p>
+      </div>
+
+      <div className="deep-didactic-grid">
+        <article><Badge tone="cyan">Conceito inicial</Badge><p>{lesson.concept}</p></article>
+        <article><Badge tone="green">Por que existe</Badge><p>{lesson.whyExists}</p></article>
+      </div>
+
+      <Section title="Aula passo a passo: como funciona" tone="orange">
+        <ol className="deep-ordered-list">{lesson.howItWorks.map((item) => <li key={item}>{item}</li>)}</ol>
+      </Section>
+
+      <Section title="Regras principais explicadas" tone="purple">
+        <ul className="compact-list">{lesson.mainRules.map((item) => <li key={item}>{item}</li>)}</ul>
+      </Section>
+
+      <div className="deep-example-panel">
+        <Badge tone="green">Exemplo certo e errado</Badge>
+        <p><strong>Situação:</strong> {lesson.simpleExample.prompt}</p>
+        <p className="deep-right"><strong>Uso correto:</strong> {lesson.simpleExample.right}</p>
+        <p className="deep-wrong"><strong>Uso incorreto:</strong> {lesson.simpleExample.wrong}</p>
+        <p><strong>Comentário:</strong> {lesson.simpleExample.explanation}</p>
+      </div>
+
+      <Section title="Aplicação à Procuradoria Municipal" tone="green"><p>{lesson.municipalExample}</p></Section>
+
+      <div className="lesson-columns deep-safe-columns">
+        <Section title="Como identificar na prova" tone="cyan"><ul className="compact-list">{lesson.examSignals.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+        <Section title="Como resolver questão sobre o tema" tone="orange"><ol className="deep-ordered-list">{lesson.solvingSteps.map((item) => <li key={item}>{item}</li>)}</ol></Section>
+      </div>
+
+      <div className="lesson-columns deep-safe-columns">
+        <Section title="Como a banca tenta confundir" tone="orange"><ul className="compact-list">{lesson.traps.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+        <Section title="Erros comuns do candidato" tone="purple"><ul className="compact-list">{lesson.commonErrors.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+      </div>
+
+      <Section title="Como usar na discursiva" tone="green"><p>{lesson.discursiveUse}</p></Section>
+
+      <div className="deep-question-card">
+        <Badge tone="cyan">Mini questão comentada</Badge>
+        <p><strong>Enunciado:</strong> {lesson.miniQuestion.statement}</p>
+        <ol className="deep-options">{lesson.miniQuestion.options.map((option, index) => <li key={option}>{String.fromCharCode(65 + index)}) {option}</li>)}</ol>
+        <p><strong>Gabarito:</strong> {lesson.miniQuestion.answer}</p>
+        <p><strong>Comentário:</strong> {lesson.miniQuestion.comment}</p>
+      </div>
+
+      <div className="lesson-columns deep-safe-columns">
+        <Section title="Exercícios rápidos" tone="cyan"><ul className="compact-list">{lesson.exercises.map((item) => <li key={item}>{item}</li>)}</ul></Section>
+        <Section title="Mini resumo para memorizar" tone="green"><p>{lesson.finalMemory}</p></Section>
+      </div>
+    </section>
+  );
+}
 
 function includesAny(text, terms) {
   const normalized = normalize(text);
@@ -545,6 +608,7 @@ export default function PremiumApostila({ onNavigate }) {
   const visibleActiveSubject = filteredSubjects.find((item) => item.id === activeSubject.id) || filteredSubjects[0] || activeSubject;
   const studiedSet = new Set(progress.studied?.[visibleActiveSubject.id] || []);
   const activeTopic = visibleActiveSubject.topics.find((topic) => topic.id === activeTopicId) || visibleActiveSubject.topics[0] || activeSubject.topics[0];
+  const activeDeepLesson = getDeepDidacticLesson(activeSubject.id, activeTopic.id);
   const subjectTotal = activeSubject.topics.length;
   const subjectDone = progress.studied?.[activeSubject.id]?.length || 0;
   const subjectPercent = Math.round((subjectDone / Math.max(subjectTotal, 1)) * 100);
@@ -714,6 +778,7 @@ export default function PremiumApostila({ onNavigate }) {
               <Section title="3. Explicação completa" tone="orange">
                 {activeTopic.plainExplanation.map((item) => <p key={item}>{item}</p>)}
               </Section>
+              <DeepDidacticBlock lesson={activeDeepLesson} />
               <Section title="4. Explicação técnica para prova" tone="purple"><p>{activeTopic.examTechnical}</p></Section>
               <Section title="5. Exemplo aplicado à Procuradoria Municipal" tone="green"><p>{activeTopic.cityExample}</p></Section>
 
