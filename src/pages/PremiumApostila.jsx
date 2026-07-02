@@ -238,7 +238,7 @@ export default function PremiumApostila({ onNavigate }) {
               </div>
               <Button variant="ghost" onClick={copySummary}>Copiar aula completa</Button>
             </div>
-            <ProgressBar label={`Progresso em Direito Administrativo: ${subjectDone}/${subjectTotal} tópicos`} value={subjectPercent} />
+            <ProgressBar label={`Progresso em ${activeSubject.subject}: ${subjectDone}/${subjectTotal} tópicos`} value={subjectPercent} />
           </Card>
 
           <div className="apostila-workbench">

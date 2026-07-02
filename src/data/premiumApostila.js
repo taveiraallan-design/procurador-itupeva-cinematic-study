@@ -1,11 +1,10 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39G',
+  phase: 'Fase 39J',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal + Penal/Processo Penal + Trabalho/Processo do Trabalho — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Apostila premium completa: Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal + Penal/Processo Penal + Trabalho/Processo do Trabalho + Direito Urbanístico + Direito Ambiental + Língua Portuguesa — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39H — Direito Urbanístico Premium',
-    '39I — Direito Ambiental Premium'
+    'Fase 39 concluída — todas as matérias do edital estão na Apostila Premium'
   ]
 };
 
@@ -2843,6 +2842,838 @@ export const premiumApostilaSubjects = [
         summary: 'Direito coletivo e Processo do Trabalho completam a visão trabalhista. Para Procurador, o foco é competência, prova, prescrição, fiscalização, negociação e impacto financeiro.',
         checklist: ['Sei competência da Justiça do Trabalho.', 'Sei noções de audiência e defesa.', 'Sei recursos básicos.', 'Sei negociação coletiva.', 'Consigo montar defesa municipal trabalhista.'],
         nextTopic: 'Próxima fase: Direito Urbanístico Premium'
+      }
+    ]
+  }
+  ,{
+    id: 'direito-urbanistico',
+    subject: 'Direito Urbanístico',
+    status: '39H concluída',
+    priority: 'Alta',
+    overview: 'Apostila premium de Direito Urbanístico para Procurador Municipal: política urbana constitucional, Estatuto da Cidade, função social da propriedade, plano diretor, parcelamento, uso e ocupação do solo, instrumentos urbanísticos, regularização fundiária urbana, poder de polícia urbanístico e responsabilidade do Município no ordenamento territorial.',
+    lawBase: ['CF/88, arts. 30, I, II e VIII; 182 e 183', 'Lei nº 10.257/2001 — Estatuto da Cidade', 'Lei nº 6.766/1979 — Parcelamento do Solo Urbano', 'Lei nº 13.465/2017 — Regularização Fundiária Urbana', 'Legislação municipal de plano diretor, zoneamento, obras, posturas e uso do solo'],
+    topics: [
+      {
+        id: 'politica-urbana-constitucional',
+        level: 'básico',
+        title: 'Política urbana constitucional, competência municipal e função social da cidade',
+        whatIs: 'Direito Urbanístico é o ramo que organiza juridicamente o espaço urbano. Ele disciplina como a cidade deve crescer, como o solo pode ser usado, quais instrumentos o Poder Público pode utilizar para ordenar o território e como a propriedade urbana deve cumprir função social.',
+        purpose: 'Serve para transformar o crescimento da cidade em política pública juridicamente controlada. Para Procurador Municipal, é essencial para defender plano diretor, zoneamento, licenciamento de obras, fiscalização de loteamentos, regularização fundiária e sanções urbanísticas.',
+        plainExplanation: [
+          'A Constituição deu ao Município papel central na política urbana. O art. 30 trata do interesse local e da ordenação territorial, enquanto os arts. 182 e 183 criam a base da política urbana e da usucapião especial urbana. Isso significa que a cidade não é apenas um amontoado de imóveis privados: ela tem função social, precisa de planejamento, infraestrutura, mobilidade, saneamento, moradia e equilíbrio ambiental.',
+          'A propriedade urbana não é um direito absoluto. O proprietário pode usar, construir e explorar seu imóvel, mas deve respeitar o plano diretor, o zoneamento, recuos, coeficientes, posturas, normas ambientais, acessibilidade, segurança e interesse coletivo. Em prova, a banca costuma cobrar essa passagem do individual para o coletivo: propriedade urbana deve atender à função social definida pelo ordenamento municipal.',
+          'Para a Procuradoria, o tema aparece quando alguém quer construir em área irregular, questiona multa urbanística, pede alvará incompatível com o zoneamento ou ajuíza ação contra obrigação de regularizar obra. O parecer bom mostra competência municipal, fundamento constitucional, legislação local e proporcionalidade da medida.'
+        ],
+        examTechnical: 'Para prova, fixe: CF/88, art. 30, VIII, atribui ao Município promover adequado ordenamento territorial, mediante planejamento e controle do uso, parcelamento e ocupação do solo urbano. O art. 182 determina que a política de desenvolvimento urbano, executada pelo Município, tem por objetivo ordenar o pleno desenvolvimento das funções sociais da cidade e garantir o bem-estar de seus habitantes. O plano diretor é o instrumento básico da política de desenvolvimento e expansão urbana.',
+        cityExample: 'Um empreendimento pretende instalar atividade industrial incômoda em bairro predominantemente residencial. O Procurador deve analisar competência municipal, zoneamento, impactos urbanísticos, vizinhança, licenciamento e eventual indeferimento motivado do alvará, evitando tanto omissão fiscalizatória quanto restrição arbitrária.',
+        legalBase: ['CF/88, arts. 30, I, II e VIII', 'CF/88, arts. 182 e 183', 'Lei nº 10.257/2001, especialmente diretrizes gerais da política urbana', 'Lei Orgânica Municipal e legislação local de ordenamento territorial'],
+        dryLaw: ['CF/88, art. 30, VIII', 'CF/88, art. 182', 'CF/88, art. 183', 'Estatuto da Cidade, arts. 1º e 2º'],
+        jurisprudence: ['O STF reconhece ampla competência municipal para legislar sobre interesse local e ordenamento territorial urbano, desde que respeitadas normas gerais federais e competências dos demais entes.', 'A atuação urbanística municipal deve observar função social da propriedade, proporcionalidade, motivação e devido processo administrativo quando houver restrição ou sanção.'],
+        objectiveCharge: ['Competência municipal para uso, parcelamento e ocupação do solo.', 'Finalidade da política urbana.', 'Função social da propriedade urbana.', 'Plano diretor como instrumento básico.', 'Diferença entre interesse local e normas gerais federais.'],
+        discursiveCharge: 'Pode cair como parecer sobre alvará de construção, interdição de obra, loteamento irregular, aplicação de multa, alteração de zoneamento ou defesa de lei municipal urbanística.',
+        traps: ['Município não pode ignorar normas gerais federais, mas tem competência forte sobre interesse local e ordenamento territorial.', 'Função social não elimina propriedade privada; condiciona seu exercício.', 'Plano diretor não é peça decorativa: orienta a política urbana.', 'Restrição urbanística exige fundamento legal e motivação.', 'Direito de construir não é absoluto.'],
+        differences: ['Política urbana x política habitacional: a primeira organiza a cidade; a segunda foca moradia.', 'Função social da cidade x função social da propriedade: uma olha o conjunto urbano; outra olha o imóvel.', 'Competência suplementar x competência exclusiva: Município suplementa normas gerais e regula interesse local.', 'Poder de polícia urbanístico x desapropriação: fiscalização limita uso; desapropriação retira propriedade mediante requisitos.'],
+        commonMistakes: ['Responder urbanístico como se fosse apenas direito de propriedade civil.', 'Esquecer o art. 30, VIII da CF.', 'Tratar plano diretor como facultativo em qualquer caso.', 'Não relacionar cidade, meio ambiente e interesse local.', 'Confundir licença urbanística com favor do prefeito.'],
+        miniCase: 'Morador pede alvará para construir prédio acima do gabarito permitido. O Município indefere com base na lei de zoneamento. A decisão tende a ser legítima se houver base legal, motivação, impessoalidade e possibilidade de contraditório em eventual recurso administrativo.',
+        activeQuestions: ['Qual é a competência municipal no caso?', 'Há lei local disciplinando uso do solo?', 'O imóvel cumpre função social?', 'A restrição urbanística é proporcional?', 'Há motivação suficiente no ato administrativo?'],
+        flashcards: [
+          { front: 'Qual artigo da CF trata do ordenamento territorial municipal?', back: 'Art. 30, VIII.' },
+          { front: 'Qual artigo da CF trata da política urbana?', back: 'Art. 182.' },
+          { front: 'Direito de construir é absoluto?', back: 'Não. Deve respeitar função social, plano diretor, zoneamento e normas urbanísticas.' }
+        ],
+        summary: 'Direito Urbanístico é a técnica jurídica de organizar a cidade. Para Procurador Municipal, o núcleo é competência local, função social, plano diretor, zoneamento, poder de polícia e motivação dos atos.',
+        checklist: ['Sei explicar competência municipal urbanística.', 'Sei art. 182 da CF.', 'Sei função social da cidade e da propriedade.', 'Consigo aplicar zoneamento a caso concreto.', 'Consigo redigir parecer sobre alvará ou obra irregular.'],
+        nextTopic: 'Estatuto da Cidade e instrumentos da política urbana'
+      },
+      {
+        id: 'estatuto-da-cidade-instrumentos',
+        level: 'intermediário',
+        title: 'Estatuto da Cidade: diretrizes gerais e instrumentos da política urbana',
+        whatIs: 'O Estatuto da Cidade é a Lei nº 10.257/2001. Ele regulamenta os arts. 182 e 183 da Constituição, estabelece diretrizes gerais da política urbana e fornece instrumentos jurídicos para o Município ordenar o uso da propriedade urbana e promover cidades sustentáveis.',
+        purpose: 'Serve para dar ferramentas concretas ao Município: plano diretor, parcelamento/edificação/uso compulsórios, IPTU progressivo no tempo, desapropriação-sanção, direito de preempção, outorga onerosa, operações urbanas, estudo de impacto de vizinhança, usucapião especial urbana e gestão democrática da cidade.',
+        plainExplanation: [
+          'O Estatuto da Cidade transforma a função social em instrumentos práticos. Sem instrumentos, a Constituição ficaria abstrata. Com eles, o Município pode induzir uso adequado do solo, combater especulação, exigir aproveitamento de imóveis ociosos, ordenar adensamento, proteger áreas sensíveis e avaliar impactos de empreendimentos.',
+          'O ponto central é que cada instrumento exige lei, procedimento e motivação. Não basta o gestor dizer que quer usar IPTU progressivo ou exigir EIV. É preciso verificar plano diretor, lei municipal específica, área definida, finalidade pública, contraditório e requisitos legais.',
+          'A banca gosta de cobrar nomes parecidos. Direito de preempção não é desapropriação; outorga onerosa não é multa; EIV não substitui EIA ambiental; IPTU progressivo no tempo tem função urbanística sancionatória, diferente da progressividade fiscal do IPTU.'
+        ],
+        examTechnical: 'Domine diretrizes do art. 2º da Lei nº 10.257/2001 e os instrumentos do art. 4º. Entenda a sequência de parcelamento/edificação/utilização compulsórios, IPTU progressivo no tempo e desapropriação com pagamento em títulos. Estude EIV, direito de preempção, outorga onerosa, transferência do direito de construir e operações urbanas consorciadas.',
+        cityExample: 'Terreno grande em área servida por infraestrutura permanece vazio por anos. O Município pode, se houver previsão no plano diretor e lei específica, exigir adequado aproveitamento. A resposta jurídica precisa observar notificação, prazos, devido processo e sequência legal antes de medidas mais gravosas.',
+        legalBase: ['Lei nº 10.257/2001 — Estatuto da Cidade', 'CF/88, arts. 182 e 183', 'Plano diretor e legislação urbanística municipal'],
+        dryLaw: ['Estatuto da Cidade, arts. 2º, 4º, 5º a 8º, 25 a 35, 36 a 38, 39 a 42', 'CF/88, art. 182, §§ 2º a 4º'],
+        jurisprudence: ['A aplicação de instrumentos urbanísticos deve respeitar legalidade, plano diretor, motivação e proporcionalidade.', 'Tribunais costumam exigir demonstração de base legal municipal para restrições urbanísticas específicas e instrumentos que afetem intensamente o direito de propriedade.'],
+        objectiveCharge: ['Finalidade do Estatuto da Cidade.', 'Diretrizes gerais da política urbana.', 'Instrumentos do art. 4º.', 'IPTU progressivo no tempo.', 'Direito de preempção.', 'EIV.', 'Outorga onerosa.'],
+        discursiveCharge: 'Pode cair como parecer sobre imóvel ocioso, exigência de EIV, operação urbana, contrapartida urbanística, direito de preempção ou validade de lei municipal urbanística.',
+        traps: ['EIV não substitui EIA quando houver impacto ambiental que exija estudo ambiental.', 'Direito de preempção é preferência do Município em aquisição, não tomada compulsória imediata.', 'IPTU progressivo urbanístico não é mera majoração arrecadatória.', 'Desapropriação-sanção depende de etapas anteriores.', 'Instrumento urbanístico sem lei local adequada é risco de nulidade.'],
+        differences: ['IPTU progressivo fiscal x IPTU progressivo no tempo urbanístico.', 'EIV x EIA/RIMA.', 'Preempção x desapropriação.', 'Outorga onerosa x taxa.', 'Operação urbana consorciada x simples obra pública.'],
+        commonMistakes: ['Decorar instrumentos sem entender a sequência.', 'Ignorar necessidade de plano diretor e lei municipal.', 'Achar que todo empreendimento exige EIV.', 'Confundir função arrecadatória com função urbanística.', 'Esquecer gestão democrática da cidade.'],
+        miniCase: 'Construtora quer grande shopping em região já congestionada. A lei municipal pode exigir EIV para avaliar impactos em trânsito, infraestrutura, vizinhança, iluminação, ventilação, patrimônio e equipamentos urbanos. Isso não dispensa licenciamento ambiental se também houver impacto ambiental relevante.',
+        activeQuestions: ['Qual instrumento é adequado?', 'Existe previsão no plano diretor?', 'Há lei municipal específica?', 'Foi garantido procedimento?', 'O instrumento é proporcional ao problema urbano?'],
+        flashcards: [
+          { front: 'Qual lei é o Estatuto da Cidade?', back: 'Lei nº 10.257/2001.' },
+          { front: 'EIV substitui EIA?', back: 'Não. São estudos distintos; EIV não dispensa estudo ambiental quando exigido.' },
+          { front: 'IPTU progressivo no tempo tem qual finalidade?', back: 'Induzir cumprimento da função social da propriedade urbana.' }
+        ],
+        summary: 'O Estatuto da Cidade dá instrumentos para o Município ordenar a cidade. A chave de prova é saber finalidade, requisitos, sequência e diferença entre instrumentos.',
+        checklist: ['Sei diretrizes do Estatuto da Cidade.', 'Sei instrumentos principais.', 'Sei sequência PEUC → IPTU progressivo → desapropriação-sanção.', 'Sei diferenciar EIV e EIA.', 'Consigo aplicar instrumento urbanístico em parecer.'],
+        nextTopic: 'Plano diretor, zoneamento e controle do uso do solo'
+      },
+      {
+        id: 'plano-diretor-zoneamento',
+        level: 'avançado',
+        title: 'Plano Diretor, zoneamento, uso e ocupação do solo, alvarás e licenciamento urbanístico',
+        whatIs: 'Plano Diretor é o instrumento básico da política de desenvolvimento e expansão urbana. Zoneamento e normas de uso e ocupação do solo definem o que pode ser feito em cada área da cidade: usos permitidos, coeficientes, gabaritos, recuos, taxa de ocupação, permeabilidade, estacionamento, atividades incômodas e restrições urbanísticas.',
+        purpose: 'Serve para organizar crescimento urbano, evitar conflitos de vizinhança, distribuir atividades, proteger áreas sensíveis, orientar investimentos públicos e dar segurança jurídica aos particulares.',
+        plainExplanation: [
+          'O plano diretor não é apenas mapa. Ele é lei municipal estruturante, define diretrizes de desenvolvimento e condiciona instrumentos urbanísticos. Já o zoneamento traduz essas diretrizes em regras aplicáveis ao lote e à atividade. Para o cidadão, aparece como alvará, licença, certidão de uso do solo e fiscalização de obra.',
+          'Em Procuradoria Municipal, os conflitos são muito práticos: alvará negado, obra embargada, mudança de zoneamento questionada, atividade barulhenta em área residencial, construção irregular, lote com recuo insuficiente, igreja ou comércio em área incompatível. O parecer deve juntar Constituição, Estatuto da Cidade e lei local.',
+          'A banca costuma cobrar o caráter obrigatório do plano diretor em hipóteses constitucionais/legais, a participação popular e a vinculação da propriedade à função social. Também cobra que licença urbanística é ato vinculado quando os requisitos legais estão preenchidos; se não estão, a Administração deve indeferir motivadamente.'
+        ],
+        examTechnical: 'Estude plano diretor, processo participativo, revisão periódica, zoneamento, alvará, licença de construção, habite-se, embargo, demolição administrativa quando legalmente cabível, regularização, direito adquirido urbanístico e limites da discricionariedade administrativa. Em prova, destaque motivação e legalidade estrita na análise de licença.',
+        cityExample: 'Empresário pede alvará para bar com música ao vivo em zona residencial. A análise jurídica verifica uso permitido, impacto de vizinhança, ruído, horário, posturas, acessibilidade, segurança e eventual necessidade de adequação. Se a lei proíbe, o indeferimento deve ser motivado e impessoal.',
+        legalBase: ['CF/88, art. 182', 'Lei nº 10.257/2001, plano diretor e gestão democrática', 'Lei municipal de plano diretor, zoneamento, obras e posturas', 'Lei nº 13.874/2019 quando houver discussão de liberdade econômica compatível com interesse local e risco da atividade'],
+        dryLaw: ['CF/88, art. 182, §1º e §2º', 'Estatuto da Cidade, arts. 39 a 42', 'Legislação municipal de uso e ocupação do solo', 'Código de Obras e Código de Posturas local'],
+        jurisprudence: ['A alteração de zoneamento e planejamento urbano é matéria de competência municipal, mas deve respeitar processo legislativo, razoabilidade e, quando aplicável, participação e estudos técnicos.', 'Licença urbanística concedida contra a lei pode ser anulada, sem prejuízo de análise de boa-fé, segurança jurídica e eventual responsabilidade estatal conforme o caso.'],
+        objectiveCharge: ['Plano diretor como instrumento básico.', 'Obrigatoriedade do plano diretor.', 'Função social definida pelo plano diretor.', 'Alvará e licença urbanística.', 'Zoneamento e poder de polícia.', 'Participação popular.'],
+        discursiveCharge: 'Pode cair parecer sobre indeferimento de alvará, obra irregular, mudança de zoneamento, regularização de imóvel, direito adquirido de construir ou ação contra embargo municipal.',
+        traps: ['Protocolo de pedido não gera direito de construir contra lei posterior em qualquer hipótese; é preciso analisar ato jurídico perfeito, licença e regime local.', 'Alvará não é favor político.', 'Lei de zoneamento não pode ser aplicada de modo pessoal para beneficiar empreendimento específico sem fundamento geral.', 'Mudança legislativa urbanística exige cuidado com motivação, impessoalidade e interesse público.', 'Liberdade econômica não elimina controle urbanístico de atividades de risco ou impacto.'],
+        differences: ['Plano diretor x zoneamento.', 'Alvará de funcionamento x licença de construção.', 'Embargo x demolição.', 'Uso permitido x uso tolerado x uso proibido.', 'Direito adquirido x mera expectativa.'],
+        commonMistakes: ['Responder sem consultar lei municipal.', 'Confundir habite-se com licença para atividade econômica.', 'Ignorar posturas municipais.', 'Achar que todo indeferimento gera indenização.', 'Esquecer participação popular no planejamento urbano.'],
+        miniCase: 'Após lei nova reduzir gabarito, construtora alega direito de construir 20 andares porque possuía estudo preliminar. Se não havia licença válida consolidada, pode haver apenas expectativa. O parecer deve analisar protocolo, aprovação, prazo, boa-fé e regra de transição.',
+        activeQuestions: ['Existe plano diretor vigente?', 'Qual zona incide no imóvel?', 'O uso é permitido?', 'Há licença válida?', 'Existe direito adquirido ou mera expectativa?', 'A decisão foi motivada?'],
+        flashcards: [
+          { front: 'Plano diretor é instrumento de quê?', back: 'Instrumento básico da política de desenvolvimento e expansão urbana.' },
+          { front: 'Alvará é ato discricionário?', back: 'Em regra, licença urbanística é vinculada aos requisitos legais, embora a análise técnica possa exigir verificação concreta.' },
+          { front: 'Zoneamento pode limitar propriedade?', back: 'Sim, como expressão da função social e do ordenamento territorial, observada legalidade.' }
+        ],
+        summary: 'Plano diretor e zoneamento transformam política urbana em regra concreta. Para prova, foque em competência municipal, função social, licença vinculada, motivação e consulta à lei local.',
+        checklist: ['Sei o que é plano diretor.', 'Sei função do zoneamento.', 'Sei analisar alvará e licença.', 'Sei diferença entre direito adquirido e expectativa.', 'Consigo fundamentar embargo ou indeferimento.'],
+        nextTopic: 'Parcelamento do solo urbano e loteamentos irregulares'
+      },
+      {
+        id: 'parcelamento-solo-loteamentos',
+        level: 'avançado',
+        title: 'Parcelamento do solo urbano, loteamentos, desmembramentos e loteamentos irregulares ou clandestinos',
+        whatIs: 'Parcelamento do solo urbano é a divisão de uma gleba em lotes destinados à edificação, com abertura ou não de novas vias, conforme regras urbanísticas. Loteamento envolve abertura, prolongamento ou modificação de vias e espaços públicos; desmembramento aproveita sistema viário existente.',
+        purpose: 'Serve para garantir que a expansão da cidade ocorra com infraestrutura, vias, áreas públicas, equipamentos urbanos, drenagem, saneamento, segurança jurídica registral e respeito ao planejamento municipal.',
+        plainExplanation: [
+          'O parcelamento do solo é um dos temas mais importantes para Procurador Municipal porque loteamento irregular cria problemas por décadas: ruas sem infraestrutura, moradores sem matrícula, áreas públicas ocupadas, cobrança por serviços inexistentes, risco ambiental e judicialização.',
+          'A Lei nº 6.766/1979 estabelece normas gerais. O Município aprova projetos, verifica compatibilidade urbanística, exige infraestrutura, áreas públicas e registro. Loteamento clandestino é aquele feito sem aprovação; irregular é aquele aprovado ou iniciado, mas executado em desacordo com requisitos ou sem regularização completa.',
+          'A atuação municipal deve combinar fiscalização, embargo, multa, ação civil pública se necessário, regularização quando possível e proteção de adquirentes de boa-fé. O Procurador não pode olhar só para o empreendedor: há interesse social dos moradores e interesse urbanístico coletivo.'
+        ],
+        examTechnical: 'Domine Lei nº 6.766/1979, conceitos de loteamento e desmembramento, requisitos mínimos, aprovação municipal, registro imobiliário, áreas públicas, infraestrutura, crimes relacionados e responsabilidade do loteador. Conecte com REURB quando houver núcleo urbano informal consolidado.',
+        cityExample: 'Empreendedor vende lotes em área rural como chácaras urbanas sem aprovação municipal. O Município pode embargar, multar, comunicar Ministério Público e Registro de Imóveis, orientar consumidores e avaliar medidas judiciais para impedir agravamento do dano.',
+        legalBase: ['Lei nº 6.766/1979', 'CF/88, art. 30, VIII', 'Lei nº 10.257/2001', 'Lei nº 13.465/2017 quando houver regularização fundiária', 'Legislação municipal de parcelamento do solo'],
+        dryLaw: ['Lei nº 6.766/1979 — conceitos, aprovação, registro e responsabilidade', 'CF/88, art. 30, VIII', 'Estatuto da Cidade, instrumentos urbanísticos', 'Lei nº 13.465/2017, REURB'],
+        jurisprudence: ['Tribunais reconhecem dever municipal de fiscalização urbanística, mas a responsabilidade por loteamento irregular deve considerar conduta do Município, do loteador e circunstâncias do caso.', 'A regularização fundiária não é anistia automática para qualquer irregularidade; exige procedimento, interesse público e análise urbanística/ambiental.'],
+        objectiveCharge: ['Loteamento x desmembramento.', 'Aprovação municipal.', 'Registro do loteamento.', 'Loteamento irregular x clandestino.', 'Responsabilidade do loteador.', 'Infraestrutura e áreas públicas.'],
+        discursiveCharge: 'Pode cair como parecer sobre venda irregular de lotes, pedido de regularização, embargo de parcelamento, ação civil pública ou responsabilidade do Município por omissão fiscalizatória.',
+        traps: ['Contrato particular não regulariza lote.', 'Registro imobiliário não substitui aprovação urbanística quando exigida.', 'REURB não é liberação automática sem análise.', 'Município deve fiscalizar, mas não assume automaticamente toda obrigação do loteador.', 'Área pública de loteamento não pode ser tratada como bem privado do empreendedor.'],
+        differences: ['Loteamento x desmembramento.', 'Irregular x clandestino.', 'Aprovação urbanística x registro imobiliário.', 'Regularização fundiária x aprovação ordinária de novo parcelamento.', 'Responsabilidade administrativa x civil x penal.'],
+        commonMistakes: ['Esquecer Lei nº 6.766/1979.', 'Não diferenciar clandestino de irregular.', 'Ignorar Registro de Imóveis.', 'Regularizar sem infraestrutura mínima.', 'Não proteger adquirentes de boa-fé.'],
+        miniCase: 'Famílias compram lotes de loteador que nunca aprovou o empreendimento. O Município deve impedir novas vendas, buscar responsabilização do loteador e avaliar REURB se houver núcleo consolidado e interesse social, sem legitimar automaticamente fraude futura.',
+        activeQuestions: ['Houve aprovação municipal?', 'Houve registro?', 'Existe infraestrutura?', 'Quem vendeu os lotes?', 'O núcleo é consolidado?', 'Cabe fiscalização, sanção ou regularização?'],
+        flashcards: [
+          { front: 'Loteamento e desmembramento são iguais?', back: 'Não. Loteamento envolve abertura/modificação de vias; desmembramento aproveita sistema viário existente.' },
+          { front: 'Lei geral de parcelamento do solo urbano?', back: 'Lei nº 6.766/1979.' },
+          { front: 'REURB regulariza automaticamente?', back: 'Não. Depende de procedimento e requisitos urbanísticos, ambientais e sociais.' }
+        ],
+        summary: 'Parcelamento do solo protege a expansão ordenada da cidade. Em prova, separe conceitos, aprovação, registro, responsabilidade e regularização.',
+        checklist: ['Sei loteamento x desmembramento.', 'Sei irregular x clandestino.', 'Sei papel do Município.', 'Sei relação com Registro de Imóveis.', 'Consigo parecer sobre loteamento irregular.'],
+        nextTopic: 'Regularização fundiária urbana — REURB'
+      },
+      {
+        id: 'reurb-regularizacao-fundiaria',
+        level: 'discursiva',
+        title: 'Regularização fundiária urbana — REURB, núcleos urbanos informais, REURB-S e REURB-E',
+        whatIs: 'Regularização fundiária urbana é o conjunto de medidas jurídicas, urbanísticas, ambientais e sociais destinado a incorporar núcleos urbanos informais ao ordenamento territorial e titular seus ocupantes quando cabível. A Lei nº 13.465/2017 disciplina a REURB.',
+        purpose: 'Serve para enfrentar ocupações consolidadas, loteamentos antigos irregulares, moradias sem matrícula, falta de infraestrutura e insegurança jurídica, equilibrando direito à moradia, função social, meio ambiente e planejamento urbano.',
+        plainExplanation: [
+          'A REURB é uma resposta para realidades urbanas já consolidadas. Ela não deve ser vista como prêmio à irregularidade, mas como instrumento de reorganização da cidade quando desfazer a ocupação seria socialmente inviável ou desproporcional. Ainda assim, precisa de procedimento técnico e jurídico.',
+          'Há REURB-S, de interesse social, voltada à população de baixa renda, e REURB-E, de interesse específico, normalmente sem o mesmo perfil social. Essa distinção influencia custos, responsabilidades, políticas públicas e análise do interesse envolvido.',
+          'Para Procurador Municipal, o cuidado é evitar duas distorções: negar toda regularização por formalismo e, no extremo oposto, regularizar qualquer ocupação sem estudo, sem controle ambiental, sem infraestrutura mínima e sem responsabilizar quem lucrou com a irregularidade.'
+        ],
+        examTechnical: 'Estude legitimados, procedimento, classificação, projeto de regularização, CRF, titulação, infraestrutura essencial, áreas de risco, áreas ambientais, registro e responsabilidade por implantação de medidas. A prova pode explorar equilíbrio entre moradia, urbanismo e meio ambiente.',
+        cityExample: 'Bairro consolidado há 20 anos possui casas, ruas informais e ausência de matrícula individual. O Município avalia REURB-S, identifica ocupantes, faz projeto urbanístico, analisa riscos, define obras essenciais e expede certidão de regularização fundiária quando cumpridos requisitos.',
+        legalBase: ['Lei nº 13.465/2017', 'Decreto nº 9.310/2018 como referência regulamentar federal', 'CF/88, arts. 6º, 30, VIII, 182 e 225', 'Estatuto da Cidade', 'Legislação municipal de REURB, habitação e urbanismo'],
+        dryLaw: ['Lei nº 13.465/2017 — REURB', 'CF/88, arts. 6º, 182 e 225', 'Estatuto da Cidade', 'Lei nº 6.766/1979 quando pertinente'],
+        jurisprudence: ['A regularização fundiária deve ser compatibilizada com proteção ambiental, segurança dos ocupantes e interesse urbanístico.', 'Áreas de risco ou ambientalmente sensíveis exigem análise técnica específica; a titulação não pode ignorar risco à vida ou dano ambiental relevante.'],
+        objectiveCharge: ['Conceito de REURB.', 'REURB-S x REURB-E.', 'Núcleo urbano informal.', 'CRF.', 'Legitimados.', 'Infraestrutura essencial.', 'Regularização em áreas de risco.'],
+        discursiveCharge: 'Muito provável em parecer: regularizar bairro informal, área de preservação, loteamento antigo, conflito entre moradia e meio ambiente ou definição de responsabilidades por obras.',
+        traps: ['REURB não é cheque em branco.', 'REURB-S não é igual a REURB-E.', 'Regularização não pode ignorar risco geológico ou inundação.', 'Titulação sem projeto urbanístico pode perpetuar problema.', 'Não se deve confundir REURB com aprovação normal de novo loteamento.'],
+        differences: ['REURB-S x REURB-E.', 'Regularização fundiária x parcelamento novo.', 'Titulação x infraestrutura.', 'Núcleo consolidado x ocupação recente.', 'Interesse social x interesse específico.'],
+        commonMistakes: ['Tratar REURB como simples entrega de escritura.', 'Ignorar diagnóstico ambiental.', 'Não classificar a modalidade.', 'Não definir responsabilidades por obras.', 'Esquecer participação e cadastro social.'],
+        miniCase: 'Ocupação de baixa renda fica próxima a córrego. A resposta adequada não é regularizar automaticamente nem remover todos sem estudo. É preciso laudo técnico, análise de risco, solução habitacional/urbanística e compatibilização ambiental.',
+        activeQuestions: ['O núcleo é urbano informal consolidado?', 'É REURB-S ou REURB-E?', 'Há área de risco?', 'Existe impacto ambiental?', 'Quais obras essenciais são necessárias?', 'Quem arca com custos?'],
+        flashcards: [
+          { front: 'Lei da REURB?', back: 'Lei nº 13.465/2017.' },
+          { front: 'REURB-S é para quê?', back: 'Regularização fundiária de interesse social, voltada à população de baixa renda.' },
+          { front: 'REURB é só titulação?', back: 'Não. Envolve medidas jurídicas, urbanísticas, ambientais e sociais.' }
+        ],
+        summary: 'REURB é instrumento de inclusão urbana com técnica. Para Procurador, a resposta deve equilibrar moradia, urbanismo, ambiente, risco e responsabilidade.',
+        checklist: ['Sei conceito de REURB.', 'Sei REURB-S e REURB-E.', 'Sei riscos e limites ambientais.', 'Sei função da CRF.', 'Consigo elaborar parecer de regularização.'],
+        nextTopic: 'Poder de polícia urbanístico e sanções'
+      },
+      {
+        id: 'poder-policia-urbanistico',
+        level: 'discursiva',
+        title: 'Poder de polícia urbanístico: fiscalização, embargo, interdição, multa, demolição e defesa do Município',
+        whatIs: 'Poder de polícia urbanístico é a atividade administrativa de condicionar, limitar, fiscalizar e sancionar o uso da propriedade e das atividades urbanas para proteger segurança, ordem urbanística, função social, vizinhança, mobilidade, meio ambiente urbano e interesse coletivo.',
+        purpose: 'Serve para impedir obras irregulares, atividades incompatíveis com zoneamento, ocupações perigosas, descumprimento de alvarás, loteamentos clandestinos e danos à cidade. Para Procurador, é tema central de defesa judicial e parecer preventivo.',
+        plainExplanation: [
+          'O poder de polícia urbanístico aparece de forma concreta: fiscal vai à obra, lavra auto, embarga, multa, interdita ou instaura processo. Cada ato deve ter competência, base legal, descrição do fato, prova mínima, proporcionalidade e possibilidade de defesa quando a medida não for de urgência absoluta.',
+          'Embargo e interdição são medidas para cessar situação irregular ou perigosa. Multa é sanção. Demolição é medida extrema e exige previsão legal, procedimento e cautela, especialmente quando envolve moradia. A Administração não pode ser omissa diante de risco, mas também não pode agir sem devido processo.',
+          'Em prova, a pegadinha é confundir autoexecutoriedade com arbitrariedade. Alguns atos de polícia podem ser autoexecutórios quando previstos em lei ou diante de urgência, mas isso não elimina motivação, controle, proporcionalidade e responsabilidade por excesso.'
+        ],
+        examTechnical: 'Estude atributos do poder de polícia, licenças urbanísticas, fiscalização, processo administrativo sancionador, devido processo, autoexecutoriedade, proporcionalidade, prescrição de sanções, nulidades do auto de infração e controle judicial. Conecte com Direito Administrativo e Ambiental.',
+        cityExample: 'Obra avança sobre passeio público e não possui alvará. O fiscal embarga a obra e lavra auto. O Procurador deve verificar base legal, identificação do infrator, prova fotográfica, prazo de defesa, risco à coletividade e medida adequada para recomposição do passeio.',
+        legalBase: ['CF/88, arts. 30, VIII e 182', 'Código Tributário Nacional, art. 78 como conceito geral de poder de polícia', 'Legislação municipal de obras, posturas, zoneamento e fiscalização', 'Lei nº 10.257/2001'],
+        dryLaw: ['CTN, art. 78', 'CF/88, arts. 30, VIII e 182', 'Código de Obras/Posturas Municipal', 'Lei municipal de processo administrativo, se houver'],
+        jurisprudence: ['Controle judicial pode anular sanção urbanística ilegal, desmotivada ou desproporcional, mas não deve substituir a discricionariedade técnica legítima do Município.', 'A autoexecutoriedade administrativa não afasta necessidade de respeito a direitos fundamentais e devido processo, especialmente em medidas gravosas.'],
+        objectiveCharge: ['Conceito de poder de polícia.', 'Autoexecutoriedade.', 'Embargo x interdição x multa.', 'Devido processo.', 'Competência do fiscal.', 'Controle judicial.'],
+        discursiveCharge: 'Pode cair parecer sobre demolição de obra irregular, defesa em ação anulatória de multa, interdição de estabelecimento ou mandado de segurança contra embargo municipal.',
+        traps: ['Autoexecutoriedade não é carta branca.', 'Multa exige processo e motivação.', 'Demolição é medida extrema.', 'Obra antiga não é automaticamente regular.', 'Alvará vencido ou obtido por fraude pode ser revisto.'],
+        differences: ['Embargo x interdição.', 'Multa x medida cautelar.', 'Licença x autorização.', 'Poder de polícia preventivo x repressivo.', 'Vício formal x vício material do auto.'],
+        commonMistakes: ['Não juntar fotos e relatório técnico.', 'Lavrar auto sem descrever fato.', 'Aplicar sanção sem base legal.', 'Confundir urgência com dispensa total de processo.', 'Ignorar proporcionalidade.'],
+        miniCase: 'Estabelecimento funciona como casa de eventos em área residencial, sem alvará e com ruído excessivo. O Município pode fiscalizar, autuar e até interditar se houver base legal e risco/irregularidade, garantindo defesa e motivando a medida.',
+        activeQuestions: ['Qual norma foi violada?', 'Quem tem competência para fiscalizar?', 'Existe urgência?', 'A medida é proporcional?', 'Foi garantida defesa?', 'A prova do fato é suficiente?'],
+        flashcards: [
+          { front: 'Poder de polícia urbanístico limita qual interesse?', back: 'Limita uso da propriedade e atividades urbanas em favor da ordem urbanística e interesse coletivo.' },
+          { front: 'Embargo e multa são iguais?', back: 'Não. Embargo paralisa atividade/obra; multa é sanção pecuniária.' },
+          { front: 'Autoexecutoriedade elimina controle judicial?', back: 'Não. O ato continua sujeito a controle de legalidade e proporcionalidade.' }
+        ],
+        summary: 'Poder de polícia urbanístico é defesa concreta da cidade. A prova cobra competência, legalidade, motivação, proporcionalidade e diferença entre medidas.',
+        checklist: ['Sei poder de polícia urbanístico.', 'Sei embargo, interdição, multa e demolição.', 'Sei autoexecutoriedade.', 'Sei devido processo sancionador.', 'Consigo defender auto de infração municipal.'],
+        nextTopic: 'Mobilidade urbana, patrimônio urbano e interface ambiental'
+      },
+      {
+        id: 'mobilidade-patrimonio-interface-ambiental',
+        level: 'intermediário',
+        title: 'Mobilidade urbana, patrimônio urbano, acessibilidade, vizinhança e interface com Direito Ambiental',
+        whatIs: 'É o conjunto de temas urbanísticos que conectam uso do solo com circulação, acessibilidade, qualidade de vida, paisagem urbana, patrimônio histórico-cultural, impactos de vizinhança e proteção ambiental no espaço urbano.',
+        purpose: 'Serve para analisar impacto de empreendimentos, organizar trânsito e transporte, proteger calçadas e acessibilidade, compatibilizar desenvolvimento com patrimônio e evitar que a cidade cresça gerando danos sociais e ambientais.',
+        plainExplanation: [
+          'A cidade funciona como sistema. Uma obra grande não afeta apenas o lote: pode gerar trânsito, sombra, ruído, demanda por água, esgoto, escolas, saúde, segurança e transporte. Por isso o Direito Urbanístico conversa com mobilidade, meio ambiente, patrimônio, acessibilidade e vizinhança.',
+          'O Estudo de Impacto de Vizinhança é instrumento típico dessa interface. Ele avalia efeitos urbanos de empreendimentos e permite exigir medidas mitigadoras ou compensatórias. Já o licenciamento ambiental analisa impacto ambiental. Os dois podem coexistir e não devem ser confundidos.',
+          'Para Procurador, isso aparece em ações contra obras públicas, empreendimentos privados, proteção de bens culturais, ocupação de calçadas, acessibilidade e questionamentos sobre exigências municipais. A defesa deve mostrar base legal, estudo técnico e interesse público.'
+        ],
+        examTechnical: 'Estude Política Nacional de Mobilidade Urbana, Estatuto da Cidade, EIV, acessibilidade, bens públicos de uso comum, calçadas, paisagem urbana, patrimônio histórico-cultural, medidas mitigadoras, compensatórias e relação com licenciamento ambiental. Foque na competência municipal e na necessidade de estudos técnicos.',
+        cityExample: 'Novo condomínio aumenta tráfego em avenida já saturada. O Município pode exigir EIV, adequações viárias, acesso seguro, calçadas acessíveis e medidas mitigadoras, desde que previstas na legislação e tecnicamente justificadas.',
+        legalBase: ['Lei nº 12.587/2012 — Política Nacional de Mobilidade Urbana', 'Lei nº 10.257/2001 — Estatuto da Cidade', 'CF/88, arts. 30, 182, 216 e 225', 'Lei Brasileira de Inclusão — Lei nº 13.146/2015, quando aplicável', 'Legislação municipal de mobilidade, posturas, patrimônio e acessibilidade'],
+        dryLaw: ['Estatuto da Cidade, arts. 36 a 38 — EIV', 'Lei nº 12.587/2012', 'CF/88, arts. 216 e 225', 'Lei nº 13.146/2015, acessibilidade'],
+        jurisprudence: ['Exigências urbanísticas baseadas em impacto de vizinhança e mobilidade tendem a ser legítimas quando previstas em lei e apoiadas por estudos técnicos.', 'Proteção de patrimônio cultural e meio ambiente urbano pode justificar limitações ao uso da propriedade, desde que respeitada legalidade e proporcionalidade.'],
+        objectiveCharge: ['EIV.', 'Mobilidade urbana.', 'Acessibilidade.', 'Patrimônio cultural.', 'Medidas mitigadoras.', 'Diferença entre impacto urbanístico e ambiental.'],
+        discursiveCharge: 'Pode cair parecer sobre empreendimento de grande impacto, exigência de contrapartida, ocupação de calçada, proteção de imóvel histórico ou conflito entre desenvolvimento econômico e qualidade urbana.',
+        traps: ['EIV não é taxa disfarçada.', 'Contrapartida precisa de base legal e relação com impacto.', 'Acessibilidade não é detalhe opcional.', 'Patrimônio cultural não depende apenas de beleza estética.', 'Mobilidade urbana não se resume a carros.'],
+        differences: ['EIV x EIA.', 'Mitigação x compensação.', 'Mobilidade x trânsito.', 'Patrimônio cultural x propriedade comum.', 'Calçada como espaço público x área privada de livre uso.'],
+        commonMistakes: ['Ignorar base técnica.', 'Exigir contrapartida sem nexo com impacto.', 'Confundir licença ambiental com licença urbanística.', 'Esquecer acessibilidade.', 'Não analisar competência municipal.'],
+        miniCase: 'Restaurante ocupa toda a calçada com mesas, impedindo passagem de cadeirantes. Ainda que gere atividade econômica, o Município pode exigir liberação da faixa de circulação e aplicar sanção com base em posturas, acessibilidade e uso comum do povo.',
+        activeQuestions: ['Qual impacto urbano existe?', 'Há EIV exigível?', 'A medida tem base legal?', 'Existe nexo entre impacto e contrapartida?', 'Há acessibilidade e proteção de patrimônio?'],
+        flashcards: [
+          { front: 'EIV substitui licenciamento ambiental?', back: 'Não. Avalia impacto de vizinhança; pode coexistir com EIA/licenciamento ambiental.' },
+          { front: 'Mobilidade urbana é só trânsito de veículos?', back: 'Não. Envolve circulação de pessoas, transporte, acessibilidade, segurança e sustentabilidade.' },
+          { front: 'Contrapartida urbanística exige quê?', back: 'Base legal, nexo com impacto, proporcionalidade e motivação técnica.' }
+        ],
+        summary: 'A cidade deve ser analisada como sistema. Mobilidade, patrimônio, acessibilidade e ambiente urbano transformam o parecer urbanístico em análise técnica e constitucional.',
+        checklist: ['Sei EIV e sua função.', 'Sei diferença entre impacto urbanístico e ambiental.', 'Sei mobilidade urbana básica.', 'Sei acessibilidade urbana.', 'Consigo avaliar contrapartida urbanística.'],
+        nextTopic: 'Próxima fase: Direito Ambiental Premium'
+      }
+    ]
+  }
+,
+  {
+    id: 'direito-ambiental',
+    subject: 'Direito Ambiental',
+    status: '39I concluída',
+    priority: 'Muito alta',
+    overview: 'Apostila premium de Direito Ambiental para Procurador Municipal, com foco em princípios ambientais, competências federativas, Política Nacional do Meio Ambiente, licenciamento ambiental, responsabilidade civil, administrativa e penal, Código Florestal, unidades de conservação, saneamento, resíduos, recursos hídricos, poder de polícia ambiental e interface com urbanismo.',
+    lawBase: ['CF/88, art. 225', 'CF/88, arts. 23, VI e VII; 24, VI e VIII; 30, I, II e VIII', 'Lei nº 6.938/1981 — Política Nacional do Meio Ambiente', 'Lei nº 9.605/1998 — Crimes Ambientais e infrações administrativas', 'Lei nº 12.651/2012 — proteção da vegetação nativa', 'Lei nº 9.985/2000 — SNUC', 'Lei nº 11.445/2007 — saneamento básico', 'Lei nº 12.305/2010 — resíduos sólidos', 'Lei nº 15.190/2025 — licenciamento ambiental, quando aplicável e conforme vigência/atualização'],
+    topics: [
+      {
+        id: 'principios-direito-ambiental',
+        level: 'básico',
+        title: 'Direito Ambiental: conceito, finalidade, bem ambiental e princípios estruturantes',
+        whatIs: 'Direito Ambiental é o ramo do Direito Público que organiza a proteção jurídica do meio ambiente ecologicamente equilibrado. Ele trata do uso sustentável dos recursos naturais, da prevenção de danos, da responsabilização de poluidores e da atuação estatal para proteger ambiente natural, artificial, cultural e do trabalho.',
+        purpose: 'Serve para impedir que crescimento econômico, obras públicas, atividades privadas ou omissões administrativas destruam recursos ambientais essenciais à vida, à saúde e à qualidade urbana. Para Procurador Municipal, serve para orientar licenciamento, fiscalização, defesa judicial, TACs, políticas públicas e proteção do Município contra responsabilidade por omissão.',
+        plainExplanation: [
+          'O meio ambiente não é apenas floresta. Para prova, pense em quatro dimensões: meio ambiente natural, meio ambiente artificial ou urbano, meio ambiente cultural e meio ambiente do trabalho. Um Município lida diariamente com todas elas: poda de árvore, obra em APP, loteamento irregular, resíduos sólidos, ruído, drenagem, esgoto, patrimônio histórico, enchentes e fiscalização de atividades potencialmente poluidoras.',
+          'O núcleo constitucional está no art. 225 da Constituição: todos têm direito ao meio ambiente ecologicamente equilibrado, bem de uso comum do povo e essencial à sadia qualidade de vida. Esse artigo impõe dever ao Poder Público e à coletividade. Por isso, o Município não pode tratar meio ambiente como tema opcional: ele deve prevenir, fiscalizar, planejar e agir.',
+          'Os princípios ambientais são ferramentas de decisão. Prevenção atua quando o risco é conhecido; precaução atua quando há incerteza científica relevante; poluidor-pagador evita transferir custo ambiental à sociedade; usuário-pagador lida com uso de recursos; desenvolvimento sustentável busca compatibilizar proteção ambiental e atividade econômica; participação e informação fortalecem controle social.'
+        ],
+        examTechnical: 'Para prova, domine art. 225 da CF, competências ambientais, princípios da prevenção, precaução, poluidor-pagador, desenvolvimento sustentável, função socioambiental da propriedade, vedação ao retrocesso ambiental, participação, informação e responsabilidade intergeracional. A banca costuma trocar prevenção por precaução e tratar licenciamento como mera burocracia, quando ele é instrumento preventivo de gestão ambiental.',
+        cityExample: 'Uma empresa quer instalar atividade com emissão de ruídos e geração de resíduos em área próxima a residências. A Procuradoria deve verificar zoneamento, licenciamento, estudo técnico, condicionantes, controle de ruído, manejo de resíduos, participação dos órgãos competentes e medidas para evitar dano ambiental e conflito de vizinhança.',
+        legalBase: ['CF/88, art. 225', 'CF/88, arts. 23, VI e VII; 24, VI e VIII; 30, I, II e VIII', 'Lei nº 6.938/1981', 'Lei nº 9.605/1998'],
+        dryLaw: ['CF/88, art. 225, caput e §1º', 'CF/88, art. 23, VI e VII', 'Lei nº 6.938/1981, arts. 2º, 3º, 4º, 9º e 14, §1º'],
+        jurisprudence: ['A proteção ambiental é compreendida pelos tribunais superiores como dever constitucional de atuação preventiva e reparatória, e a responsabilidade civil ambiental segue lógica objetiva e voltada à recomposição integral do dano.', 'O princípio da vedação ao retrocesso ambiental costuma ser usado para questionar redução injustificada de proteção ambiental já consolidada. Confira jurisprudência atual antes da prova.'],
+        objectiveCharge: ['Conceito de meio ambiente e suas espécies.', 'Art. 225 da Constituição.', 'Princípios da prevenção e precaução.', 'Poluidor-pagador.', 'Função socioambiental da propriedade.', 'Competência comum ambiental.'],
+        discursiveCharge: 'Pode cair parecer sobre empreendimento poluidor, omissão municipal em área de risco, corte de árvores, loteamento em APP, ruído urbano, resíduos sólidos ou conflito entre desenvolvimento econômico e proteção ambiental.',
+        traps: ['Prevenção não é sinônimo perfeito de precaução.', 'Poluidor-pagador não autoriza poluir mediante pagamento.', 'Desenvolvimento sustentável não elimina proteção ambiental.', 'Meio ambiente artificial também é meio ambiente.', 'Município tem competência ambiental, não é mero espectador.'],
+        differences: ['Prevenção x precaução.', 'Dano ambiental individual x coletivo.', 'Meio ambiente natural x artificial x cultural x do trabalho.', 'Reparação x compensação.', 'Licença urbanística x licença ambiental.'],
+        commonMistakes: ['Decorar princípios sem aplicar ao caso concreto.', 'Ignorar competência municipal.', 'Achar que licença ambiental regulariza qualquer dano.', 'Não diferenciar responsabilidade civil, administrativa e penal.', 'Esquecer que dano ambiental costuma exigir recomposição.'],
+        miniCase: 'O Município autoriza evento em praça pública sem plano de resíduos, controle de ruído e recuperação do local. Mesmo sendo evento temporário, há dever de prevenir dano ambiental urbano, exigir medidas de limpeza, horários, fiscalização e responsabilização do organizador.',
+        activeQuestions: ['Qual dimensão ambiental está envolvida?', 'O risco é conhecido ou incerto?', 'Há dever municipal de agir?', 'Qual princípio resolve o caso?', 'A medida proposta previne, mitiga ou repara o dano?'],
+        flashcards: [
+          { front: 'Qual é o núcleo do art. 225 da CF?', back: 'Todos têm direito ao meio ambiente ecologicamente equilibrado, bem de uso comum do povo e essencial à sadia qualidade de vida.' },
+          { front: 'Prevenção e precaução são iguais?', back: 'Não. Prevenção lida com risco conhecido; precaução com incerteza científica relevante diante de risco grave ou plausível.' },
+          { front: 'Poluidor-pagador permite comprar o direito de poluir?', back: 'Não. Ele internaliza custos e orienta responsabilização, mas não autoriza degradação ilícita.' }
+        ],
+        summary: 'Direito Ambiental protege condições de vida e qualidade urbana. Para Procurador Municipal, o raciocínio central é prevenir dano, identificar competência, exigir estudos, fiscalizar e buscar reparação integral quando houver degradação.',
+        checklist: ['Sei art. 225 da CF.', 'Sei principais princípios ambientais.', 'Sei espécies de meio ambiente.', 'Sei competência municipal ambiental.', 'Consigo aplicar princípios em parecer.'],
+        nextTopic: 'Competências ambientais e papel do Município'
+      },
+      {
+        id: 'competencias-ambientais-municipio',
+        level: 'intermediário',
+        title: 'Competências ambientais: União, Estados, Municípios e atuação ambiental municipal',
+        whatIs: 'Competência ambiental é a repartição constitucional e legal de atribuições para legislar, fiscalizar, licenciar, proteger e executar políticas ambientais. No Brasil, a proteção ambiental envolve competência comum material e competência legislativa concorrente, além da atuação municipal em interesse local e ordenamento territorial.',
+        purpose: 'Serve para saber quando o Município pode fiscalizar, licenciar, regulamentar, autuar, embargar, criar normas locais e defender o meio ambiente urbano. Para Procurador, evita tanto omissão indevida quanto invasão de competência de outro ente.',
+        plainExplanation: [
+          'A Constituição distribui deveres ambientais. União, Estados, Distrito Federal e Municípios têm competência comum para proteger o meio ambiente e combater poluição. Isso significa que o Município pode e deve agir materialmente quando houver interesse local ou dano ambiental em seu território.',
+          'Na legislação, a União edita normas gerais, os Estados suplementam e os Municípios legislam sobre interesse local e suplementam a legislação federal e estadual no que couber. Em ambiente urbano, posturas, uso do solo, ruído, resíduos, arborização, drenagem, ocupação irregular e fiscalização são temas muito conectados à competência municipal.',
+          'A Lei Complementar nº 140/2011 é peça-chave porque organiza cooperação entre entes federativos em ações administrativas ambientais. Ela ajuda a definir licenciamento e fiscalização, mas não elimina dever municipal de proteger ambiente local.'
+        ],
+        examTechnical: 'Domine CF arts. 23, 24 e 30, além da LC nº 140/2011. Para prova, cuidado: competência comum não é hierarquia; cooperação federativa não significa que apenas a União protege ambiente; o Município pode legislar sobre interesse local e suplementar normas gerais. Em questões municipais, a interface com urbanismo e posturas é muito cobrada.',
+        cityExample: 'Moradores denunciam despejo irregular de resíduos em terreno urbano. Ainda que exista órgão estadual ambiental, o Município pode fiscalizar posturas, limpeza urbana, uso do solo, saúde pública e acionar o órgão ambiental competente, sem ficar inerte.',
+        legalBase: ['CF/88, arts. 23, VI e VII; 24, VI e VIII; 30, I, II e VIII', 'LC nº 140/2011', 'Lei nº 6.938/1981', 'Legislação municipal ambiental, urbanística e de posturas'],
+        dryLaw: ['CF/88, arts. 23, 24 e 30', 'LC nº 140/2011', 'Lei nº 6.938/1981, SISNAMA'],
+        jurisprudence: ['O STF reconhece a relevância da competência municipal para assuntos de interesse local e ordenamento urbano, inclusive quando há reflexos ambientais. Conferir sempre o tema específico e a legislação local.', 'A jurisprudência tende a exigir atuação cooperativa, evitando omissão estatal diante de dano ambiental.'],
+        objectiveCharge: ['Competência comum ambiental.', 'Competência legislativa concorrente.', 'Interesse local.', 'LC 140/2011.', 'Município e poder de polícia ambiental.', 'SISNAMA.'],
+        discursiveCharge: 'Pode cair parecer sobre se o Município pode autuar, licenciar atividade de impacto local, criar norma de ruído, exigir arborização, disciplinar resíduos ou fiscalizar loteamento irregular com dano ambiental.',
+        traps: ['Competência comum não significa que todos fazem tudo sem regra.', 'Município não é incompetente só porque existe órgão estadual.', 'Interesse local não pode contrariar norma geral federal.', 'Fiscalização municipal não elimina comunicação a outros órgãos quando necessário.'],
+        differences: ['Competência material x legislativa.', 'Norma geral x suplementação municipal.', 'Interesse local x interesse regional/nacional.', 'Licenciamento x fiscalização.', 'Poder de polícia ambiental x urbanístico.'],
+        commonMistakes: ['Achar que só o Estado licencia e fiscaliza.', 'Desconsiderar LC 140/2011.', 'Confundir competência para legislar com competência para executar.', 'Não identificar predominância do interesse.', 'Ignorar normas municipais.'],
+        miniCase: 'Uma oficina mecânica em zona residencial gera óleo descartado irregularmente e ruído. O Município pode agir por posturas, uso do solo, saúde pública, limpeza urbana e ambiente local, sem prejuízo de comunicação ao órgão ambiental estadual.',
+        activeQuestions: ['Qual ente tem competência material?', 'Existe interesse local?', 'Há norma geral federal?', 'A norma municipal suplementa ou contraria?', 'O caso exige cooperação com Estado/União?'],
+        flashcards: [
+          { front: 'Município tem competência ambiental?', back: 'Sim, especialmente por competência comum, interesse local, suplementação e ordenamento territorial.' },
+          { front: 'Qual lei organiza cooperação administrativa ambiental?', back: 'Lei Complementar nº 140/2011.' },
+          { front: 'Competência comum cria hierarquia?', back: 'Não. Exige cooperação e atuação coordenada.' }
+        ],
+        summary: 'O Município tem papel ambiental relevante. Em prova de Procurador, a resposta deve combinar art. 225, competências constitucionais, LC 140, interesse local e proteção urbana.',
+        checklist: ['Sei CF arts. 23, 24 e 30.', 'Sei LC 140/2011.', 'Sei explicar interesse local.', 'Sei quando Município pode fiscalizar.', 'Consigo defender atuação ambiental municipal.'],
+        nextTopic: 'Política Nacional do Meio Ambiente e SISNAMA'
+      },
+      {
+        id: 'pnma-sisnama-instrumentos',
+        level: 'intermediário',
+        title: 'Política Nacional do Meio Ambiente, SISNAMA e instrumentos de gestão ambiental',
+        whatIs: 'A Política Nacional do Meio Ambiente é o marco legal que estrutura objetivos, princípios, conceitos e instrumentos da proteção ambiental no Brasil. O SISNAMA é o sistema que articula órgãos e entidades ambientais da União, Estados, Distrito Federal e Municípios.',
+        purpose: 'Serve para transformar proteção ambiental em gestão pública: padrões de qualidade, zoneamento ambiental, avaliação de impactos, licenciamento, incentivos, fiscalização, cadastro, penalidades e responsabilização.',
+        plainExplanation: [
+          'A Lei nº 6.938/1981 é uma das leis mais importantes de Direito Ambiental. Ela define meio ambiente, degradação, poluição, poluidor e recursos ambientais. Esses conceitos aparecem diretamente em prova e ajudam a enquadrar casos práticos.',
+          'O SISNAMA mostra que meio ambiente não é assunto de um órgão isolado. A gestão ambiental é sistêmica e cooperativa. Municípios podem integrar esse sistema e executar política ambiental local, especialmente quando possuem estrutura administrativa adequada.',
+          'Os instrumentos da PNMA são ferramentas concretas: licenciamento, avaliação de impacto, zoneamento, padrões, penalidades, cadastro técnico e espaços especialmente protegidos. Para Procurador, esses instrumentos aparecem em pareceres, ações civis públicas, autos de infração e defesa de políticas municipais.'
+        ],
+        examTechnical: 'Memorize conceitos do art. 3º da Lei nº 6.938/1981 e instrumentos do art. 9º. A responsabilidade civil ambiental objetiva está no art. 14, §1º. A banca costuma cobrar diferença entre poluição e degradação, conceito de poluidor direto/indireto e instrumentos como licenciamento e avaliação de impacto.',
+        cityExample: 'O Município quer criar programa de controle de ruído urbano. Pode usar instrumentos ambientais e urbanísticos: padrões, fiscalização, licenças, zoneamento, educação ambiental, sanções e cooperação com órgãos ambientais.',
+        legalBase: ['Lei nº 6.938/1981', 'CF/88, art. 225', 'LC nº 140/2011', 'Resoluções CONAMA pertinentes, conforme atualidade e aplicabilidade'],
+        dryLaw: ['Lei nº 6.938/1981, arts. 2º, 3º, 4º, 6º, 9º e 14, §1º'],
+        jurisprudence: ['A responsabilidade civil ambiental objetiva e a busca de reparação integral são pontos consolidados na jurisprudência superior.', 'A identificação de poluidor direto e indireto é relevante para responsabilização de proprietários, empreendedores e entes omissos, conforme o caso.'],
+        objectiveCharge: ['Conceitos da PNMA.', 'Instrumentos do art. 9º.', 'SISNAMA.', 'Responsabilidade objetiva.', 'Poluidor direto e indireto.', 'Licenciamento como instrumento.'],
+        discursiveCharge: 'Pode cair parecer sobre atividade poluidora sem licença, omissão fiscalizatória, responsabilidade de proprietário, necessidade de EIA/RIMA ou atuação do Município no SISNAMA.',
+        traps: ['Poluidor pode ser direto ou indireto.', 'Responsabilidade civil ambiental independe de culpa.', 'Licença não exonera totalmente responsabilidade por dano.', 'Instrumentos da PNMA não se limitam a licenciamento.', 'SISNAMA não é apenas órgão federal.'],
+        differences: ['Poluição x degradação.', 'Poluidor direto x indireto.', 'Licenciamento x fiscalização.', 'Responsabilidade civil x administrativa x penal.', 'Reparação x indenização.'],
+        commonMistakes: ['Não estudar art. 3º da PNMA.', 'Esquecer art. 14, §1º.', 'Tratar licença como salvo-conduto.', 'Ignorar instrumentos do art. 9º.', 'Confundir órgão consultivo com executor.'],
+        miniCase: 'Empresa com licença ambiental causa vazamento em córrego. A licença não impede responsabilização; será necessário cessar dano, reparar integralmente e apurar sanções administrativas e penais conforme o caso.',
+        activeQuestions: ['Há poluição ou degradação?', 'Quem é poluidor direto/indireto?', 'Qual instrumento ambiental deveria ter sido usado?', 'Há licença?', 'Licença foi cumprida?', 'Qual medida repara o dano?'],
+        flashcards: [
+          { front: 'Onde está a responsabilidade civil ambiental objetiva?', back: 'Lei nº 6.938/1981, art. 14, §1º.' },
+          { front: 'Licença ambiental exclui responsabilidade?', back: 'Não necessariamente. Se houver dano ou descumprimento, pode haver responsabilização.' },
+          { front: 'SISNAMA envolve Municípios?', back: 'Sim, órgãos municipais podem integrar a estrutura sistêmica ambiental.' }
+        ],
+        summary: 'A PNMA fornece vocabulário e ferramentas do Direito Ambiental. Para prova, art. 3º, art. 9º e art. 14, §1º são leitura obrigatória.',
+        checklist: ['Sei conceitos da Lei 6.938.', 'Sei instrumentos da PNMA.', 'Sei SISNAMA.', 'Sei responsabilidade objetiva.', 'Consigo usar PNMA em parecer.'],
+        nextTopic: 'Licenciamento ambiental e estudos de impacto'
+      },
+      {
+        id: 'licenciamento-eia-rima',
+        level: 'avançado',
+        title: 'Licenciamento ambiental, estudos ambientais, EIA/RIMA e condicionantes',
+        whatIs: 'Licenciamento ambiental é o procedimento pelo qual o órgão competente avalia localização, instalação, ampliação e operação de atividades ou empreendimentos capazes de causar degradação ambiental, podendo impor condicionantes, negar licença ou exigir estudos técnicos.',
+        purpose: 'Serve para prevenir dano ambiental antes que ele aconteça. Para Procurador Municipal, é essencial em obras públicas, empreendimentos privados, loteamentos, atividades industriais, resíduos, supressão de vegetação, drenagem e conflitos entre crescimento urbano e proteção ambiental.',
+        plainExplanation: [
+          'Licenciamento não é carimbo. Ele é processo técnico-jurídico de avaliação de risco ambiental. O empreendedor deve demonstrar viabilidade, impactos, medidas mitigadoras e cumprimento de condicionantes. O poder público deve motivar decisões e fiscalizar depois da licença.',
+          'EIA/RIMA é estudo mais robusto para atividades potencialmente causadoras de significativa degradação ambiental. EIA é técnico; RIMA é relatório em linguagem acessível. A Constituição exige estudo prévio de impacto ambiental para obra ou atividade potencialmente causadora de significativa degradação, com publicidade.',
+          'O tema está em transição normativa por causa da Lei nº 15.190/2025, que dispõe sobre licenciamento ambiental. Como se trata de legislação recente, o candidato deve conferir a vigência, regulamentação e eventuais atualizações antes da prova. Em prova, a cobrança pode combinar regra constitucional, PNMA, LC 140 e lei nova.'
+        ],
+        examTechnical: 'Domine CF art. 225, §1º, IV; licenças, condicionantes, competência para licenciar, estudo ambiental, publicidade, participação, fiscalização e consequência do descumprimento. Diferencie licença ambiental de licença urbanística. A banca pode cobrar que EIA/RIMA não é exigido para qualquer atividade, mas para significativa degradação.',
+        cityExample: 'Loteamento pretende ocupar área próxima a curso d’água. Além de aprovação urbanística, é preciso verificar APP, drenagem, supressão de vegetação, licenciamento ambiental, impacto de vizinhança e condicionantes para evitar enchentes e dano ao córrego.',
+        legalBase: ['CF/88, art. 225, §1º, IV', 'Lei nº 6.938/1981', 'LC nº 140/2011', 'Lei nº 15.190/2025, com conferência de vigência e regulamentação', 'Legislação estadual e municipal aplicável'],
+        dryLaw: ['CF/88, art. 225, §1º, IV', 'Lei nº 6.938/1981, art. 9º', 'LC nº 140/2011', 'Lei nº 15.190/2025'],
+        jurisprudence: ['A exigência de estudo ambiental e publicidade decorre da lógica constitucional de prevenção e controle social.', 'Condicionantes ambientais devem guardar relação com impactos identificados e podem ser controladas quanto à legalidade e proporcionalidade.'],
+        objectiveCharge: ['Licenciamento ambiental.', 'EIA/RIMA.', 'Condicionantes.', 'Competência licenciatória.', 'Publicidade.', 'Diferença entre licença ambiental e urbanística.'],
+        discursiveCharge: 'Pode cair parecer sobre obra municipal sem estudo ambiental, loteamento próximo a APP, questionamento de condicionante, ação civil pública por ausência de licenciamento ou conflito de competência entre entes.',
+        traps: ['EIA/RIMA não é exigido para toda atividade.', 'Licença ambiental não é licença urbanística.', 'Condicionante não pode ser arbitrária.', 'Publicidade é elemento relevante do controle ambiental.', 'Lei nova deve ser conferida na lei seca atualizada.'],
+        differences: ['Licença prévia x instalação x operação, conforme regime aplicável.', 'EIA x RIMA.', 'Licenciamento x fiscalização.', 'Licença ambiental x alvará de construção.', 'Mitigação x compensação.'],
+        commonMistakes: ['Usar regra antiga sem conferir lei nova.', 'Achar que alvará municipal substitui licenciamento ambiental.', 'Não analisar competência.', 'Ignorar condicionantes.', 'Esquecer publicidade do EIA/RIMA.'],
+        miniCase: 'Prefeitura pretende canalizar córrego urbano para obra viária. O parecer deve exigir avaliação ambiental, análise de drenagem, risco de enchentes, alternativas técnicas, eventual licenciamento, participação dos órgãos competentes e motivação.',
+        activeQuestions: ['A atividade causa significativa degradação?', 'Qual órgão licencia?', 'Há necessidade de EIA/RIMA?', 'As condicionantes têm nexo com impacto?', 'Há licença urbanística também?', 'A decisão foi publicizada?'],
+        flashcards: [
+          { front: 'EIA/RIMA é sempre obrigatório?', back: 'Não. É exigido para obra/atividade potencialmente causadora de significativa degradação ambiental.' },
+          { front: 'Alvará substitui licença ambiental?', back: 'Não. São controles diferentes e podem coexistir.' },
+          { front: 'Condicionante ambiental exige quê?', back: 'Nexo com impacto, motivação, proporcionalidade e base técnica/legal.' }
+        ],
+        summary: 'Licenciamento é prevenção qualificada. Em prova, conecte Constituição, PNMA, LC 140, lei atualizada, estudo técnico, publicidade e condicionantes.',
+        checklist: ['Sei conceito de licenciamento.', 'Sei EIA/RIMA.', 'Sei diferença entre licença ambiental e urbanística.', 'Sei condicionantes.', 'Vou conferir Lei 15.190/2025 na lei seca.'],
+        nextTopic: 'Responsabilidade ambiental civil, administrativa e penal'
+      },
+      {
+        id: 'responsabilidade-ambiental',
+        level: 'avançado',
+        title: 'Responsabilidade ambiental: civil objetiva, administrativa sancionadora e penal',
+        whatIs: 'Responsabilidade ambiental é o conjunto de consequências jurídicas aplicáveis a quem causa, contribui ou se omite diante de dano ambiental. Pode ser civil, administrativa e penal, com regimes próprios e independentes entre si.',
+        purpose: 'Serve para fazer cessar o dano, reparar integralmente, punir infrações, prevenir novas ocorrências e proteger interesses difusos. Para Procurador Municipal, é tema de ação civil pública, autos de infração, defesa do Município e responsabilização de particulares.',
+        plainExplanation: [
+          'A responsabilidade civil ambiental é objetiva: não depende de culpa. Em geral, exige dano e nexo causal. O foco é recompor o meio ambiente, e a indenização em dinheiro é subsidiária ou complementar quando a reparação integral não for possível.',
+          'A responsabilidade administrativa decorre de infração ambiental apurada em processo administrativo, com sanções como multa, embargo, apreensão e suspensão de atividade, conforme lei. Aqui, devido processo, motivação e prova são essenciais para sustentar o auto de infração.',
+          'A responsabilidade penal decorre da Lei nº 9.605/1998 e pode atingir pessoas físicas e jurídicas conforme requisitos legais e constitucionais. Para prova, cuidado com independência das instâncias e com a diferença entre reparar o dano e responder por infração ou crime.'
+        ],
+        examTechnical: 'Estude responsabilidade objetiva do art. 14, §1º, da Lei nº 6.938/1981, sanções da Lei nº 9.605/1998, reparação integral, imprescritibilidade da pretensão de reparação civil ambiental em determinados entendimentos, obrigações propter rem ambientais e independência das instâncias. Confira jurisprudência atual do STF/STJ antes da prova.',
+        cityExample: 'Empresa deposita entulho em área pública e atinge córrego. O Município pode autuar administrativamente se competente, exigir remoção e recuperação, comunicar órgãos ambientais, propor ação civil ou firmar TAC, além de apurar crime ambiental se houver indício.',
+        legalBase: ['CF/88, art. 225, §3º', 'Lei nº 6.938/1981, art. 14, §1º', 'Lei nº 9.605/1998', 'Decreto nº 6.514/2008, conforme aplicabilidade federal', 'Lei nº 7.347/1985 — Ação Civil Pública'],
+        dryLaw: ['CF/88, art. 225, §3º', 'Lei nº 6.938/1981, art. 14, §1º', 'Lei nº 9.605/1998', 'Lei nº 7.347/1985'],
+        jurisprudence: ['Responsabilidade civil ambiental objetiva e obrigação de reparar integralmente são pontos centrais na jurisprudência ambiental.', 'O STJ possui orientação de que obrigações ambientais podem ter natureza propter rem, ligadas ao imóvel, conforme o caso. Conferir súmulas e teses atualizadas antes da prova.'],
+        objectiveCharge: ['Responsabilidade civil objetiva.', 'Responsabilidade administrativa.', 'Responsabilidade penal.', 'Independência das instâncias.', 'Reparação integral.', 'Propter rem ambiental.'],
+        discursiveCharge: 'Pode cair parecer sobre ação civil pública, TAC, defesa de auto de infração, responsabilização de proprietário atual por dano antigo, omissão municipal em fiscalização ou dano em área pública.',
+        traps: ['Responsabilidade civil ambiental não depende de culpa.', 'Pagar multa não substitui reparar dano.', 'Licença não blinda dano.', 'Instâncias são independentes, mas fatos podem dialogar.', 'Responsabilidade objetiva civil não transforma todo agente público em responsável automático.'],
+        differences: ['Civil x administrativa x penal.', 'Multa x reparação.', 'Dano material x dano moral coletivo ambiental.', 'Obrigação de fazer x indenização.', 'Poluidor direto x indireto.'],
+        commonMistakes: ['Confundir multa com indenização.', 'Não pedir recuperação da área.', 'Ignorar nexo causal.', 'Não garantir processo administrativo.', 'Deixar prescrição/decadência sem análise.'],
+        miniCase: 'Proprietário atual compra imóvel rural com área degradada. Em tese, pode haver obrigação ambiental de recuperar por natureza propter rem, mas o caso exige análise da matrícula, da área, do dano e da legislação aplicável.',
+        activeQuestions: ['Qual dano ocorreu?', 'Quem causou ou se beneficiou?', 'Há nexo causal?', 'Qual instância está sendo acionada?', 'O pedido busca reparar integralmente?', 'Há processo administrativo válido?'],
+        flashcards: [
+          { front: 'Responsabilidade civil ambiental exige culpa?', back: 'Não. É objetiva, em regra fundada no risco e na reparação integral.' },
+          { front: 'Multa ambiental substitui recuperação?', back: 'Não. São consequências diferentes.' },
+          { front: 'As instâncias ambiental civil, administrativa e penal são idênticas?', back: 'Não. São independentes, embora possam dialogar.' }
+        ],
+        summary: 'Responsabilidade ambiental é tripla e forte. Para Procurador, a resposta deve cessar o dano, reparar integralmente, preservar prova, respeitar processo e escolher instrumento adequado.',
+        checklist: ['Sei responsabilidade civil objetiva.', 'Sei diferença entre sanção e reparação.', 'Sei Lei 9.605 básica.', 'Sei independência das instâncias.', 'Consigo propor providências em parecer.'],
+        nextTopic: 'Código Florestal, APP, Reserva Legal e áreas protegidas'
+      },
+      {
+        id: 'codigo-florestal-app-areas-protegidas',
+        level: 'avançado',
+        title: 'Código Florestal, APP, Reserva Legal, áreas protegidas e unidades de conservação',
+        whatIs: 'É o conjunto de normas sobre proteção da vegetação nativa, áreas de preservação permanente, reserva legal, uso restrito, supressão de vegetação, regularização ambiental e espaços especialmente protegidos, incluindo unidades de conservação.',
+        purpose: 'Serve para proteger água, solo, biodiversidade, encostas, margens de rios, nascentes, matas e serviços ecossistêmicos. No Município, aparece em loteamentos, obras públicas, ocupações irregulares, supressão de árvores, enchentes, regularização fundiária e ações ambientais.',
+        plainExplanation: [
+          'APP é área protegida por sua função ecológica: proteger recursos hídricos, estabilidade geológica, biodiversidade, fluxo gênico, solo e bem-estar das populações. Não é simples “área vazia”: tem função ambiental específica. Intervenção em APP exige hipóteses legais e cautela técnica.',
+          'Reserva Legal é instituto típico de imóvel rural, voltado à conservação de vegetação nativa e uso sustentável. Em prova municipal, a banca pode cruzar Código Florestal com expansão urbana, regularização fundiária, loteamento e proteção de cursos d’água.',
+          'Unidades de conservação são espaços territoriais especialmente protegidos pelo SNUC. Podem ser de proteção integral ou uso sustentável. O Município pode criar e gerir unidades municipais, desde que observe requisitos técnicos e legais.'
+        ],
+        examTechnical: 'Estude Lei nº 12.651/2012, conceitos de APP e Reserva Legal, intervenção excepcional, áreas consolidadas, proteção de nascentes, margens de cursos d’água e encostas. Estude Lei nº 9.985/2000 para SNUC, grupos e categorias. A banca pode cobrar diferença entre APP e UC e entre proteção integral e uso sustentável.',
+        cityExample: 'Morador constrói muro e edícula em margem de córrego urbano. O Município deve avaliar se há APP, risco, legislação local, possibilidade de regularização, necessidade de demolição, recuperação da área e articulação com defesa civil/órgão ambiental.',
+        legalBase: ['Lei nº 12.651/2012', 'Lei nº 9.985/2000', 'CF/88, art. 225, §1º, III', 'Lei nº 6.938/1981', 'Legislação municipal e estadual aplicável'],
+        dryLaw: ['Lei nº 12.651/2012, arts. 3º, 4º, 7º e dispositivos sobre APP e Reserva Legal', 'Lei nº 9.985/2000', 'CF/88, art. 225, §1º, III'],
+        jurisprudence: ['A proteção de APP tem forte tutela judicial, especialmente quando relacionada a cursos d’água, nascentes, encostas e risco ambiental.', 'A regularização de ocupações em áreas ambientalmente sensíveis exige análise legal e técnica, não mera decisão política.'],
+        objectiveCharge: ['APP.', 'Reserva Legal.', 'Unidades de conservação.', 'Proteção integral x uso sustentável.', 'Intervenção em APP.', 'Supressão de vegetação.'],
+        discursiveCharge: 'Pode cair parecer sobre ocupação em margem de córrego, loteamento em área protegida, corte de árvores, criação de parque municipal, ação civil pública para recuperação ambiental ou regularização fundiária com restrição ambiental.',
+        traps: ['APP não depende sempre de averbação para existir.', 'Reserva Legal não é igual a APP.', 'UC não é qualquer área verde informal.', 'Regularização fundiária não apaga proteção ambiental.', 'Intervenção em APP exige hipótese legal e motivação técnica.'],
+        differences: ['APP x Reserva Legal.', 'UC x área verde urbana.', 'Proteção integral x uso sustentável.', 'Supressão autorizada x dano ambiental.', 'Regularização urbanística x regularização ambiental.'],
+        commonMistakes: ['Achar que área urbana não tem APP.', 'Confundir área verde de loteamento com unidade de conservação.', 'Desconsiderar risco de enchente.', 'Não consultar órgão técnico.', 'Prometer regularização sem base legal.'],
+        miniCase: 'O Município pretende abrir via pública em área com vegetação e nascente. O parecer deve exigir levantamento técnico, análise de alternativas locacionais, eventual licenciamento, proteção da nascente e compensações/medidas cabíveis.',
+        activeQuestions: ['Existe APP?', 'Existe Reserva Legal?', 'A área é urbana ou rural?', 'Há unidade de conservação?', 'A intervenção se enquadra em hipótese legal?', 'Qual medida de recuperação é necessária?'],
+        flashcards: [
+          { front: 'APP e Reserva Legal são iguais?', back: 'Não. APP protege áreas sensíveis por função ecológica; Reserva Legal é percentual de vegetação nativa em imóvel rural.' },
+          { front: 'Área urbana pode ter APP?', back: 'Sim. A proteção de APP pode existir também em contexto urbano.' },
+          { front: 'O que é SNUC?', back: 'Sistema Nacional de Unidades de Conservação, regulado pela Lei nº 9.985/2000.' }
+        ],
+        summary: 'Código Florestal e SNUC protegem espaços ambientais sensíveis. Para Procurador, o ponto é compatibilizar urbanismo, regularização, risco, drenagem e proteção legal.',
+        checklist: ['Sei APP.', 'Sei Reserva Legal.', 'Sei SNUC básico.', 'Sei intervenção em APP.', 'Consigo analisar ocupação em margem de córrego.'],
+        nextTopic: 'Saneamento, resíduos sólidos e recursos hídricos'
+      },
+      {
+        id: 'saneamento-residuos-recursos-hidricos',
+        level: 'intermediário',
+        title: 'Saneamento básico, resíduos sólidos, recursos hídricos e saúde ambiental',
+        whatIs: 'É o conjunto de normas sobre abastecimento de água, esgotamento sanitário, drenagem, manejo de resíduos sólidos, limpeza urbana, recursos hídricos e controle de impactos ambientais ligados à saúde pública e à infraestrutura urbana.',
+        purpose: 'Serve para organizar serviços essenciais e prevenir poluição, enchentes, doenças, descarte irregular, contaminação de solo e água. Para Procurador Municipal, aparece em contratos de concessão, políticas públicas, ações civis públicas, fiscalização e gestão de resíduos.',
+        plainExplanation: [
+          'Saneamento básico envolve quatro eixos: água, esgoto, resíduos sólidos e drenagem/manejo de águas pluviais. Em Município, esses temas são cotidianos e judicializáveis. Falhas podem gerar dano ambiental, dano à saúde, responsabilidade do poder público e necessidade de planejamento.',
+          'Resíduos sólidos exigem gestão integrada, responsabilidade compartilhada, logística reversa e disposição final ambientalmente adequada. Lixão, descarte irregular de entulho e ausência de política pública podem gerar ações civis públicas e responsabilização.',
+          'Recursos hídricos envolvem uso racional, proteção de corpos d’água, outorga quando aplicável, bacias hidrográficas e prevenção de poluição. Em área urbana, drenagem deficiente e ocupação de várzeas aumentam enchentes e danos ambientais.'
+        ],
+        examTechnical: 'Estude Lei nº 11.445/2007, Lei nº 12.305/2010, Lei nº 9.433/1997, competências municipais, contratos, planos, regulação, responsabilidade compartilhada, logística reversa e articulação com licenciamento/urbanismo. A banca pode cobrar saneamento como direito ligado à saúde, ambiente e dignidade.',
+        cityExample: 'Bairro sofre com descarte irregular de entulho em área pública e alagamentos. O Município deve fiscalizar, remover, identificar responsáveis, organizar ecopontos, planejar drenagem, aplicar sanções e atuar preventivamente com educação ambiental e infraestrutura.',
+        legalBase: ['Lei nº 11.445/2007', 'Lei nº 12.305/2010', 'Lei nº 9.433/1997', 'CF/88, arts. 23, IX; 30; 196; 225', 'Legislação municipal de limpeza urbana, resíduos e saneamento'],
+        dryLaw: ['Lei nº 11.445/2007', 'Lei nº 12.305/2010', 'Lei nº 9.433/1997', 'CF/88, arts. 196 e 225'],
+        jurisprudence: ['O Judiciário pode determinar medidas estruturais em saneamento e resíduos quando houver omissão grave, mas a implementação deve considerar planejamento, orçamento e técnica.', 'A gestão inadequada de resíduos pode gerar responsabilidade ambiental e obrigação de fazer.'],
+        objectiveCharge: ['Quatro eixos do saneamento.', 'Política Nacional de Resíduos Sólidos.', 'Responsabilidade compartilhada.', 'Logística reversa.', 'Recursos hídricos.', 'Planos municipais.'],
+        discursiveCharge: 'Pode cair parecer sobre lixão, contrato de coleta, enchentes, descarte irregular, cobrança por serviço de resíduos, ação civil pública por esgoto sem tratamento ou plano municipal de saneamento.',
+        traps: ['Saneamento não é só esgoto.', 'Resíduo sólido não é apenas lixo doméstico.', 'Logística reversa não depende só do Município.', 'Drenagem também é saneamento.', 'Omissão estrutural exige plano, não resposta improvisada.'],
+        differences: ['Resíduo x rejeito.', 'Coleta x destinação final.', 'Drenagem x esgotamento sanitário.', 'Serviço público x poder de polícia.', 'Responsabilidade do gerador x responsabilidade do Município.'],
+        commonMistakes: ['Esquecer drenagem.', 'Não diferenciar resíduo e rejeito.', 'Tratar lixão como problema meramente administrativo.', 'Ignorar planos e regulação.', 'Não conectar saúde e meio ambiente.'],
+        miniCase: 'Comerciantes descartam óleo e resíduos em bueiros. O Município pode fiscalizar, multar conforme lei local, exigir destinação adequada, promover orientação e articular limpeza/drenagem para evitar enchentes e contaminação.',
+        activeQuestions: ['Qual eixo do saneamento está envolvido?', 'Existe plano municipal?', 'Quem é o gerador do resíduo?', 'Há responsabilidade compartilhada?', 'A medida é estrutural ou emergencial?', 'Qual dano ambiental/à saúde existe?'],
+        flashcards: [
+          { front: 'Quais são os quatro eixos do saneamento?', back: 'Água, esgotamento sanitário, limpeza/resíduos sólidos e drenagem/manejo de águas pluviais.' },
+          { front: 'Resíduo e rejeito são iguais?', back: 'Não. Rejeito é o que resta após possibilidades de tratamento e recuperação.' },
+          { front: 'Drenagem urbana é saneamento?', back: 'Sim, integra saneamento básico.' }
+        ],
+        summary: 'Saneamento e resíduos são Direito Ambiental aplicado ao cotidiano municipal. A resposta boa combina plano, fiscalização, contrato, saúde, ambiente e orçamento.',
+        checklist: ['Sei quatro eixos do saneamento.', 'Sei PNRS básica.', 'Sei responsabilidade compartilhada.', 'Sei recursos hídricos básicos.', 'Consigo analisar problema de entulho/enchente/esgoto.'],
+        nextTopic: 'Poder de polícia ambiental municipal'
+      },
+      {
+        id: 'poder-policia-ambiental-municipal',
+        level: 'discursiva',
+        title: 'Poder de polícia ambiental municipal: fiscalização, autos de infração, embargo, interdição, multa e TAC',
+        whatIs: 'Poder de polícia ambiental municipal é a atividade administrativa de prevenir, fiscalizar, limitar e sancionar condutas que causem ou possam causar dano ambiental de interesse local ou urbano, nos limites da competência municipal e da cooperação federativa.',
+        purpose: 'Serve para transformar a proteção ambiental em atuação concreta: fiscalizar atividades, lavrar autos, impor medidas cautelares, aplicar sanções, exigir recuperação, celebrar TACs, comunicar órgãos competentes e defender atos municipais em juízo.',
+        plainExplanation: [
+          'A fiscalização ambiental não pode ser apenas simbólica. Um auto de infração precisa descrever fato, indicar norma violada, identificar responsável, conter prova mínima, respeitar competência e abrir defesa. Se o Município autua mal, perde no Judiciário. Se não autua quando deve, pode responder por omissão.',
+          'Embargo e interdição podem ser necessários para cessar dano ou risco. Multa pune infração. Recuperação da área repara dano. TAC pode organizar obrigação de fazer, prazos, medidas técnicas e multa por descumprimento. Cada instrumento tem finalidade diferente.',
+          'Para Procurador, o tema é altamente prático: defender auto de infração, responder mandado de segurança, elaborar parecer para embargo, orientar fiscalização, estruturar TAC ou ajuizar ação civil pública.'
+        ],
+        examTechnical: 'Estude CTN art. 78 como conceito geral de poder de polícia, CF art. 225, Lei 9.605, Lei 6.938, LC 140, processo administrativo sancionador, devido processo, proporcionalidade, autoexecutoriedade, medidas cautelares e defesa judicial do ato administrativo ambiental.',
+        cityExample: 'Fiscal encontra depósito clandestino de entulho em área pública com risco de assoreamento. O Município pode interditar a área, autuar responsáveis, exigir remoção e recuperação, acionar guarda/fiscalização, comunicar órgão ambiental e buscar ressarcimento dos custos.',
+        legalBase: ['CF/88, art. 225', 'CTN, art. 78', 'Lei nº 9.605/1998', 'Lei nº 6.938/1981', 'LC nº 140/2011', 'Legislação municipal ambiental e de posturas'],
+        dryLaw: ['CTN, art. 78', 'Lei nº 9.605/1998', 'Lei nº 6.938/1981, art. 14, §1º', 'LC nº 140/2011'],
+        jurisprudence: ['Atos de polícia ambiental são controláveis quanto à competência, motivação, prova, devido processo e proporcionalidade.', 'Medidas urgentes podem justificar atuação imediata, mas não eliminam documentação, motivação e controle posterior.'],
+        objectiveCharge: ['Poder de polícia.', 'Autoexecutoriedade.', 'Auto de infração.', 'Sanções ambientais.', 'TAC.', 'Processo administrativo ambiental.'],
+        discursiveCharge: 'Pode cair parecer sobre validade de auto ambiental, embargo de atividade, defesa em mandado de segurança, TAC para recuperação de área degradada ou ação civil pública por dano ambiental local.',
+        traps: ['Autoexecutoriedade não é arbitrariedade.', 'Multa não repara o dano por si só.', 'TAC não pode legalizar dano impossível de regularizar.', 'Fiscalização precisa de prova.', 'O Município precisa respeitar sua competência.'],
+        differences: ['Embargo x interdição.', 'Multa x recuperação ambiental.', 'TAC x licença.', 'Medida cautelar x sanção final.', 'Fiscalização ambiental x urbanística.'],
+        commonMistakes: ['Auto genérico.', 'Falta de foto ou relatório.', 'Norma violada incorreta.', 'Ausência de defesa.', 'Não exigir recuperação da área.'],
+        miniCase: 'Uma marmoraria lança pó e resíduos em via pública e sistema de drenagem. O Município pode fiscalizar ruído, resíduos, posturas, licença de funcionamento e dano ambiental local, aplicando medidas proporcionais e exigindo adequação.',
+        activeQuestions: ['Qual infração ocorreu?', 'Há competência municipal?', 'Qual prova existe?', 'Qual medida cessa o dano?', 'Foi garantida defesa?', 'Há necessidade de TAC ou ação judicial?'],
+        flashcards: [
+          { front: 'Multa ambiental repara dano?', back: 'Não. Multa sanciona; reparação exige recuperar/indenizar.' },
+          { front: 'Auto de infração precisa de quê?', back: 'Competência, descrição do fato, norma violada, prova, motivação e defesa.' },
+          { front: 'TAC serve para quê?', back: 'Formalizar obrigações de fazer/não fazer, prazos e medidas para adequação ou recuperação.' }
+        ],
+        summary: 'Poder de polícia ambiental municipal exige técnica e prova. O Procurador deve proteger o ambiente e também blindar o ato contra nulidades.',
+        checklist: ['Sei poder de polícia ambiental.', 'Sei requisitos do auto.', 'Sei embargo/interdição/multa.', 'Sei TAC.', 'Consigo defender fiscalização municipal.'],
+        nextTopic: 'Ações ambientais, ACP, improbidade ambiental e defesa do Município'
+      },
+      {
+        id: 'acoes-ambientais-defesa-municipio',
+        level: 'discursiva',
+        title: 'Ações ambientais, ação civil pública, TAC, improbidade ambiental e defesa do Município',
+        whatIs: 'É o estudo dos instrumentos processuais e administrativos usados para proteger o meio ambiente, reparar danos, firmar compromissos, responsabilizar poluidores e defender o Município em litígios ambientais.',
+        purpose: 'Serve para o Procurador atuar em ações civis públicas, mandados de segurança contra fiscalização, execuções de TAC, defesas por omissão, acordos ambientais, demandas de saneamento, resíduos, áreas de risco e obras públicas.',
+        plainExplanation: [
+          'Ação civil pública é instrumento central para tutela coletiva ambiental. Pode buscar obrigação de fazer, não fazer, indenização, recuperação de área degradada, bloqueio de atividade, implantação de política pública e medidas estruturais. O Município pode ser autor, réu ou interessado.',
+          'TAC é ferramenta de solução consensual. Bem usado, evita processo longo e cria cronograma de recuperação. Mal usado, pode virar autorização informal para continuar irregularidade. Por isso precisa de obrigações claras, prazos, multas e fiscalização.',
+          'Quando o Município é réu por omissão ambiental, a defesa não deve negar o problema sem base. Deve demonstrar providências, planejamento, competência, limitações reais, cronograma, orçamento e medidas já adotadas. A LINDB ajuda a exigir análise de consequências práticas em decisões administrativas e judiciais.'
+        ],
+        examTechnical: 'Estude Lei nº 7.347/1985, tutela coletiva, legitimidade, obrigações ambientais, TAC, provas técnicas, perícia, responsabilidade objetiva, controle de políticas públicas, improbidade após Lei nº 14.230/2021 quando houver dolo e violação qualificada, além de defesa do Município em demandas estruturais.',
+        cityExample: 'Ministério Público ajuíza ACP exigindo fechamento de área de descarte irregular e implantação de ecoponto. A Procuradoria deve avaliar prova, competência, custos, plano de ação, medidas já adotadas e possibilidade de acordo com cronograma factível.',
+        legalBase: ['Lei nº 7.347/1985', 'Lei nº 6.938/1981', 'Lei nº 9.605/1998', 'Lei nº 8.429/1992 com alterações', 'LINDB, arts. 20 a 30', 'CPC para tutela coletiva subsidiária'],
+        dryLaw: ['Lei nº 7.347/1985', 'Lei nº 6.938/1981, art. 14, §1º', 'LINDB, arts. 20 a 30', 'Lei nº 8.429/1992, conforme tema'],
+        jurisprudence: ['A tutela coletiva ambiental tem forte orientação para prevenção e reparação integral.', 'Em políticas públicas ambientais, decisões judiciais tendem a considerar mínimo existencial ambiental, separação de poderes e capacidade administrativa, conforme o caso.'],
+        objectiveCharge: ['Ação civil pública.', 'TAC.', 'Legitimidade.', 'Obrigação de fazer/não fazer.', 'Responsabilidade objetiva.', 'Controle judicial de política pública.'],
+        discursiveCharge: 'Pode cair elaboração de parecer sobre celebrar TAC, defesa em ACP por lixão, ação contra poluidor, cumprimento de sentença ambiental ou pedido judicial de obra de saneamento.',
+        traps: ['TAC não é perdão automático.', 'Acordo sem fiscalização vira risco.', 'Município pode ser autor ou réu.', 'Omissão genérica não deve ser defendida com negativa vazia.', 'Improbidade ambiental exige análise do elemento subjetivo conforme lei atual.'],
+        differences: ['ACP x ação individual.', 'TAC x contrato administrativo.', 'Obrigação de fazer x indenização.', 'Dano ambiental x dano urbanístico.', 'Defesa de mérito x proposta de solução estrutural.'],
+        commonMistakes: ['Não juntar plano de ação.', 'Prometer prazo impossível.', 'Ignorar perícia.', 'Não avaliar competência de outros entes.', 'Tratar política pública ambiental como discricionariedade absoluta.'],
+        miniCase: 'ACP pede que o Município elimine todos os pontos de descarte irregular em 30 dias. A defesa deve reconhecer dever de atuação, mas discutir prazo, plano progressivo, orçamento, fiscalização, educação ambiental e corresponsabilidade de geradores.',
+        activeQuestions: ['O Município é autor ou réu?', 'Qual dano foi provado?', 'Existe plano de ação?', 'Cabe TAC?', 'O prazo é factível?', 'Há outros responsáveis?'],
+        flashcards: [
+          { front: 'ACP ambiental busca apenas dinheiro?', back: 'Não. Prioriza prevenção, obrigação de fazer/não fazer e reparação integral.' },
+          { front: 'TAC ambiental precisa de quê?', back: 'Obrigações claras, prazo, fiscalização e multa por descumprimento.' },
+          { front: 'Município pode propor ACP ambiental?', back: 'Sim, conforme legitimidade da Lei da Ação Civil Pública.' }
+        ],
+        summary: 'Litígio ambiental exige solução, prova e plano. Para Procurador, a melhor peça combina legalidade, técnica, cronograma e proteção efetiva do ambiente.',
+        checklist: ['Sei ACP ambiental.', 'Sei TAC.', 'Sei defesa do Município por omissão.', 'Sei prova e perícia ambiental.', 'Consigo estruturar proposta de acordo.'],
+        nextTopic: 'Próxima fase: Língua Portuguesa Premium'
+      }
+    ]
+  }
+
+  ,{
+    id: 'lingua-portuguesa',
+    subject: 'Língua Portuguesa',
+    status: '39J concluída',
+    priority: 'Alta',
+    overview: 'Apostila premium de Língua Portuguesa voltada para prova de Procurador: interpretação de textos, tipologia, gêneros, coesão, coerência, classes gramaticais, sintaxe, pontuação, concordância, regência, crase, semântica, ortografia e redação técnica jurídica.',
+    lawBase: ['Acordo Ortográfico da Língua Portuguesa', 'Vocabulário Ortográfico da Língua Portuguesa — ABL', 'Gramática normativa aplicada a concursos', 'Prática de leitura de textos jurídicos, administrativos e argumentativos'],
+    topics: [
+      {
+        id: 'interpretacao-compreensao-textual',
+        level: 'básico',
+        title: 'Compreensão e interpretação de textos',
+        whatIs: 'Compreensão é localizar e reconhecer informações que estão expressas no texto. Interpretação é inferir sentido, intenção, pressupostos, conclusões e relações implícitas a partir das pistas linguísticas fornecidas.',
+        purpose: 'Serve para responder questões de prova com segurança e para atuar como Procurador, lendo contratos, pareceres, decisões, ofícios, notificações e peças processuais sem distorcer o sentido do texto.',
+        plainExplanation: [
+          'Em concursos, Língua Portuguesa não cobra apenas “saber gramática”. A banca frequentemente testa se o candidato lê com precisão. Uma alternativa pode errar por trocar uma palavra absoluta por uma relativa, transformar hipótese em certeza ou atribuir ao autor uma opinião que o texto apenas relata.',
+          'Compreender é recuperar dados: quem fez, quando, onde, qual causa, qual consequência. Interpretar é ir além: perceber ironia, finalidade, tese, argumento, pressuposto e conclusão. O erro comum é responder com opinião pessoal ou conhecimento externo, quando a questão pede o que o texto permite afirmar.',
+          'Para Procurador, esse cuidado é essencial. Uma cláusula contratual, um artigo de lei ou um despacho administrativo pode mudar completamente de sentido por causa de uma conjunção, uma vírgula, um pronome ou uma expressão restritiva.'
+        ],
+        examTechnical: 'Na prova, separe comando, texto e alternativas. Primeiro descubra se a questão pede informação explícita, inferência, tese, finalidade, sentido de palavra, coesão ou reescrita. Desconfie de alternativas com exageros: sempre, nunca, exclusivamente, totalmente, apenas. Em interpretação, a resposta correta costuma ser a mais fiel ao texto, não a mais bonita.',
+        cityExample: 'Um parecer municipal analisa se uma empresa “poderá ser penalizada se não comprovar a execução”. Se alguém interpreta como “deverá ser penalizada imediatamente”, há erro: “poderá” indica possibilidade condicionada, não imposição automática.',
+        legalBase: ['Leitura técnica de textos normativos, administrativos e argumentativos', 'Acordo Ortográfico e norma-padrão como base de escrita oficial', 'Manual de redação oficial como referência prática de clareza e impessoalidade'],
+        dryLaw: ['Não há artigo único de lei seca; estudar por textos de lei, Constituição, códigos e enunciados de prova', 'Consultar VOLP/ABL para grafia oficial de palavras quando houver dúvida'],
+        jurisprudence: ['Não se aplica jurisprudência como conteúdo central, mas a leitura de ementas e teses de tribunais ajuda a treinar identificação de tese, fundamento e conclusão.'],
+        objectiveCharge: ['Identificação da ideia principal.', 'Inferência permitida pelo texto.', 'Sentido de palavra no contexto.', 'Finalidade comunicativa.', 'Relação entre argumentos.', 'Reescrita sem alteração de sentido.'],
+        discursiveCharge: 'Na discursiva, interpretação aparece na capacidade de compreender o problema jurídico proposto. Quem lê mal o enunciado responde tema diferente, ignora limites do caso ou deixa de enfrentar a pergunta central.',
+        traps: ['Confundir opinião do autor com opinião de personagem citado.', 'Usar conhecimento externo para contrariar o texto.', 'Trocar causa por consequência.', 'Transformar possibilidade em certeza.', 'Ignorar palavras como “salvo”, “exceto”, “ainda que”, “desde que” e “somente”.'],
+        differences: ['Compreensão x interpretação: uma localiza informação expressa; a outra infere sentido.', 'Tese x argumento: tese é o ponto defendido; argumento é a razão usada para sustentá-la.', 'Tema x título: tema é assunto; título pode ser síntese, provocação ou recorte.'],
+        commonMistakes: ['Ler alternativas antes de entender o comando.', 'Marcar resposta por afinidade pessoal.', 'Ignorar conectivos.', 'Não voltar ao texto para confirmar.', 'Achar que toda inferência é subjetiva.'],
+        miniCase: 'Um enunciado afirma que a Administração “deve motivar seus atos, especialmente quando restringem direitos”. A alternativa diz que “todo ato administrativo sem motivação é automaticamente nulo em qualquer hipótese”. A alternativa extrapola: há forte exigência de motivação, mas a nulidade depende do regime do ato e do prejuízo/controle no caso concreto.',
+        activeQuestions: ['O comando pede informação expressa ou inferência?', 'Qual é a tese do texto?', 'Qual palavra muda o alcance da afirmação?', 'A alternativa exagerou o sentido?', 'A resposta depende do texto ou de opinião externa?'],
+        flashcards: [
+          { front: 'Compreensão é o quê?', back: 'Localizar informações expressas no texto.' },
+          { front: 'Interpretação é o quê?', back: 'Inferir sentido com base em pistas textuais.' },
+          { front: 'Principal armadilha em interpretação?', back: 'Extrapolar o texto ou marcar opinião pessoal como se fosse resposta.' }
+        ],
+        summary: 'Interpretação é fidelidade ao texto. Leia comando, localize pistas, observe conectivos e evite exageros. Para Procurador, ler bem é decidir bem.',
+        checklist: ['Sei diferenciar compreensão e interpretação.', 'Consigo identificar tese e argumento.', 'Reconheço alternativas extrapoladas.', 'Volto ao texto para confirmar resposta.', 'Leio enunciado jurídico com atenção às condições.'],
+        nextTopic: 'Tipologia textual e gêneros textuais'
+      },
+      {
+        id: 'tipologia-generos-textuais',
+        level: 'intermediário',
+        title: 'Tipologia textual e gêneros textuais',
+        whatIs: 'Tipologia textual é a forma predominante de organização do texto: narração, descrição, dissertação/argumentação, exposição, injunção. Gênero textual é a forma social concreta de comunicação, como artigo, notícia, parecer, ofício, edital, despacho, decisão, e-mail institucional e petição.',
+        purpose: 'Serve para reconhecer a finalidade do texto e entender como sua estrutura influencia a interpretação. Em concurso, isso ajuda a perceber se o texto informa, argumenta, orienta, relata ou determina uma conduta.',
+        plainExplanation: [
+          'Tipo textual é a “engrenagem interna” do texto. Um texto narrativo organiza fatos no tempo; um descritivo caracteriza objetos ou situações; um argumentativo defende tese; um expositivo explica; um injuntivo orienta ou ordena. Um mesmo gênero pode misturar tipos.',
+          'Gênero textual é o texto em uso social. Um parecer jurídico, por exemplo, geralmente expõe fatos, analisa fundamentos e conclui com orientação. Um edital tem função normativa e informativa. Uma notícia relata fatos com finalidade jornalística. Uma petição argumenta para convencer o juiz.',
+          'A prova gosta de perguntar finalidade, predominância e linguagem. Em textos jurídicos e administrativos, há forte presença de impessoalidade, clareza, objetividade e encadeamento lógico.'
+        ],
+        examTechnical: 'Não decore apenas nomes. Pergunte: o texto quer convencer, informar, ordenar, narrar, descrever ou explicar? A banca pode chamar texto argumentativo de dissertativo-argumentativo. Em reescrita, é comum cobrar manutenção de sentido e adequação ao gênero.',
+        cityExample: 'Um parecer da Procuradoria não é crônica nem opinião livre. Ele deve relatar consulta, delimitar questão, fundamentar juridicamente, ponderar riscos e concluir. Se o texto não conclui, falha no gênero parecer.',
+        legalBase: ['Redação oficial e prática administrativa', 'Norma-padrão da Língua Portuguesa', 'Técnica de parecer e textos institucionais'],
+        dryLaw: ['Ler modelos de edital, parecer, ofício, despacho e decisão administrativa para reconhecer finalidade e estrutura'],
+        jurisprudence: ['Não há jurisprudência central; a utilidade está na leitura de ementas e votos para reconhecer exposição, fundamentação e conclusão.'],
+        objectiveCharge: ['Tipo textual predominante.', 'Gênero textual.', 'Finalidade comunicativa.', 'Características de linguagem.', 'Trecho narrativo dentro de texto argumentativo.', 'Função de exemplos e dados.'],
+        discursiveCharge: 'Na discursiva de Procurador, o gênero esperado pode ser parecer, resposta jurídica ou peça argumentativa. A nota cai quando o candidato escreve como resumo solto, sem estrutura de consulta, fundamento e conclusão.',
+        traps: ['Achar que texto com fatos é sempre narrativo.', 'Confundir exposição com argumentação.', 'Chamar qualquer texto formal de jurídico.', 'Ignorar a finalidade do gênero.', 'Escrever discursiva sem conclusão prática.'],
+        differences: ['Tipo textual x gênero textual.', 'Exposição x argumentação.', 'Relato de fato x defesa de tese.', 'Parecer x despacho.', 'Ofício x petição.'],
+        commonMistakes: ['Decorar tipologia sem olhar finalidade.', 'Não perceber mistura de tipos.', 'Escrever resposta discursiva sem adequação ao gênero pedido.', 'Confundir linguagem objetiva com texto pobre.'],
+        miniCase: 'A questão apresenta um texto que explica o funcionamento do plano diretor e depois defende sua importância. A primeira parte é expositiva; a segunda é argumentativa. A predominância depende do objetivo global do texto.',
+        activeQuestions: ['Qual é a finalidade do texto?', 'Há tese defendida?', 'O texto ordena ou orienta?', 'O gênero exige conclusão?', 'A linguagem é adequada ao contexto institucional?'],
+        flashcards: [
+          { front: 'Texto argumentativo faz o quê?', back: 'Defende uma tese com argumentos.' },
+          { front: 'Gênero textual é o quê?', back: 'Forma social concreta de texto, como parecer, edital, notícia ou ofício.' },
+          { front: 'Parecer jurídico precisa de quê?', back: 'Questão, fatos relevantes, fundamentos e conclusão orientadora.' }
+        ],
+        summary: 'Tipologia mostra como o texto se organiza; gênero mostra para que ele serve socialmente. Na prova, a finalidade manda.',
+        checklist: ['Sei os principais tipos textuais.', 'Sei diferenciar tipo e gênero.', 'Reconheço finalidade comunicativa.', 'Consigo estruturar parecer.', 'Evito confundir relato com argumento.'],
+        nextTopic: 'Coesão, coerência e conectivos'
+      },
+      {
+        id: 'coesao-coerencia-conectivos',
+        level: 'intermediário',
+        title: 'Coesão, coerência, referenciação e conectivos',
+        whatIs: 'Coesão é a ligação linguística entre partes do texto por pronomes, conjunções, advérbios, elipses, repetição controlada e substituição vocabular. Coerência é a unidade lógica de sentido: o texto precisa fazer sentido como conjunto.',
+        purpose: 'Serve para construir e interpretar textos claros. Na prova, conectivos e pronomes são usados para testar relações de causa, consequência, oposição, condição, conclusão, concessão e explicação.',
+        plainExplanation: [
+          'Coesão é a costura visível. Palavras como portanto, porém, embora, porque, caso, conforme e além disso sinalizam como uma ideia se liga à outra. Se o candidato ignora o conectivo, pode inverter completamente o sentido.',
+          'Coerência é a lógica global. Um texto pode ter frases gramaticalmente corretas e ainda ser incoerente se contradiz, muda de tema sem transição ou apresenta conclusão que não decorre dos argumentos.',
+          'Referenciação é identificar a quem ou a quê um pronome ou expressão se refere. Em textos jurídicos, isso evita confundir sujeito, responsável, ato, órgão, empresa ou agente público.'
+        ],
+        examTechnical: 'Estude valor semântico dos conectivos: adversidade, concessão, condição, causa, consequência, finalidade, comparação, conclusão e explicação. A banca cobra substituição de conectivos sem alterar sentido. “Embora” não é igual a “porque”; “portanto” não é igual a “porém”; “se” pode indicar condição.',
+        cityExample: 'Em um contrato: “A empresa será notificada se descumprir o prazo”. O “se” cria condição. Não se pode notificar por esse fundamento sem demonstrar descumprimento.',
+        legalBase: ['Norma-padrão da língua escrita', 'Técnica de redação oficial e jurídica', 'Leitura de textos legais e administrativos'],
+        dryLaw: ['Treinar conectivos em artigos de lei: salvo, exceto, desde que, quando, enquanto, sem prejuízo, ainda que'],
+        jurisprudence: ['A leitura de teses jurídicas exige atenção a conectivos, especialmente quando o tribunal fixa exceções, condições ou ressalvas.'],
+        objectiveCharge: ['Valor semântico de conectivo.', 'Substituição sem prejuízo de sentido.', 'Referente de pronome.', 'Coerência de reescrita.', 'Relação entre períodos.'],
+        discursiveCharge: 'Em discursiva, coesão ruim derruba clareza. Use conectivos para organizar: inicialmente, além disso, por outro lado, contudo, portanto, assim, no caso concreto, conclui-se.',
+        traps: ['Trocar concessão por causa.', 'Achar que “contudo” conclui.', 'Não identificar referente do pronome.', 'Usar “onde” para tudo.', 'Escrever parágrafos sem conexão.'],
+        differences: ['Coesão x coerência.', 'Causa x consequência.', 'Oposição x concessão.', 'Condição x finalidade.', 'Retomada pronominal x repetição.'],
+        commonMistakes: ['Decorar conectivos sem sentido.', 'Usar “portanto” sem conclusão.', 'Criar ambiguidade com pronomes.', 'Começar todo parágrafo com “dessa forma” sem lógica.'],
+        miniCase: 'A frase “Embora o ato tenha vício, ele poderá ser convalidado se o defeito for sanável” contém concessão e condição. A conclusão correta depende dos dois elementos: existe vício, mas há possível convalidação condicionada à sanabilidade.',
+        activeQuestions: ['Qual relação o conectivo cria?', 'O pronome retoma qual termo?', 'A conclusão decorre dos argumentos?', 'Há contradição interna?', 'A reescrita preserva o sentido?'],
+        flashcards: [
+          { front: '“Embora” indica quê?', back: 'Concessão.' },
+          { front: '“Portanto” indica quê?', back: 'Conclusão.' },
+          { front: 'Coerência é o quê?', back: 'Unidade lógica de sentido do texto.' }
+        ],
+        summary: 'Coesão é costura; coerência é lógica. Conectivo errado muda resposta. Em texto jurídico, clareza depende de relações bem marcadas.',
+        checklist: ['Sei valores dos conectivos.', 'Identifico referentes pronominais.', 'Consigo reescrever sem mudar sentido.', 'Uso conectivos na discursiva.', 'Evito ambiguidade.'],
+        nextTopic: 'Classes de palavras e morfologia aplicada'
+      },
+      {
+        id: 'classes-palavras-morfologia',
+        level: 'básico',
+        title: 'Classes de palavras e morfologia aplicada à prova',
+        whatIs: 'Classes de palavras são categorias gramaticais que organizam as palavras conforme função e comportamento: substantivo, adjetivo, artigo, numeral, pronome, verbo, advérbio, preposição, conjunção e interjeição.',
+        purpose: 'Serve para entender concordância, regência, crase, pontuação, sentido e reescrita. A banca raramente cobra classificação isolada; cobra o efeito da classe no funcionamento da frase.',
+        plainExplanation: [
+          'Substantivo nomeia; adjetivo caracteriza; pronome retoma ou substitui; verbo indica ação, estado, fenômeno ou processo; advérbio modifica verbo, adjetivo ou outro advérbio; preposição liga termos; conjunção liga orações ou termos.',
+          'A mesma palavra pode mudar de classe conforme contexto. “Certo” pode ser adjetivo em “ato certo” e advérbio em “ele agiu certo”. “Que” pode ser pronome relativo, conjunção integrante ou partícula expletiva, conforme a função.',
+          'Para prova, o foco é funcional: o pronome retoma qual termo? O advérbio altera o sentido? A conjunção indica oposição? O verbo exige complemento? O adjetivo restringe ou explica?'
+        ],
+        examTechnical: 'Estude especialmente pronomes relativos, conjunções, preposições, advérbios, verbos e formas nominais. Eles aparecem em reescrita, coesão, regência, crase, concordância e pontuação. A classificação deve servir ao sentido.',
+        cityExample: 'Na frase “O servidor que descumpriu o dever será notificado”, o “que” retoma servidor e introduz oração restritiva. Não é qualquer servidor; é aquele que descumpriu o dever.',
+        legalBase: ['Gramática normativa da Língua Portuguesa', 'Acordo Ortográfico e VOLP para grafia oficial', 'Uso da norma-padrão em documentos públicos'],
+        dryLaw: ['Consultar VOLP para grafia', 'Treinar pronomes, verbos e conectivos em textos legais'],
+        jurisprudence: ['Não aplicável como jurisprudência; a importância é prática para compreensão de textos normativos.'],
+        objectiveCharge: ['Classificação contextual.', 'Função de pronome relativo.', 'Valor de conjunção.', 'Sentido de advérbio.', 'Emprego de formas verbais.', 'Reescrita mantendo classe/função.'],
+        discursiveCharge: 'Na discursiva, domínio morfológico evita ambiguidade e melhora precisão: escolher verbo adequado, retomar termos corretamente e usar conectivos técnicos.',
+        traps: ['Classificar palavra fora do contexto.', 'Achar que todo “que” tem mesma função.', 'Confundir preposição com conjunção.', 'Não perceber pronome com referente ambíguo.', 'Usar advérbio que muda o alcance da tese.'],
+        differences: ['Pronome relativo x conjunção integrante.', 'Adjetivo restritivo x explicativo.', 'Advérbio x adjetivo.', 'Preposição x conjunção.', 'Verbo transitivo x intransitivo.'],
+        commonMistakes: ['Decorar tabela sem aplicar.', 'Ignorar contexto.', 'Errar referente do pronome.', 'Não perceber mudança de sentido por advérbio.'],
+        miniCase: '“A multa somente será aplicada após defesa.” O advérbio “somente” restringe a possibilidade: a aplicação depende de defesa prévia. Se retirado, o alcance muda.',
+        activeQuestions: ['Qual classe a palavra exerce neste contexto?', 'O pronome retoma quem?', 'O verbo pede complemento?', 'O advérbio restringe o quê?', 'A conjunção liga ideias com qual sentido?'],
+        flashcards: [
+          { front: 'Classe da palavra depende de quê?', back: 'Do contexto e da função na frase.' },
+          { front: 'Pronome relativo faz o quê?', back: 'Retoma termo anterior e introduz oração subordinada adjetiva.' },
+          { front: 'Advérbio modifica o quê?', back: 'Verbo, adjetivo ou outro advérbio.' }
+        ],
+        summary: 'Morfologia boa é morfologia aplicada. Em concurso, classe gramatical importa quando altera sentido, coesão ou correção da frase.',
+        checklist: ['Sei classes principais.', 'Analiso função no contexto.', 'Reconheço pronomes relativos.', 'Reconheço conectivos.', 'Uso verbos e pronomes com precisão.'],
+        nextTopic: 'Sintaxe, termos da oração e período composto'
+      },
+      {
+        id: 'sintaxe-periodo-composto',
+        level: 'avançado',
+        title: 'Sintaxe: termos da oração, período simples e período composto',
+        whatIs: 'Sintaxe estuda a relação entre palavras, termos e orações. Inclui sujeito, predicado, objetos, complementos, adjuntos, aposto, vocativo, orações coordenadas e subordinadas.',
+        purpose: 'Serve para resolver concordância, pontuação, crase, regência e interpretação. Quem entende sintaxe sabe por que a vírgula pode mudar sentido e por que o verbo concorda com determinado núcleo.',
+        plainExplanation: [
+          'O período simples tem uma oração; o composto tem mais de uma. Em textos jurídicos, períodos longos são comuns, mas exigem identificação de oração principal, subordinadas, sujeitos e complementos.',
+          'O sujeito é o termo sobre o qual se declara algo. O predicado traz a declaração. Objetos completam verbos; complementos nominais completam nomes; adjuntos acrescentam circunstâncias ou qualificações. Aposto explica ou especifica; vocativo chama interlocutor.',
+          'Orações subordinadas podem exercer função substantiva, adjetiva ou adverbial. Esse ponto cai muito em vírgula, valor semântico e reescrita.'
+        ],
+        examTechnical: 'Domine sujeito simples, composto, oculto, indeterminado e oração sem sujeito; transitividade verbal; complemento nominal x adjunto adnominal; oração adjetiva restritiva x explicativa; oração adverbial causal, concessiva, condicional, final, temporal, consecutiva e conformativa.',
+        cityExample: '“Os contratos que foram prorrogados sem justificativa serão analisados.” A oração “que foram prorrogados sem justificativa” restringe quais contratos serão analisados. Se vier entre vírgulas, pode virar explicativa e mudar o alcance.',
+        legalBase: ['Gramática normativa', 'Redação oficial', 'Norma-padrão aplicada a textos jurídicos'],
+        dryLaw: ['Treinar sintaxe lendo artigos com incisos, parágrafos, ressalvas e condições'],
+        jurisprudence: ['Não há jurisprudência própria; a aplicação é decisiva para leitura de teses e dispositivos legais.'],
+        objectiveCharge: ['Função sintática.', 'Orações subordinadas.', 'Restritiva x explicativa.', 'Transitividade verbal.', 'Sujeito e concordância.', 'Reescrita sintaticamente correta.'],
+        discursiveCharge: 'Na discursiva, sintaxe clara evita frases confusas. Prefira períodos médios, sujeito claro, verbo forte e conclusão expressa.',
+        traps: ['Confundir objeto indireto com complemento nominal.', 'Separar sujeito e verbo por vírgula.', 'Não diferenciar oração adjetiva restritiva e explicativa.', 'Achar que todo termo com preposição é objeto indireto.'],
+        differences: ['Complemento nominal x adjunto adnominal.', 'Oração restritiva x explicativa.', 'Coordenação x subordinação.', 'Objeto direto x objeto indireto.', 'Sujeito indeterminado x oração sem sujeito.'],
+        commonMistakes: ['Analisar termo isolado.', 'Ignorar núcleo do sujeito.', 'Pontuar por pausa oral.', 'Não perceber mudança de sentido em oração explicativa.'],
+        miniCase: '“Os servidores, que participaram do curso, receberão certificado” indica que todos os servidores participaram. “Os servidores que participaram do curso receberão certificado” indica apenas os que participaram.',
+        activeQuestions: ['Qual é o sujeito?', 'Qual é o verbo principal?', 'Há oração restritiva?', 'A vírgula muda o alcance?', 'O termo preposicionado completa verbo ou nome?'],
+        flashcards: [
+          { front: 'Oração adjetiva restritiva usa vírgula?', back: 'Em regra, não; ela restringe o termo anterior.' },
+          { front: 'Oração explicativa usa vírgula?', back: 'Sim, em regra vem isolada por vírgulas.' },
+          { front: 'Pode separar sujeito e verbo por vírgula?', back: 'Não, salvo intercalações devidamente marcadas.' }
+        ],
+        summary: 'Sintaxe é a arquitetura da frase. Ela explica pontuação, concordância, regência e sentido. Para prova, restritiva x explicativa é tema obrigatório.',
+        checklist: ['Identifico sujeito e verbo.', 'Sei transitividade básica.', 'Diferencio restritiva e explicativa.', 'Reconheço orações subordinadas.', 'Evito vírgula entre sujeito e verbo.'],
+        nextTopic: 'Pontuação, vírgula e efeitos de sentido'
+      },
+      {
+        id: 'pontuacao-virgula',
+        level: 'avançado',
+        title: 'Pontuação: vírgula, ponto e vírgula, dois-pontos, travessões e efeitos de sentido',
+        whatIs: 'Pontuação é o conjunto de sinais que organiza a escrita, marca relações sintáticas e semânticas, indica pausas estruturais e evita ambiguidade.',
+        purpose: 'Serve para tornar o texto claro, correto e juridicamente seguro. Na prova, pontuação é cobrada principalmente por seu efeito no sentido e por regras de sintaxe.',
+        plainExplanation: [
+          'Vírgula não é “pausa para respirar”. Ela marca deslocamentos, intercalações, enumerações, aposto, vocativo, orações explicativas e certas relações entre orações. A regra mais lembrada é: não separar sujeito e verbo nem verbo e complemento direto por vírgula indevida.',
+          'Dois-pontos introduzem explicação, enumeração, citação ou esclarecimento. Ponto e vírgula separa itens longos ou orações coordenadas com certa autonomia. Travessões isolam explicações, comentários ou intercalações com destaque.',
+          'Em textos jurídicos, uma vírgula pode ampliar ou restringir alcance. Por isso, a banca adora perguntar se a retirada de vírgulas altera sentido.'
+        ],
+        examTechnical: 'Estude vírgula em adjunto adverbial deslocado, oração adjetiva explicativa, aposto, vocativo, elipse verbal, enumeração, orações coordenadas e orações subordinadas adverbiais deslocadas. Em reescrita, verifique se a vírgula altera restrição, explicação ou ambiguidade.',
+        cityExample: '“Os contribuintes que aderirem ao parcelamento terão desconto” restringe o benefício aos aderentes. “Os contribuintes, que aderirem ao parcelamento, terão desconto” sugere que todos aderirão ou torna a frase inadequada ao objetivo normativo.',
+        legalBase: ['Gramática normativa', 'Norma-padrão em redação oficial', 'Técnica legislativa e administrativa'],
+        dryLaw: ['Treinar vírgula em leis, incisos, parágrafos, ressalvas e enumerações'],
+        jurisprudence: ['Não há jurisprudência central, mas a pontuação influencia leitura de contratos, leis e decisões.'],
+        objectiveCharge: ['Emprego da vírgula.', 'Mudança de sentido com pontuação.', 'Dois-pontos e enumeração.', 'Travessão e intercalação.', 'Ponto e vírgula em enumeração complexa.'],
+        discursiveCharge: 'Na discursiva, pontuação correta aumenta clareza. Uma resposta com vírgulas mal colocadas parece insegura e pode dificultar a compreensão do fundamento jurídico.',
+        traps: ['Pontuar por pausa oral.', 'Separar sujeito e verbo.', 'Usar vírgula que transforma restrição em explicação.', 'Não isolar aposto ou vocativo.', 'Colocar dois-pontos sem termo anunciador.'],
+        differences: ['Vírgula sintática x pausa oral.', 'Restrição x explicação.', 'Aposto x adjunto.', 'Dois-pontos x ponto e vírgula.', 'Travessão x parênteses.'],
+        commonMistakes: ['Excesso de vírgulas.', 'Falta de vírgula em intercalação.', 'Vírgula entre verbo e complemento.', 'Não perceber mudança de sentido.'],
+        miniCase: '“O Município notificou a empresa, responsável pela obra, para corrigir falhas.” A vírgula sugere explicação. Sem vírgulas, “responsável pela obra” restringiria qual empresa foi notificada.',
+        activeQuestions: ['A vírgula separou sujeito e verbo?', 'Há termo deslocado?', 'A oração é explicativa ou restritiva?', 'Existe enumeração?', 'A pontuação mudou sentido?'],
+        flashcards: [
+          { front: 'Vírgula separa sujeito e verbo?', back: 'Não.' },
+          { front: 'Oração explicativa vem como?', back: 'Isolada por vírgulas.' },
+          { front: 'Dois-pontos introduzem o quê?', back: 'Explicação, enumeração, citação ou esclarecimento.' }
+        ],
+        summary: 'Pontuação é sintaxe visível. Na prova, pergunte se o sinal organiza, explica, restringe ou muda sentido.',
+        checklist: ['Não separo sujeito e verbo.', 'Sei usar vírgula em explicativa.', 'Reconheço enumeração.', 'Entendo efeito de sentido.', 'Pontuo discursiva com clareza.'],
+        nextTopic: 'Concordância, regência e crase'
+      },
+      {
+        id: 'concordancia-regencia-crase',
+        level: 'lei seca',
+        title: 'Concordância verbal e nominal, regência e crase',
+        whatIs: 'Concordância é a adequação de verbo, nomes e determinantes a número, pessoa e gênero. Regência é a relação de dependência entre termos, especialmente verbos/nomes e seus complementos. Crase é a fusão da preposição “a” com artigo “a” ou pronomes iniciados por “a”.',
+        purpose: 'Serve para escrever corretamente e resolver grande parte das questões gramaticais. Para Procurador, evita erros formais em pareceres, peças, ofícios e manifestações processuais.',
+        plainExplanation: [
+          'Concordância verbal exige identificar o núcleo do sujeito. O verbo concorda com o sujeito, não com o termo mais próximo. Expressões partitivas, porcentagens, sujeito posposto e voz passiva sintética são pontos frequentes.',
+          'Regência depende do termo regente. Verbos como assistir, visar, implicar, obedecer, preferir, informar, pagar e responder mudam sentido ou exigem preposição. Nome também tem regência: favorável a, compatível com, relativo a, necessário a.',
+          'Crase exige, em regra, preposição “a” + artigo “a”. Use teste simples: trocar palavra feminina por masculina. Se virar “ao”, há forte sinal de crase. Mas existem casos especiais: à moda de, às vezes, à medida que, àquele, à qual.'
+        ],
+        examTechnical: 'Estude concordância com sujeito composto, partitivo, percentual, pronome relativo, voz passiva sintética e verbo haver/existir. Em regência, foque verbos comuns de concurso. Em crase, domine casos obrigatórios, proibidos e facultativos. A banca cobra reescrita e correção segundo norma-padrão.',
+        cityExample: '“Fazem dois anos que a obra está paralisada” está incorreto na norma-padrão; com sentido de tempo decorrido, o verbo fazer é impessoal: “Faz dois anos”. Já “Existem pendências” concorda normalmente, porque existir tem sujeito.',
+        legalBase: ['Gramática normativa', 'Norma-padrão da língua escrita', 'Redação oficial e jurídica'],
+        dryLaw: ['Consultar VOLP para grafia e treinar concordância/regência em textos normativos'],
+        jurisprudence: ['Não aplicável como jurisprudência; aplicação prática em peças e pareceres.'],
+        objectiveCharge: ['Correção de concordância.', 'Regência verbal/nominal.', 'Crase obrigatória/proibida.', 'Reescrita correta.', 'Verbos impessoais.', 'Voz passiva sintética.'],
+        discursiveCharge: 'Na discursiva, erro recorrente de concordância, regência ou crase reduz qualidade formal e pode prejudicar nota de linguagem.',
+        traps: ['Confundir haver impessoal com existir.', 'Usar crase antes de verbo.', 'Usar crase antes de palavra masculina comum.', 'Esquecer preposição exigida pelo verbo.', 'Fazer verbo concordar com termo intercalado.'],
+        differences: ['Haver impessoal x existir.', 'Assistir no sentido de ver x assistir no sentido de ajudar.', 'Crase obrigatória x facultativa.', 'Regência verbal x nominal.', 'Concordância verbal x nominal.'],
+        commonMistakes: ['“Houveram problemas”.', '“Visar o cargo” quando sentido é almejar, em norma tradicional exige “visar ao”.', '“À partir de”.', '“Obedecer o prazo”.', '“Segue anexo os documentos”.'],
+        miniCase: 'Em ofício: “Encaminha-se, anexos, as certidões” está inadequado. Melhor: “Encaminham-se, anexas, as certidões” se a estrutura for passiva sintética com sujeito “as certidões”.',
+        activeQuestions: ['Qual é o núcleo do sujeito?', 'O verbo é impessoal?', 'O verbo exige preposição?', 'Há artigo feminino?', 'A troca por masculino gera “ao”?'],
+        flashcards: [
+          { front: '“Houveram problemas” está correto?', back: 'Não. No sentido de existir, haver é impessoal: “Houve problemas”.' },
+          { front: 'Crase antes de verbo?', back: 'Não ocorre.' },
+          { front: 'Existir é impessoal?', back: 'Não. Concorda com o sujeito: “Existem dúvidas”.' }
+        ],
+        summary: 'Concordância, regência e crase são o núcleo da gramática normativa em concursos. A solução começa por identificar sujeito, termo regente e presença de artigo.',
+        checklist: ['Identifico sujeito.', 'Sei haver x existir.', 'Conheço regências frequentes.', 'Aplico teste da crase.', 'Evito erros formais na discursiva.'],
+        nextTopic: 'Ortografia, acentuação e semântica'
+      },
+      {
+        id: 'ortografia-acentuacao-semantica',
+        level: 'lei seca',
+        title: 'Ortografia, acentuação, semântica, figuras de linguagem e vícios de linguagem',
+        whatIs: 'Ortografia trata da grafia correta das palavras; acentuação define o emprego de acentos gráficos; semântica estuda significado; figuras de linguagem produzem efeitos expressivos; vícios de linguagem são desvios que prejudicam clareza, correção ou elegância.',
+        purpose: 'Serve para responder questões objetivas de correção gramatical e para escrever peças e pareceres com precisão, clareza e credibilidade profissional.',
+        plainExplanation: [
+          'Ortografia cobra palavras parecidas, hífen, uso de porquê, mal/mau, há/a, onde/aonde, seção/sessão/cessão, senão/se não, acerca de/a cerca de/há cerca de. A fonte segura para grafia é o VOLP/ABL.',
+          'Acentuação exige reconhecer oxítonas, paroxítonas, proparoxítonas, hiatos, ditongos e alterações do Acordo Ortográfico. Em prova, não basta decorar: compare palavras com mesma regra.',
+          'Semântica aparece em sinônimos, antônimos, polissemia, ambiguidade, denotação, conotação, pressupostos e inferências. Figuras de linguagem são menos frequentes em prova jurídica, mas podem aparecer em interpretação.'
+        ],
+        examTechnical: 'Estude por agrupamento de casos: porquês, hífen, acentuação, parônimos, homônimos, denotação/conotação, ambiguidade, pleonasmo vicioso, cacofonia, barbarismo, solecismo e eco. Em reescrita, observe se a substituição preserva sentido e correção.',
+        cityExample: 'Em documento oficial, escrever “a cerca de cinco anos” no lugar de “há cerca de cinco anos” gera erro de sentido: “há” indica tempo decorrido; “a cerca de” indica aproximação espacial ou numérica conforme construção.',
+        legalBase: ['Acordo Ortográfico da Língua Portuguesa', 'Vocabulário Ortográfico da Língua Portuguesa — ABL', 'Norma-padrão da língua escrita'],
+        dryLaw: ['Consultar VOLP/ABL para grafia oficial', 'Revisar listas de parônimos e homônimos comuns em concursos'],
+        jurisprudence: ['Não aplicável; tema de norma-padrão e interpretação textual.'],
+        objectiveCharge: ['Grafia correta.', 'Acentuação.', 'Uso dos porquês.', 'Hífen.', 'Parônimos e homônimos.', 'Ambiguidade e sentido contextual.'],
+        discursiveCharge: 'Na discursiva, ortografia e semântica impactam nota de linguagem. Erros repetidos geram impressão de descuido, mesmo quando o conteúdo jurídico é bom.',
+        traps: ['“Por que” pergunta direta/indireta; “porque” explicação; “por quê” fim de frase; “porquê” substantivo.', '“Mal” opõe-se a bem; “mau” opõe-se a bom.', '“Onde” indica lugar físico; “aonde” indica movimento com verbo que exige “a”.', '“Há” tempo passado; “a” tempo futuro/distância.'],
+        differences: ['Mal x mau.', 'Há x a.', 'Onde x aonde.', 'Seção x sessão x cessão.', 'Acerca de x a cerca de x há cerca de.', 'Denotação x conotação.'],
+        commonMistakes: ['Usar “onde” para lei, tema ou situação abstrata.', 'Trocar sessão por seção.', 'Errar porquês.', 'Escrever “à partir de”.', 'Ignorar ambiguidade.'],
+        miniCase: '“A decisão onde o Município foi condenado” é inadequado. Melhor: “A decisão em que o Município foi condenado”, pois decisão não é lugar físico.',
+        activeQuestions: ['A palavra está grafada conforme VOLP?', 'O porquê está correto?', 'Há ambiguidade?', 'O sentido é literal ou figurado?', 'A substituição preserva significado?'],
+        flashcards: [
+          { front: '“Mal” se opõe a quê?', back: 'Bem.' },
+          { front: '“Mau” se opõe a quê?', back: 'Bom.' },
+          { front: '“Onde” deve ser usado para quê?', back: 'Lugar físico ou espacial.' }
+        ],
+        summary: 'Ortografia e semântica parecem detalhes, mas derrubam pontos. Para prova, foque casos recorrentes e sempre confirme grafia oficial quando houver dúvida.',
+        checklist: ['Sei porquês.', 'Sei mal/mau.', 'Sei há/a.', 'Evito “onde” indevido.', 'Reconheço ambiguidade e polissemia.'],
+        nextTopic: 'Redação oficial, linguagem jurídica e resposta discursiva'
+      },
+      {
+        id: 'redacao-oficial-juridica',
+        level: 'discursiva',
+        title: 'Redação oficial, linguagem jurídica e resposta discursiva de Procurador',
+        whatIs: 'Redação oficial é a comunicação escrita da Administração Pública, baseada em clareza, objetividade, formalidade, impessoalidade, padronização e correção. Linguagem jurídica é o uso técnico da língua para argumentar, fundamentar e concluir juridicamente.',
+        purpose: 'Serve para produzir pareceres, ofícios, despachos, informações, contestações e respostas discursivas de forma clara, técnica e institucional.',
+        plainExplanation: [
+          'Uma boa resposta discursiva de Procurador não é texto bonito: é texto útil. Deve entender o problema, organizar fundamentos, aplicar ao caso e concluir com providência prática. Linguagem rebuscada demais atrapalha; linguagem simples demais pode parecer sem técnica. O equilíbrio é clareza técnica.',
+          'Redação oficial exige impessoalidade. Evite opinião pessoal solta: prefira “entende-se”, “verifica-se”, “no caso concreto”, “à luz do art.”, “recomenda-se”. O texto deve representar a instituição, não o ego do redator.',
+          'A estrutura mais segura para discursiva é: delimitação da questão, regra jurídica, aplicação ao caso, conclusão. Em parecer, acrescente relatório breve e análise de riscos.'
+        ],
+        examTechnical: 'Treine parágrafos de 4 a 6 linhas, frases com sujeito claro, conectivos jurídicos e conclusão expressa. Evite períodos enormes, jargão inútil, citações vagas e resposta sem providência. Em prova, cumprir o comando vale mais que despejar conteúdo.',
+        cityExample: 'Se a questão pede parecer sobre anulação de contrato, a resposta deve dizer se há vício, qual norma foi violada, se cabe convalidação, se há contraditório, qual providência o Município deve tomar e quais efeitos preservar ou modular.',
+        legalBase: ['Manual de redação oficial como referência de clareza, impessoalidade e concisão', 'Norma-padrão da língua escrita', 'Técnica de parecer jurídico', 'LINDB, arts. 20 a 30, para decisões públicas com consequências práticas'],
+        dryLaw: ['Ler modelos de parecer, ofício, despacho, contestação e informações em mandado de segurança', 'LINDB, arts. 20 a 30'],
+        jurisprudence: ['Em temas jurídicos, cite jurisprudência apenas quando for relevante e segura. Melhor explicar bem o fundamento do que inventar tese ou número de precedente.'],
+        objectiveCharge: ['Características da redação oficial.', 'Impessoalidade.', 'Clareza.', 'Concisão.', 'Adequação vocabular.', 'Reescrita formal.'],
+        discursiveCharge: 'É o coração da prova discursiva: a banca avalia clareza, estrutura, precisão, domínio jurídico, aplicação ao caso e conclusão. A resposta precisa parecer manifestação de Procurador, não resumo de aula.',
+        traps: ['Não responder ao comando.', 'Escrever sem conclusão.', 'Usar “eu acho”.', 'Citar artigo errado com segurança falsa.', 'Fazer texto longo sem aplicar ao caso.', 'Confundir linguagem técnica com juridiquês.'],
+        differences: ['Clareza x simplismo.', 'Técnica x juridiquês.', 'Parecer x dissertação genérica.', 'Conclusão objetiva x opinião vaga.', 'Relatório x fundamentação.'],
+        commonMistakes: ['Começar sem delimitar o problema.', 'Empilhar conceitos.', 'Não usar conectivos.', 'Ignorar fatos do enunciado.', 'Não indicar providência prática.'],
+        miniCase: 'Enunciado: “Secretaria quer revogar ato ilegal por conveniência”. Resposta boa: ato ilegal não se revoga; deve ser anulado, observando contraditório quando houver efeitos favoráveis, motivação e eventual preservação de efeitos conforme segurança jurídica.',
+        activeQuestions: ['Respondi exatamente o comando?', 'Há fundamento jurídico?', 'Apliquei ao caso?', 'Concluí com providência?', 'Meu texto está claro e impessoal?'],
+        flashcards: [
+          { front: 'Estrutura segura da discursiva?', back: 'Problema, regra jurídica, aplicação ao caso e conclusão.' },
+          { front: 'Redação oficial deve ser pessoal?', back: 'Não. Deve ser impessoal, clara, formal e objetiva.' },
+          { front: 'Maior erro em discursiva?', back: 'Não responder ao caso concreto.' }
+        ],
+        summary: 'Português para Procurador termina em escrita técnica. A melhor resposta é clara, precisa, impessoal, fundamentada e conclusiva.',
+        checklist: ['Escrevo com clareza.', 'Uso norma-padrão.', 'Estruturo parecer.', 'Aplico ao caso.', 'Concluo com providência prática.'],
+        nextTopic: 'Fase 39 concluída — revisar questões comentadas por tópico na próxima fase'
       }
     ]
   }
