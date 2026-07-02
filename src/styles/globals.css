@@ -5524,3 +5524,37 @@ img, svg, canvas, video { max-width: 100%; }
     padding: 0;
   }
 }
+
+
+/* Hotfix 43.1 — Aula unificada da Apostila */
+.integrated-theory-block {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0;
+}
+.integrated-theory-header {
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+}
+.integrated-theory-header h3 { margin: 8px 0 6px; }
+.integrated-reading-card { overflow: hidden; }
+.integrated-prose h4 {
+  margin: 22px 0 10px;
+  color: #f8fafc;
+  font-size: 1.05rem;
+  letter-spacing: .01em;
+}
+.integrated-prose p {
+  max-width: 86ch;
+  line-height: 1.78;
+  font-size: 1rem;
+}
+@media (max-width: 760px) {
+  .integrated-theory-header,
+  .integrated-reading-card,
+  .theory-question-card,
+  .theory-support-card { border-radius: 18px; }
+  .integrated-prose p { font-size: .98rem; line-height: 1.72; }
+}

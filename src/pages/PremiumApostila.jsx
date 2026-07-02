@@ -120,6 +120,89 @@ function TheoreticalLessonBlock({ lesson }) {
   );
 }
 
+
+
+function IntegratedTheoryBlock({ theory, deep, topic }) {
+  if (!theory && !deep) return null;
+  if (!deep) return <TheoreticalLessonBlock lesson={theory} />;
+
+  const conceptLead = deep.concept || topic?.whatIs || '';
+  const purposeLead = deep.whyExists || topic?.purpose || '';
+  const rules = [...(deep.howItWorks || []), ...(deep.mainRules || [])];
+
+  return (
+    <section className="integrated-theory-block">
+      <div className="integrated-theory-header">
+        <Badge tone="orange">Fase 43.1 • aula unificada</Badge>
+        <h3>Aula completa — {topic?.title || theory?.title}</h3>
+        <p>Conteúdo em formato de apostila corrida: explicação primeiro, revisão depois.</p>
+      </div>
+
+      <article className="theory-reading-card integrated-reading-card">
+        <Badge tone="green">Aula teórica principal</Badge>
+        <div className="theory-prose integrated-prose">
+          {theory?.paragraphs?.map((paragraph, index) => <p key={`theory-${index}`}>{paragraph}</p>)}
+
+          {conceptLead && <p>{conceptLead}</p>}
+          {purposeLead && <p>{purposeLead}</p>}
+
+          {rules.length > 0 && (
+            <>
+              <h4>Aula passo a passo: como o tema funciona na prática</h4>
+              {rules.map((item, index) => <p key={`rule-${index}`}>{item}</p>)}
+            </>
+          )}
+
+          {deep.simpleExample && (
+            <>
+              <h4>Exemplo comentado para entender de verdade</h4>
+              <p>{deep.simpleExample.prompt}</p>
+              <p><strong>Aplicação correta:</strong> {deep.simpleExample.right}</p>
+              <p><strong>Aplicação incorreta:</strong> {deep.simpleExample.wrong}</p>
+              <p>{deep.simpleExample.explanation}</p>
+            </>
+          )}
+
+          {deep.municipalExample && (
+            <>
+              <h4>Aplicação na Procuradoria Municipal</h4>
+              <p>{deep.municipalExample}</p>
+            </>
+          )}
+
+          {deep.discursiveUse && (
+            <>
+              <h4>Uso na discursiva e no parecer</h4>
+              <p>{deep.discursiveUse}</p>
+            </>
+          )}
+        </div>
+      </article>
+
+      <div className="theory-support-grid">
+        <article className="theory-support-card">
+          <Badge tone="orange">Cuidados de prova</Badge>
+          <ul className="compact-list">{[...(deep.traps || []), ...(deep.commonErrors || [])].slice(0, 8).map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+        <article className="theory-support-card">
+          <Badge tone="cyan">Como resolver questão</Badge>
+          <ol className="compact-list">{(deep.solvingSteps || theory?.exam || []).map((item) => <li key={item}>{item}</li>)}</ol>
+        </article>
+      </div>
+
+      {deep.miniQuestion && (
+        <article className="theory-question-card">
+          <Badge tone="purple">Mini questão comentada</Badge>
+          <p><strong>Enunciado:</strong> {deep.miniQuestion.statement}</p>
+          <ol className="deep-options">{deep.miniQuestion.options.map((option, index) => <li key={option}>{String.fromCharCode(65 + index)}) {option}</li>)}</ol>
+          <p><strong>Gabarito:</strong> {deep.miniQuestion.answer}</p>
+          <p><strong>Comentário:</strong> {deep.miniQuestion.comment}</p>
+        </article>
+      )}
+    </section>
+  );
+}
+
 function DeepDidacticBlock({ lesson }) {
   if (!lesson) return null;
   return (
@@ -814,14 +897,14 @@ export default function PremiumApostila({ onNavigate }) {
                 <span>Aula teórica</span><span>Quadro de atenção</span><span>Como cai</span><span>Base legal</span><span>Revisão</span><span>Visual</span>
               </div>
 
-              <TheoreticalLessonBlock lesson={activeTheoryLesson} />
+              <IntegratedTheoryBlock theory={activeTheoryLesson} deep={activeDeepLesson} topic={activeTopic} />
 
               <Section title="Complemento de revisão — conceito" tone="cyan"><p>{activeTopic.whatIs}</p></Section>
               <Section title="Complemento de revisão — função prática" tone="green"><p>{activeTopic.purpose}</p></Section>
               <Section title="Complemento de revisão — pontos principais" tone="orange">
                 {activeTopic.plainExplanation.map((item) => <p key={item}>{item}</p>)}
               </Section>
-              <DeepDidacticBlock lesson={activeDeepLesson} />
+              {!activeDeepLesson && <DeepDidacticBlock lesson={activeDeepLesson} />}
               <Section title="4. Explicação técnica para prova" tone="purple"><p>{activeTopic.examTechnical}</p></Section>
               <Section title="5. Exemplo aplicado à Procuradoria Municipal" tone="green"><p>{activeTopic.cityExample}</p></Section>
 
