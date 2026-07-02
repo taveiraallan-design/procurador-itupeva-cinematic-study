@@ -3380,302 +3380,821 @@ export const premiumApostilaSubjects = [
   }
 
   ,{
-    id: 'lingua-portuguesa',
-    subject: 'Língua Portuguesa',
-    status: '39J concluída',
-    priority: 'Alta',
-    overview: 'Apostila premium de Língua Portuguesa voltada para prova de Procurador: interpretação de textos, tipologia, gêneros, coesão, coerência, classes gramaticais, sintaxe, pontuação, concordância, regência, crase, semântica, ortografia e redação técnica jurídica.',
-    lawBase: ['Acordo Ortográfico da Língua Portuguesa', 'Vocabulário Ortográfico da Língua Portuguesa — ABL', 'Gramática normativa aplicada a concursos', 'Prática de leitura de textos jurídicos, administrativos e argumentativos'],
-    topics: [
-      {
-        id: 'interpretacao-compreensao-textual',
-        level: 'básico',
-        title: 'Compreensão e interpretação de textos',
-        whatIs: 'Compreensão é localizar e reconhecer informações que estão expressas no texto. Interpretação é inferir sentido, intenção, pressupostos, conclusões e relações implícitas a partir das pistas linguísticas fornecidas.',
-        purpose: 'Serve para responder questões de prova com segurança e para atuar como Procurador, lendo contratos, pareceres, decisões, ofícios, notificações e peças processuais sem distorcer o sentido do texto.',
-        plainExplanation: [
-          'Em concursos, Língua Portuguesa não cobra apenas “saber gramática”. A banca frequentemente testa se o candidato lê com precisão. Uma alternativa pode errar por trocar uma palavra absoluta por uma relativa, transformar hipótese em certeza ou atribuir ao autor uma opinião que o texto apenas relata.',
-          'Compreender é recuperar dados: quem fez, quando, onde, qual causa, qual consequência. Interpretar é ir além: perceber ironia, finalidade, tese, argumento, pressuposto e conclusão. O erro comum é responder com opinião pessoal ou conhecimento externo, quando a questão pede o que o texto permite afirmar.',
-          'Para Procurador, esse cuidado é essencial. Uma cláusula contratual, um artigo de lei ou um despacho administrativo pode mudar completamente de sentido por causa de uma conjunção, uma vírgula, um pronome ou uma expressão restritiva.'
-        ],
-        examTechnical: 'Na prova, separe comando, texto e alternativas. Primeiro descubra se a questão pede informação explícita, inferência, tese, finalidade, sentido de palavra, coesão ou reescrita. Desconfie de alternativas com exageros: sempre, nunca, exclusivamente, totalmente, apenas. Em interpretação, a resposta correta costuma ser a mais fiel ao texto, não a mais bonita.',
-        cityExample: 'Um parecer municipal analisa se uma empresa “poderá ser penalizada se não comprovar a execução”. Se alguém interpreta como “deverá ser penalizada imediatamente”, há erro: “poderá” indica possibilidade condicionada, não imposição automática.',
-        legalBase: ['Leitura técnica de textos normativos, administrativos e argumentativos', 'Acordo Ortográfico e norma-padrão como base de escrita oficial', 'Manual de redação oficial como referência prática de clareza e impessoalidade'],
-        dryLaw: ['Não há artigo único de lei seca; estudar por textos de lei, Constituição, códigos e enunciados de prova', 'Consultar VOLP/ABL para grafia oficial de palavras quando houver dúvida'],
-        jurisprudence: ['Não se aplica jurisprudência como conteúdo central, mas a leitura de ementas e teses de tribunais ajuda a treinar identificação de tese, fundamento e conclusão.'],
-        objectiveCharge: ['Identificação da ideia principal.', 'Inferência permitida pelo texto.', 'Sentido de palavra no contexto.', 'Finalidade comunicativa.', 'Relação entre argumentos.', 'Reescrita sem alteração de sentido.'],
-        discursiveCharge: 'Na discursiva, interpretação aparece na capacidade de compreender o problema jurídico proposto. Quem lê mal o enunciado responde tema diferente, ignora limites do caso ou deixa de enfrentar a pergunta central.',
-        traps: ['Confundir opinião do autor com opinião de personagem citado.', 'Usar conhecimento externo para contrariar o texto.', 'Trocar causa por consequência.', 'Transformar possibilidade em certeza.', 'Ignorar palavras como “salvo”, “exceto”, “ainda que”, “desde que” e “somente”.'],
-        differences: ['Compreensão x interpretação: uma localiza informação expressa; a outra infere sentido.', 'Tese x argumento: tese é o ponto defendido; argumento é a razão usada para sustentá-la.', 'Tema x título: tema é assunto; título pode ser síntese, provocação ou recorte.'],
-        commonMistakes: ['Ler alternativas antes de entender o comando.', 'Marcar resposta por afinidade pessoal.', 'Ignorar conectivos.', 'Não voltar ao texto para confirmar.', 'Achar que toda inferência é subjetiva.'],
-        miniCase: 'Um enunciado afirma que a Administração “deve motivar seus atos, especialmente quando restringem direitos”. A alternativa diz que “todo ato administrativo sem motivação é automaticamente nulo em qualquer hipótese”. A alternativa extrapola: há forte exigência de motivação, mas a nulidade depende do regime do ato e do prejuízo/controle no caso concreto.',
-        activeQuestions: ['O comando pede informação expressa ou inferência?', 'Qual é a tese do texto?', 'Qual palavra muda o alcance da afirmação?', 'A alternativa exagerou o sentido?', 'A resposta depende do texto ou de opinião externa?'],
-        flashcards: [
-          { front: 'Compreensão é o quê?', back: 'Localizar informações expressas no texto.' },
-          { front: 'Interpretação é o quê?', back: 'Inferir sentido com base em pistas textuais.' },
-          { front: 'Principal armadilha em interpretação?', back: 'Extrapolar o texto ou marcar opinião pessoal como se fosse resposta.' }
-        ],
-        summary: 'Interpretação é fidelidade ao texto. Leia comando, localize pistas, observe conectivos e evite exageros. Para Procurador, ler bem é decidir bem.',
-        checklist: ['Sei diferenciar compreensão e interpretação.', 'Consigo identificar tese e argumento.', 'Reconheço alternativas extrapoladas.', 'Volto ao texto para confirmar resposta.', 'Leio enunciado jurídico com atenção às condições.'],
-        nextTopic: 'Tipologia textual e gêneros textuais'
-      },
-      {
-        id: 'tipologia-generos-textuais',
-        level: 'intermediário',
-        title: 'Tipologia textual e gêneros textuais',
-        whatIs: 'Tipologia textual é a forma predominante de organização do texto: narração, descrição, dissertação/argumentação, exposição, injunção. Gênero textual é a forma social concreta de comunicação, como artigo, notícia, parecer, ofício, edital, despacho, decisão, e-mail institucional e petição.',
-        purpose: 'Serve para reconhecer a finalidade do texto e entender como sua estrutura influencia a interpretação. Em concurso, isso ajuda a perceber se o texto informa, argumenta, orienta, relata ou determina uma conduta.',
-        plainExplanation: [
-          'Tipo textual é a “engrenagem interna” do texto. Um texto narrativo organiza fatos no tempo; um descritivo caracteriza objetos ou situações; um argumentativo defende tese; um expositivo explica; um injuntivo orienta ou ordena. Um mesmo gênero pode misturar tipos.',
-          'Gênero textual é o texto em uso social. Um parecer jurídico, por exemplo, geralmente expõe fatos, analisa fundamentos e conclui com orientação. Um edital tem função normativa e informativa. Uma notícia relata fatos com finalidade jornalística. Uma petição argumenta para convencer o juiz.',
-          'A prova gosta de perguntar finalidade, predominância e linguagem. Em textos jurídicos e administrativos, há forte presença de impessoalidade, clareza, objetividade e encadeamento lógico.'
-        ],
-        examTechnical: 'Não decore apenas nomes. Pergunte: o texto quer convencer, informar, ordenar, narrar, descrever ou explicar? A banca pode chamar texto argumentativo de dissertativo-argumentativo. Em reescrita, é comum cobrar manutenção de sentido e adequação ao gênero.',
-        cityExample: 'Um parecer da Procuradoria não é crônica nem opinião livre. Ele deve relatar consulta, delimitar questão, fundamentar juridicamente, ponderar riscos e concluir. Se o texto não conclui, falha no gênero parecer.',
-        legalBase: ['Redação oficial e prática administrativa', 'Norma-padrão da Língua Portuguesa', 'Técnica de parecer e textos institucionais'],
-        dryLaw: ['Ler modelos de edital, parecer, ofício, despacho e decisão administrativa para reconhecer finalidade e estrutura'],
-        jurisprudence: ['Não há jurisprudência central; a utilidade está na leitura de ementas e votos para reconhecer exposição, fundamentação e conclusão.'],
-        objectiveCharge: ['Tipo textual predominante.', 'Gênero textual.', 'Finalidade comunicativa.', 'Características de linguagem.', 'Trecho narrativo dentro de texto argumentativo.', 'Função de exemplos e dados.'],
-        discursiveCharge: 'Na discursiva de Procurador, o gênero esperado pode ser parecer, resposta jurídica ou peça argumentativa. A nota cai quando o candidato escreve como resumo solto, sem estrutura de consulta, fundamento e conclusão.',
-        traps: ['Achar que texto com fatos é sempre narrativo.', 'Confundir exposição com argumentação.', 'Chamar qualquer texto formal de jurídico.', 'Ignorar a finalidade do gênero.', 'Escrever discursiva sem conclusão prática.'],
-        differences: ['Tipo textual x gênero textual.', 'Exposição x argumentação.', 'Relato de fato x defesa de tese.', 'Parecer x despacho.', 'Ofício x petição.'],
-        commonMistakes: ['Decorar tipologia sem olhar finalidade.', 'Não perceber mistura de tipos.', 'Escrever resposta discursiva sem adequação ao gênero pedido.', 'Confundir linguagem objetiva com texto pobre.'],
-        miniCase: 'A questão apresenta um texto que explica o funcionamento do plano diretor e depois defende sua importância. A primeira parte é expositiva; a segunda é argumentativa. A predominância depende do objetivo global do texto.',
-        activeQuestions: ['Qual é a finalidade do texto?', 'Há tese defendida?', 'O texto ordena ou orienta?', 'O gênero exige conclusão?', 'A linguagem é adequada ao contexto institucional?'],
-        flashcards: [
-          { front: 'Texto argumentativo faz o quê?', back: 'Defende uma tese com argumentos.' },
-          { front: 'Gênero textual é o quê?', back: 'Forma social concreta de texto, como parecer, edital, notícia ou ofício.' },
-          { front: 'Parecer jurídico precisa de quê?', back: 'Questão, fatos relevantes, fundamentos e conclusão orientadora.' }
-        ],
-        summary: 'Tipologia mostra como o texto se organiza; gênero mostra para que ele serve socialmente. Na prova, a finalidade manda.',
-        checklist: ['Sei os principais tipos textuais.', 'Sei diferenciar tipo e gênero.', 'Reconheço finalidade comunicativa.', 'Consigo estruturar parecer.', 'Evito confundir relato com argumento.'],
-        nextTopic: 'Coesão, coerência e conectivos'
-      },
-      {
-        id: 'coesao-coerencia-conectivos',
-        level: 'intermediário',
-        title: 'Coesão, coerência, referenciação e conectivos',
-        whatIs: 'Coesão é a ligação linguística entre partes do texto por pronomes, conjunções, advérbios, elipses, repetição controlada e substituição vocabular. Coerência é a unidade lógica de sentido: o texto precisa fazer sentido como conjunto.',
-        purpose: 'Serve para construir e interpretar textos claros. Na prova, conectivos e pronomes são usados para testar relações de causa, consequência, oposição, condição, conclusão, concessão e explicação.',
-        plainExplanation: [
-          'Coesão é a costura visível. Palavras como portanto, porém, embora, porque, caso, conforme e além disso sinalizam como uma ideia se liga à outra. Se o candidato ignora o conectivo, pode inverter completamente o sentido.',
-          'Coerência é a lógica global. Um texto pode ter frases gramaticalmente corretas e ainda ser incoerente se contradiz, muda de tema sem transição ou apresenta conclusão que não decorre dos argumentos.',
-          'Referenciação é identificar a quem ou a quê um pronome ou expressão se refere. Em textos jurídicos, isso evita confundir sujeito, responsável, ato, órgão, empresa ou agente público.'
-        ],
-        examTechnical: 'Estude valor semântico dos conectivos: adversidade, concessão, condição, causa, consequência, finalidade, comparação, conclusão e explicação. A banca cobra substituição de conectivos sem alterar sentido. “Embora” não é igual a “porque”; “portanto” não é igual a “porém”; “se” pode indicar condição.',
-        cityExample: 'Em um contrato: “A empresa será notificada se descumprir o prazo”. O “se” cria condição. Não se pode notificar por esse fundamento sem demonstrar descumprimento.',
-        legalBase: ['Norma-padrão da língua escrita', 'Técnica de redação oficial e jurídica', 'Leitura de textos legais e administrativos'],
-        dryLaw: ['Treinar conectivos em artigos de lei: salvo, exceto, desde que, quando, enquanto, sem prejuízo, ainda que'],
-        jurisprudence: ['A leitura de teses jurídicas exige atenção a conectivos, especialmente quando o tribunal fixa exceções, condições ou ressalvas.'],
-        objectiveCharge: ['Valor semântico de conectivo.', 'Substituição sem prejuízo de sentido.', 'Referente de pronome.', 'Coerência de reescrita.', 'Relação entre períodos.'],
-        discursiveCharge: 'Em discursiva, coesão ruim derruba clareza. Use conectivos para organizar: inicialmente, além disso, por outro lado, contudo, portanto, assim, no caso concreto, conclui-se.',
-        traps: ['Trocar concessão por causa.', 'Achar que “contudo” conclui.', 'Não identificar referente do pronome.', 'Usar “onde” para tudo.', 'Escrever parágrafos sem conexão.'],
-        differences: ['Coesão x coerência.', 'Causa x consequência.', 'Oposição x concessão.', 'Condição x finalidade.', 'Retomada pronominal x repetição.'],
-        commonMistakes: ['Decorar conectivos sem sentido.', 'Usar “portanto” sem conclusão.', 'Criar ambiguidade com pronomes.', 'Começar todo parágrafo com “dessa forma” sem lógica.'],
-        miniCase: 'A frase “Embora o ato tenha vício, ele poderá ser convalidado se o defeito for sanável” contém concessão e condição. A conclusão correta depende dos dois elementos: existe vício, mas há possível convalidação condicionada à sanabilidade.',
-        activeQuestions: ['Qual relação o conectivo cria?', 'O pronome retoma qual termo?', 'A conclusão decorre dos argumentos?', 'Há contradição interna?', 'A reescrita preserva o sentido?'],
-        flashcards: [
-          { front: '“Embora” indica quê?', back: 'Concessão.' },
-          { front: '“Portanto” indica quê?', back: 'Conclusão.' },
-          { front: 'Coerência é o quê?', back: 'Unidade lógica de sentido do texto.' }
-        ],
-        summary: 'Coesão é costura; coerência é lógica. Conectivo errado muda resposta. Em texto jurídico, clareza depende de relações bem marcadas.',
-        checklist: ['Sei valores dos conectivos.', 'Identifico referentes pronominais.', 'Consigo reescrever sem mudar sentido.', 'Uso conectivos na discursiva.', 'Evito ambiguidade.'],
-        nextTopic: 'Classes de palavras e morfologia aplicada'
-      },
-      {
-        id: 'classes-palavras-morfologia',
-        level: 'básico',
-        title: 'Classes de palavras e morfologia aplicada à prova',
-        whatIs: 'Classes de palavras são categorias gramaticais que organizam as palavras conforme função e comportamento: substantivo, adjetivo, artigo, numeral, pronome, verbo, advérbio, preposição, conjunção e interjeição.',
-        purpose: 'Serve para entender concordância, regência, crase, pontuação, sentido e reescrita. A banca raramente cobra classificação isolada; cobra o efeito da classe no funcionamento da frase.',
-        plainExplanation: [
-          'Substantivo nomeia; adjetivo caracteriza; pronome retoma ou substitui; verbo indica ação, estado, fenômeno ou processo; advérbio modifica verbo, adjetivo ou outro advérbio; preposição liga termos; conjunção liga orações ou termos.',
-          'A mesma palavra pode mudar de classe conforme contexto. “Certo” pode ser adjetivo em “ato certo” e advérbio em “ele agiu certo”. “Que” pode ser pronome relativo, conjunção integrante ou partícula expletiva, conforme a função.',
-          'Para prova, o foco é funcional: o pronome retoma qual termo? O advérbio altera o sentido? A conjunção indica oposição? O verbo exige complemento? O adjetivo restringe ou explica?'
-        ],
-        examTechnical: 'Estude especialmente pronomes relativos, conjunções, preposições, advérbios, verbos e formas nominais. Eles aparecem em reescrita, coesão, regência, crase, concordância e pontuação. A classificação deve servir ao sentido.',
-        cityExample: 'Na frase “O servidor que descumpriu o dever será notificado”, o “que” retoma servidor e introduz oração restritiva. Não é qualquer servidor; é aquele que descumpriu o dever.',
-        legalBase: ['Gramática normativa da Língua Portuguesa', 'Acordo Ortográfico e VOLP para grafia oficial', 'Uso da norma-padrão em documentos públicos'],
-        dryLaw: ['Consultar VOLP para grafia', 'Treinar pronomes, verbos e conectivos em textos legais'],
-        jurisprudence: ['Não aplicável como jurisprudência; a importância é prática para compreensão de textos normativos.'],
-        objectiveCharge: ['Classificação contextual.', 'Função de pronome relativo.', 'Valor de conjunção.', 'Sentido de advérbio.', 'Emprego de formas verbais.', 'Reescrita mantendo classe/função.'],
-        discursiveCharge: 'Na discursiva, domínio morfológico evita ambiguidade e melhora precisão: escolher verbo adequado, retomar termos corretamente e usar conectivos técnicos.',
-        traps: ['Classificar palavra fora do contexto.', 'Achar que todo “que” tem mesma função.', 'Confundir preposição com conjunção.', 'Não perceber pronome com referente ambíguo.', 'Usar advérbio que muda o alcance da tese.'],
-        differences: ['Pronome relativo x conjunção integrante.', 'Adjetivo restritivo x explicativo.', 'Advérbio x adjetivo.', 'Preposição x conjunção.', 'Verbo transitivo x intransitivo.'],
-        commonMistakes: ['Decorar tabela sem aplicar.', 'Ignorar contexto.', 'Errar referente do pronome.', 'Não perceber mudança de sentido por advérbio.'],
-        miniCase: '“A multa somente será aplicada após defesa.” O advérbio “somente” restringe a possibilidade: a aplicação depende de defesa prévia. Se retirado, o alcance muda.',
-        activeQuestions: ['Qual classe a palavra exerce neste contexto?', 'O pronome retoma quem?', 'O verbo pede complemento?', 'O advérbio restringe o quê?', 'A conjunção liga ideias com qual sentido?'],
-        flashcards: [
-          { front: 'Classe da palavra depende de quê?', back: 'Do contexto e da função na frase.' },
-          { front: 'Pronome relativo faz o quê?', back: 'Retoma termo anterior e introduz oração subordinada adjetiva.' },
-          { front: 'Advérbio modifica o quê?', back: 'Verbo, adjetivo ou outro advérbio.' }
-        ],
-        summary: 'Morfologia boa é morfologia aplicada. Em concurso, classe gramatical importa quando altera sentido, coesão ou correção da frase.',
-        checklist: ['Sei classes principais.', 'Analiso função no contexto.', 'Reconheço pronomes relativos.', 'Reconheço conectivos.', 'Uso verbos e pronomes com precisão.'],
-        nextTopic: 'Sintaxe, termos da oração e período composto'
-      },
-      {
-        id: 'sintaxe-periodo-composto',
-        level: 'avançado',
-        title: 'Sintaxe: termos da oração, período simples e período composto',
-        whatIs: 'Sintaxe estuda a relação entre palavras, termos e orações. Inclui sujeito, predicado, objetos, complementos, adjuntos, aposto, vocativo, orações coordenadas e subordinadas.',
-        purpose: 'Serve para resolver concordância, pontuação, crase, regência e interpretação. Quem entende sintaxe sabe por que a vírgula pode mudar sentido e por que o verbo concorda com determinado núcleo.',
-        plainExplanation: [
-          'O período simples tem uma oração; o composto tem mais de uma. Em textos jurídicos, períodos longos são comuns, mas exigem identificação de oração principal, subordinadas, sujeitos e complementos.',
-          'O sujeito é o termo sobre o qual se declara algo. O predicado traz a declaração. Objetos completam verbos; complementos nominais completam nomes; adjuntos acrescentam circunstâncias ou qualificações. Aposto explica ou especifica; vocativo chama interlocutor.',
-          'Orações subordinadas podem exercer função substantiva, adjetiva ou adverbial. Esse ponto cai muito em vírgula, valor semântico e reescrita.'
-        ],
-        examTechnical: 'Domine sujeito simples, composto, oculto, indeterminado e oração sem sujeito; transitividade verbal; complemento nominal x adjunto adnominal; oração adjetiva restritiva x explicativa; oração adverbial causal, concessiva, condicional, final, temporal, consecutiva e conformativa.',
-        cityExample: '“Os contratos que foram prorrogados sem justificativa serão analisados.” A oração “que foram prorrogados sem justificativa” restringe quais contratos serão analisados. Se vier entre vírgulas, pode virar explicativa e mudar o alcance.',
-        legalBase: ['Gramática normativa', 'Redação oficial', 'Norma-padrão aplicada a textos jurídicos'],
-        dryLaw: ['Treinar sintaxe lendo artigos com incisos, parágrafos, ressalvas e condições'],
-        jurisprudence: ['Não há jurisprudência própria; a aplicação é decisiva para leitura de teses e dispositivos legais.'],
-        objectiveCharge: ['Função sintática.', 'Orações subordinadas.', 'Restritiva x explicativa.', 'Transitividade verbal.', 'Sujeito e concordância.', 'Reescrita sintaticamente correta.'],
-        discursiveCharge: 'Na discursiva, sintaxe clara evita frases confusas. Prefira períodos médios, sujeito claro, verbo forte e conclusão expressa.',
-        traps: ['Confundir objeto indireto com complemento nominal.', 'Separar sujeito e verbo por vírgula.', 'Não diferenciar oração adjetiva restritiva e explicativa.', 'Achar que todo termo com preposição é objeto indireto.'],
-        differences: ['Complemento nominal x adjunto adnominal.', 'Oração restritiva x explicativa.', 'Coordenação x subordinação.', 'Objeto direto x objeto indireto.', 'Sujeito indeterminado x oração sem sujeito.'],
-        commonMistakes: ['Analisar termo isolado.', 'Ignorar núcleo do sujeito.', 'Pontuar por pausa oral.', 'Não perceber mudança de sentido em oração explicativa.'],
-        miniCase: '“Os servidores, que participaram do curso, receberão certificado” indica que todos os servidores participaram. “Os servidores que participaram do curso receberão certificado” indica apenas os que participaram.',
-        activeQuestions: ['Qual é o sujeito?', 'Qual é o verbo principal?', 'Há oração restritiva?', 'A vírgula muda o alcance?', 'O termo preposicionado completa verbo ou nome?'],
-        flashcards: [
-          { front: 'Oração adjetiva restritiva usa vírgula?', back: 'Em regra, não; ela restringe o termo anterior.' },
-          { front: 'Oração explicativa usa vírgula?', back: 'Sim, em regra vem isolada por vírgulas.' },
-          { front: 'Pode separar sujeito e verbo por vírgula?', back: 'Não, salvo intercalações devidamente marcadas.' }
-        ],
-        summary: 'Sintaxe é a arquitetura da frase. Ela explica pontuação, concordância, regência e sentido. Para prova, restritiva x explicativa é tema obrigatório.',
-        checklist: ['Identifico sujeito e verbo.', 'Sei transitividade básica.', 'Diferencio restritiva e explicativa.', 'Reconheço orações subordinadas.', 'Evito vírgula entre sujeito e verbo.'],
-        nextTopic: 'Pontuação, vírgula e efeitos de sentido'
-      },
-      {
-        id: 'pontuacao-virgula',
-        level: 'avançado',
-        title: 'Pontuação: vírgula, ponto e vírgula, dois-pontos, travessões e efeitos de sentido',
-        whatIs: 'Pontuação é o conjunto de sinais que organiza a escrita, marca relações sintáticas e semânticas, indica pausas estruturais e evita ambiguidade.',
-        purpose: 'Serve para tornar o texto claro, correto e juridicamente seguro. Na prova, pontuação é cobrada principalmente por seu efeito no sentido e por regras de sintaxe.',
-        plainExplanation: [
-          'Vírgula não é “pausa para respirar”. Ela marca deslocamentos, intercalações, enumerações, aposto, vocativo, orações explicativas e certas relações entre orações. A regra mais lembrada é: não separar sujeito e verbo nem verbo e complemento direto por vírgula indevida.',
-          'Dois-pontos introduzem explicação, enumeração, citação ou esclarecimento. Ponto e vírgula separa itens longos ou orações coordenadas com certa autonomia. Travessões isolam explicações, comentários ou intercalações com destaque.',
-          'Em textos jurídicos, uma vírgula pode ampliar ou restringir alcance. Por isso, a banca adora perguntar se a retirada de vírgulas altera sentido.'
-        ],
-        examTechnical: 'Estude vírgula em adjunto adverbial deslocado, oração adjetiva explicativa, aposto, vocativo, elipse verbal, enumeração, orações coordenadas e orações subordinadas adverbiais deslocadas. Em reescrita, verifique se a vírgula altera restrição, explicação ou ambiguidade.',
-        cityExample: '“Os contribuintes que aderirem ao parcelamento terão desconto” restringe o benefício aos aderentes. “Os contribuintes, que aderirem ao parcelamento, terão desconto” sugere que todos aderirão ou torna a frase inadequada ao objetivo normativo.',
-        legalBase: ['Gramática normativa', 'Norma-padrão em redação oficial', 'Técnica legislativa e administrativa'],
-        dryLaw: ['Treinar vírgula em leis, incisos, parágrafos, ressalvas e enumerações'],
-        jurisprudence: ['Não há jurisprudência central, mas a pontuação influencia leitura de contratos, leis e decisões.'],
-        objectiveCharge: ['Emprego da vírgula.', 'Mudança de sentido com pontuação.', 'Dois-pontos e enumeração.', 'Travessão e intercalação.', 'Ponto e vírgula em enumeração complexa.'],
-        discursiveCharge: 'Na discursiva, pontuação correta aumenta clareza. Uma resposta com vírgulas mal colocadas parece insegura e pode dificultar a compreensão do fundamento jurídico.',
-        traps: ['Pontuar por pausa oral.', 'Separar sujeito e verbo.', 'Usar vírgula que transforma restrição em explicação.', 'Não isolar aposto ou vocativo.', 'Colocar dois-pontos sem termo anunciador.'],
-        differences: ['Vírgula sintática x pausa oral.', 'Restrição x explicação.', 'Aposto x adjunto.', 'Dois-pontos x ponto e vírgula.', 'Travessão x parênteses.'],
-        commonMistakes: ['Excesso de vírgulas.', 'Falta de vírgula em intercalação.', 'Vírgula entre verbo e complemento.', 'Não perceber mudança de sentido.'],
-        miniCase: '“O Município notificou a empresa, responsável pela obra, para corrigir falhas.” A vírgula sugere explicação. Sem vírgulas, “responsável pela obra” restringiria qual empresa foi notificada.',
-        activeQuestions: ['A vírgula separou sujeito e verbo?', 'Há termo deslocado?', 'A oração é explicativa ou restritiva?', 'Existe enumeração?', 'A pontuação mudou sentido?'],
-        flashcards: [
-          { front: 'Vírgula separa sujeito e verbo?', back: 'Não.' },
-          { front: 'Oração explicativa vem como?', back: 'Isolada por vírgulas.' },
-          { front: 'Dois-pontos introduzem o quê?', back: 'Explicação, enumeração, citação ou esclarecimento.' }
-        ],
-        summary: 'Pontuação é sintaxe visível. Na prova, pergunte se o sinal organiza, explica, restringe ou muda sentido.',
-        checklist: ['Não separo sujeito e verbo.', 'Sei usar vírgula em explicativa.', 'Reconheço enumeração.', 'Entendo efeito de sentido.', 'Pontuo discursiva com clareza.'],
-        nextTopic: 'Concordância, regência e crase'
-      },
-      {
-        id: 'concordancia-regencia-crase',
-        level: 'lei seca',
-        title: 'Concordância verbal e nominal, regência e crase',
-        whatIs: 'Concordância é a adequação de verbo, nomes e determinantes a número, pessoa e gênero. Regência é a relação de dependência entre termos, especialmente verbos/nomes e seus complementos. Crase é a fusão da preposição “a” com artigo “a” ou pronomes iniciados por “a”.',
-        purpose: 'Serve para escrever corretamente e resolver grande parte das questões gramaticais. Para Procurador, evita erros formais em pareceres, peças, ofícios e manifestações processuais.',
-        plainExplanation: [
-          'Concordância verbal exige identificar o núcleo do sujeito. O verbo concorda com o sujeito, não com o termo mais próximo. Expressões partitivas, porcentagens, sujeito posposto e voz passiva sintética são pontos frequentes.',
-          'Regência depende do termo regente. Verbos como assistir, visar, implicar, obedecer, preferir, informar, pagar e responder mudam sentido ou exigem preposição. Nome também tem regência: favorável a, compatível com, relativo a, necessário a.',
-          'Crase exige, em regra, preposição “a” + artigo “a”. Use teste simples: trocar palavra feminina por masculina. Se virar “ao”, há forte sinal de crase. Mas existem casos especiais: à moda de, às vezes, à medida que, àquele, à qual.'
-        ],
-        examTechnical: 'Estude concordância com sujeito composto, partitivo, percentual, pronome relativo, voz passiva sintética e verbo haver/existir. Em regência, foque verbos comuns de concurso. Em crase, domine casos obrigatórios, proibidos e facultativos. A banca cobra reescrita e correção segundo norma-padrão.',
-        cityExample: '“Fazem dois anos que a obra está paralisada” está incorreto na norma-padrão; com sentido de tempo decorrido, o verbo fazer é impessoal: “Faz dois anos”. Já “Existem pendências” concorda normalmente, porque existir tem sujeito.',
-        legalBase: ['Gramática normativa', 'Norma-padrão da língua escrita', 'Redação oficial e jurídica'],
-        dryLaw: ['Consultar VOLP para grafia e treinar concordância/regência em textos normativos'],
-        jurisprudence: ['Não aplicável como jurisprudência; aplicação prática em peças e pareceres.'],
-        objectiveCharge: ['Correção de concordância.', 'Regência verbal/nominal.', 'Crase obrigatória/proibida.', 'Reescrita correta.', 'Verbos impessoais.', 'Voz passiva sintética.'],
-        discursiveCharge: 'Na discursiva, erro recorrente de concordância, regência ou crase reduz qualidade formal e pode prejudicar nota de linguagem.',
-        traps: ['Confundir haver impessoal com existir.', 'Usar crase antes de verbo.', 'Usar crase antes de palavra masculina comum.', 'Esquecer preposição exigida pelo verbo.', 'Fazer verbo concordar com termo intercalado.'],
-        differences: ['Haver impessoal x existir.', 'Assistir no sentido de ver x assistir no sentido de ajudar.', 'Crase obrigatória x facultativa.', 'Regência verbal x nominal.', 'Concordância verbal x nominal.'],
-        commonMistakes: ['“Houveram problemas”.', '“Visar o cargo” quando sentido é almejar, em norma tradicional exige “visar ao”.', '“À partir de”.', '“Obedecer o prazo”.', '“Segue anexo os documentos”.'],
-        miniCase: 'Em ofício: “Encaminha-se, anexos, as certidões” está inadequado. Melhor: “Encaminham-se, anexas, as certidões” se a estrutura for passiva sintética com sujeito “as certidões”.',
-        activeQuestions: ['Qual é o núcleo do sujeito?', 'O verbo é impessoal?', 'O verbo exige preposição?', 'Há artigo feminino?', 'A troca por masculino gera “ao”?'],
-        flashcards: [
-          { front: '“Houveram problemas” está correto?', back: 'Não. No sentido de existir, haver é impessoal: “Houve problemas”.' },
-          { front: 'Crase antes de verbo?', back: 'Não ocorre.' },
-          { front: 'Existir é impessoal?', back: 'Não. Concorda com o sujeito: “Existem dúvidas”.' }
-        ],
-        summary: 'Concordância, regência e crase são o núcleo da gramática normativa em concursos. A solução começa por identificar sujeito, termo regente e presença de artigo.',
-        checklist: ['Identifico sujeito.', 'Sei haver x existir.', 'Conheço regências frequentes.', 'Aplico teste da crase.', 'Evito erros formais na discursiva.'],
-        nextTopic: 'Ortografia, acentuação e semântica'
-      },
-      {
-        id: 'ortografia-acentuacao-semantica',
-        level: 'lei seca',
-        title: 'Ortografia, acentuação, semântica, figuras de linguagem e vícios de linguagem',
-        whatIs: 'Ortografia trata da grafia correta das palavras; acentuação define o emprego de acentos gráficos; semântica estuda significado; figuras de linguagem produzem efeitos expressivos; vícios de linguagem são desvios que prejudicam clareza, correção ou elegância.',
-        purpose: 'Serve para responder questões objetivas de correção gramatical e para escrever peças e pareceres com precisão, clareza e credibilidade profissional.',
-        plainExplanation: [
-          'Ortografia cobra palavras parecidas, hífen, uso de porquê, mal/mau, há/a, onde/aonde, seção/sessão/cessão, senão/se não, acerca de/a cerca de/há cerca de. A fonte segura para grafia é o VOLP/ABL.',
-          'Acentuação exige reconhecer oxítonas, paroxítonas, proparoxítonas, hiatos, ditongos e alterações do Acordo Ortográfico. Em prova, não basta decorar: compare palavras com mesma regra.',
-          'Semântica aparece em sinônimos, antônimos, polissemia, ambiguidade, denotação, conotação, pressupostos e inferências. Figuras de linguagem são menos frequentes em prova jurídica, mas podem aparecer em interpretação.'
-        ],
-        examTechnical: 'Estude por agrupamento de casos: porquês, hífen, acentuação, parônimos, homônimos, denotação/conotação, ambiguidade, pleonasmo vicioso, cacofonia, barbarismo, solecismo e eco. Em reescrita, observe se a substituição preserva sentido e correção.',
-        cityExample: 'Em documento oficial, escrever “a cerca de cinco anos” no lugar de “há cerca de cinco anos” gera erro de sentido: “há” indica tempo decorrido; “a cerca de” indica aproximação espacial ou numérica conforme construção.',
-        legalBase: ['Acordo Ortográfico da Língua Portuguesa', 'Vocabulário Ortográfico da Língua Portuguesa — ABL', 'Norma-padrão da língua escrita'],
-        dryLaw: ['Consultar VOLP/ABL para grafia oficial', 'Revisar listas de parônimos e homônimos comuns em concursos'],
-        jurisprudence: ['Não aplicável; tema de norma-padrão e interpretação textual.'],
-        objectiveCharge: ['Grafia correta.', 'Acentuação.', 'Uso dos porquês.', 'Hífen.', 'Parônimos e homônimos.', 'Ambiguidade e sentido contextual.'],
-        discursiveCharge: 'Na discursiva, ortografia e semântica impactam nota de linguagem. Erros repetidos geram impressão de descuido, mesmo quando o conteúdo jurídico é bom.',
-        traps: ['“Por que” pergunta direta/indireta; “porque” explicação; “por quê” fim de frase; “porquê” substantivo.', '“Mal” opõe-se a bem; “mau” opõe-se a bom.', '“Onde” indica lugar físico; “aonde” indica movimento com verbo que exige “a”.', '“Há” tempo passado; “a” tempo futuro/distância.'],
-        differences: ['Mal x mau.', 'Há x a.', 'Onde x aonde.', 'Seção x sessão x cessão.', 'Acerca de x a cerca de x há cerca de.', 'Denotação x conotação.'],
-        commonMistakes: ['Usar “onde” para lei, tema ou situação abstrata.', 'Trocar sessão por seção.', 'Errar porquês.', 'Escrever “à partir de”.', 'Ignorar ambiguidade.'],
-        miniCase: '“A decisão onde o Município foi condenado” é inadequado. Melhor: “A decisão em que o Município foi condenado”, pois decisão não é lugar físico.',
-        activeQuestions: ['A palavra está grafada conforme VOLP?', 'O porquê está correto?', 'Há ambiguidade?', 'O sentido é literal ou figurado?', 'A substituição preserva significado?'],
-        flashcards: [
-          { front: '“Mal” se opõe a quê?', back: 'Bem.' },
-          { front: '“Mau” se opõe a quê?', back: 'Bom.' },
-          { front: '“Onde” deve ser usado para quê?', back: 'Lugar físico ou espacial.' }
-        ],
-        summary: 'Ortografia e semântica parecem detalhes, mas derrubam pontos. Para prova, foque casos recorrentes e sempre confirme grafia oficial quando houver dúvida.',
-        checklist: ['Sei porquês.', 'Sei mal/mau.', 'Sei há/a.', 'Evito “onde” indevido.', 'Reconheço ambiguidade e polissemia.'],
-        nextTopic: 'Redação oficial, linguagem jurídica e resposta discursiva'
-      },
-      {
-        id: 'redacao-oficial-juridica',
-        level: 'discursiva',
-        title: 'Redação oficial, linguagem jurídica e resposta discursiva de Procurador',
-        whatIs: 'Redação oficial é a comunicação escrita da Administração Pública, baseada em clareza, objetividade, formalidade, impessoalidade, padronização e correção. Linguagem jurídica é o uso técnico da língua para argumentar, fundamentar e concluir juridicamente.',
-        purpose: 'Serve para produzir pareceres, ofícios, despachos, informações, contestações e respostas discursivas de forma clara, técnica e institucional.',
-        plainExplanation: [
-          'Uma boa resposta discursiva de Procurador não é texto bonito: é texto útil. Deve entender o problema, organizar fundamentos, aplicar ao caso e concluir com providência prática. Linguagem rebuscada demais atrapalha; linguagem simples demais pode parecer sem técnica. O equilíbrio é clareza técnica.',
-          'Redação oficial exige impessoalidade. Evite opinião pessoal solta: prefira “entende-se”, “verifica-se”, “no caso concreto”, “à luz do art.”, “recomenda-se”. O texto deve representar a instituição, não o ego do redator.',
-          'A estrutura mais segura para discursiva é: delimitação da questão, regra jurídica, aplicação ao caso, conclusão. Em parecer, acrescente relatório breve e análise de riscos.'
-        ],
-        examTechnical: 'Treine parágrafos de 4 a 6 linhas, frases com sujeito claro, conectivos jurídicos e conclusão expressa. Evite períodos enormes, jargão inútil, citações vagas e resposta sem providência. Em prova, cumprir o comando vale mais que despejar conteúdo.',
-        cityExample: 'Se a questão pede parecer sobre anulação de contrato, a resposta deve dizer se há vício, qual norma foi violada, se cabe convalidação, se há contraditório, qual providência o Município deve tomar e quais efeitos preservar ou modular.',
-        legalBase: ['Manual de redação oficial como referência de clareza, impessoalidade e concisão', 'Norma-padrão da língua escrita', 'Técnica de parecer jurídico', 'LINDB, arts. 20 a 30, para decisões públicas com consequências práticas'],
-        dryLaw: ['Ler modelos de parecer, ofício, despacho, contestação e informações em mandado de segurança', 'LINDB, arts. 20 a 30'],
-        jurisprudence: ['Em temas jurídicos, cite jurisprudência apenas quando for relevante e segura. Melhor explicar bem o fundamento do que inventar tese ou número de precedente.'],
-        objectiveCharge: ['Características da redação oficial.', 'Impessoalidade.', 'Clareza.', 'Concisão.', 'Adequação vocabular.', 'Reescrita formal.'],
-        discursiveCharge: 'É o coração da prova discursiva: a banca avalia clareza, estrutura, precisão, domínio jurídico, aplicação ao caso e conclusão. A resposta precisa parecer manifestação de Procurador, não resumo de aula.',
-        traps: ['Não responder ao comando.', 'Escrever sem conclusão.', 'Usar “eu acho”.', 'Citar artigo errado com segurança falsa.', 'Fazer texto longo sem aplicar ao caso.', 'Confundir linguagem técnica com juridiquês.'],
-        differences: ['Clareza x simplismo.', 'Técnica x juridiquês.', 'Parecer x dissertação genérica.', 'Conclusão objetiva x opinião vaga.', 'Relatório x fundamentação.'],
-        commonMistakes: ['Começar sem delimitar o problema.', 'Empilhar conceitos.', 'Não usar conectivos.', 'Ignorar fatos do enunciado.', 'Não indicar providência prática.'],
-        miniCase: 'Enunciado: “Secretaria quer revogar ato ilegal por conveniência”. Resposta boa: ato ilegal não se revoga; deve ser anulado, observando contraditório quando houver efeitos favoráveis, motivação e eventual preservação de efeitos conforme segurança jurídica.',
-        activeQuestions: ['Respondi exatamente o comando?', 'Há fundamento jurídico?', 'Apliquei ao caso?', 'Concluí com providência?', 'Meu texto está claro e impessoal?'],
-        flashcards: [
-          { front: 'Estrutura segura da discursiva?', back: 'Problema, regra jurídica, aplicação ao caso e conclusão.' },
-          { front: 'Redação oficial deve ser pessoal?', back: 'Não. Deve ser impessoal, clara, formal e objetiva.' },
-          { front: 'Maior erro em discursiva?', back: 'Não responder ao caso concreto.' }
-        ],
-        summary: 'Português para Procurador termina em escrita técnica. A melhor resposta é clara, precisa, impessoal, fundamentada e conclusiva.',
-        checklist: ['Escrevo com clareza.', 'Uso norma-padrão.', 'Estruturo parecer.', 'Aplico ao caso.', 'Concluo com providência prática.'],
-        nextTopic: 'Fase 39 concluída — revisar questões comentadas por tópico na próxima fase'
-      }
-    ]
+      "id": "lingua-portuguesa",
+      "subject": "Língua Portuguesa",
+      "status": "41.2 didática",
+      "priority": "Alta",
+      "overview": "Apostila didática aprofundada de Língua Portuguesa para Procurador Municipal: cada tópico ensina conceito, uso prático, passo a passo de prova, exemplo comentado, pegadinhas, erros comuns, exercícios e aplicação na discursiva.",
+      "lawBase": [
+          "Acordo Ortográfico da Língua Portuguesa",
+          "Vocabulário Ortográfico da Língua Portuguesa — ABL",
+          "Norma-padrão da língua escrita",
+          "Manual de Redação da Presidência da República como referência de redação oficial",
+          "Técnica de parecer jurídico e resposta discursiva"
+      ],
+      "topics": [
+          {
+              "id": "compreensao-interpretacao",
+              "level": "básico",
+              "title": "Compreensão e interpretação de textos",
+              "whatIs": "Compreensão é localizar informações expressas no texto. Interpretação é concluir sentido implícito com base nas pistas do próprio texto, sem inventar dado externo.",
+              "purpose": "Serve para acertar questões de leitura e para responder discursivas fielmente ao enunciado. Para Procurador, evita pareceres que resolvem problema diferente do caso apresentado.",
+              "plainExplanation": [
+                  "O primeiro passo é separar o que o texto afirma daquilo que o candidato acredita saber. Em prova, a alternativa pode parecer juridicamente correta, mas estar errada porque não corresponde ao texto.",
+                  "Compreender é responder com dado expresso: quem fez, o que ocorreu, qual causa, qual consequência, qual posição do autor. Interpretar é perceber tese, inferência, intenção, pressuposto, subentendido e efeito de sentido.",
+                  "A inferência válida nasce de uma pista textual. Extrapolação ocorre quando a alternativa aumenta o alcance do texto; restrição ocorre quando diminui; contradição ocorre quando inverte a ideia; fuga ocorre quando fala de tema parecido, mas não responde ao comando.",
+                  "Passo a passo: leia o comando; identifique se pede ideia central, inferência, sentido de palavra ou finalidade; volte ao trecho; elimine alternativa absoluta indevida; confira se a resposta depende do texto e não de opinião pessoal."
+              ],
+              "examTechnical": "Palavras de comando são decisivas: “segundo o texto” exige informação textual; “infere-se” permite conclusão sustentada; “depreende-se” pede dedução; “mantém o sentido” cobra equivalência semântica. Marque termos como sempre, nunca, apenas, necessariamente, todos e nenhum.",
+              "cityExample": "Se o enunciado diz que um ato municipal foi praticado sem motivação, a resposta deve focar ausência de motivação e risco de nulidade, não escrever genericamente sobre todos os atos administrativos.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Ideia central do texto.",
+                  "Tese e argumento.",
+                  "Inferência válida.",
+                  "Pressuposto e subentendido.",
+                  "Alternativa extrapolada, restritiva ou contrária.",
+                  "Sentido contextual de palavra ou expressão."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Usar conhecimento externo quando o comando limita ao texto.",
+                  "Marcar alternativa com palavra do texto, mas sentido invertido.",
+                  "Aceitar alternativa absoluta em texto moderado.",
+                  "Confundir assunto com tese.",
+                  "Ignorar advérbios de intensidade e restrição."
+              ],
+              "differences": [
+                  "Compreensão x interpretação.",
+                  "Inferência x extrapolação.",
+                  "Pressuposto x subentendido.",
+                  "Tese x argumento.",
+                  "Sentido literal x sentido contextual."
+              ],
+              "commonMistakes": [
+                  "Ler alternativas antes do comando.",
+                  "Não voltar ao trecho indicado.",
+                  "Responder com opinião pessoal.",
+                  "Não perceber palavra absoluta.",
+                  "Confundir conclusão do autor com exemplo usado no texto."
+              ],
+              "miniCase": "Texto: “A motivação permite controle do ato.” Alternativa: “Todo ato sem motivação é inexistente.” Errada: o texto fala de controle, mas não afirmou inexistência nem universalizou consequência.",
+              "activeQuestions": [
+                  "Qual é a tese do texto?",
+                  "O comando pede dado expresso ou inferência?",
+                  "A alternativa acrescenta informação externa?",
+                  "Há palavra absoluta?",
+                  "Qual trecho sustenta a resposta?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Compreensão é o quê?",
+                      "back": "Localizar informação expressa no texto."
+                  },
+                  {
+                      "front": "Interpretação é o quê?",
+                      "back": "Concluir sentido implícito com base no texto."
+                  },
+                  {
+                      "front": "Extrapolação é o quê?",
+                      "back": "Alternativa que vai além do que o texto autoriza."
+                  }
+              ],
+              "summary": "Interpretação boa é leitura disciplinada: comando, trecho, tese, relação lógica e eliminação de alternativas que distorcem o texto.",
+              "checklist": [
+                  "Identifico tese.",
+                  "Diferencio informação expressa e inferência.",
+                  "Reconheço extrapolação.",
+                  "Volto ao texto antes de marcar.",
+                  "Evito opinião pessoal."
+              ],
+              "nextTopic": "Tipologia textual e gêneros textuais"
+          },
+          {
+              "id": "tipologia-generos",
+              "level": "intermediário",
+              "title": "Tipologia textual e gêneros textuais",
+              "whatIs": "Tipologia textual é o modo de organização predominante: narração, descrição, exposição, argumentação ou injunção. Gênero textual é a forma social concreta: parecer, ofício, notícia, artigo, edital, relatório, despacho ou decisão.",
+              "purpose": "Serve para reconhecer finalidade comunicativa, estrutura e linguagem. Para Procurador, ajuda a produzir parecer, relatório, ofício e resposta discursiva no formato correto.",
+              "plainExplanation": [
+                  "Tipo textual é a lógica interna do texto. Narração organiza acontecimentos no tempo; descrição caracteriza; exposição informa; argumentação defende tese; injunção orienta, ordena ou recomenda conduta.",
+                  "Gênero textual é o texto na vida real. Um parecer jurídico é gênero administrativo-jurídico e pode conter relatório expositivo, fundamentação argumentativa e conclusão injuntiva.",
+                  "A banca cobra finalidade: informar, convencer, orientar, criticar, explicar ou regulamentar. Verbos no imperativo indicam injunção; tese e justificativas indicam argumentação; sequência temporal indica narração.",
+                  "Em textos jurídicos, é comum haver mistura: relatório expõe fatos; fundamentação argumenta; conclusão recomenda providência. Por isso, não confunda predominância com exclusividade."
+              ],
+              "examTechnical": "Pergunte: qual é a finalidade? Há sequência temporal? Há tese? Há instrução ao leitor? Há descrição de características? A questão pode pedir tipo predominante, gênero ou função do trecho.",
+              "cityExample": "Um parecer da Procuradoria começa com relatório dos fatos, passa à fundamentação jurídica e termina com conclusão: “opina-se pela anulação do ato”. É gênero parecer, com trechos expositivos, argumentativos e injuntivos.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Diferença entre tipo e gênero.",
+                  "Finalidade do texto.",
+                  "Predominância argumentativa, expositiva ou injuntiva.",
+                  "Reconhecimento de parecer, ofício, edital e relatório.",
+                  "Efeito de verbos imperativos."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Chamar gênero de tipo.",
+                  "Achar que texto jurídico é sempre apenas dissertativo.",
+                  "Ignorar que um texto pode misturar sequências.",
+                  "Confundir exposição com argumentação.",
+                  "Não observar finalidade."
+              ],
+              "differences": [
+                  "Tipo textual x gênero textual.",
+                  "Exposição x argumentação.",
+                  "Narração x descrição.",
+                  "Injunção x prescrição normativa.",
+                  "Parecer x relatório."
+              ],
+              "commonMistakes": [
+                  "Decorar listas sem analisar finalidade.",
+                  "Responder tipo quando a questão pede gênero.",
+                  "Confundir tema com forma.",
+                  "Ignorar verbos e conectivos.",
+                  "Não identificar tese."
+              ],
+              "miniCase": "Trecho de edital: “O candidato deverá apresentar documento oficial.” É gênero edital e apresenta sequência injuntiva, pois impõe conduta.",
+              "activeQuestions": [
+                  "Qual é a finalidade do texto?",
+                  "O texto informa, convence ou orienta?",
+                  "Qual gênero social aparece?",
+                  "Há tese defendida?",
+                  "Há comando ao leitor?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Tipo textual é o quê?",
+                      "back": "Modo de organização: narração, descrição, exposição, argumentação ou injunção."
+                  },
+                  {
+                      "front": "Gênero textual é o quê?",
+                      "back": "Forma social do texto: parecer, ofício, edital, notícia etc."
+                  },
+                  {
+                      "front": "Parecer costuma ter quais partes?",
+                      "back": "Relatório, fundamentação e conclusão/providência."
+                  }
+              ],
+              "summary": "Tipo mostra como o texto funciona; gênero mostra o papel social que ele cumpre.",
+              "checklist": [
+                  "Diferencio tipo e gênero.",
+                  "Identifico finalidade.",
+                  "Reconheço argumentação.",
+                  "Reconheço injunção.",
+                  "Aplico estrutura correta na discursiva."
+              ],
+              "nextTopic": "Coesão, coerência, referenciação e conectivos"
+          },
+          {
+              "id": "coesao-coerencia",
+              "level": "intermediário",
+              "title": "Coesão, coerência, referenciação e conectivos",
+              "whatIs": "Coesão é a ligação linguística entre partes do texto. Coerência é a compatibilidade lógica das ideias. Referenciação é o uso de termos que retomam ou antecipam informações. Conectivos indicam relações como causa, oposição, conclusão, condição e finalidade.",
+              "purpose": "Serve para interpretar textos, reescrever frases e redigir pareceres com raciocínio claro, sem saltos lógicos ou contradições.",
+              "plainExplanation": [
+                  "Coesão aparece em pronomes, sinônimos, elipses, repetição controlada, substituição lexical e conectivos. Se o texto diz “o Município” e depois “ele”, é preciso saber quem “ele” retoma.",
+                  "Coerência é a lógica global. A frase “o ato é ilegal, portanto deve ser revogado por conveniência” é gramaticalmente possível, mas juridicamente incoerente: ato ilegal se anula.",
+                  "Conectivos funcionam como placas do raciocínio: porque indica causa; portanto conclusão; embora concessão; mas oposição; se condição; para que finalidade; além disso adição.",
+                  "A banca cobra substituição de conectivo. Só é possível trocar se a relação lógica permanecer igual. Trocar “portanto” por “porém” muda conclusão para oposição e geralmente erra."
+              ],
+              "examTechnical": "Classifique conectivos por função. Causa: porque, visto que, uma vez que. Consequência/conclusão: portanto, logo, assim. Oposição: mas, porém, contudo. Concessão: embora, ainda que. Condição: se, caso. Finalidade: para que, a fim de que.",
+              "cityExample": "Em parecer: “Embora haja urgência administrativa, a contratação direta exige motivação e justificativa de preço.” O conectivo “embora” reconhece a urgência, mas não elimina a exigência legal.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Referente de pronome.",
+                  "Substituição de conectivo.",
+                  "Relação semântica entre orações.",
+                  "Reescrita mantendo sentido.",
+                  "Coerência entre períodos."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Trocar causa por consequência.",
+                  "Achar que “mas” e “portanto” são equivalentes.",
+                  "Não identificar referente de “isso” ou “tal medida”.",
+                  "Usar “onde” para ideia abstrata.",
+                  "Começar parágrafo com pronome sem referente claro."
+              ],
+              "differences": [
+                  "Coesão x coerência.",
+                  "Causa x consequência.",
+                  "Oposição x concessão.",
+                  "Conector conclusivo x explicativo.",
+                  "Referência anafórica x catafórica."
+              ],
+              "commonMistakes": [
+                  "Escrever períodos longos sem conexão.",
+                  "Usar conectivo bonito sem função correta.",
+                  "Repetir termos desnecessariamente.",
+                  "Não conectar conclusão à fundamentação.",
+                  "Deixar pronome ambíguo."
+              ],
+              "miniCase": "“A autoridade não motivou o ato; portanto, há risco de nulidade.” “Portanto” indica conclusão. Substituir por “embora” destruiria a relação lógica.",
+              "activeQuestions": [
+                  "Qual termo o pronome retoma?",
+                  "O conectivo indica causa, oposição ou conclusão?",
+                  "A frase ficou contraditória?",
+                  "A substituição mantém sentido?",
+                  "Meu parágrafo tem encadeamento lógico?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Coesão é o quê?",
+                      "back": "Ligação linguística entre partes do texto."
+                  },
+                  {
+                      "front": "Coerência é o quê?",
+                      "back": "Compatibilidade lógica das ideias."
+                  },
+                  {
+                      "front": "Portanto indica quê?",
+                      "back": "Conclusão ou consequência lógica."
+                  }
+              ],
+              "summary": "Coesão liga palavras; coerência liga ideias. Conectivos guiam o leitor pelo raciocínio.",
+              "checklist": [
+                  "Identifico referentes.",
+                  "Classifico conectivos.",
+                  "Evito contradição.",
+                  "Uso conectivos na discursiva.",
+                  "Reescrevo mantendo sentido."
+              ],
+              "nextTopic": "Classes de palavras e morfologia aplicada à prova"
+          },
+          {
+              "id": "classes-palavras",
+              "level": "básico",
+              "title": "Classes de palavras e morfologia aplicada à prova",
+              "whatIs": "Classes de palavras são categorias gramaticais: substantivo, adjetivo, artigo, numeral, pronome, verbo, advérbio, preposição, conjunção e interjeição. Morfologia aplicada estuda a classe conforme o contexto.",
+              "purpose": "Serve para resolver análise gramatical, sentido, reescrita, concordância, regência e interpretação. Na discursiva, evita ambiguidade e imprecisão.",
+              "plainExplanation": [
+                  "A classe de uma palavra depende do papel que ela exerce. “O poder público” usa poder como substantivo; “poderá decidir” usa verbo; “direito administrativo” usa direito como substantivo e administrativo como adjetivo.",
+                  "Substantivo nomeia; adjetivo caracteriza; artigo determina; pronome substitui ou acompanha; verbo indica ação/estado; advérbio modifica; preposição liga termos; conjunção liga orações; numeral quantifica.",
+                  "As palavras mais cobradas são as multifuncionais: que, se, como, onde e porque. O “que” pode ser pronome relativo ou conjunção integrante. O “se” pode ser reflexivo, apassivador, índice de indeterminação ou conjunção.",
+                  "Método: veja se a palavra acompanha nome, substitui termo, liga orações, modifica verbo, exige complemento ou retoma antecedente. Não classifique fora do contexto."
+              ],
+              "examTechnical": "Foque: pronomes relativos, conjunções, preposições de regência, locuções verbais, funções de “se” e “que”, valor semântico de advérbios e mudança de classe por contexto.",
+              "cityExample": "No trecho “a decisão que anulou o contrato”, “que” retoma “decisão” e introduz oração adjetiva. Se fosse “é necessário que o ato seja motivado”, o “que” seria conjunção integrante.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Classe gramatical no contexto.",
+                  "Função do “que”.",
+                  "Função do “se”.",
+                  "Valor de advérbio.",
+                  "Pronome relativo e referente.",
+                  "Reescrita com mudança de sentido."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Achar que classe é fixa.",
+                  "Confundir pronome relativo com conjunção integrante.",
+                  "Confundir “se” apassivador com índice de indeterminação.",
+                  "Usar onde para ideia abstrata.",
+                  "Ignorar advérbio que muda certeza/intensidade."
+              ],
+              "differences": [
+                  "Pronome x artigo.",
+                  "Advérbio x adjetivo.",
+                  "Conjunção x preposição.",
+                  "Pronome relativo x conjunção integrante.",
+                  "Partícula apassivadora x índice de indeterminação."
+              ],
+              "commonMistakes": [
+                  "Decorar sem analisar função.",
+                  "Não procurar antecedente.",
+                  "Confundir porquês.",
+                  "Usar pronome sem referente.",
+                  "Ignorar locução verbal."
+              ],
+              "miniCase": "“Fiscalizam-se obras irregulares.” O “se” é partícula apassivadora, e “obras irregulares” é sujeito paciente. No singular: “Fiscaliza-se obra irregular”.",
+              "activeQuestions": [
+                  "A palavra acompanha ou substitui nome?",
+                  "Liga termos ou orações?",
+                  "Modifica verbo/adjetivo?",
+                  "O “se” permite voz passiva?",
+                  "O “que” retoma antecedente?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Advérbio modifica o quê?",
+                      "back": "Verbo, adjetivo ou outro advérbio."
+                  },
+                  {
+                      "front": "Pronome relativo faz o quê?",
+                      "back": "Retoma termo anterior e introduz oração adjetiva."
+                  },
+                  {
+                      "front": "Se apassivador ocorre com quê?",
+                      "back": "Verbo transitivo direto e sujeito paciente."
+                  }
+              ],
+              "summary": "Morfologia de prova é função contextual: uma palavra só é corretamente classificada dentro da frase.",
+              "checklist": [
+                  "Reconheço classes básicas.",
+                  "Analiso função no contexto.",
+                  "Sei funções de “que”.",
+                  "Sei funções de “se”.",
+                  "Evito pronomes ambíguos."
+              ],
+              "nextTopic": "Sintaxe"
+          },
+          {
+              "id": "sintaxe",
+              "level": "avançado",
+              "title": "Sintaxe: termos da oração, período simples e período composto",
+              "whatIs": "Sintaxe estuda relações entre termos da oração e entre orações no período: sujeito, predicado, objetos, complemento nominal, adjuntos, aposto, vocativo, coordenação e subordinação.",
+              "purpose": "Serve para resolver pontuação, concordância, regência, crase, reescrita e interpretação. Para Procurador, sintaxe clara evita parecer ambíguo.",
+              "plainExplanation": [
+                  "Sujeito é sobre quem se declara algo; predicado é a declaração. Objeto direto completa verbo sem preposição; objeto indireto completa com preposição; complemento nominal completa nome; adjunto adnominal caracteriza substantivo; adjunto adverbial indica circunstância.",
+                  "Aposto explica, resume ou especifica termo anterior. Vocativo chama o interlocutor. Ambos costumam ser isolados, mas exercem funções diferentes.",
+                  "Período simples tem uma oração; composto tem duas ou mais. Orações coordenadas são sintaticamente independentes; subordinadas dependem de outra oração e podem ser substantivas, adjetivas ou adverbiais.",
+                  "Sintaxe é o esqueleto da frase. Localizar verbo, sujeito e complementos resolve metade da gramática: vírgula, concordância, regência e sentido."
+              ],
+              "examTechnical": "Pergunte: qual é o verbo principal? Quem é o sujeito? O verbo exige complemento? O termo é essencial ou acessório? A oração introduzida por “que” equivale a substantivo, adjetivo ou advérbio? A vírgula separa termo deslocado ou separa indevidamente sujeito e verbo?",
+              "cityExample": "“O Município, após parecer jurídico, anulou o contrato.” O adjunto adverbial deslocado fica isolado por vírgulas. Não há vírgula entre sujeito “O Município” e verbo “anulou”.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Função sintática de termo.",
+                  "Sujeito e predicado.",
+                  "Objeto direto e indireto.",
+                  "Complemento nominal x adjunto adnominal.",
+                  "Oração subordinada adjetiva restritiva/explicativa.",
+                  "Pontuação e reescrita."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Separar sujeito e verbo por vírgula.",
+                  "Confundir complemento nominal com adjunto adnominal.",
+                  "Confundir oração explicativa com restritiva.",
+                  "Não perceber sujeito posposto.",
+                  "Confundir aposto com vocativo."
+              ],
+              "differences": [
+                  "Objeto indireto x complemento nominal.",
+                  "Adjunto adnominal x complemento nominal.",
+                  "Coordenação x subordinação.",
+                  "Adjetiva restritiva x explicativa.",
+                  "Aposto x vocativo."
+              ],
+              "commonMistakes": [
+                  "Pontuar por pausa oral.",
+                  "Não localizar verbo principal.",
+                  "Ignorar preposição exigida.",
+                  "Fazer períodos enormes.",
+                  "Usar sujeito indeterminado quando precisa indicar órgão/autoridade."
+              ],
+              "miniCase": "“Os servidores que descumpriram o dever responderão a PAD.” Sem vírgula, restringe o grupo. Com vírgulas, explicaria todos os servidores e mudaria o sentido.",
+              "activeQuestions": [
+                  "Qual é o verbo principal?",
+                  "Quem é o sujeito?",
+                  "O verbo pede complemento?",
+                  "O termo é acessório?",
+                  "A oração restringe ou explica?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Pode vírgula entre sujeito e verbo?",
+                      "back": "Em regra, não."
+                  },
+                  {
+                      "front": "Adjetiva restritiva usa vírgula?",
+                      "back": "Em regra, não."
+                  },
+                  {
+                      "front": "Vocativo é isolado?",
+                      "back": "Sim, por vírgula ou pontuação equivalente."
+                  }
+              ],
+              "summary": "Sintaxe é a base da gramática aplicada: quem enxerga a estrutura da frase erra menos pontuação, concordância e interpretação.",
+              "checklist": [
+                  "Identifico sujeito.",
+                  "Identifico complementos.",
+                  "Diferencio adjuntos.",
+                  "Reconheço orações.",
+                  "Evito vírgula entre sujeito e verbo."
+              ],
+              "nextTopic": "Pontuação"
+          },
+          {
+              "id": "pontuacao",
+              "level": "avançado",
+              "title": "Pontuação: vírgula, ponto e vírgula, dois-pontos, travessões e efeitos de sentido",
+              "whatIs": "Pontuação organiza sintaxe, sentido e hierarquia das informações. Em concurso, vírgula não é pausa da fala: é marca de função sintática e efeito de sentido.",
+              "purpose": "Serve para evitar ambiguidade, separar termos deslocados, marcar explicações, organizar enumerações e escrever com clareza jurídica.",
+              "plainExplanation": [
+                  "Não se separa sujeito e verbo por vírgula. Também não se separa verbo e objeto direto por vírgula. A vírgula pode isolar adjunto adverbial deslocado, aposto, vocativo, oração explicativa, expressão intercalada e enumeração.",
+                  "Ponto e vírgula separa itens extensos ou orações coordenadas longas. Dois-pontos anunciam explicação, enumeração, citação ou consequência. Travessões isolam explicação, destaque ou fala.",
+                  "A pontuação pode mudar sentido. “Os servidores que descumpriram o dever serão punidos” restringe. “Os servidores, que descumpriram o dever, serão punidos” explica e altera o alcance.",
+                  "Na discursiva, pontuação é ferramenta de clareza. Evite frases enormes. Prefira períodos controlados e conectados."
+              ],
+              "examTechnical": "Antes de aceitar a pontuação, identifique sujeito, verbo, complemento e termo acessório. Veja se a vírgula isola termo deslocado ou se comete erro estrutural. Em reescrita, avalie se mudou restrição para explicação.",
+              "cityExample": "“O parecer, elaborado pela Procuradoria, recomendou a anulação.” As vírgulas isolam explicação. “O parecer elaborado pela Procuradoria recomendou a anulação” especifica qual parecer.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Uso correto da vírgula.",
+                  "Proibição de vírgula entre sujeito e verbo.",
+                  "Oração explicativa x restritiva.",
+                  "Dois-pontos e enumeração.",
+                  "Travessões e efeito de sentido.",
+                  "Reescrita com pontuação."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Usar vírgula por pausa.",
+                  "Separar sujeito e verbo.",
+                  "Separar verbo e objeto direto.",
+                  "Transformar restritiva em explicativa sem perceber.",
+                  "Usar dois-pontos sem termo anunciador."
+              ],
+              "differences": [
+                  "Vírgula x ponto e vírgula.",
+                  "Dois-pontos x travessão.",
+                  "Explicativa x restritiva.",
+                  "Aposto x adjunto restritivo.",
+                  "Pontuação obrigatória x facultativa."
+              ],
+              "commonMistakes": [
+                  "Pontuar frase longa sem analisar sintaxe.",
+                  "Usar vírgula antes de “e” sempre.",
+                  "Não isolar vocativo.",
+                  "Não isolar aposto explicativo.",
+                  "Trocar sentido por vírgula indevida."
+              ],
+              "miniCase": "“A Administração deve anular o ato, se houver ilegalidade.” A vírgula organiza a condição. “A Administração, deve anular” está errado: separa sujeito e verbo.",
+              "activeQuestions": [
+                  "A vírgula separa sujeito e verbo?",
+                  "O termo está deslocado?",
+                  "A oração explica ou restringe?",
+                  "Há enumeração?",
+                  "A pontuação mudou sentido?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Vírgula entre sujeito e verbo?",
+                      "back": "Em regra, proibida."
+                  },
+                  {
+                      "front": "Oração explicativa é isolada?",
+                      "back": "Sim, por vírgulas."
+                  },
+                  {
+                      "front": "Dois-pontos anunciam o quê?",
+                      "back": "Explicação, enumeração, citação ou consequência anunciada."
+                  }
+              ],
+              "summary": "Pontuação é sintaxe visível. Em prova, pontue pela função dos termos, não pelo ouvido.",
+              "checklist": [
+                  "Não separo sujeito e verbo.",
+                  "Uso vírgula em termo deslocado.",
+                  "Diferencio explicativa e restritiva.",
+                  "Uso dois-pontos corretamente.",
+                  "Reviso períodos longos."
+              ],
+              "nextTopic": "Concordância, regência e crase"
+          },
+          {
+              "id": "concordancia-regencia-crase",
+              "level": "lei seca",
+              "title": "Concordância verbal e nominal, regência e crase",
+              "whatIs": "Concordância é a harmonia entre palavras; regência é a relação entre termo regente e complemento; crase é a fusão da preposição “a” com artigo “a” ou demonstrativo iniciado por “a”.",
+              "purpose": "Serve para resolver gramática normativa e escrever respostas sem erros formais graves, especialmente na discursiva de Procurador.",
+              "plainExplanation": [
+                  "Concordância verbal começa pelo núcleo do sujeito. “O conjunto de medidas foi aprovado” concorda com conjunto; “as medidas foram aprovadas” concorda com medidas. Cuidado com sujeito distante do verbo.",
+                  "Haver no sentido de existir é impessoal: houve problemas. Fazer indicando tempo é impessoal: faz dez anos. Existir não é impessoal: existem problemas. Esses três casos derrubam muita gente.",
+                  "Regência pergunta qual preposição o termo exige: obedecer a, assistir a no sentido de presenciar, visar a no sentido de objetivar, preferir isto a aquilo, informar algo a alguém ou alguém de algo.",
+                  "Crase exige preposição a + artigo a. Teste do masculino: referiu-se à lei / referiu-se ao decreto. Não há crase antes de verbo, palavra masculina comum e pronomes pessoais. “À luz de” tem crase por locução feminina."
+              ],
+              "examTechnical": "Resolva na ordem: identifique sujeito; verifique impessoalidade; veja regência; teste crase. Em concordância nominal, atenção a anexo, incluso, meio, bastante, é necessário/proibido/permitido e adjetivo para mais de um substantivo.",
+              "cityExample": "“Houve irregularidades e existem documentos.” Houve fica singular por ser impessoal; existem concorda com documentos.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Haver/fazer impessoal.",
+                  "Concordância com sujeito composto.",
+                  "Expressões partitivas.",
+                  "Regência verbal e nominal.",
+                  "Crase obrigatória, proibida e facultativa.",
+                  "Reescrita normativa."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "“Houveram problemas” errado.",
+                  "“Fazem dez anos” errado para tempo decorrido.",
+                  "“À partir de” errado.",
+                  "“Obedece o edital” errado na norma-padrão.",
+                  "Usar crase antes de verbo."
+              ],
+              "differences": [
+                  "Haver x existir.",
+                  "Fazer impessoal x fazer ação.",
+                  "Regência verbal x nominal.",
+                  "Crase obrigatória x facultativa.",
+                  "Concordância lógica x gramatical."
+              ],
+              "commonMistakes": [
+                  "Concordar com termo próximo.",
+                  "Ignorar verbo impessoal.",
+                  "Esquecer preposição.",
+                  "Usar crase no chute.",
+                  "Não revisar “há/a”."
+              ],
+              "miniCase": "“A decisão se refere à anulação do ato.” Há crase porque “referir-se a” exige preposição e “anulação” admite artigo. Teste: “ao decreto”.",
+              "activeQuestions": [
+                  "Qual é o núcleo do sujeito?",
+                  "O verbo é impessoal?",
+                  "O termo exige preposição?",
+                  "Há artigo feminino?",
+                  "O teste masculino gera “ao”?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Houveram problemas?",
+                      "back": "Errado. O correto é “houve problemas”."
+                  },
+                  {
+                      "front": "Crase antes de verbo?",
+                      "back": "Não ocorre."
+                  },
+                  {
+                      "front": "Existir é impessoal?",
+                      "back": "Não. Concorda com o sujeito."
+                  }
+              ],
+              "summary": "Concordância, regência e crase exigem método: sujeito, verbo, preposição e artigo.",
+              "checklist": [
+                  "Identifico sujeito.",
+                  "Sei haver x existir.",
+                  "Conheço regências frequentes.",
+                  "Aplico teste da crase.",
+                  "Evito erros formais."
+              ],
+              "nextTopic": "Ortografia, acentuação e semântica"
+          },
+          {
+              "id": "ortografia-acentuacao-semantica",
+              "level": "lei seca",
+              "title": "Ortografia, acentuação, semântica, figuras de linguagem e vícios de linguagem",
+              "whatIs": "Ortografia trata da grafia correta; acentuação trata dos acentos; semântica estuda significado; figuras produzem efeitos expressivos; vícios prejudicam clareza ou correção.",
+              "purpose": "Serve para acertar questões objetivas e escrever peças, pareceres e discursivas com precisão e credibilidade.",
+              "plainExplanation": [
+                  "Ortografia cobra casos recorrentes: porquês, mal/mau, há/a, onde/aonde, sessão/seção/cessão, senão/se não, acerca de/a cerca de/há cerca de, hífen e parônimos. A fonte segura de grafia é o VOLP/ABL.",
+                  "Acentuação exige reconhecer oxítona, paroxítona, proparoxítona, hiato e ditongo. Todas as proparoxítonas são acentuadas; oxítonas terminadas em a, e, o, em, ens recebem acento; paroxítonas seguem regras específicas.",
+                  "Semântica cobra sentido contextual. Palavra não vale apenas pelo dicionário: “competência” pode ser capacidade comum ou atribuição legal; “ato” pode ser ação comum ou ato administrativo.",
+                  "Figuras como metáfora, metonímia, ironia e hipérbole aparecem em interpretação. Vícios como ambiguidade, pleonasmo vicioso, cacofonia, barbarismo e gerundismo devem ser evitados em redação oficial."
+              ],
+              "examTechnical": "Estude por blocos: porquês, hífen, acentuação, homônimos, parônimos, denotação/conotação, ambiguidade e reescrita. Em prova, veja se a substituição preserva sentido e correção.",
+              "cityExample": "“A decisão onde o Município foi condenado” é inadequado, porque decisão não é lugar físico. Melhor: “A decisão em que o Município foi condenado”.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Grafia correta.",
+                  "Acentuação.",
+                  "Uso dos porquês.",
+                  "Hífen.",
+                  "Parônimos e homônimos.",
+                  "Ambiguidade e sentido contextual."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Confundir por que/porque/por quê/porquê.",
+                  "Usar onde para ideia abstrata.",
+                  "Trocar seção/sessão/cessão.",
+                  "Escrever à partir de.",
+                  "Usar gerundismo em texto oficial."
+              ],
+              "differences": [
+                  "Mal x mau.",
+                  "Há x a.",
+                  "Onde x aonde.",
+                  "Seção x sessão x cessão.",
+                  "Denotação x conotação.",
+                  "Iminente x eminente."
+              ],
+              "commonMistakes": [
+                  "Não consultar grafia oficial.",
+                  "Chutar acentuação.",
+                  "Ignorar contexto semântico.",
+                  "Não perceber ambiguidade.",
+                  "Usar vícios de linguagem na discursiva."
+              ],
+              "miniCase": "“Há cerca de dois anos” indica tempo decorrido. “A cerca de dois quilômetros” indica distância aproximada. “Acerca de” significa sobre.",
+              "activeQuestions": [
+                  "A grafia está conforme VOLP?",
+                  "O porquê está correto?",
+                  "Há ambiguidade?",
+                  "O sentido é literal ou figurado?",
+                  "A substituição preserva significado?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Mal se opõe a quê?",
+                      "back": "Bem."
+                  },
+                  {
+                      "front": "Mau se opõe a quê?",
+                      "back": "Bom."
+                  },
+                  {
+                      "front": "Onde deve retomar quê?",
+                      "back": "Lugar físico ou espacial."
+                  }
+              ],
+              "summary": "Ortografia e semântica parecem detalhes, mas tiram pontos. Foque casos recorrentes e revise antes de entregar discursiva.",
+              "checklist": [
+                  "Sei porquês.",
+                  "Sei mal/mau.",
+                  "Sei há/a.",
+                  "Evito onde indevido.",
+                  "Reconheço ambiguidade."
+              ],
+              "nextTopic": "Redação oficial, linguagem jurídica e resposta discursiva"
+          },
+          {
+              "id": "redacao-oficial-juridica",
+              "level": "discursiva",
+              "title": "Redação oficial, linguagem jurídica e resposta discursiva de Procurador",
+              "whatIs": "Redação oficial é a comunicação escrita da Administração, baseada em clareza, concisão, formalidade, impessoalidade e correção. Linguagem jurídica é o uso técnico da língua para fundamentar e concluir.",
+              "purpose": "Serve para produzir pareceres, ofícios, despachos, informações, contestações e respostas discursivas com clareza institucional.",
+              "plainExplanation": [
+                  "Resposta boa de Procurador não é enfeitada: é útil. Ela entende o problema, apresenta regra jurídica, aplica ao caso e conclui com providência. O corretor precisa enxergar raciocínio, não apenas conceitos soltos.",
+                  "Redação oficial exige impessoalidade. Evite “eu acho”. Use “verifica-se”, “no caso concreto”, “à luz do art.”, “recomenda-se”, “opina-se”. O texto representa a instituição.",
+                  "Estrutura segura: relatório breve do problema, fundamentação jurídica, aplicação ao caso, conclusão/providência. Em peça processual, acrescente preliminares, mérito, pedidos e provas conforme a situação.",
+                  "Passo a passo: 1) identifique o comando; 2) delimite problema; 3) exponha regra; 4) aplique aos fatos; 5) enfrente pegadinha; 6) conclua objetivamente. Se não disser o que o Município deve fazer, a resposta fica incompleta."
+              ],
+              "examTechnical": "Treine parágrafos de 4 a 6 linhas, frases com sujeito claro, conectivos jurídicos, citação legal segura e conclusão expressa. Evite períodos enormes, juridiquês inútil, artigo inventado e resposta sem providência.",
+              "cityExample": "Se a questão pede parecer sobre anulação de contrato, diga se há vício, qual norma foi violada, se cabe convalidação, se há contraditório, qual providência o Município deve tomar e como preservar segurança jurídica.",
+              "legalBase": [
+                  "Norma-padrão da Língua Portuguesa",
+                  "Acordo Ortográfico e VOLP/ABL quando envolver grafia",
+                  "Redação oficial, linguagem jurídica clara e técnica de prova"
+              ],
+              "dryLaw": [
+                  "Revisar regras gramaticais do tema",
+                  "Treinar reescrita, interpretação e exemplos de banca",
+                  "Conferir grafia oficial no VOLP/ABL quando houver dúvida"
+              ],
+              "jurisprudence": [
+                  "Não aplicável como jurisprudência; tema de língua, interpretação e técnica de redação."
+              ],
+              "objectiveCharge": [
+                  "Características da redação oficial.",
+                  "Impessoalidade.",
+                  "Clareza e concisão.",
+                  "Adequação vocabular.",
+                  "Estrutura de parecer.",
+                  "Reescrita formal."
+              ],
+              "discursiveCharge": "Na discursiva, este tópico aparece na clareza da resposta: leitura correta do comando, organização da ideia, precisão vocabular, norma-padrão e conclusão objetiva.",
+              "traps": [
+                  "Não responder ao comando.",
+                  "Escrever sem conclusão.",
+                  "Usar “eu acho”.",
+                  "Citar artigo errado com segurança falsa.",
+                  "Fazer texto longo sem aplicar ao caso.",
+                  "Confundir técnica com juridiquês."
+              ],
+              "differences": [
+                  "Clareza x simplismo.",
+                  "Técnica x juridiquês.",
+                  "Parecer x dissertação genérica.",
+                  "Relatório x fundamentação.",
+                  "Conclusão objetiva x opinião vaga."
+              ],
+              "commonMistakes": [
+                  "Começar sem delimitar o problema.",
+                  "Empilhar conceitos.",
+                  "Não usar conectivos.",
+                  "Ignorar fatos do enunciado.",
+                  "Não indicar providência prática."
+              ],
+              "miniCase": "Enunciado: “Secretaria quer revogar ato ilegal por conveniência.” Resposta boa: ato ilegal não se revoga; deve ser anulado, com motivação, contraditório quando houver efeitos favoráveis e análise de efeitos conforme segurança jurídica.",
+              "activeQuestions": [
+                  "Respondi exatamente o comando?",
+                  "Há fundamento jurídico?",
+                  "Apliquei ao caso?",
+                  "Concluí com providência?",
+                  "Meu texto está impessoal e claro?"
+              ],
+              "flashcards": [
+                  {
+                      "front": "Estrutura segura da discursiva?",
+                      "back": "Problema, regra, aplicação ao caso e conclusão."
+                  },
+                  {
+                      "front": "Redação oficial é pessoal?",
+                      "back": "Não. Deve ser impessoal, clara, formal e objetiva."
+                  },
+                  {
+                      "front": "Maior erro em discursiva?",
+                      "back": "Não responder ao caso concreto."
+                  }
+              ],
+              "summary": "Português para Procurador termina em escrita técnica. A melhor resposta é clara, precisa, impessoal, fundamentada e conclusiva.",
+              "checklist": [
+                  "Escrevo com clareza.",
+                  "Uso norma-padrão.",
+                  "Estruturo parecer.",
+                  "Aplico ao caso.",
+                  "Concluo com providência prática."
+              ],
+              "nextTopic": "Fase 41.2 concluída — avançar para questões comentadas por tópico"
+          }
+      ]
   }
 
 
