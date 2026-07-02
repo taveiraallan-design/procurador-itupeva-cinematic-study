@@ -6177,3 +6177,48 @@ img, svg, canvas, video { max-width: 100%; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Fase 44.1 — Hotfix anti-quebra vertical dos selos da aula premium
+   Tratativa do chat anterior: selo/badge não pode ficar dentro de uma linha flex
+   podendo encolher até a largura de uma letra. A cabeça da seção vira grid e
+   o badge ganha largura útil, quebra só por palavra e nunca letra por letra. */
+.fase44-section-head {
+  display: grid !important;
+  grid-template-columns: 52px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 12px !important;
+}
+
+.fase44-section-head > span:not(.badge) {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  flex: 0 0 42px !important;
+}
+
+.fase44-section-head .badge {
+  justify-self: start !important;
+  align-self: center !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 220px !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+}
+
+@media (max-width: 560px) {
+  .fase44-section-head {
+    grid-template-columns: 46px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .fase44-section-head .badge {
+    min-width: 0 !important;
+    width: 100% !important;
+    letter-spacing: .08em !important;
+  }
+}
