@@ -1,11 +1,11 @@
 export const premiumApostilaMeta = {
-  phase: 'Fase 39D',
+  phase: 'Fase 39E',
   title: 'Apostila Explicada Premium por Tópico',
-  subtitle: 'Direito Administrativo + Constitucional + Processo/Civil + Tributário, Financeiro e Orçamentário — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
+  subtitle: 'Direito Administrativo + Constitucional + Processo/Civil + Tributário/Financeiro/Orçamentário + Legislação Municipal — Concurso Público nº 003/2026 • Procurador Municipal de Itupeva/SP',
   sourceNote: 'Conteúdo estruturado a partir do Anexo III do edital e de legislação oficial. Material explicativo, autoral e para estudo; sempre conferir a lei seca atualizada antes da prova.',
   nextPhases: [
-    '39E — Legislação Municipal Premium',
-    '39F — Penal e Processo Penal Premium'
+    '39F — Penal e Processo Penal Premium',
+    '39G — Trabalho e Processo do Trabalho Premium'
   ]
 };
 
@@ -2204,6 +2204,242 @@ export const premiumApostilaSubjects = [
     }
   ]
 }
+,
+  {
+    id: 'legislacao-municipal',
+    subject: 'Legislação Municipal',
+    status: '39E concluída',
+    priority: 'Crítica absoluta',
+    overview: 'Apostila premium de Legislação Municipal de Itupeva, com foco em Lei Orgânica, Estatuto dos Servidores, plano de cargos e carreiras e reorganização administrativa do Poder Executivo. É a matéria com maior potencial de diferenciação, porque muitos candidatos estudam apenas leis gerais e negligenciam a lei local.',
+    lawBase: ['Lei Orgânica do Município de Itupeva', 'Lei Complementar nº 387/2015 — Estatuto dos Servidores Públicos Municipais', 'Lei Complementar nº 389/2015 — Plano de cargos, carreiras, criação, transformação e extinção de cargos e funções', 'Lei Complementar nº 551/2024 — Reorganização da estrutura administrativa do Poder Executivo', 'Constituição Federal, especialmente arts. 29 a 31 e 37 a 41'],
+    topics: [
+      {
+        id: 'lei-organica-autonomia-municipal',
+        level: 'básico',
+        title: 'Lei Orgânica, autonomia municipal e competências do Município',
+        whatIs: 'A Lei Orgânica é a norma institucional básica do Município. Ela funciona como uma Constituição municipal: organiza os Poderes locais, distribui competências, disciplina regras essenciais de administração, processo legislativo, fiscalização, finanças, políticas públicas e relação entre Executivo e Legislativo.',
+        purpose: 'Serve para dar forma jurídica à autonomia municipal. Para o Procurador, é a primeira referência quando a dúvida envolve competência do Município, atribuição do Prefeito, atuação da Câmara, iniciativa de leis, organização administrativa, fiscalização legislativa ou limite de atuação local.',
+        plainExplanation: [
+          'Município não é mera repartição do Estado. A Constituição reconhece sua autonomia política, administrativa, financeira e legislativa. Essa autonomia aparece na eleição de Prefeito e Vereadores, na capacidade de editar leis de interesse local, arrecadar tributos municipais, organizar serviços públicos e gerir sua própria administração.',
+          'A Lei Orgânica detalha essa autonomia. Ela não pode contrariar a Constituição Federal nem a Constituição Estadual, mas tem força normativa interna elevada. Por isso, quando a Prefeitura quer reorganizar secretarias, criar cargos, conceder benefícios, regulamentar serviços ou propor projetos, o Procurador precisa conferir se há compatibilidade com a Lei Orgânica.',
+          'Em prova, a banca gosta de cobrar a lógica do interesse local. O Município legisla sobre assuntos predominantemente locais, suplementa a legislação federal e estadual quando couber, organiza serviços públicos municipais e exerce poder de polícia administrativa em temas como posturas, uso do solo, obras, trânsito local, meio ambiente urbano e funcionamento de estabelecimentos.'
+        ],
+        examTechnical: 'Para concurso de Procurador Municipal, o ponto central é relacionar Lei Orgânica com autonomia municipal. A Constituição, especialmente os arts. 29, 30 e 31, fixa o núcleo da organização municipal. A Lei Orgânica concretiza esse núcleo no plano local. A banca pode tentar afirmar que o Município depende de autorização do Estado para tudo; isso é falso. Mas também pode afirmar que o Município tem soberania; isso também é falso. Município tem autonomia, não soberania.',
+        cityExample: 'A Câmara aprova projeto que interfere diretamente na estrutura administrativa da Prefeitura, criando obrigações para uma secretaria sem iniciativa do Prefeito. A Procuradoria deve examinar se houve vício de iniciativa, violação à separação de poderes local e incompatibilidade com a Lei Orgânica.',
+        legalBase: ['CF/88, arts. 18, 29, 30 e 31', 'Lei Orgânica do Município de Itupeva', 'Regras constitucionais sobre organização municipal e fiscalização'],
+        dryLaw: ['CF/88, art. 18', 'CF/88, art. 29', 'CF/88, art. 30', 'CF/88, art. 31', 'Lei Orgânica de Itupeva: dispositivos sobre organização do Município, competências, Poderes e fiscalização'],
+        jurisprudence: ['O STF possui entendimento consolidado de que leis municipais de iniciativa parlamentar não podem invadir a reserva de iniciativa do chefe do Executivo quando tratam de organização administrativa, atribuições de órgãos ou regime jurídico de servidores.', 'A autonomia municipal deve ser exercida dentro dos limites da Constituição Federal, especialmente quanto à separação de poderes, competência legislativa e responsabilidade fiscal.'],
+        objectiveCharge: ['Diferença entre autonomia e soberania.', 'Competência municipal para legislar sobre interesse local.', 'Competência suplementar municipal.', 'Fiscalização do Município pela Câmara com auxílio do Tribunal de Contas.', 'Limites da Lei Orgânica diante da Constituição.'],
+        discursiveCharge: 'Pode cair como parecer sobre projeto de lei municipal, vício de iniciativa, competência da Câmara, atribuição do Prefeito, organização de secretaria, criação de despesa ou conflito entre Lei Orgânica e Constituição.',
+        traps: ['Município tem autonomia, não soberania.', 'Lei Orgânica não pode contrariar Constituição Federal.', 'Interesse local não significa interesse exclusivo; significa predominância local.', 'Câmara fiscaliza, mas não administra a Prefeitura.', 'Iniciativa parlamentar não pode invadir organização administrativa do Executivo.'],
+        differences: ['Autonomia x soberania: autonomia é autogoverno limitado pela Constituição; soberania é poder supremo do Estado brasileiro.', 'Competência legislativa local x suplementar: local trata do interesse predominante do Município; suplementar completa normas federais/estaduais no que couber.', 'Fiscalização x administração: fiscalizar é controlar; administrar é executar políticas e gerir órgãos.'],
+        commonMistakes: ['Decorar artigos sem entender o interesse local.', 'Achar que todo tema urbano é automaticamente municipal sem verificar normas gerais.', 'Ignorar vício de iniciativa em projeto de vereador.', 'Confundir atribuição da Câmara com poder de comandar secretarias.'],
+        miniCase: 'Vereador apresenta projeto obrigando a Secretaria de Saúde a criar setor específico, definir cargos e estabelecer escala de servidores. Ainda que a finalidade seja boa, há forte risco de vício de iniciativa por interferência na organização administrativa do Executivo.',
+        activeQuestions: ['Qual é o interesse local envolvido?', 'Há vício de iniciativa?', 'A Lei Orgânica autoriza a medida?', 'A Câmara está fiscalizando ou administrando?', 'Existe impacto financeiro e previsão orçamentária?'],
+        flashcards: [
+          { front: 'Município tem soberania?', back: 'Não. Município tem autonomia política, administrativa, legislativa e financeira nos limites da Constituição.' },
+          { front: 'Qual o núcleo da competência municipal?', back: 'Legislar sobre interesse local, suplementar normas federais/estaduais quando couber e organizar/prestar serviços públicos locais.' },
+          { front: 'Lei Orgânica é superior à Constituição?', back: 'Não. A Lei Orgânica deve respeitar a Constituição Federal e a Constituição Estadual.' }
+        ],
+        summary: 'Lei Orgânica é a base institucional do Município. Para prova, domine autonomia, interesse local, competências, separação de poderes e fiscalização. Para parecer, verifique competência, iniciativa, orçamento e compatibilidade constitucional.',
+        checklist: ['Sei explicar Lei Orgânica.', 'Sei diferenciar autonomia e soberania.', 'Sei aplicar interesse local.', 'Sei identificar vício de iniciativa.', 'Consigo elaborar parecer sobre projeto municipal.'],
+        nextTopic: 'Poder Executivo municipal: Prefeito, secretarias e direção administrativa'
+      },
+      {
+        id: 'executivo-municipal-prefeito-secretarias',
+        level: 'intermediário',
+        title: 'Poder Executivo municipal: Prefeito, secretarias, direção superior e atos de gestão',
+        whatIs: 'É o conjunto de regras que definem a atuação do Prefeito como chefe do Executivo municipal, a estrutura de secretarias, órgãos e unidades administrativas, e a forma como a Prefeitura executa políticas públicas, serviços e atos de gestão.',
+        purpose: 'Serve para identificar quem decide, quem executa, quem pode assinar atos, quem representa politicamente a Administração e quais matérias dependem de lei, decreto, portaria ou ato administrativo interno.',
+        plainExplanation: [
+          'O Prefeito é o chefe do Poder Executivo local. Ele exerce direção superior da Administração, sanciona e veta leis, expede decretos e regulamentos, administra bens e serviços municipais, encaminha projetos de lei de sua iniciativa, propõe orçamento e pratica atos de gestão dentro dos limites constitucionais e legais.',
+          'Secretarias e órgãos municipais não possuem vontade própria desvinculada do Município. Eles são instrumentos de execução administrativa. A reorganização de estrutura, criação de órgãos, definição de atribuições e cargos costuma envolver iniciativa do Executivo, lei formal quando houver matéria reservada e observância da Lei Orgânica e da legislação específica.',
+          'Na prática da Procuradoria, esse tema aparece todos os dias: minuta de decreto, parecer sobre competência de secretário, delegação de assinatura, criação de comissão, abertura de processo administrativo, regulamentação de lei municipal, resposta a requerimento da Câmara e defesa judicial de ato do Executivo.'
+        ],
+        examTechnical: 'A prova tende a cobrar iniciativa privativa do Chefe do Executivo, poder regulamentar, limites da delegação administrativa e separação de poderes. Decreto regulamentar não cria obrigações novas sem base legal; ele detalha a execução da lei. Portaria, resolução e ordem de serviço são atos internos ou específicos, conforme competência.',
+        cityExample: 'A Prefeitura pretende reorganizar uma secretaria, alterar denominação de departamentos e redefinir cargos em comissão. A Procuradoria deve verificar a Lei Complementar nº 551/2024, a Lei Orgânica, a necessidade de lei formal, impacto orçamentário e compatibilidade com o art. 37 da Constituição.',
+        legalBase: ['Lei Orgânica de Itupeva', 'LC nº 551/2024', 'CF/88, art. 37', 'CF/88, regras sobre separação de poderes aplicadas por simetria'],
+        dryLaw: ['Lei Orgânica: competências do Prefeito', 'LC nº 551/2024: estrutura administrativa', 'CF/88, art. 37', 'CF/88, arts. 29 e 30'],
+        jurisprudence: ['O STF costuma invalidar leis de iniciativa parlamentar que criem atribuições para órgãos do Executivo ou interfiram na organização administrativa, por violação à separação de poderes e reserva de iniciativa.', 'Cargos em comissão devem se destinar a direção, chefia e assessoramento, não a funções técnicas ou burocráticas permanentes.'],
+        objectiveCharge: ['Competências típicas do Prefeito.', 'Diferença entre lei e decreto regulamentar.', 'Reserva de iniciativa do Executivo.', 'Cargos em comissão e funções de confiança.', 'Separação de poderes municipal.'],
+        discursiveCharge: 'Pode cair como parecer sobre projeto parlamentar que cria obrigação para secretaria, decreto regulamentar sem lei, reorganização administrativa, nomeação em cargo comissionado ou delegação de competência.',
+        traps: ['Decreto não substitui lei quando a matéria exige lei formal.', 'Secretário não tem competência universal; precisa de delegação ou atribuição normativa.', 'Cargo em comissão não serve para burlar concurso.', 'Boa intenção legislativa não corrige vício de iniciativa.'],
+        differences: ['Lei x decreto: lei inova primariamente; decreto regulamenta a execução da lei.', 'Órgão x entidade: órgão não tem personalidade jurídica; entidade tem.', 'Cargo efetivo x comissão: efetivo depende de concurso; comissão é livre nomeação para direção, chefia ou assessoramento.'],
+        commonMistakes: ['Autorizar decreto para criar obrigação sem lei.', 'Esquecer impacto orçamentário.', 'Ignorar a LC de estrutura administrativa.', 'Não verificar competência de quem assina o ato.', 'Confundir delegação com transferência definitiva de competência.'],
+        miniCase: 'Secretário municipal assina convênio sem autorização legal ou delegação expressa. A Procuradoria deve analisar competência, eventual ratificação, risco de nulidade e providências para regularização.',
+        activeQuestions: ['Quem tem competência?', 'A matéria exige lei?', 'Existe base na LC nº 551/2024?', 'O ato cria despesa?', 'Há vício de iniciativa?'],
+        flashcards: [
+          { front: 'Decreto pode criar obrigação primária sem lei?', back: 'Em regra, não. Decreto regulamentar detalha a execução da lei.' },
+          { front: 'Cargo em comissão serve para atividade burocrática permanente?', back: 'Não. Deve se destinar a direção, chefia e assessoramento.' },
+          { front: 'Secretaria tem personalidade jurídica?', back: 'Não. Secretaria é órgão integrante da Administração direta.' }
+        ],
+        summary: 'O Executivo municipal executa políticas, organiza serviços e pratica atos de gestão. Em prova, foque em competência, iniciativa, decreto, cargos e separação de poderes. Em parecer, sempre confira Lei Orgânica, LC nº 551/2024 e art. 37 da Constituição.',
+        checklist: ['Sei competências do Prefeito.', 'Sei diferenciar lei, decreto e portaria.', 'Sei identificar vício de iniciativa.', 'Sei usar a LC nº 551/2024.', 'Consigo analisar competência de secretário.'],
+        nextTopic: 'Câmara Municipal, processo legislativo e fiscalização'
+      },
+      {
+        id: 'camara-processo-legislativo-fiscalizacao',
+        level: 'intermediário',
+        title: 'Câmara Municipal, processo legislativo, fiscalização e relação com o Executivo',
+        whatIs: 'É o conjunto de regras sobre o Poder Legislativo municipal, sua função de legislar, fiscalizar o Executivo, julgar contas em certas hipóteses, aprovar leis locais e exercer controle político-administrativo dentro dos limites constitucionais.',
+        purpose: 'Serve para controlar a validade das leis municipais e dos atos legislativos. Para Procurador, é essencial para examinar autógrafos, vetos, sanções, vícios de iniciativa, requerimentos de informação, comissões, fiscalização e controle de contas.',
+        plainExplanation: [
+          'A Câmara Municipal tem duas grandes funções: legislar e fiscalizar. Ela aprova leis de interesse local, vota orçamento, analisa projetos, fiscaliza atos do Executivo e exerce controle político. Mas fiscalizar não significa assumir a gestão da Prefeitura.',
+          'O processo legislativo municipal envolve iniciativa, discussão, votação, sanção ou veto, promulgação e publicação. Se a iniciativa for de autoridade errada em matéria reservada ao Executivo, a lei pode nascer inconstitucional. A sanção do Prefeito nem sempre corrige vício de iniciativa, especialmente quando há reserva constitucional.',
+          'A fiscalização legislativa deve respeitar limites. Requerimentos de informação são legítimos, mas não podem inviabilizar a Administração, exigir providências administrativas diretas ou violar sigilo legal. O Procurador deve equilibrar transparência, separação de poderes e proteção jurídica do Município.'
+        ],
+        examTechnical: 'A banca cobra muito vício formal subjetivo de iniciativa e separação de poderes. Também pode cobrar fiscalização contábil, financeira, orçamentária, operacional e patrimonial, exercida pela Câmara com auxílio do Tribunal de Contas. No Município, o parecer prévio do Tribunal de Contas sobre contas do Prefeito tem peso relevante, mas a Câmara exerce julgamento político conforme Constituição e Lei Orgânica.',
+        cityExample: 'A Câmara aprova lei de iniciativa parlamentar obrigando o Executivo a fornecer determinado benefício, criando fluxo administrativo, prazo, despesa e atribuições para secretaria. A Procuradoria deve avaliar vício de iniciativa, impacto financeiro e eventual veto jurídico.',
+        legalBase: ['CF/88, arts. 29, 30 e 31', 'Lei Orgânica de Itupeva', 'Regimento Interno da Câmara quando necessário', 'Jurisprudência do STF sobre iniciativa e separação de poderes'],
+        dryLaw: ['CF/88, art. 29', 'CF/88, art. 30', 'CF/88, art. 31', 'Lei Orgânica: processo legislativo, sanção, veto e fiscalização'],
+        jurisprudence: ['STF: leis municipais de iniciativa parlamentar que invadem organização administrativa do Executivo podem violar separação de poderes.', 'A fiscalização legislativa é legítima, mas deve observar devido processo, competência, finalidade pública e limites constitucionais.'],
+        objectiveCharge: ['Funções da Câmara.', 'Processo legislativo municipal.', 'Sanção e veto.', 'Fiscalização com auxílio do Tribunal de Contas.', 'Vício de iniciativa.'],
+        discursiveCharge: 'Pode cair como parecer sobre veto jurídico, constitucionalidade de projeto de vereador, resposta a requerimento de informações, CPI municipal ou fiscalização de contrato.',
+        traps: ['Sanção não cura todo vício de iniciativa.', 'Câmara fiscaliza, mas não manda diretamente em servidor do Executivo.', 'Requerimento de informação não pode violar dados protegidos sem base legal.', 'Controle político não elimina controle jurídico.'],
+        differences: ['Sanção x promulgação: sanção é concordância do Executivo; promulgação atesta existência da lei.', 'Veto jurídico x político: jurídico por inconstitucionalidade/ilegalidade; político por contrariedade ao interesse público.', 'Fiscalização x cogestão: controlar não é administrar.'],
+        commonMistakes: ['Tratar todo projeto de vereador como válido por representar interesse público.', 'Não analisar iniciativa.', 'Não verificar impacto orçamentário.', 'Responder requerimento da Câmara sem cuidado com LGPD ou sigilo.', 'Confundir parecer do Tribunal de Contas com julgamento automático.'],
+        miniCase: 'Projeto parlamentar cria programa social, define órgão executor, impõe contratação de equipe e fixa prazo de implantação. A finalidade é socialmente relevante, mas há risco de vício de iniciativa e criação de despesa sem planejamento.',
+        activeQuestions: ['Quem iniciou o projeto?', 'A matéria é reservada ao Executivo?', 'Cria atribuições para órgão?', 'Cria despesa?', 'Cabe veto jurídico?'],
+        flashcards: [
+          { front: 'A Câmara pode fiscalizar o Executivo?', back: 'Sim, dentro dos limites constitucionais e da Lei Orgânica, sem assumir a administração.' },
+          { front: 'Vício de iniciativa é sempre curado pela sanção?', back: 'Não. Em matérias de iniciativa reservada, a sanção não necessariamente convalida o vício.' },
+          { front: 'Quem auxilia a Câmara no controle externo municipal?', back: 'O Tribunal de Contas competente.' }
+        ],
+        summary: 'Câmara legisla e fiscaliza, mas não administra. O tema exige atenção a processo legislativo, iniciativa, veto, fiscalização e separação de poderes. Para Procurador, é matéria diária em análise de projetos e autógrafos.',
+        checklist: ['Sei funções da Câmara.', 'Sei processo legislativo básico.', 'Sei diferenciar veto jurídico e político.', 'Sei identificar vício de iniciativa.', 'Consigo redigir fundamentos de veto/parecer.'],
+        nextTopic: 'Estatuto dos servidores municipais: provimento, direitos, deveres e responsabilidades'
+      },
+      {
+        id: 'estatuto-servidores-municipais',
+        level: 'avançado',
+        title: 'Estatuto dos Servidores Municipais: regime jurídico, provimento, direitos, deveres e responsabilidade funcional',
+        whatIs: 'O Estatuto dos Servidores Municipais é a lei que disciplina a vida funcional dos servidores estatutários de Itupeva: ingresso, provimento, posse, exercício, estágio probatório, direitos, deveres, vantagens, licenças, regime disciplinar, responsabilidade e processo administrativo.',
+        purpose: 'Serve para orientar a gestão de pessoal, evitar nulidades, proteger o servidor contra arbitrariedades e proteger o Município contra pagamentos indevidos, nomeações irregulares, sanções mal aplicadas e passivos judiciais.',
+        plainExplanation: [
+          'Servidor estatutário não tem contrato de trabalho comum; ele ocupa cargo público regido por lei. Por isso, seus direitos e deveres não decorrem de negociação privada, mas de regime jurídico legal. No Município de Itupeva, o Estatuto local é a referência principal.',
+          'A vida funcional começa com concurso, nomeação, posse e exercício. Depois vêm estágio probatório, avaliação, estabilidade, progressões, licenças, afastamentos e deveres funcionais. Cada ato precisa respeitar competência, forma, motivação e publicação quando necessária.',
+          'O regime disciplinar é uma área sensível. Antes de punir, o Município deve apurar fatos, garantir contraditório e ampla defesa, individualizar conduta, observar prescrição e aplicar sanção proporcional. Uma punição mal instruída pode ser anulada judicialmente e gerar reintegração, indenização ou passivo.'
+        ],
+        examTechnical: 'Para prova, domine diferença entre cargo, emprego e função; provimento originário e derivado; posse e exercício; estabilidade e estágio probatório; acumulação constitucional; deveres e proibições; sindicância e PAD; responsabilidade civil, penal e administrativa. A lei local deve ser lida literalmente, porque banca pode cobrar prazos, requisitos e nomenclaturas próprias.',
+        cityExample: 'Servidor é acusado de abandono de cargo. A Procuradoria deve orientar abertura de procedimento adequado, comprovação das ausências, citação/notificação, defesa, relatório, decisão motivada e respeito ao Estatuto, evitando demissão nula.',
+        legalBase: ['LC nº 387/2015 — Estatuto dos Servidores Públicos Municipais de Itupeva', 'CF/88, arts. 37 a 41', 'Lei Orgânica de Itupeva', 'Princípios do devido processo administrativo'],
+        dryLaw: ['LC nº 387/2015: provimento, posse, exercício, direitos, deveres, proibições, responsabilidade e processo disciplinar', 'CF/88, art. 37', 'CF/88, art. 41'],
+        jurisprudence: ['STF: contratação e ingresso em cargo efetivo exigem concurso público, ressalvadas hipóteses constitucionais.', 'STJ: sanção disciplinar exige processo regular, motivação, proporcionalidade e observância da prescrição aplicável.'],
+        objectiveCharge: ['Cargo, emprego e função.', 'Concurso público.', 'Estágio probatório e estabilidade.', 'Acumulação de cargos.', 'PAD, sindicância e sanções.', 'Direitos e licenças estatutárias.'],
+        discursiveCharge: 'Pode cair como parecer sobre exoneração, acumulação ilegal, licença, vantagem funcional, PAD, sindicância, estabilidade, demissão, abandono, reintegração ou pagamento indevido.',
+        traps: ['CLT não rege automaticamente servidor estatutário.', 'Estabilidade não é imunidade contra PAD.', 'Cargo em comissão não substitui concurso para função permanente.', 'Acumulação só é possível nas hipóteses constitucionais e com compatibilidade de horários.', 'Processo disciplinar sem defesa é anulável.'],
+        differences: ['Cargo efetivo x cargo em comissão.', 'Posse x exercício.', 'Estágio probatório x estabilidade.', 'Sindicância x PAD.', 'Responsabilidade administrativa x civil x penal.'],
+        commonMistakes: ['Aplicar regra trabalhista a servidor estatutário.', 'Punir sem processo.', 'Não verificar prescrição disciplinar.', 'Conceder vantagem sem lei.', 'Não conferir compatibilidade de horários em acumulação.'],
+        miniCase: 'Servidor efetivo pede licença remunerada sem previsão clara no Estatuto. O Procurador deve verificar a LC nº 387/2015 e concluir que vantagem funcional depende de previsão legal expressa, sob pena de violar legalidade e gerar responsabilização.',
+        activeQuestions: ['Qual é o regime jurídico do servidor?', 'Existe cargo criado por lei?', 'A vantagem está prevista no Estatuto?', 'Foi garantida defesa?', 'Há prazo prescricional?'],
+        flashcards: [
+          { front: 'Servidor estatutário tem contrato comum?', back: 'Não. Ele é regido por regime jurídico legal, definido no Estatuto.' },
+          { front: 'Estabilidade impede demissão?', back: 'Não. Servidor estável pode perder cargo nas hipóteses constitucionais e mediante processo regular.' },
+          { front: 'Vantagem funcional pode ser concedida sem lei?', back: 'Não. Remuneração e vantagens exigem previsão legal.' }
+        ],
+        summary: 'Estatuto local é leitura obrigatória. Ele rege a vida funcional do servidor e é fonte direta de questões e pareceres. Em prova, atenção a conceitos; em parecer, atenção a processo, competência e legalidade estrita.',
+        checklist: ['Sei cargo, emprego e função.', 'Sei posse e exercício.', 'Sei estágio probatório e estabilidade.', 'Sei PAD e sindicância.', 'Consigo analisar vantagem/licença à luz do Estatuto.'],
+        nextTopic: 'Plano de cargos, carreiras e remuneração'
+      },
+      {
+        id: 'plano-cargos-carreiras-remuneracao',
+        level: 'avançado',
+        title: 'Plano de cargos, carreiras, remuneração e evolução funcional',
+        whatIs: 'Plano de cargos e carreiras é a legislação que organiza os cargos efetivos, funções, classes, referências, padrões remuneratórios, evolução funcional, enquadramento e regras de desenvolvimento na carreira dos servidores municipais.',
+        purpose: 'Serve para dar racionalidade à estrutura de pessoal, evitar improviso remuneratório, permitir progressões conforme critérios legais e proteger o Município contra equiparações indevidas, reenquadramentos sem base legal e aumento irregular de despesa com pessoal.',
+        plainExplanation: [
+          'A Administração só pode criar cargos, carreiras, vencimentos e vantagens por lei. O plano de cargos define o desenho da força de trabalho: quais cargos existem, quais atribuições possuem, qual carga horária, qual tabela de vencimentos, como ocorre progressão e quais requisitos permitem evolução.',
+          'Para o servidor, o plano é garantia de previsibilidade. Para a Prefeitura, é instrumento de gestão. Para o Procurador, é campo de controle de legalidade: verificar se há cargo criado por lei, se o enquadramento é correto, se a progressão cumpre requisitos e se o impacto financeiro respeita orçamento e LRF.',
+          'Na prova, esse tema costuma parecer administrativo, financeiro e constitucional ao mesmo tempo. Envolve art. 37 da Constituição, legalidade remuneratória, concurso público, vedação de equiparações automáticas, limites da LRF e regras específicas da lei local.'
+        ],
+        examTechnical: 'O candidato deve estudar a LC nº 389/2015 em conjunto com Constituição e LRF. Cargos efetivos dependem de lei e concurso. Reajustes, vantagens, progressões e reenquadramentos precisam de base legal, dotação, estimativa de impacto e respeito aos limites de despesa com pessoal. Lei local pode ter detalhes que a banca cobra literalmente.',
+        cityExample: 'Grupo de servidores pede reenquadramento em padrão superior alegando isonomia com outro cargo. A Procuradoria deve verificar atribuições, requisitos legais, plano de carreira, vedação de equiparação, impacto financeiro e eventual necessidade de lei específica.',
+        legalBase: ['LC nº 389/2015 — Plano de cargos e carreiras de Itupeva', 'CF/88, art. 37', 'CF/88, art. 169', 'Lei de Responsabilidade Fiscal'],
+        dryLaw: ['LC nº 389/2015: cargos, carreiras, tabelas, progressão e enquadramento', 'CF/88, art. 37, II, X e XIII', 'CF/88, art. 169', 'LRF: despesa com pessoal'],
+        jurisprudence: ['STF: não cabe equiparação remuneratória automática entre servidores por decisão judicial com fundamento apenas em isonomia, diante da exigência de lei específica.', 'A criação de cargos e aumento de remuneração exigem lei e observância orçamentária.'],
+        objectiveCharge: ['Criação de cargos por lei.', 'Concurso público.', 'Vedação de equiparação.', 'Progressão e promoção.', 'Despesa com pessoal.', 'Limites da LRF.'],
+        discursiveCharge: 'Pode cair como parecer sobre criação de cargo, reenquadramento, progressão, reajuste, vantagem, cargo em comissão, impacto financeiro ou adequação à LRF.',
+        traps: ['Isonomia não autoriza aumento sem lei.', 'Reenquadramento não pode burlar concurso.', 'Progressão exige cumprimento de requisitos legais.', 'Cargo em comissão não substitui carreira efetiva.', 'Impacto orçamentário é indispensável em aumento de despesa.'],
+        differences: ['Progressão x promoção: podem variar conforme lei local; leia a nomenclatura da LC nº 389/2015.', 'Vencimento x remuneração: vencimento é básico; remuneração inclui vantagens.', 'Reajuste geral x revisão específica de carreira.', 'Cargo x função gratificada.'],
+        commonMistakes: ['Usar analogia para criar vantagem.', 'Ignorar tabelas e anexos.', 'Não verificar cargo de origem e atribuições.', 'Não calcular impacto financeiro.', 'Tratar decisão administrativa como se pudesse alterar lei de carreira.'],
+        miniCase: 'Servidor em estágio probatório requer progressão automática prevista apenas para servidores que cumpriram interstício e avaliação. A Procuradoria deve conferir a lei local e, se requisitos não foram preenchidos, opinar pelo indeferimento motivado.',
+        activeQuestions: ['Existe cargo criado por lei?', 'Qual tabela se aplica?', 'A progressão cumpriu requisitos?', 'Há dotação e impacto?', 'A medida viola equiparação vedada?'],
+        flashcards: [
+          { front: 'Pode haver aumento remuneratório sem lei?', back: 'Não. Remuneração e vantagens de servidores dependem de lei específica e observância orçamentária.' },
+          { front: 'Plano de carreira pode burlar concurso?', back: 'Não. Evolução funcional não pode transformar servidor em cargo diverso sem concurso quando houver mudança substancial.' },
+          { front: 'Isonomia basta para equiparar vencimentos?', back: 'Não. A Constituição veda equiparações automáticas, exigindo lei.' }
+        ],
+        summary: 'Plano de cargos é lei de estrutura de pessoal. Para Procurador, é tema de legalidade remuneratória, concurso, orçamento e LRF. Leia a LC nº 389/2015 com atenção aos anexos.',
+        checklist: ['Sei função do plano de carreira.', 'Sei diferença entre vencimento e remuneração.', 'Sei progressão/promoção conforme lei local.', 'Sei vedação de equiparação.', 'Consigo analisar impacto financeiro.'],
+        nextTopic: 'Reorganização administrativa do Executivo e estrutura de órgãos'
+      },
+      {
+        id: 'reorganizacao-administrativa-lc551',
+        level: 'avançado',
+        title: 'Reorganização da estrutura administrativa do Executivo municipal — LC nº 551/2024',
+        whatIs: 'É a lei local que organiza a Administração Pública do Poder Executivo de Itupeva, seus órgãos, secretarias, estrutura de direção, assessoramento e cargos de provimento em comissão.',
+        purpose: 'Serve para identificar quais órgãos existem, como se distribuem atribuições, quais cargos de direção/chefia/assessoramento compõem a estrutura e qual é a arquitetura administrativa da Prefeitura.',
+        plainExplanation: [
+          'Toda Prefeitura precisa de estrutura para funcionar: gabinete, procuradoria, secretarias, departamentos, coordenadorias e unidades. A reorganização administrativa define esse desenho. Ela é importante porque competência administrativa não nasce de costume; nasce da lei e dos atos de organização válidos.',
+          'A LC nº 551/2024 deve ser usada para conferir se determinado órgão existe, se determinada secretaria tem atribuição para conduzir tema, se cargo comissionado tem função compatível e se a estrutura respeita o art. 37 da Constituição.',
+          'Em prova de Procurador, esse tema pode ser cobrado como legislação municipal literal, mas também como raciocínio jurídico: cargos em comissão só podem servir a direção, chefia e assessoramento; criação de estrutura exige lei; atribuição administrativa precisa respeitar competência; reorganização deve observar orçamento e limites de pessoal.'
+        ],
+        examTechnical: 'O foco é cruzar lei local com Constituição. A LC nº 551/2024 reorganiza órgãos e cargos, mas deve ser interpretada à luz da legalidade, impessoalidade, eficiência, concurso público, cargos em comissão e responsabilidade fiscal. A banca pode cobrar nomes de estruturas, finalidade da lei e limites constitucionais.',
+        cityExample: 'Um contrato é instruído por secretaria sem atribuição relacionada ao objeto. O Procurador deve verificar a LC nº 551/2024 para confirmar competência material e orientar correção de fluxo ou ratificação por autoridade competente, se juridicamente possível.',
+        legalBase: ['LC nº 551/2024', 'Lei Orgânica de Itupeva', 'CF/88, art. 37', 'CF/88, art. 169', 'LRF'],
+        dryLaw: ['LC nº 551/2024: estrutura administrativa e cargos comissionados', 'CF/88, art. 37, II e V', 'CF/88, art. 169'],
+        jurisprudence: ['STF: cargos em comissão devem ter atribuições de direção, chefia ou assessoramento, sendo inconstitucional sua criação para atividades meramente técnicas, burocráticas ou permanentes.', 'A criação de cargos e reorganização administrativa deve respeitar iniciativa do Executivo e estimativa de impacto quando gerar despesa.'],
+        objectiveCharge: ['Estrutura administrativa do Executivo.', 'Cargos em comissão.', 'Órgãos e atribuições.', 'Iniciativa legislativa.', 'Compatibilidade com art. 37 da Constituição.'],
+        discursiveCharge: 'Pode cair como parecer sobre criação de cargo, alteração de secretaria, competência de órgão, validade de assinatura, excesso de comissionados ou reorganização administrativa.',
+        traps: ['Cargo comissionado não é atalho para contratação sem concurso.', 'Órgão sem personalidade jurídica não responde em nome próprio, salvo hipóteses processuais específicas.', 'Atribuição de secretaria precisa estar na lei ou ato normativo válido.', 'Reorganização que aumenta despesa exige análise orçamentária.'],
+        differences: ['Secretaria x departamento x cargo: secretaria é órgão; departamento é unidade; cargo é posição ocupada por agente.', 'Cargo em comissão x função de confiança.', 'Competência legal x conveniência administrativa.', 'Estrutura formal x atuação de fato.'],
+        commonMistakes: ['Não consultar a LC nº 551/2024 antes de opinar.', 'Validar assinatura de autoridade incompetente.', 'Ignorar cargo em comissão com atribuição incompatível.', 'Não avaliar impacto financeiro.', 'Confundir organograma com lei: organograma ajuda, mas a base é normativa.'],
+        miniCase: 'Departamento sem atribuição legal assume fiscalização de contrato de outra área. O parecer deve recomendar designação formal de fiscal competente e ajuste do fluxo conforme estrutura administrativa.',
+        activeQuestions: ['Qual órgão é competente?', 'A atribuição está na LC nº 551/2024?', 'O cargo é compatível com direção/chefia/assessoramento?', 'Há aumento de despesa?', 'Quem deve assinar?'],
+        flashcards: [
+          { front: 'LC nº 551/2024 trata de quê?', back: 'Reorganização da estrutura administrativa do Poder Executivo de Itupeva, órgãos da Prefeitura e cargos de provimento em comissão.' },
+          { front: 'Cargo em comissão pode ser técnico permanente?', back: 'Não. Deve ser destinado a direção, chefia ou assessoramento.' },
+          { front: 'Organograma substitui lei?', back: 'Não. Organograma orienta visualmente; a base jurídica é a lei e atos normativos válidos.' }
+        ],
+        summary: 'A LC nº 551/2024 é o mapa da Prefeitura. Para estudo, leia seus órgãos e atribuições. Para parecer, use-a para confirmar competência, estrutura, cargos e validade dos atos administrativos.',
+        checklist: ['Sei finalidade da LC nº 551/2024.', 'Sei usar estrutura administrativa em parecer.', 'Sei limites de cargo comissionado.', 'Sei verificar competência de órgão.', 'Consigo cruzar lei local com art. 37.'],
+        nextTopic: 'Legislação municipal em prova objetiva e parecer jurídico'
+      },
+      {
+        id: 'legislacao-municipal-prova-parecer',
+        level: 'discursiva',
+        title: 'Como estudar Legislação Municipal para objetiva, discursiva e parecer jurídico',
+        whatIs: 'É o método de transformar leis locais em conhecimento de prova e atuação prática. Não basta ler a lei: é preciso entender quem decide, qual competência, qual procedimento, qual consequência jurídica e quais artigos viram pegadinha.',
+        purpose: 'Serve para estudar com eficiência a matéria mais local do concurso. Legislação Municipal costuma diferenciar candidatos porque muitos deixam para o fim. Para Procurador, ela também é essencial para pareceres reais.',
+        plainExplanation: [
+          'A forma correta de estudar lei local é em camadas. Primeiro, entenda a função da lei: Lei Orgânica organiza o Município; Estatuto rege servidores; Plano de Cargos organiza carreiras; LC nº 551/2024 organiza estrutura administrativa. Depois, leia dispositivos com pergunta na cabeça: quem pode? como faz? qual prazo? qual consequência? qual autoridade?',
+          'Em prova objetiva, a banca pode cobrar letra da lei, conceitos, competências e prazos. Em discursiva, pode exigir raciocínio: um projeto é constitucional? uma sanção disciplinar é válida? um cargo comissionado é legítimo? uma vantagem pode ser paga? uma secretaria tem competência?',
+          'A melhor estratégia é montar quadros: Prefeito x Câmara; cargo efetivo x comissão; posse x exercício; progressão x promoção; sindicância x PAD; lei x decreto; órgão x entidade; competência x atribuição. Esses pares viram alternativas de prova.'
+        ],
+        examTechnical: 'Legislação local deve ser estudada junto com Constituição. Quando a lei municipal trouxer regra de servidor, compare com arts. 37 a 41. Quando falar de estrutura, compare com art. 37 e separação de poderes. Quando falar de orçamento ou cargos, compare com LRF e art. 169. Quando falar de Câmara/Prefeito, compare com arts. 29 a 31.',
+        cityExample: 'O Município quer editar lei sobre gratificação para determinada categoria. O estudo correto exige verificar iniciativa, plano de cargos, estatuto, impacto orçamentário, LRF, art. 37, art. 169 e compatibilidade com a Lei Orgânica.',
+        legalBase: ['Lei Orgânica de Itupeva', 'LC nº 387/2015', 'LC nº 389/2015', 'LC nº 551/2024', 'CF/88, arts. 29 a 31 e 37 a 41', 'LRF'],
+        dryLaw: ['Ler Lei Orgânica por competências e processo legislativo', 'Ler LC nº 387/2015 por vida funcional e PAD', 'Ler LC nº 389/2015 por cargos, carreira e remuneração', 'Ler LC nº 551/2024 por estrutura e cargos comissionados'],
+        jurisprudence: ['Jurisprudência constitucional sobre separação de poderes, cargos em comissão, concurso público, iniciativa legislativa e responsabilidade fiscal deve ser usada como lente de interpretação das leis locais.'],
+        objectiveCharge: ['Competências locais.', 'Estrutura administrativa.', 'Direitos/deveres de servidores.', 'Cargos e carreiras.', 'Iniciativa de leis.', 'Fiscalização municipal.'],
+        discursiveCharge: 'A discursiva pode apresentar caso prático envolvendo projeto de lei, servidor, cargo, carreira, competência de órgão, ato do Prefeito ou resposta à Câmara. A resposta deve começar pela competência e terminar com providência prática.',
+        traps: ['Estudar lei local só por leitura passiva.', 'Ignorar Constituição ao interpretar lei municipal.', 'Decorar órgão sem entender atribuição.', 'Confundir regra local com regra federal.', 'Esquecer que banca adora prazos, requisitos e autoridades competentes.'],
+        differences: ['Leitura seca x estudo ativo: leitura seca identifica texto; estudo ativo transforma texto em perguntas.', 'Objetiva x discursiva: objetiva cobra detalhe; discursiva cobra aplicação e providência.', 'Lei local x lei geral: lei local concreta organização municipal, mas não pode violar normas superiores.'],
+        commonMistakes: ['Deixar legislação municipal para a véspera.', 'Não fazer quadro de competências.', 'Não revisar artigos de servidores.', 'Não cruzar plano de cargos com LRF.', 'Não treinar parecer com lei local.'],
+        miniCase: 'Autógrafo de lei parlamentar cria gratificação para servidores. Roteiro: verificar iniciativa, Constituição, Lei Orgânica, Estatuto, plano de cargos, estimativa de impacto, LRF, dotação e eventual veto jurídico.',
+        activeQuestions: ['Quem tem iniciativa?', 'Qual autoridade decide?', 'Qual órgão executa?', 'Qual artigo local resolve?', 'Qual limite constitucional se aplica?'],
+        flashcards: [
+          { front: 'Como estudar lei local?', back: 'Por competências, autoridades, procedimentos, requisitos, prazos, consequências e comparação com a Constituição.' },
+          { front: 'Legislação Municipal cai só na objetiva?', back: 'Não. Pode ser decisiva em discursiva e parecer jurídico.' },
+          { front: 'Qual matéria local tem maior chance de pegadinha?', back: 'Lei Orgânica, Estatuto dos Servidores, plano de cargos e estrutura administrativa.' }
+        ],
+        summary: 'Legislação Municipal deve ser estudada como ferramenta de parecer. O candidato competitivo transforma artigo em pergunta, quadro comparativo, flashcard e caso prático. Essa matéria pode separar quem sabe Direito Municipal de quem estudou só leis gerais.',
+        checklist: ['Sei montar quadro Prefeito x Câmara.', 'Sei usar Estatuto em caso de servidor.', 'Sei usar plano de cargos em remuneração.', 'Sei usar LC nº 551/2024 em competência de órgão.', 'Consigo escrever parecer com lei local.'],
+        nextTopic: 'Próxima fase: Penal e Processo Penal Premium'
+      }
+    ]
+  }
+
 
 ];
 
